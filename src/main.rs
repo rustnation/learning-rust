@@ -7,6 +7,7 @@ use self::basics::floating_point;
 use self::basics::numeric_operations;
 use self::basics::boolean_type;
 use self::basics::character_type;
+use self::basics::compound_types;
 
 fn main() {
     // Variables
@@ -32,4 +33,10 @@ fn main() {
 
     // Character Types
     character_type::character_type();
+
+    // Tuple Types
+    compound_types::tuple_type();
+
+    // Array Type
+    compound_types::array_type();
 }
