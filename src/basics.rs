@@ -8,3 +8,4 @@ pub mod boolean_type;
 pub mod character_type;
 pub mod compound_types;
 pub mod functions;
+pub mod control_flow;

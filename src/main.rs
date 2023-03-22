@@ -9,6 +9,7 @@ use self::basics::boolean_type;
 use self::basics::character_type;
 use self::basics::compound_types;
 use self::basics::functions;
+use self::basics::control_flow;
 
 fn main() {
     // Variables
@@ -53,6 +54,12 @@ fn main() {
     // Function with Return Value
     let seven = functions::function_with_return_value();
     println!("The value of seven is: {seven}");
+
+    // If Expression
+    control_flow::if_expression();
+
+    // If with Multiple Expressions
+    control_flow::if_multiple_expressions();
 }
 
 fn local_function() {
