@@ -39,4 +39,12 @@ fn main() {
 
     // Array Type
     compound_types::array_type();
+
+    // Local Function
+    local_function();
+}
+
+fn local_function() {
+    println!("--- Local Function ---");
+    println!("Hello from local function!");
 }

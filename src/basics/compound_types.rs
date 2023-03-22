@@ -33,5 +33,4 @@ pub fn array_type() {
 
     let second = b[1];
     println!("The value of second is: {second}");
-
 }
