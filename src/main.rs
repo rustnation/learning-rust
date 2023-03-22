@@ -49,6 +49,10 @@ fn main() {
 
     // Functions Multiple Parameters
     functions::function_multiple_parameters(7, 'h');
+
+    // Function with Return Value
+    let seven = functions::function_with_return_value();
+    println!("The value of seven is: {seven}");
 }
 
 fn local_function() {
