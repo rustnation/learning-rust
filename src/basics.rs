@@ -7,3 +7,4 @@ pub mod numeric_operations;
 pub mod boolean_type;
 pub mod character_type;
 pub mod compound_types;
+pub mod functions;

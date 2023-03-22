@@ -8,6 +8,7 @@ use self::basics::numeric_operations;
 use self::basics::boolean_type;
 use self::basics::character_type;
 use self::basics::compound_types;
+use self::basics::functions;
 
 fn main() {
     // Variables
@@ -42,6 +43,12 @@ fn main() {
 
     // Local Function
     local_function();
+
+    // Functions with Parameters
+    functions::function_with_parameters(7);
+
+    // Functions Multiple Parameters
+    functions::function_multiple_parameters(7, 'h');
 }
 
 fn local_function() {
