@@ -71,3 +71,13 @@ pub fn for_loop_elements() {
         println!("the value is: {element}");
     }
 }
+
+pub fn countdown_loop_with_rev() {
+    println!("--- Countdown Loop with Rev ---");
+
+    for number in (1..7).rev() {
+        println!("the value is: {number}!");
+    }
+
+    println!("LIFTOFF!!!");
+}

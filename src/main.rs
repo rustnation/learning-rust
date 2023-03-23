@@ -76,6 +76,9 @@ fn main() {
 
     // For Loop Elements
     loops::for_loop_elements();
+
+    // Countdown Loop with Rev
+    loops::countdown_loop_with_rev();
 }
 
 fn local_function() {
