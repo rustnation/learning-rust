@@ -70,6 +70,12 @@ fn main() {
 
     // Conditional Loops with While
     loops::conditional_loops_with_while();
+
+    // Looping Through a Collection with For
+    loops::looping_through_collection_with_for();
+
+    // For Loop Elements
+    loops::for_loop_elements();
 }
 
 fn local_function() {

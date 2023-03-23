@@ -49,3 +49,25 @@ pub fn conditional_loops_with_while() {
 
     println!("LIFTOFF!!!");
 }
+
+pub fn looping_through_collection_with_for() {
+    println!("--- Looping Through a Collection with For ---");
+
+    let a = [10, 20, 30, 40, 50 , 60, 77];
+    let mut index = 0;
+
+    while index < 7 {
+        println!("the value is: {}", a[index]);
+        index += 1;
+    }
+}
+
+pub fn for_loop_elements() {
+    println!("--- For Loop Elements ---");
+
+    let a = [10, 20, 30, 40, 50, 60, 77];
+
+    for element in a {
+        println!("the value is: {element}");
+    }
+}
