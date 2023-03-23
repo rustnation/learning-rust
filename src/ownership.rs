@@ -1,5 +1,6 @@
 pub mod string_type;
 pub mod string_clone_heap;
+pub mod functions;
 
 pub fn ownership() {
     // String Type
@@ -7,4 +8,7 @@ pub fn ownership() {
 
     // String Clone Heap
     string_clone_heap::string_clone_heap();
+
+    // Moving a Value
+    functions::moving_value();
 }
