@@ -1,6 +1,6 @@
 # Learning Rust
 
-I want to learn to program with Rust at the same level of Golang.
+`Learning Rust` is one of those thing every man must do before he dies.
 
 ## Resources
 
