@@ -64,6 +64,9 @@ fn main() {
 
     // Returning Values with Loops
     loops::returning_values_from_loops();
+
+    // Loop Labels Multiple Loops
+    loops::loop_labels_multiple_loops();
 }
 
 fn local_function() {
