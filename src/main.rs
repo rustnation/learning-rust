@@ -20,4 +20,3 @@ fn local_function() {
     println!("--- Local Function ---");
     println!("Hello from local function!");
 }
-
