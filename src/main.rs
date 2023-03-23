@@ -10,6 +10,7 @@ use self::basics::character_type;
 use self::basics::compound_types;
 use self::basics::functions;
 use self::basics::control_flow;
+use self::basics::loops;
 
 fn main() {
     // Variables
@@ -60,6 +61,9 @@ fn main() {
 
     // If with Multiple Expressions
     control_flow::if_multiple_expressions();
+
+    // Returning Values with Loops
+    loops::returning_values_from_loops();
 }
 
 fn local_function() {
