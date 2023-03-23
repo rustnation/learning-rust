@@ -35,3 +35,17 @@ pub fn loop_labels_multiple_loops() {
     }
     println!("End count = {count}");
 }
+
+pub fn conditional_loops_with_while() {
+    println!("--- Conditional Loops with While ---");
+
+    let mut number = 7;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
+}

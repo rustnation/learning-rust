@@ -67,6 +67,9 @@ fn main() {
 
     // Loop Labels Multiple Loops
     loops::loop_labels_multiple_loops();
+
+    // Conditional Loops with While
+    loops::conditional_loops_with_while();
 }
 
 fn local_function() {
