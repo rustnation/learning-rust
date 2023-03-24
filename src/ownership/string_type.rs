@@ -1,4 +1,4 @@
-pub fn string_type() {
+pub fn master() {
     println!("--- String Type ---");
 
     let mut s = String::from("hallo");

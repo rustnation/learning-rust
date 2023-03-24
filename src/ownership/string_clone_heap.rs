@@ -1,4 +1,4 @@
-pub fn string_clone_heap() {
+pub fn master() {
     println!("--- String Cloning Heap ---");
     let s1 = String::from("hallo");
     let s2 = s1.clone(); // use of clone method

@@ -1,4 +1,4 @@
-pub fn moving_value() {
+pub fn master() {
     println!("--- Moving a Value ---");
     let s = String::from("hallo");
 

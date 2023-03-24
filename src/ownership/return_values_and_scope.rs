@@ -1,4 +1,4 @@
-pub fn return_values_and_scope() {
+pub fn master() {
     let _s1 = gives_ownership(); // gives_ownership moves its return value to s1
 
     let s2 = String::from("hallo"); // s2 comes into scope
