@@ -4,6 +4,7 @@ pub mod functions;
 pub mod return_values_and_scope;
 pub mod return_multiple_values;
 pub mod references_borrowing;
+pub mod mutable_references;
 
 pub fn ownership() {
     // String Type
@@ -23,4 +24,7 @@ pub fn ownership() {
 
     // References and Borrowing
     references_borrowing::master();
+
+    // Mutable references
+    mutable_references::master();
 }
