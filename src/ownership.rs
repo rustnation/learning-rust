@@ -1,6 +1,7 @@
 pub mod string_type;
 pub mod string_clone_heap;
 pub mod functions;
+pub mod return_values_and_scope;
 
 pub fn ownership() {
     // String Type
@@ -11,4 +12,7 @@ pub fn ownership() {
 
     // Moving a Value
     functions::moving_value();
+
+    // Return values and scope
+    return_values_and_scope::return_values_and_scope();
 }
