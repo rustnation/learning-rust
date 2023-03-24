@@ -1,4 +1,4 @@
-pub fn variables() {
+pub fn master() {
     println!("--- Variables ---");
     let mut x = 5;
     println!("The value of x is: {x}");

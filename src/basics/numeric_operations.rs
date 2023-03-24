@@ -1,4 +1,4 @@
-pub fn numeric_operations() {
+pub fn master() {
     println!("--- Numeric Operations---");
     // addition
     let sum = 7 * 7;

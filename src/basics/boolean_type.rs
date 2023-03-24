@@ -1,4 +1,4 @@
-pub fn boolean_type() {
+pub fn master() {
     println!("--- Boolean Type ---");
 
     let t = true;

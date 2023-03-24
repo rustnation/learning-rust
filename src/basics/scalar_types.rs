@@ -1,4 +1,4 @@
-pub fn scalar_types() {
+pub fn master() {
     println!("--- Scalar Types ---");
     println!("--- Integer Types ---");
     let vi8: i8 = -128;

@@ -1,4 +1,4 @@
-pub fn shadowing() {
+pub fn master() {
     let x = 7;
     println!("--- Shadowing ---");
     {

@@ -1,4 +1,4 @@
-pub fn character_type() {
+pub fn master() {
     println!("--- Character Types ---");
 
     let c = 'z';

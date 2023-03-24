@@ -15,28 +15,28 @@ pub fn basics() {
     //print_title("BASICS");
 
     // Variables
-    variables::variables();
+    variables::master();
 
     // Constants
-    constants::constants();
+    constants::master();
 
     // Shadowing
-    shadowing::shadowing();
+    shadowing::master();
 
     // Scalar Types
-    scalar_types::scalar_types();
+    scalar_types::master();
 
     // Floating Points
-    floating_point::floating_points();
+    floating_point::master();
 
     // Numeric Operations
-    numeric_operations::numeric_operations();
+    numeric_operations::master();
 
     // Boolean Types
-    boolean_type::boolean_type();
+    boolean_type::master();
 
     // Character Types
-    character_type::character_type();
+    character_type::master();
 
     // Tuple Types
     compound_types::tuple_type();
