@@ -3,6 +3,7 @@ pub mod string_clone_heap;
 pub mod functions;
 pub mod return_values_and_scope;
 pub mod return_multiple_values;
+pub mod references_borrowing;
 
 pub fn ownership() {
     // String Type
@@ -19,4 +20,7 @@ pub fn ownership() {
 
     // Return multiple values
     return_multiple_values::master();
+
+    // References and Borrowing
+    references_borrowing::master();
 }
