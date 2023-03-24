@@ -12,8 +12,6 @@ pub mod control_flow;
 pub mod loops;
 
 pub fn basics() {
-    //print_title("BASICS");
-
     // Variables
     variables::master();
 
