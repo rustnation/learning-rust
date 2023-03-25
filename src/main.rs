@@ -1,6 +1,7 @@
 pub mod common;
 pub mod basics;
 pub mod ownership;
+pub mod structs;
 //use self::ownership::string_type;
 
 fn main() {
@@ -14,6 +15,10 @@ fn main() {
     // Ownership
     common::messages::print_title("OWNERSHIP");
     ownership::ownership();
+
+    // Structs
+    common::messages::print_title("STRUCTS");
+    structs::master();
 }
 
 fn local_function() {
