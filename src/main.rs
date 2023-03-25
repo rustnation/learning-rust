@@ -3,6 +3,7 @@ pub mod basics;
 pub mod ownership;
 pub mod structs;
 pub mod methods;
+pub mod enums;
 //use self::ownership::string_type;
 
 fn main() {
@@ -24,6 +25,10 @@ fn main() {
     // Methods
     common::messages::print_title("METHODS");
     methods::master();
+
+    // Enums
+    common::messages::print_title("ENUMS");
+    enums::master();
 }
 
 fn local_function() {
