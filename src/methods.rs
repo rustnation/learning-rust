@@ -1,6 +1,7 @@
 pub mod definition;
 pub mod parameters;
 pub mod associated_functions;
+pub mod multiple_impl_blocks;
 
 pub fn master() {
     // Methods Definition
@@ -11,4 +12,7 @@ pub fn master() {
 
     // Associated Functions
     associated_functions::master();
+
+    // Multiple impl Blocks
+    multiple_impl_blocks::master();
 }
