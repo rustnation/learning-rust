@@ -2,6 +2,7 @@ pub mod common;
 pub mod basics;
 pub mod ownership;
 pub mod structs;
+pub mod methods;
 //use self::ownership::string_type;
 
 fn main() {
@@ -19,6 +20,10 @@ fn main() {
     // Structs
     common::messages::print_title("STRUCTS");
     structs::master();
+
+    // Methods
+    common::messages::print_title("METHODS");
+    methods::master();
 }
 
 fn local_function() {
