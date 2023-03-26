@@ -2,6 +2,12 @@
 
 `Learning Rust` is one of those thing every man must do before he dies.
 
+## Install rand with cargo
+
+```commandline
+cargo add rand
+```
+
 ## Resources
 
 - The Rust Programming Language 2nd Edition

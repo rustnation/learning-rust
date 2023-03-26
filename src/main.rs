@@ -4,31 +4,37 @@ pub mod ownership;
 pub mod structs;
 pub mod methods;
 pub mod enums;
+pub mod random_numbers;
 //use self::ownership::string_type;
+use common::messages;
 
 fn main() {
     // Basics
-    common::messages::print_title("BASICS");
+    messages::print_title("BASICS");
     basics::basics();
 
     // Local Function
     local_function();
 
     // Ownership
-    common::messages::print_title("OWNERSHIP");
+    messages::print_title("OWNERSHIP");
     ownership::ownership();
 
     // Structs
-    common::messages::print_title("STRUCTS");
+    messages::print_title("STRUCTS");
     structs::master();
 
     // Methods
-    common::messages::print_title("METHODS");
+    messages::print_title("METHODS");
     methods::master();
 
     // Enums
-    common::messages::print_title("ENUMS");
+    messages::print_title("ENUMS");
     enums::master();
+
+    // Random Numbers
+    messages::print_title("RANDOM NUMBERS");
+    random_numbers::master();
 }
 
 fn local_function() {
