@@ -1,5 +1,6 @@
 pub fn master() {
-    println!("--- Sort numbers ascending ---");
+    println!("--- Quick Sort ---");
+    println!("Sort numbers ascending");
     let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
     println!("Before: {:?}", numbers);
     quick_sort(&mut numbers);
