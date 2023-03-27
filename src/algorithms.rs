@@ -2,6 +2,7 @@ pub mod quick_sort;
 pub mod bubble_sort;
 pub mod insertion_sort;
 pub mod selection_sort;
+pub mod merge_sort;
 
 pub fn master() {
     // Quick Sort
@@ -15,4 +16,7 @@ pub fn master() {
 
     // Selection Sort
     selection_sort::master();
+
+    // Merge Sort
+    merge_sort::master();
 }
