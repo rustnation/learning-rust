@@ -8,6 +8,10 @@
 cargo add rand
 ```
 
+## Algorithms
+
+- [Quick Sort](https://www.hackertouch.com/rust-data-structures-and-algorithms/quick-sort-in-rust.html)
+
 ## Resources
 
 - The Rust Programming Language 2nd Edition

@@ -5,8 +5,9 @@ pub mod structs;
 pub mod methods;
 pub mod enums;
 pub mod random_numbers;
+pub mod algorithms;
 use common::messages;
-use std::{cmp::Ordering, io};
+//use std::{cmp::Ordering, io};
 
 fn main() {
     // Basics
@@ -35,6 +36,10 @@ fn main() {
     // Random Numbers
     messages::print_title("RANDOM NUMBERS");
     random_numbers::master();
+
+    // Algorithms
+    messages::print_title("ALGORITHMS");
+    algorithms::master();
 }
 
 fn local_function() {
