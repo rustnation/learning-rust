@@ -6,6 +6,7 @@ pub mod methods;
 pub mod enums;
 pub mod random_numbers;
 pub mod algorithms;
+pub mod collections;
 use common::messages;
 //use std::{cmp::Ordering, io};
 
@@ -40,6 +41,10 @@ fn main() {
     // Algorithms
     messages::print_title("ALGORITHMS");
     algorithms::master();
+
+    // Vectors
+    messages::print_title("COLLECTIONS");
+    collections::master();
 }
 
 fn local_function() {
