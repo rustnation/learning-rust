@@ -10,6 +10,7 @@ pub mod compound_types;
 pub mod functions;
 pub mod control_flow;
 pub mod loops;
+pub mod slices;
 
 pub fn basics() {
     // Variables
@@ -75,4 +76,7 @@ pub fn basics() {
 
     // Countdown Loop with Rev
     loops::countdown_loop_with_rev();
+
+    // Slices
+    slices::master();
 }
