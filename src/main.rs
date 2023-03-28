@@ -7,6 +7,7 @@ pub mod enums;
 pub mod random_numbers;
 pub mod algorithms;
 pub mod collections;
+pub mod hashmaps;
 use common::messages;
 //use std::{cmp::Ordering, io};
 
@@ -45,6 +46,10 @@ fn main() {
     // Vectors
     messages::print_title("COLLECTIONS");
     collections::master();
+
+    // HashMaps
+    messages::print_title("HASHMAPS");
+    hashmaps::master();
 }
 
 fn local_function() {
