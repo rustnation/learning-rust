@@ -1,4 +1,5 @@
 pub fn master() {
+    println!("--- String Definition ---");
     let data = "This is a first string literal";
 
     // to_string method is available on any type that implements the Display trait
@@ -24,6 +25,7 @@ pub fn master() {
 }
 
 fn pushing_to_string() {
+    println!("--- Pushing to String ---");
     let mut s = String::from("Mutable string");
 
     println!("initial value of s String: {}", s);
@@ -34,6 +36,7 @@ fn pushing_to_string() {
 }
 
 fn push_single_character() {
+    println!("--- Push a Single Character ---");
     let mut s = String::from("lo");
 
     println!("value of s: {}", s);
