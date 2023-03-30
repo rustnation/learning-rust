@@ -15,4 +15,17 @@ pub fn master() {
     let s3 = String::from("This is a third string literal");
 
     println!("{}", s3);
+
+    // push a value into a String
+    pushing_to_string();
+}
+
+fn pushing_to_string() {
+    let mut s = String::from("Mutable string");
+
+    println!("initial value of s String: {}", s);
+
+    s.push_str(", this value was pushed to s variable");
+
+    println!("After push: {}", s);
 }
