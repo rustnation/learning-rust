@@ -18,6 +18,9 @@ pub fn master() {
 
     // push a value into a String
     pushing_to_string();
+
+    // push a single character
+    push_single_character();
 }
 
 fn pushing_to_string() {
@@ -28,4 +31,14 @@ fn pushing_to_string() {
     s.push_str(", this value was pushed to s variable");
 
     println!("After push: {}", s);
+}
+
+fn push_single_character() {
+    let mut s = String::from("lo");
+
+    println!("value of s: {}", s);
+
+    s.push('l');
+
+    println!("value of s after push: {}", s);
 }
