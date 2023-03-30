@@ -8,6 +8,7 @@ pub mod random_numbers;
 pub mod algorithms;
 pub mod collections;
 pub mod hashmaps;
+pub mod strings;
 use common::messages;
 //use std::{cmp::Ordering, io};
 
@@ -50,6 +51,10 @@ fn main() {
     // HashMaps
     messages::print_title("HASHMAPS");
     hashmaps::master();
+
+    // Strings
+    messages::print_title("STRINGS");
+    strings::master();
 }
 
 fn local_function() {
