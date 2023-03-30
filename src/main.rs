@@ -9,6 +9,7 @@ pub mod algorithms;
 pub mod collections;
 pub mod hashmaps;
 pub mod strings;
+pub mod exercises;
 use common::messages;
 //use std::{cmp::Ordering, io};
 
@@ -55,6 +56,10 @@ fn main() {
     // Strings
     messages::print_title("STRINGS");
     strings::master();
+
+    // Exercises
+    messages::print_title("EXERCISES");
+    exercises::master();
 }
 
 fn local_function() {
