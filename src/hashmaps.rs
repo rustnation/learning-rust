@@ -1,6 +1,10 @@
 pub mod definition;
 
-pub fn master() {
-    // HashMap Definition
-    definition::master();
+pub fn master(show: bool) {
+    if show {
+        common::print_title("HASHMAPS");
+
+        // HashMap Definition
+        definition::master();
+    }
 }

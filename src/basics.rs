@@ -12,71 +12,75 @@ pub mod control_flow;
 pub mod loops;
 pub mod slices;
 
-pub fn basics() {
-    // Variables
-    variables::master();
+pub fn master(show: bool) {
+    if show {
+        common::print_title("BASICS");
 
-    // Constants
-    constants::master();
+        // Variables
+        variables::master();
 
-    // Shadowing
-    shadowing::master();
+        // Constants
+        constants::master();
 
-    // Scalar Types
-    scalar_types::master();
+        // Shadowing
+        shadowing::master();
 
-    // Floating Points
-    floating_point::master();
+        // Scalar Types
+        scalar_types::master();
 
-    // Numeric Operations
-    numeric_operations::master();
+        // Floating Points
+        floating_point::master();
 
-    // Boolean Types
-    boolean_type::master();
+        // Numeric Operations
+        numeric_operations::master();
 
-    // Character Types
-    character_type::master();
+        // Boolean Types
+        boolean_type::master();
 
-    // Tuple Types
-    compound_types::tuple_type();
+        // Character Types
+        character_type::master();
 
-    // Array Type
-    compound_types::array_type();
+        // Tuple Types
+        compound_types::tuple_type();
 
-    // Functions with Parameters
-    functions::function_with_parameters(7);
+        // Array Type
+        compound_types::array_type();
 
-    // Functions Multiple Parameters
-    functions::function_multiple_parameters(7, 'h');
+        // Functions with Parameters
+        functions::function_with_parameters(7);
 
-    // Function with Return Value
-    let seven = functions::function_with_return_value();
-    println!("The value of seven is: {seven}");
+        // Functions Multiple Parameters
+        functions::function_multiple_parameters(7, 'h');
 
-    // If Expression
-    control_flow::if_expression();
+        // Function with Return Value
+        let seven = functions::function_with_return_value();
+        println!("The value of seven is: {seven}");
 
-    // If with Multiple Expressions
-    control_flow::if_multiple_expressions();
+        // If Expression
+        control_flow::if_expression();
 
-    // Returning Values with Loops
-    loops::returning_values_from_loops();
+        // If with Multiple Expressions
+        control_flow::if_multiple_expressions();
 
-    // Loop Labels Multiple Loops
-    loops::loop_labels_multiple_loops();
+        // Returning Values with Loops
+        loops::returning_values_from_loops();
 
-    // Conditional Loops with While
-    loops::conditional_loops_with_while();
+        // Loop Labels Multiple Loops
+        loops::loop_labels_multiple_loops();
 
-    // Looping Through a Collection with For
-    loops::looping_through_collection_with_for();
+        // Conditional Loops with While
+        loops::conditional_loops_with_while();
 
-    // For Loop Elements
-    loops::for_loop_elements();
+        // Looping Through a Collection with For
+        loops::looping_through_collection_with_for();
 
-    // Countdown Loop with Rev
-    loops::countdown_loop_with_rev();
+        // For Loop Elements
+        loops::for_loop_elements();
 
-    // Slices
-    slices::master();
+        // Countdown Loop with Rev
+        loops::countdown_loop_with_rev();
+
+        // Slices
+        slices::master();
+    }
 }

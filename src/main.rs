@@ -13,54 +13,45 @@ pub mod exercises;
 
 fn main() {
     // Basics
-    common::print_title("BASICS");
-    basics::basics();
+    basics::master(false);
 
     // Local Function
-    local_function();
+    local_function(false);
 
     // Ownership
-    common::print_title("OWNERSHIP");
-    ownership::ownership();
+    ownership::master(false);
 
     // Structs
-    common::print_title("STRUCTS");
-    structs::master();
+    structs::master(false);
 
     // Methods
-    common::print_title("METHODS");
-    methods::master();
+    methods::master(false);
 
     // Enums
-    common::print_title("ENUMS");
-    enums::master();
+    enums::master(false);
 
     // Random Numbers
-    common::print_title("RANDOM NUMBERS");
-    random_numbers::master();
+    random_numbers::master(false);
 
     // Algorithms
-    common::print_title("ALGORITHMS");
-    algorithms::master();
+    algorithms::master(false);
 
     // Vectors
-    common::print_title("COLLECTIONS");
-    collections::master();
+    collections::master(false);
 
     // HashMaps
-    common::print_title("HASHMAPS");
-    hashmaps::master();
+    hashmaps::master(false);
 
     // Strings
-    common::print_title("STRINGS");
-    strings::master();
+    strings::master(false);
 
     // Exercises
-    common::print_title("EXERCISES");
-    exercises::master();
+    exercises::master(true);
 }
 
-fn local_function() {
-    println!("--- Local Function ---");
-    println!("Hello from local function!");
+fn local_function(show: bool) {
+    if show {
+        println!("--- Local Function ---");
+        println!("Hello from local function!");
+    }
 }

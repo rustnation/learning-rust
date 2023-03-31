@@ -2,10 +2,14 @@ pub mod definition;
 pub mod tuple_structs;
 pub mod unit_struct;
 
-pub fn master() {
-    definition::master();
+pub fn master(show: bool) {
+    if show {
+        common::print_title("STRUCTS");
 
-    tuple_structs::master();
+        definition::master();
 
-    unit_struct::master();
+        tuple_structs::master();
+
+        unit_struct::master();
+    }
 }

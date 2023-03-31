@@ -2,13 +2,17 @@ pub mod definition;
 pub mod options;
 pub mod matches;
 
-pub fn master() {
-    // Enum Definition
-    definition::master();
+pub fn master(show: bool) {
+    if show {
+        common::print_title("ENUMS");
 
-    // Option Enums
-    options::master();
+        // Enum Definition
+        definition::master();
 
-    // Matches
-    matches::master();
+        // Option Enums
+        options::master();
+
+        // Matches
+        matches::master();
+    }
 }

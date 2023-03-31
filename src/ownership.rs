@@ -6,25 +6,29 @@ pub mod return_multiple_values;
 pub mod references_borrowing;
 pub mod mutable_references;
 
-pub fn ownership() {
-    // String Type
-    string_type::master();
+pub fn master(show: bool) {
+    if show {
+        common::print_title("OWNERSHIP");
 
-    // String Clone Heap
-    string_clone_heap::master();
+        // String Type
+        string_type::master();
 
-    // Moving a Value
-    functions::master();
+        // String Clone Heap
+        string_clone_heap::master();
 
-    // Return values and scope
-    return_values_and_scope::master();
+        // Moving a Value
+        functions::master();
 
-    // Return multiple values
-    return_multiple_values::master();
+        // Return values and scope
+        return_values_and_scope::master();
 
-    // References and Borrowing
-    references_borrowing::master();
+        // Return multiple values
+        return_multiple_values::master();
 
-    // Mutable references
-    mutable_references::master();
+        // References and Borrowing
+        references_borrowing::master();
+
+        // Mutable references
+        mutable_references::master();
+    }
 }
