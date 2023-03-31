@@ -7,6 +7,6 @@ pub fn master(show: bool) {
 
         ex03::master(false);
 
-        ex08::master(true);
+        ex08::master(false);
     }
 }
