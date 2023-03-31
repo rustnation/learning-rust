@@ -1,10 +1,11 @@
-pub mod convert_fahrenheit_celsius;
+pub mod fah_to_cel;
 pub mod fib;
+pub mod christmas_carol;
 
 pub fn master() {
     common::print_title("- Chapter 3");
-    convert_fahrenheit_celsius::master();
-
+    fah_to_cel::master();
     fib::master();
+    christmas_carol::master();
 }
 
