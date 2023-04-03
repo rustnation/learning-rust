@@ -48,10 +48,10 @@ fn main() {
     strings::master(false);
 
     // Exercises
-    exercises::master(false);
+    exercises::master(true);
 
     // Errors
-    errors::master(true);
+    errors::master(false);
 }
 
 fn local_function(show: bool) {
