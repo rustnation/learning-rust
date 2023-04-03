@@ -48,7 +48,7 @@ fn main() {
     strings::master(false);
 
     // Exercises
-    exercises::master(true);
+    exercises::master(false);
 
     // Errors
     errors::master(false);
