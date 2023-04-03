@@ -9,6 +9,8 @@ pub mod collections;
 pub mod hashmaps;
 pub mod strings;
 pub mod exercises;
+pub mod errors;
+
 //use std::{cmp::Ordering, io};
 
 fn main() {
@@ -46,7 +48,10 @@ fn main() {
     strings::master(false);
 
     // Exercises
-    exercises::master(true);
+    exercises::master(false);
+
+    // Errors
+    errors::master(true);
 }
 
 fn local_function(show: bool) {
