@@ -51,7 +51,7 @@ fn main() {
     exercises::master(false);
 
     // Errors
-    errors::master(false);
+    errors::master(true);
 }
 
 fn local_function(show: bool) {
