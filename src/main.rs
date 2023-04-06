@@ -10,6 +10,7 @@ pub mod hashmaps;
 pub mod strings;
 pub mod exercises;
 pub mod errors;
+pub mod generics;
 
 //use std::{cmp::Ordering, io};
 
@@ -51,7 +52,10 @@ fn main() {
     exercises::master(false);
 
     // Errors
-    errors::master(true);
+    errors::master(false);
+
+    // Generics
+    generics::master(true);
 }
 
 fn local_function(show: bool) {
