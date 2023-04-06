@@ -1,15 +1,20 @@
+use std::cmp;
+
 pub fn master() {
     println!("--- Generic Function Definition ---");
-    using_generic_function();
+    generic_function();
 
     println!("--- Generic Struct Definition ---");
-    using_struct_definition();
+    generic_struct_definition();
 
     println!("--- Generic Struct Multiple Values Definition ---");
-    using_struct_multiple_values();
+    generic_struct_multiple_values();
+
+    println!("--- Generic in Methods ---");
+    generic_in_methods();
 }
 
-fn using_generic_function() {
+fn generic_function() {
     let number_list = vec![34, 50, 25, 100, 65];
 
     let result = largest(&number_list);
@@ -30,7 +35,7 @@ fn using_generic_function() {
 }
 
 // Generic definition
-fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {
+fn largest<T: PartialOrd>(list: &[T]) -> &T {
     let mut largest = &list[0];
 
     for item in list {
@@ -48,7 +53,7 @@ struct Point<T> {
     y: T,
 }
 
-fn using_struct_definition() {
+fn generic_struct_definition() {
     let integer = Point { x: 7, y: 7 };
     let float = Point { x: 7.7, y: 7.7 };
 
@@ -65,7 +70,7 @@ struct MPoint<T, U> {
     y: U,
 }
 
-fn using_struct_multiple_values() {
+fn generic_struct_multiple_values() {
     let integers = MPoint { x: 7, y: 7 };
     let floats = MPoint { x: 7.7, y: 7.7 };
     let integer_and_float = MPoint { x: 7, y: 7.7 };
@@ -78,4 +83,17 @@ fn using_struct_multiple_values() {
 
     println!("The value of integer_and_float x is: {}", integer_and_float.x);
     println!("The value of integer_and_float y is: {}", integer_and_float.y);
+}
+
+// In Method Definitions
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
+fn generic_in_methods() {
+    let p = Point { x: 7, y: 7 };
+
+    println!("p.x value is: {}", p.x());
 }
