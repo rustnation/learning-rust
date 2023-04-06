@@ -34,7 +34,7 @@ fn generic_function() {
     println!("The largest char is: {result}");
 }
 
-// Generic definition
+// Generic definition. use std::cmp;
 fn largest<T: PartialOrd>(list: &[T]) -> &T {
     let mut largest = &list[0];
 
