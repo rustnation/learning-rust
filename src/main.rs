@@ -59,7 +59,7 @@ fn main() {
     generics::master(false);
 
     // Traits
-    traits::master(true);
+    traits::master(false);
 }
 
 fn local_function(show: bool) {
