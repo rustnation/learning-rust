@@ -13,13 +13,13 @@ pub fn master() {
     };
     println!("1 new tweet: {}", tweet.summarize());
 
-    let news_article = NewsArticle {
+    let article = NewsArticle {
         headline: String::from("Learning Rust!"),
         location: String::from("Envigado"),
         author: String::from("Will"),
         content: String::from("Learning Rust is fantastic!"),
     };
-    println!("1 new article: {}", news_article.summarize());
+    println!("1 new article: {}", article.summarize());
 }
 
 pub struct NewsArticle {
