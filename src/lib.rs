@@ -4,5 +4,12 @@ pub fn print_title(title: &str) {
 }
 
 pub trait Summary {
-    fn summarize(&self) -> String;
+    fn summarize_author(&self) -> String;
+
+    fn summarize(&self) -> String {
+        format!(
+            "(Read more form {}...",
+            self.summarize_author()
+        )
+    }
 }
