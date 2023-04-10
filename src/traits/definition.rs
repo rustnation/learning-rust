@@ -10,7 +10,7 @@ pub fn master() {
 
 struct Sheep { naked: bool, name: &'static str }
 
-trait Animal {
+pub trait Animal {
     // Associated function signature; `Self` refers to the implementor type.
     fn new(name: &'static str) -> Self;
 
