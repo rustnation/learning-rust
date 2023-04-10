@@ -19,3 +19,7 @@ cargo add rand
 - Rust Web Programming
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
+
+### Free Resources
+
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
