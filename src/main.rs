@@ -12,6 +12,7 @@ pub mod exercises;
 pub mod errors;
 pub mod generics;
 pub mod traits;
+pub mod lifetimes;
 
 //use std::{cmp::Ordering, io};
 
@@ -59,7 +60,10 @@ fn main() {
     generics::master(false);
 
     // Traits
-    traits::master(true);
+    traits::master(false);
+
+    // Lifetimes
+    lifetimes::master(true);
 }
 
 fn local_function(show: bool) {
