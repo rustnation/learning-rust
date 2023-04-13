@@ -10,7 +10,6 @@ pub mod hashmaps;
 pub mod strings;
 pub mod exercises;
 pub mod errors;
-pub mod generics;
 pub mod traits;
 pub mod lifetimes;
 
@@ -56,14 +55,14 @@ fn main() {
     // Errors
     errors::master(false);
 
-    // Generics
-    generics::master(false);
-
     // Traits
     traits::master(false);
 
     // Lifetimes
-    lifetimes::master(true);
+    lifetimes::master(false);
+
+    // Generics
+    common::generics::definition::master(true);
 }
 
 fn local_function(show: bool) {

@@ -1,17 +1,19 @@
 //use std::cmp;
 
-pub fn master() {
-    println!("--- Generic Function Definition ---");
-    generic_function();
+pub fn master(show: bool) {
+    if show {
+        println!("--- Generic Function Definition ---");
+        generic_function();
 
-    println!("--- Generic Struct Definition ---");
-    generic_struct_definition();
+        println!("--- Generic Struct Definition ---");
+        generic_struct_definition();
 
-    println!("--- Generic Struct Multiple Values Definition ---");
-    generic_struct_multiple_values();
+        println!("--- Generic Struct Multiple Values Definition ---");
+        generic_struct_multiple_values();
 
-    println!("--- Generic in Methods ---");
-    generic_in_methods();
+        println!("--- Generic in Methods ---");
+        generic_in_methods();
+    }
 }
 
 fn generic_function() {
