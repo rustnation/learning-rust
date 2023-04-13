@@ -62,7 +62,10 @@ fn main() {
     lifetimes::master(false);
 
     // Generics
-    common::generics::definition::master(true);
+    common::generics::definition::master(false);
+
+    // Tests
+    common::tests::definition::master(false);
 }
 
 fn local_function(show: bool) {

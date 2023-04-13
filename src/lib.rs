@@ -1,4 +1,5 @@
 pub mod generics;
+pub mod tests;
 
 pub fn print_title(title: &str) {
     println!(" ");
