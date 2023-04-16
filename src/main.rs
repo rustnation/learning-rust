@@ -66,6 +66,9 @@ fn main() {
 
     // Tests
     common::tests::definition::master(false);
+
+    // Closures
+    common::closures::definition::master(true);
 }
 
 fn local_function(show: bool) {
