@@ -68,7 +68,10 @@ fn main() {
     common::tests::definition::master(false);
 
     // Closures
-    common::closures::definition::master(true);
+    common::closures::definition::master(false);
+
+    // Iterators
+    common::iterators::definition::master(true);
 }
 
 fn local_function(show: bool) {
