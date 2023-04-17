@@ -101,3 +101,29 @@ fn greeting_contains_name() {
         "Greeting did not contain name, value was`{result}`"
     );
 }
+
+#[test]
+fn iterator_demonstration() {
+    let v1 = vec![1, 2, 3, 4, 5, 6, 7];
+
+    let mut v1_iter = v1.iter();
+
+    assert_eq!(v1_iter.next(), Some(&1));
+    assert_eq!(v1_iter.next(), Some(&2));
+    assert_eq!(v1_iter.next(), Some(&3));
+    assert_eq!(v1_iter.next(), Some(&4));
+    assert_eq!(v1_iter.next(), Some(&5));
+    assert_eq!(v1_iter.next(), Some(&6));
+    assert_eq!(v1_iter.next(), Some(&7));
+    assert_eq!(v1_iter.next(), None);
+}
+
+#[test]
+fn iterator_sum() {
+    let v1 = vec![1, 2, 3, 4, 5, 6, 7];
+    let v1_iter = v1.iter();
+
+    let total: i32 = v1_iter.sum();
+
+    assert_eq!(total, 28);
+}
