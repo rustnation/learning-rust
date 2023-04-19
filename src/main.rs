@@ -71,7 +71,10 @@ fn main() {
     common::closures::definition::master(false);
 
     // Iterators
-    common::iterators::definition::master(true);
+    common::iterators::definition::master(false);
+
+    // Doc
+    common::doc::definition::master(true);
 }
 
 fn local_function(show: bool) {
