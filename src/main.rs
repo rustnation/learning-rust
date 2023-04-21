@@ -74,7 +74,10 @@ fn main() {
     common::iterators::definition::master(false);
 
     // Doc
-    common::doc::definition::master(true);
+    common::doc::definition::master(false);
+
+    // Boxes
+    common::boxes::definition::master(true);
 }
 
 fn local_function(show: bool) {

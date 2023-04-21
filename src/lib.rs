@@ -3,6 +3,7 @@ pub mod closures;
 pub mod iterators;
 pub mod doc;
 pub mod tests;
+pub mod boxes;
 
 pub fn print_title(title: &str) {
     println!(" ");
