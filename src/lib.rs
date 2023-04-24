@@ -5,6 +5,7 @@ pub mod doc;
 pub mod tests;
 pub mod boxes;
 pub mod custom_smart_pointer;
+pub mod rc_t;
 
 pub fn print_title(title: &str) {
     println!(" ");

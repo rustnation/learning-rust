@@ -80,7 +80,10 @@ fn main() {
     common::boxes::definition::master(false);
 
     // Custom Smart Pointer
-    common::custom_smart_pointer::definition::master(true);
+    common::custom_smart_pointer::definition::master(false);
+
+    // Rc<T>
+    common::rc_t::definition::master(true);
 }
 
 fn local_function(show: bool) {
