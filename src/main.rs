@@ -77,7 +77,10 @@ fn main() {
     common::doc::definition::master(false);
 
     // Boxes
-    common::boxes::definition::master(true);
+    common::boxes::definition::master(false);
+
+    // Custom Smart Pointer
+    common::custom_smart_pointer::definition::master(true);
 }
 
 fn local_function(show: bool) {

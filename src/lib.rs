@@ -4,6 +4,7 @@ pub mod iterators;
 pub mod doc;
 pub mod tests;
 pub mod boxes;
+pub mod custom_smart_pointer;
 
 pub fn print_title(title: &str) {
     println!(" ");
