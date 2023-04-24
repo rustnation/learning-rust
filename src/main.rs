@@ -83,7 +83,10 @@ fn main() {
     common::custom_smart_pointer::definition::master(false);
 
     // Rc<T>
-    common::rc_t::definition::master(true);
+    common::rc_t::definition::master(false);
+
+    // Messenger Application
+    common::messenger::definition::master(true);
 }
 
 fn local_function(show: bool) {

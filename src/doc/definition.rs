@@ -13,7 +13,7 @@ pub fn master(show: bool) {
 ///
 /// ```
 /// let arg = 5;
-/// let answer = my_crate::add_one(arg);
+/// let answer = common::doc::definition::add_one(arg);
 ///
 /// assert_eq!(6, answer);
 /// ```
