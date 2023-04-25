@@ -86,7 +86,10 @@ fn main() {
     common::rc_t::definition::master(false);
 
     // Messenger Application
-    common::messenger::definition::master(true);
+    common::messenger::definition::master(false);
+
+    // Tree Data Structure
+    common::tree_data_structure::definition::master(true);
 }
 
 fn local_function(show: bool) {

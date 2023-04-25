@@ -7,6 +7,7 @@ pub mod boxes;
 pub mod custom_smart_pointer;
 pub mod rc_t;
 pub mod messenger;
+pub mod tree_data_structure;
 
 pub fn print_title(title: &str) {
     println!(" ");
