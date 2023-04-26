@@ -92,10 +92,10 @@ fn main() {
     common::tree_data_structure::definition::master(false);
 
     // Concurrency
-    common::threads::definition::master(false);
+    common::threads::definition::master(true);
 
     // JoinHandle
-    common::joinhandle::definition::master(true);
+    common::joinhandle::definition::master(false);
 }
 
 fn local_function(show: bool) {
