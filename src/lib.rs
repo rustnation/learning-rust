@@ -9,6 +9,7 @@ pub mod rc_t;
 pub mod messenger;
 pub mod tree_data_structure;
 pub mod threads;
+pub mod joinhandle;
 
 pub fn print_title(title: &str) {
     println!(" ");
