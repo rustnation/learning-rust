@@ -89,7 +89,10 @@ fn main() {
     common::messenger::definition::master(false);
 
     // Tree Data Structure
-    common::tree_data_structure::definition::master(true);
+    common::tree_data_structure::definition::master(false);
+
+    // Concurrency
+    common::threads::definition::master(true);
 }
 
 fn local_function(show: bool) {
