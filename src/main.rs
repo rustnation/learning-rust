@@ -98,7 +98,10 @@ fn main() {
     common::joinhandle::definition::master(false);
 
     // Message Passing
-    common::message_passing::definition::master(true);
+    common::message_passing::definition::master(false);
+
+    // The API of Mutex<T>
+    common::api_mutex::definition::master(true);
 }
 
 fn local_function(show: bool) {

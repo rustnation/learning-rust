@@ -11,6 +11,7 @@ pub mod tree_data_structure;
 pub mod threads;
 pub mod joinhandle;
 pub mod message_passing;
+pub mod api_mutex;
 
 pub fn print_title(title: &str) {
     println!(" ");
