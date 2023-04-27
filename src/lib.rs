@@ -10,6 +10,7 @@ pub mod messenger;
 pub mod tree_data_structure;
 pub mod threads;
 pub mod joinhandle;
+pub mod message_passing;
 
 pub fn print_title(title: &str) {
     println!(" ");
