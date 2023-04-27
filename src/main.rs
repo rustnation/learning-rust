@@ -92,7 +92,7 @@ fn main() {
     common::tree_data_structure::definition::master(false);
 
     // Concurrency
-    common::threads::definition::master(false);
+    common::threads::definition::master(true);
 
     // JoinHandle
     common::joinhandle::definition::master(false);
@@ -101,7 +101,7 @@ fn main() {
     common::message_passing::definition::master(false);
 
     // The API of Mutex<T>
-    common::api_mutex::definition::master(true);
+    common::api_mutex::definition::master(false);
 }
 
 fn local_function(show: bool) {
