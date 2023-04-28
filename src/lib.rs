@@ -14,6 +14,7 @@ pub mod message_passing;
 pub mod api_mutex;
 pub mod object_oriented;
 pub mod draw;
+pub mod post;
 
 pub fn print_title(title: &str) {
     println!(" ");

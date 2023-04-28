@@ -107,7 +107,10 @@ fn main() {
     common::object_oriented::definition::master(false);
 
     // Draw Trait
-    common::draw::definition::master(true);
+    common::draw::definition::master(false);
+
+    // Blog Post
+    common::post::definition::master(true);
 }
 
 fn local_function(show: bool) {
