@@ -104,7 +104,10 @@ fn main() {
     common::api_mutex::definition::master(false);
 
     // Object Oriented
-    common::object_oriented::definition::master(true);
+    common::object_oriented::definition::master(false);
+
+    // Draw Trait
+    common::draw::definition::master(true);
 }
 
 fn local_function(show: bool) {
