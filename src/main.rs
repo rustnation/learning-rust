@@ -122,7 +122,10 @@ fn main() {
     common::unsafe_code::definition::master(false);
 
     // Using Extern Functions
-    common::extern_functions::definition::master(true);
+    common::extern_functions::definition::master(false);
+
+    // Accessing or Modifying a Mutable Static Variable
+    common::static_variable::definition::master(true);
 }
 
 fn local_function(show: bool) {
