@@ -116,7 +116,10 @@ fn main() {
     common::patterns::definition::master(false);
 
     // Destructuring Structs
-    common::destructuring_structs::definition::master(true);
+    common::destructuring_structs::definition::master(false);
+
+    // Unsafe Code
+    common::unsafe_code::definition::master(true);
 }
 
 fn local_function(show: bool) {
