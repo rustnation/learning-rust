@@ -20,6 +20,7 @@ pub mod destructuring_structs;
 pub mod unsafe_code;
 pub mod extern_functions;
 pub mod static_variable;
+pub mod unsafe_trait;
 
 pub fn print_title(title: &str) {
     println!(" ");

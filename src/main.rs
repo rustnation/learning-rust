@@ -125,7 +125,10 @@ fn main() {
     common::extern_functions::definition::master(false);
 
     // Accessing or Modifying a Mutable Static Variable
-    common::static_variable::definition::master(true);
+    common::static_variable::definition::master(false);
+
+    // Implementing an Unsafe Trait
+    common::unsafe_trait::definition::master(true);
 }
 
 fn local_function(show: bool) {
