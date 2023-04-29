@@ -18,6 +18,7 @@ pub mod post;
 pub mod patterns;
 pub mod destructuring_structs;
 pub mod unsafe_code;
+pub mod extern_functions;
 
 pub fn print_title(title: &str) {
     println!(" ");

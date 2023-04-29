@@ -1,0 +1,20 @@
+pub fn master(show: bool) {
+    if show {
+        println!("-- Using Extern Functions to Call External Code");
+
+        definition();
+    }
+}
+
+extern "C" {
+    fn abs(input: i32) -> i32;
+}
+
+fn definition() {
+    unsafe {
+        println!(
+            "Absolute value of -3 according to C: {}",
+            abs(-3)
+        );
+    }
+}

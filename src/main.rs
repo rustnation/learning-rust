@@ -119,7 +119,10 @@ fn main() {
     common::destructuring_structs::definition::master(false);
 
     // Unsafe Code
-    common::unsafe_code::definition::master(true);
+    common::unsafe_code::definition::master(false);
+
+    // Using Extern Functions
+    common::extern_functions::definition::master(true);
 }
 
 fn local_function(show: bool) {
