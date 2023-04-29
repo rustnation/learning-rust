@@ -7,6 +7,10 @@ pub fn master(show: bool) {
         destructuring_matching_literal();
         destructuring_enums();
         destructuring_nested_structs_and_enums();
+        destructuring_structs_tuples();
+        ignoring_multiple_parts_of_tuple();
+        matching_first_and_last_in_tuple();
+        bindings();
     }
 }
 
@@ -108,5 +112,58 @@ fn destructuring_nested_structs_and_enums() {
             "Change color hue {h}, saturation {s}, value {v}"
         ),
         _ => (),
+    }
+}
+
+fn destructuring_structs_tuples() {
+    println!("-- Destructuring Structs and Tuples");
+
+    let ((feet, inches), Point { x, y }) = ((3, 10), Point { x: 3, y: -10 });
+    println!("Feet value: {feet}");
+    println!("Inches value: {inches}");
+    println!("Point x value: {x}");
+    println!("Point y value: {y}");
+}
+
+fn ignoring_multiple_parts_of_tuple() {
+    println!("-- Ignoring Multiple Parts of a Tuple");
+
+    let numbers = (2, 4, 8, 16, 32);
+
+    match numbers {
+        (first, _, third, _, fifth) =>  {
+            println!("Some numbers: {first}, {third}, {fifth}");
+        }
+    }
+}
+
+fn matching_first_and_last_in_tuple() {
+    println!("-- Matching only the first and last values in a tuple");
+    let numbers = (2, 4, 8, 16, 32);
+
+    match numbers {
+        (first, .., last) => {
+            println!("First and last: {first}, {last}");
+        }
+    }
+}
+
+enum Message3 {
+    Hello { id: i32 },
+}
+
+fn bindings() {
+    println!("-- @ Bindings");
+
+    let msg = Message3::Hello { id: 5 };
+
+    match msg {
+        Message3::Hello {
+            id: id_variable @ 3..=7,
+        } => println!("Found an id in range: {id_variable}"),
+        Message3::Hello { id: 10..=12 } => {
+            println!("Found an id in another range")
+        }
+        Message3::Hello { id } => println!("Some other id: {id}"),
     }
 }
