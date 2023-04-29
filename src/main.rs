@@ -110,7 +110,10 @@ fn main() {
     common::draw::definition::master(false);
 
     // Blog Post
-    common::post::definition::master(true);
+    common::post::definition::master(false);
+
+    // Patterns
+    common::patterns::definition::master(true);
 }
 
 fn local_function(show: bool) {
