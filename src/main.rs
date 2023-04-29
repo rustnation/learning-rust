@@ -113,7 +113,10 @@ fn main() {
     common::post::definition::master(false);
 
     // Patterns
-    common::patterns::definition::master(true);
+    common::patterns::definition::master(false);
+
+    // Destructuring Structs
+    common::destructuring_structs::definition::master(true);
 }
 
 fn local_function(show: bool) {

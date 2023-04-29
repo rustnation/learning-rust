@@ -16,6 +16,7 @@ pub mod object_oriented;
 pub mod draw;
 pub mod post;
 pub mod patterns;
+pub mod destructuring_structs;
 
 pub fn print_title(title: &str) {
     println!(" ");
