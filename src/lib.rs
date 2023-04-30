@@ -22,6 +22,7 @@ pub mod extern_functions;
 pub mod static_variable;
 pub mod unsafe_trait;
 pub mod operator_overloading;
+pub mod add_millimeters_to_meters;
 
 pub fn print_title(title: &str) {
     println!(" ");
