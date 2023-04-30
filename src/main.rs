@@ -128,7 +128,10 @@ fn main() {
     common::static_variable::definition::master(false);
 
     // Implementing an Unsafe Trait
-    common::unsafe_trait::definition::master(true);
+    common::unsafe_trait::definition::master(false);
+
+    // Operator Overloading
+    common::operator_overloading::definition::master(true);
 }
 
 fn local_function(show: bool) {
