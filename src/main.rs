@@ -32,7 +32,7 @@ fn main() {
     methods::master(false);
 
     // Enums
-    enums::master(false);
+    enums::master(true);
 
     // Random Numbers
     random_numbers::master(false);
@@ -134,7 +134,7 @@ fn main() {
     common::operator_overloading::definition::master(false);
 
     // Implementing the Add trait on Millimeters to add Millimeters and Meters
-    common::add_millimeters_to_meters::definition::master(true);
+    common::add_millimeters_to_meters::definition::master(false);
 }
 
 fn local_function(show: bool) {
