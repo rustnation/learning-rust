@@ -1,6 +1,6 @@
 # Learning Rust
 
-`Learning Rust` is one of those thing every man must do before he dies.
+`Learning Rust` is one of those things every man must do before he dies.
 
 ## Variable Ownership
 
