@@ -18,6 +18,10 @@
 - Segmentation faults.
 - Buffer overrun.
 
+### Copying Variables
+
+Copying occurs when a value is copied. Once it has been copied, the new variable owns the value, while the exiting variable also owns its own value.
+
 ## Install rand with cargo
 
 ```commandline
