@@ -22,6 +22,15 @@
 
 Copying occurs when a value is copied. Once it has been copied, the new variable owns the value, while the exiting variable also owns its own value.
 
+### Moving Variables
+
+Moving refers to when the value is moved from one variable to another. However, unlike copying, the original variable no longer owns the value.
+
+### Immutable borrowing of variables
+
+An immutable borrow occurs when a variable can be referenced by another variable without having to clone or copy it.
+If the borrowed variable falls out of scope, then it is not deallocated from the memory and the original reference to the value can still be used.
+
 ## Install rand with cargo
 
 ```commandline

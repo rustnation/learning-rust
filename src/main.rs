@@ -23,7 +23,7 @@ fn main() {
     local_function(false);
 
     // Ownership
-    ownership::master(false);
+    ownership::master(true);
 
     // Structs
     structs::master(false);

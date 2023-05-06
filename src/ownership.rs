@@ -5,6 +5,7 @@ pub mod return_values_and_scope;
 pub mod return_multiple_values;
 pub mod references_borrowing;
 pub mod mutable_references;
+pub mod borrowing;
 
 pub fn master(show: bool) {
     if show {
@@ -30,5 +31,8 @@ pub fn master(show: bool) {
 
         // Mutable references
         mutable_references::master();
+
+        // Borrowing
+        borrowing::master();
     }
 }
