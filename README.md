@@ -2,6 +2,22 @@
 
 `Learning Rust` is one of those thing every man must do before he dies.
 
+## Variable Ownership
+
+### Rust enforces the following rules
+
+- Values are owned by the variables assigned to them.
+- As soon as the variable moves out of the scope of where it was defined, it is then deallocated from the memory.
+- Values can be referenced and altered if we adhere to the rules for copying, moving, immutable borrowing, and mutable borrowing.
+
+### Enforcing of these rules protect against the following errors
+
+- Use after frees.
+- Dangling pointers.
+- Double frees.
+- Segmentation faults.
+- Buffer overrun.
+
 ## Install rand with cargo
 
 ```commandline
