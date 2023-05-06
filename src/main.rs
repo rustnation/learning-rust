@@ -135,6 +135,9 @@ fn main() {
 
     // Implementing the Add trait on Millimeters to add Millimeters and Meters
     common::add_millimeters_to_meters::definition::master(false);
+
+    // Vectors
+    common::vectors::definition::master(false);
 }
 
 fn local_function(show: bool) {
