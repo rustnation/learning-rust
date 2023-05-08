@@ -6,6 +6,7 @@ pub mod return_multiple_values;
 pub mod references_borrowing;
 pub mod mutable_references;
 pub mod borrowing;
+pub mod mutable_borrowing;
 
 pub fn master(show: bool) {
     if show {
@@ -34,5 +35,8 @@ pub fn master(show: bool) {
 
         // Borrowing
         borrowing::master();
+
+        // Mutable Borrowing of Variables
+        mutable_borrowing::master();
     }
 }
