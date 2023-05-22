@@ -69,6 +69,7 @@ fn main() {
 
     // Closures
     common::closures::definition::master(false);
+    common::closures::process_closure_thread::master(true);
 
     // Iterators
     common::iterators::definition::master(false);
