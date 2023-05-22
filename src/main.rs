@@ -69,7 +69,7 @@ fn main() {
 
     // Closures
     common::closures::definition::master(false);
-    common::closures::process_closure_thread::master(true);
+    common::closures::process_closure_thread::master(false);
 
     // Iterators
     common::iterators::definition::master(false);
@@ -139,6 +139,9 @@ fn main() {
 
     // Vectors
     common::vectors::definition::master(false);
+
+    // Futures
+    common::futures::definition::master(true);
 }
 
 fn local_function(show: bool) {

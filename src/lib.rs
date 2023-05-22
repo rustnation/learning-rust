@@ -24,6 +24,7 @@ pub mod unsafe_trait;
 pub mod operator_overloading;
 pub mod add_millimeters_to_meters;
 pub mod vectors;
+pub mod futures;
 
 pub fn print_title(title: &str) {
     println!(" ");
