@@ -141,7 +141,7 @@ fn main() {
     common::vectors::definition::master(false);
 
     // Futures
-    common::futures::definition::master(true);
+    common::futures::definition::master(false);
 }
 
 fn local_function(show: bool) {
