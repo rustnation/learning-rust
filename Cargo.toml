@@ -12,3 +12,4 @@ path = "src/lib.rs"
 [dependencies]
 rand = "0.8.5"
 futures = "0.3.28"
+async-std = "1.12.0"
