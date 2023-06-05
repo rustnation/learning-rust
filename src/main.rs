@@ -138,7 +138,7 @@ fn main() {
     common::add_millimeters_to_meters::definition::master(false);
 
     // Vectors
-    common::vectors::definition::master(false);
+    common::vectors::definition::master(true);
 
     // Futures
     common::futures::definition::master(false);
