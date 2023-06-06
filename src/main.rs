@@ -17,7 +17,7 @@ pub mod lifetimes;
 
 fn main() {
     // Basics
-    basics::master(false);
+    basics::master(true);
 
     // Local Function
     local_function(false);
@@ -138,7 +138,7 @@ fn main() {
     common::add_millimeters_to_meters::definition::master(false);
 
     // Vectors
-    common::vectors::definition::master(true);
+    common::vectors::definition::master(false);
 
     // Futures
     common::futures::definition::master(false);

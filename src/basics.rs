@@ -11,6 +11,7 @@ pub mod functions;
 pub mod control_flow;
 pub mod loops;
 pub mod slices;
+pub mod integers;
 
 pub fn master(show: bool) {
     if show {
@@ -82,5 +83,8 @@ pub fn master(show: bool) {
 
         // Slices
         slices::master();
+
+        // Integers
+        integers::master();
     }
 }
