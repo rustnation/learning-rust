@@ -17,7 +17,7 @@ pub mod lifetimes;
 
 fn main() {
     // Basics
-    basics::master(true);
+    basics::master(false);
 
     // Local Function
     local_function(false);
