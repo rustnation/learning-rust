@@ -12,6 +12,7 @@ pub mod exercises;
 pub mod errors;
 pub mod traits;
 pub mod lifetimes;
+pub mod get_type;
 
 //use std::{cmp::Ordering, io};
 
@@ -142,6 +143,9 @@ fn main() {
 
     // Futures
     common::futures::definition::master(false);
+
+    // Get Type
+    common::get_type::definition::master(true);
 }
 
 fn local_function(show: bool) {
