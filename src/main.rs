@@ -145,7 +145,7 @@ fn main() {
     common::futures::definition::master(false);
 
     // Get Type
-    common::get_type::definition::master(true);
+    get_type::definition::master(false);
 }
 
 fn local_function(show: bool) {
