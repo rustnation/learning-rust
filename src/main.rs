@@ -146,6 +146,9 @@ fn main() {
 
     // Get Type
     get_type::definition::master(false);
+
+    // Mutable Reference
+    common::mutable_reference::definition::master(false);
 }
 
 fn local_function(show: bool) {
