@@ -29,6 +29,7 @@ pub mod get_type;
 pub mod mutable_reference;
 pub mod decisions;
 pub mod match_expression;
+pub mod loops;
 
 pub fn print_title(title: &str) {
     println!(" ");

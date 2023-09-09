@@ -69,12 +69,6 @@ pub fn master(show: bool) {
         // If with Multiple Expressions
         control_flow::if_multiple_expressions();
 
-        // Returning Values with Loops
-        loops::returning_values_from_loops();
-
-        // Loop Labels Multiple Loops
-        loops::loop_labels_multiple_loops();
-
         // Conditional Loops with While
         loops::conditional_loops_with_while();
 

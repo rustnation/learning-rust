@@ -155,6 +155,9 @@ fn main() {
 
     // Match Expression
     common::match_expression::definition::master(false);
+
+    // Loops
+    common::loops::definition::master(true);
 }
 
 fn local_function(show: bool) {
