@@ -33,7 +33,7 @@ fn main() {
     methods::master(false);
 
     // Enums
-    enums::master(false);
+    enums::master(true);
 
     // Random Numbers
     random_numbers::master(false);
@@ -160,7 +160,7 @@ fn main() {
     common::loops::definition::master(false);
 
     // While Loops
-    common::while_loop::definition::master(true);
+    common::while_loop::definition::master(false);
 }
 
 fn local_function(show: bool) {

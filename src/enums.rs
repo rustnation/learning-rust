@@ -2,6 +2,7 @@ pub mod definition;
 pub mod options;
 pub mod matches;
 pub mod enum_multi_array;
+pub mod enum_with_match;
 
 pub fn master(show: bool) {
     if show {
@@ -18,5 +19,8 @@ pub fn master(show: bool) {
 
         // Enum Multi Array
         enum_multi_array::master();
+
+        // Enum with Match
+        enum_with_match::master();
     }
 }
