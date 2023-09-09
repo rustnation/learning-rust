@@ -12,3 +12,12 @@ pub fn function_with_return_value() -> i32 {
     println!("--- Function with Return Value ---");
     7
 }
+
+pub fn sum(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+pub fn display_result(result: i32) {
+    println!("\n-- Print the result of sum function");
+    println!("result returned by sum function: {:?}", result);
+}

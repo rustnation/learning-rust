@@ -53,6 +53,12 @@ pub fn master(show: bool) {
         // Functions Multiple Parameters
         functions::function_multiple_parameters(7, 'h');
 
+        // sum 2 numbers
+        let result = functions::sum(3, 4);
+
+        // display the result
+        functions::display_result(result);
+
         // Function with Return Value
         let seven = functions::function_with_return_value();
         println!("The value of seven is: {seven}");
