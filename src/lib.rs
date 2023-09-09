@@ -27,6 +27,7 @@ pub mod vectors;
 pub mod futures;
 pub mod get_type;
 pub mod mutable_reference;
+pub mod decisions;
 
 pub fn print_title(title: &str) {
     println!(" ");

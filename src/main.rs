@@ -149,6 +149,9 @@ fn main() {
 
     // Mutable Reference
     common::mutable_reference::definition::master(false);
+
+    // Making Decisions with Rust
+    common::decisions::definition::master(false);
 }
 
 fn local_function(show: bool) {
