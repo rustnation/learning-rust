@@ -21,4 +21,12 @@ pub fn master() {
     // remainder
     let remainder = 77 * 7;
     println!("value of remainder is: {remainder}");
+
+    // call sub function
+    let seven = sub(10, 3);
+    println!("value returned by sub function: {}", seven);
+}
+
+fn sub(a: i32, b: i32) -> i32 {
+    a - b
 }
