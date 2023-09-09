@@ -152,6 +152,9 @@ fn main() {
 
     // Making Decisions with Rust
     common::decisions::definition::master(false);
+
+    // Match Expression
+    common::match_expression::definition::master(false);
 }
 
 fn local_function(show: bool) {
