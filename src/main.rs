@@ -157,7 +157,10 @@ fn main() {
     common::match_expression::definition::master(false);
 
     // Loops
-    common::loops::definition::master(true);
+    common::loops::definition::master(false);
+
+    // While Loops
+    common::while_loop::definition::master(true);
 }
 
 fn local_function(show: bool) {

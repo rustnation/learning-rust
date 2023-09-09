@@ -69,12 +69,6 @@ pub fn master(show: bool) {
         // If with Multiple Expressions
         control_flow::if_multiple_expressions();
 
-        // Conditional Loops with While
-        loops::conditional_loops_with_while();
-
-        // Looping Through a Collection with For
-        loops::looping_through_collection_with_for();
-
         // For Loop Elements
         loops::for_loop_elements();
 
