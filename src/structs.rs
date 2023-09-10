@@ -2,6 +2,7 @@ pub mod definition;
 pub mod tuple_structs;
 pub mod unit_struct;
 pub mod human;
+pub mod integrate_struct_enum_match;
 
 pub fn master(show: bool) {
     if show {
@@ -13,6 +14,8 @@ pub fn master(show: bool) {
 
         unit_struct::master(false);
 
-        human::master(true);
+        human::master(false);
+
+        integrate_struct_enum_match::master(true);
     }
 }

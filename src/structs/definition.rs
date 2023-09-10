@@ -5,6 +5,12 @@ struct User {
     sign_in_count: u64,
 }
 
+struct ShippingBox {
+    depth: i32,
+    width: i32,
+    height: i32,
+}
+
 pub fn master(show: bool) {
     if show {
         let mut user1 = User {
@@ -22,6 +28,9 @@ pub fn master(show: bool) {
 
         user2.email = String::from("chimera@rustdeveloer.net");
         println!("{}", user2.username);
+
+        // Working with Structs
+        send_box();
     }
 }
 
@@ -32,4 +41,22 @@ fn build_user(email: String, username: String) -> User {
         email,
         sign_in_count: 1,
     }
+}
+
+fn send_box() {
+    println!("\n-- Working with Structs");
+
+    let container_box = ShippingBox {
+        depth: 7,
+        width: 7,
+        height: 7,
+    };
+
+    let height = container_box.height;
+    let depth = container_box.depth;
+    let width = container_box.width;
+
+    println!("container_box is {} height", height);
+    println!("container_box is {} depth", depth);
+    println!("container box is {} width", width);
 }

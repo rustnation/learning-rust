@@ -27,13 +27,13 @@ fn main() {
     ownership::master(false);
 
     // Structs
-    structs::master(false);
+    structs::master(true);
 
     // Methods
     methods::master(false);
 
     // Enums
-    enums::master(true);
+    enums::master(false);
 
     // Random Numbers
     random_numbers::master(false);
