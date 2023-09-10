@@ -27,7 +27,7 @@ fn main() {
     ownership::master(false);
 
     // Structs
-    structs::master(true);
+    structs::master(false);
 
     // Methods
     methods::master(false);
@@ -161,6 +161,9 @@ fn main() {
 
     // While Loops
     common::while_loop::definition::master(false);
+
+    // Tuples
+    common::tuples::master(true);
 }
 
 fn local_function(show: bool) {

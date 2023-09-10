@@ -31,6 +31,7 @@ pub mod decisions;
 pub mod match_expression;
 pub mod loops;
 pub mod while_loop;
+pub mod tuples;
 
 pub fn print_title(title: &str) {
     println!(" ");
