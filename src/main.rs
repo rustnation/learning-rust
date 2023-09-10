@@ -163,7 +163,10 @@ fn main() {
     common::while_loop::definition::master(false);
 
     // Tuples
-    common::tuples::master(true);
+    common::tuples::master(false);
+
+    // Expressions
+    common::expressions::master(true);
 }
 
 fn local_function(show: bool) {
