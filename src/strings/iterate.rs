@@ -1,11 +1,13 @@
-pub fn master() {
-    println!("--- Methods for Iterating  Over Strings ---");
+pub fn master(show: bool) {
+    if show {
+        println!("--- Methods for Iterating  Over Strings ---");
 
-    // Chars Methods
-    chars_methods();
+        // Chars Methods
+        chars_methods();
 
-    // Bytes Method
-    bytes_method();
+        // Bytes Method
+        bytes_method();
+    }
 }
 
 fn chars_methods() {

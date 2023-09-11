@@ -47,9 +47,6 @@ fn main() {
     // HashMaps
     hashmaps::master(false);
 
-    // Strings
-    strings::master(false);
-
     // Exercises
     exercises::master(false);
 
@@ -61,6 +58,9 @@ fn main() {
 
     // Lifetimes
     lifetimes::master(false);
+
+    // Strings
+    common::strings::master(true);
 
     // Generics
     common::generics::definition::master(false);
@@ -166,7 +166,7 @@ fn main() {
     common::tuples::master(false);
 
     // Expressions
-    common::expressions::master(true);
+    common::expressions::master(false);
 }
 
 fn local_function(show: bool) {

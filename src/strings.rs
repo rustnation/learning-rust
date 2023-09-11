@@ -1,18 +1,20 @@
-pub mod definition;
-pub mod concatenation;
-pub mod iterate;
+mod definition;
+mod concatenation;
+mod iterate;
+mod string_functions;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("STRINGS");
-
         // String Definition
-        definition::master();
+        definition::master(false);
 
         // String Concatenation
-        concatenation::master();
+        concatenation::master(false);
 
         // Methods for Iterating Over Strings
-        iterate::master();
+        iterate::master(false);
+
+        // String Functions
+        string_functions::master(true);
     }
 }

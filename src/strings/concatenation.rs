@@ -1,12 +1,14 @@
-pub fn master() {
-    let s1 = String::from("Hello, ");
-    let s2 = String::from("world!");
-    // not s1 has been moved here and can no longer be used
-    let s3 = s1 + &s2;
+pub fn master(show: bool) {
+    if show {
+        let s1 = String::from("Hello, ");
+        let s2 = String::from("world!");
+        // not s1 has been moved here and can no longer be used
+        let s3 = s1 + &s2;
 
-    println!("value of s3: {}", s3);
+        println!("value of s3: {}", s3);
 
-    concatenate_multiple_strings();
+        concatenate_multiple_strings();
+    }
 }
 
 fn concatenate_multiple_strings() {
