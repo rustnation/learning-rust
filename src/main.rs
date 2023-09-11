@@ -168,7 +168,7 @@ fn main() {
     common::expressions::master(false);
 
     // Arrays
-    common::arrays::master(true);
+    common::arrays::master(false);
 }
 
 fn local_function(show: bool) {
