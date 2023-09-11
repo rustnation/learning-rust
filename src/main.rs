@@ -60,7 +60,7 @@ fn main() {
     lifetimes::master(false);
 
     // Strings
-    common::strings::master(true);
+    common::strings::master(false);
 
     // Generics
     common::generics::definition::master(false);
