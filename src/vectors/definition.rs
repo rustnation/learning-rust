@@ -4,7 +4,9 @@ pub fn master(show: bool) {
 
         build_vector_from_iterator(false);
 
-        reverse_vector(true);
+        reverse_vector(false);
+
+        vector_capacity(true);
     }
 }
 
@@ -55,5 +57,32 @@ fn reverse_vector(show: bool) {
         palindrome.reverse();
         println!("palindrome reversed: {:?}", palindrome);
 
+    }
+}
+
+fn vector_capacity(show: bool) {
+    if show {
+        println!("\n--- vector capacity");
+
+        let mut v: Vec<i32> = Vec::with_capacity(2);
+        println!("vector v initial len: {}", v.len());
+        println!("vector v initial capacity: {}", v.capacity());
+
+        v.push(1);
+        v.push(2);
+        println!("vector v len: {}", v.len());
+        println!("vector v capacity: {}", v.capacity());
+
+        v.push(3);
+        println!("vector v len: {}", v.len());
+        println!("vector v capacity: {}", v.capacity());
+
+        v.remove(2);
+        println!("vector v len: {}", v.len());
+        println!("vector v capacity: {}", v.capacity());
+
+        v.push(3);
+        println!("vector v len: {}", v.len());
+        println!("vector v capacity: {}", v.capacity());
     }
 }
