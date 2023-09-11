@@ -35,6 +35,7 @@ pub mod tuples;
 pub mod expressions;
 pub mod strings;
 pub mod arrays;
+pub mod print_var_type;
 
 pub fn print_title(title: &str) {
     println!(" ");

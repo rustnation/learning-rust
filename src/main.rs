@@ -169,6 +169,9 @@ fn main() {
 
     // Arrays
     common::arrays::master(false);
+
+    // Print variable type
+    common::print_var_type::master(true);
 }
 
 fn local_function(show: bool) {
