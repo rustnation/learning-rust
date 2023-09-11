@@ -138,7 +138,7 @@ fn main() {
     common::add_millimeters_to_meters::definition::master(false);
 
     // Vectors
-    common::vectors::definition::master(false);
+    common::vectors::master(true);
 
     // Futures
     common::futures::definition::master(false);
@@ -171,7 +171,7 @@ fn main() {
     common::arrays::master(false);
 
     // Print variable type
-    common::print_var_type::master(true);
+    common::print_var_type::master(false);
 }
 
 fn local_function(show: bool) {
