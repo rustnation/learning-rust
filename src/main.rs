@@ -7,7 +7,6 @@ pub mod random_numbers;
 pub mod algorithms;
 pub mod collections;
 pub mod hashmaps;
-pub mod strings;
 pub mod exercises;
 pub mod errors;
 pub mod traits;
