@@ -6,7 +6,9 @@ pub fn master(show: bool) {
 
         reverse_vector(false);
 
-        vector_capacity(true);
+        vector_capacity(false);
+
+        vector_pop(true);
     }
 }
 
@@ -84,5 +86,26 @@ fn vector_capacity(show: bool) {
         v.push(3);
         println!("vector v len: {}", v.len());
         println!("vector v capacity: {}", v.capacity());
+    }
+}
+
+fn vector_pop(show: bool) {
+    if show {
+        println!("--- vector pop");
+
+        let mut v = vec!["Snow Puff", "Glass Gem"];
+        println!("vector v initial values: {:?}", v);
+
+        let mut item = v.pop().unwrap_or("").to_string();
+        println!("vector v values: {:?}", v);
+        println!("value returned: {}", item);
+
+        item = v.pop().unwrap_or("").to_string();
+        println!("vector v values: {:?}", v);
+        println!("value returned: {}", item);
+
+        item = v.pop().unwrap_or("").to_string();
+        println!("vector v values: {:?}", v);
+        println!("value returned: {}", item);
     }
 }
