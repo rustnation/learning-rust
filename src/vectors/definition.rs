@@ -8,7 +8,9 @@ pub fn master(show: bool) {
 
         vector_capacity(false);
 
-        vector_pop(true);
+        vector_pop(false);
+
+        vector_iterate(false);
     }
 }
 
@@ -107,5 +109,16 @@ fn vector_pop(show: bool) {
         item = v.pop().unwrap_or("").to_string();
         println!("vector v values: {:?}", v);
         println!("value returned: {}", item);
+    }
+}
+
+fn vector_iterate(show: bool) {
+    if show {
+        println!("--- Vector iterate");
+
+        let languages = vec!["c", "go", "rust"];
+        for (index, l) in languages.iter().enumerate() {
+            println!("language[{}]: {}", index, l);
+        }
     }
 }
