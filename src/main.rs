@@ -166,6 +166,9 @@ fn main() {
 
     // Expressions
     common::expressions::master(false);
+
+    // Arrays
+    common::arrays::master(true);
 }
 
 fn local_function(show: bool) {
