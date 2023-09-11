@@ -1,5 +1,3 @@
-use common::Summary;
-
 pub fn master() {
     println!("--- Media Aggregator ---");
 
@@ -28,6 +26,17 @@ pub struct NewsArticle {
     pub location: String,
     pub author: String,
     pub content: String,
+}
+
+trait Summary {
+    fn summarize_author(&self) -> String;
+
+    fn summarize(&self) -> String {
+        format!(
+            "(Read more form {}...",
+            self.summarize_author()
+        )
+    }
 }
 
 impl Summary for NewsArticle {
