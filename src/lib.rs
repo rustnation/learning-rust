@@ -36,6 +36,7 @@ pub mod expressions;
 pub mod strings;
 pub mod arrays;
 pub mod print_var_type;
+pub mod move_vars;
 
 pub fn print_title(title: &str) {
     println!(" ");

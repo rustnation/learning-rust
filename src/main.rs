@@ -172,6 +172,9 @@ fn main() {
 
     // Print variable type
     common::print_var_type::master(false);
+
+    // Move vars
+    common::move_vars::master(false);
 }
 
 fn local_function(show: bool) {
