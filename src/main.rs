@@ -177,7 +177,7 @@ fn main() {
     common::move_vars::master(false);
 
     // Data Collections
-    common::data_collections::master(true);
+    common::data_collections::master(false);
 }
 
 fn local_function(show: bool) {
