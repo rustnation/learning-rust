@@ -180,7 +180,7 @@ fn main() {
     common::data_collections::master(false);
 
     // References
-    common::references::master(true);
+    common::references::master(false);
 }
 
 fn local_function(show: bool) {
