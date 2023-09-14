@@ -4,6 +4,7 @@ pub mod unit_struct;
 pub mod human;
 pub mod integrate_struct_enum_match;
 mod structs_owned;
+mod person;
 
 pub fn master(show: bool) {
     if show {
@@ -19,6 +20,8 @@ pub fn master(show: bool) {
 
         integrate_struct_enum_match::master(false);
 
-        structs_owned::master(true);
+        structs_owned::master(false);
+
+        person::master(false);
     }
 }
