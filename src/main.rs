@@ -178,6 +178,9 @@ fn main() {
 
     // Data Collections
     common::data_collections::master(false);
+
+    // References
+    common::references::master(true);
 }
 
 fn local_function(show: bool) {
