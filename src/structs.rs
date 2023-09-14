@@ -3,6 +3,7 @@ pub mod tuple_structs;
 pub mod unit_struct;
 pub mod human;
 pub mod integrate_struct_enum_match;
+mod structs_owned;
 
 pub fn master(show: bool) {
     if show {
@@ -16,6 +17,8 @@ pub fn master(show: bool) {
 
         human::master(false);
 
-        integrate_struct_enum_match::master(true);
+        integrate_struct_enum_match::master(false);
+
+        structs_owned::master(true);
     }
 }
