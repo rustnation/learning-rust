@@ -7,7 +7,7 @@ enum MenuChoice {
 
 fn get_choice(input: &str) -> Result<MenuChoice, String> {
     match input {
-        "mainmenu" => Ok(MenuChoice::MainMenu),
+        "main" => Ok(MenuChoice::MainMenu),
         "start" => Ok(MenuChoice::Start),
         "quit" => Ok(MenuChoice::Quit),
         _ => Err("menu choice not found".to_owned()),
@@ -26,7 +26,7 @@ pub fn master(show: bool) {
     if show {
         println!("\n--- Results Definition");
 
-        let choice = get_choice("mainmenu");
+        let choice = get_choice("main");
         //print_choice(&choice);
         match choice {
             Ok(inner_choice) => print_choice(&inner_choice),

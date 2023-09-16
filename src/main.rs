@@ -189,7 +189,7 @@ fn main() {
     common::optionals::master(false);
 
     // Results
-    common::results::master(true);
+    common::results::master(false);
 }
 
 fn local_function(show: bool) {
