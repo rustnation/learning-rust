@@ -22,15 +22,25 @@ fn print_choice(choice: &MenuChoice) {
     println!("choice = {:?}", choice);
 }
 
+fn pick_choice(input: &str) -> Result<(), String> {
+    // the question mark (?) at the end automatically performs the match choice for us
+    let choice = get_choice(&input)?;
+    print_choice(&choice);
+    Ok(())
+}
+
 pub fn master(show: bool) {
     if show {
         println!("\n--- Results Definition");
 
-        let choice = get_choice("main");
+        /*let choice = get_choice("main");
         //print_choice(&choice);
         match choice {
             Ok(inner_choice) => print_choice(&inner_choice),
             Err(e) => println!("error = {:?}", e),
-        }
+        }*/
+
+        let choice = pick_choice("end");
+        println!("choice value = {:?}", choice);
     }
 }
