@@ -11,6 +11,8 @@ pub fn master(show: bool) {
         vector_pop(false);
 
         vector_iterate(false);
+
+        vector_is_empty(true);
     }
 }
 
@@ -119,6 +121,18 @@ fn vector_iterate(show: bool) {
         let languages = vec!["c", "go", "rust"];
         for (index, l) in languages.iter().enumerate() {
             println!("language[{}]: {}", index, l);
+        }
+    }
+}
+
+fn vector_is_empty(show: bool) {
+    if show {
+        println!("\n--- Vector is empty");
+
+        let numbers = vec![1, 2, 3];
+        match numbers.is_empty() {
+            true => println!("numbers vector has no numbers"),
+            false => println!("numbers vector has numbers"),
         }
     }
 }
