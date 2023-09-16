@@ -39,6 +39,7 @@ pub mod print_var_type;
 pub mod move_vars;
 pub mod data_collections;
 pub mod references;
+pub mod advanced_match;
 
 pub fn print_title(title: &str) {
     println!(" ");

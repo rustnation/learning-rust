@@ -181,6 +181,9 @@ fn main() {
 
     // References
     common::references::master(false);
+
+    // Advanced Match
+    common::advanced_match::master(true);
 }
 
 fn local_function(show: bool) {
