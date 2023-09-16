@@ -187,6 +187,9 @@ fn main() {
 
     // Optionals
     common::optionals::master(false);
+
+    // Results
+    common::results::master(true);
 }
 
 fn local_function(show: bool) {
