@@ -41,6 +41,8 @@ pub mod data_collections;
 pub mod references;
 pub mod advanced_match;
 
+pub mod optionals;
+
 pub fn print_title(title: &str) {
     println!(" ");
     println!("### {title} ###");

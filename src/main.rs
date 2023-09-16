@@ -183,7 +183,10 @@ fn main() {
     common::references::master(false);
 
     // Advanced Match
-    common::advanced_match::master(true);
+    common::advanced_match::master(false);
+
+    // Optionals
+    common::optionals::master(true);
 }
 
 fn local_function(show: bool) {
