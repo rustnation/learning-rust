@@ -7,38 +7,42 @@ enum CharacterValue {
     Items(Vec<String>)
 }
 
-pub fn master() {
-    let mut profile: HashMap<&str, CharacterValue> = HashMap::new();
+pub fn master(show: bool) {
+    if show {
+        println!("\n--- HashMaps Definition");
 
-    profile.insert("name", CharacterValue::Name("Maxwell".to_string()));
-    profile.insert("age", CharacterValue::Age(32));
-    profile.insert("items", CharacterValue::Items(vec![
-        "laptop".to_string(),
-        "book".to_string(),
-        "coat".to_string()
-    ]));
+        let mut profile: HashMap<&str, CharacterValue> = HashMap::new();
 
-    println!("{:?}", profile);
+        profile.insert("name", CharacterValue::Name("Maxwell".to_string()));
+        profile.insert("age", CharacterValue::Age(32));
+        profile.insert("items", CharacterValue::Items(vec![
+            "laptop".to_string(),
+            "book".to_string(),
+            "coat".to_string()
+        ]));
 
-    match profile.get("name") {
-        Some(value_data) => {
-            match value_data {
-                CharacterValue::Name(name) => {
-                    println!("the name is: {}", name);
-                },
-                _ => panic!("name should be a string")
+        println!("{:?}", profile);
+
+        match profile.get("name") {
+            Some(value_data) => {
+                match value_data {
+                    CharacterValue::Name(name) => {
+                        println!("the name is: {}", name);
+                    },
+                    _ => panic!("name should be a string")
+                }
+            },
+            None => {
+                println!("name is not present");
             }
-        },
-        None => {
-            println!("name is not present");
         }
+
+        // Working with HashMaps
+        scores();
+
+        // Updating a value based on the old value
+        updating_value_based_on_old_value();
     }
-
-    // Working with HashMaps
-    scores();
-
-    // Updating a value based on the old value
-    updating_value_based_on_old_value();
 }
 
 fn scores() {
