@@ -1,6 +1,7 @@
 mod definition;
 mod process_closure_thread;
 mod demo;
+mod map_combinator;
 
 pub fn master(show: bool) {
     if show {
@@ -11,5 +12,7 @@ pub fn master(show: bool) {
         process_closure_thread::master(false);
 
         demo::master(false);
+
+        map_combinator::master(true);
     }
 }
