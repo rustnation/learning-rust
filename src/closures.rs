@@ -1,5 +1,6 @@
 mod definition;
 mod process_closure_thread;
+mod demo;
 
 pub fn master(show: bool) {
     if show {
@@ -8,5 +9,7 @@ pub fn master(show: bool) {
         definition::master(false);
 
         process_closure_thread::master(false);
+
+        demo::master(false);
     }
 }
