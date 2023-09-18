@@ -100,7 +100,7 @@ fn main() {
     common::message_passing::definition::master(false);
 
     // The API of Mutex<T>
-    common::api_mutex::definition::master(false);
+    common::api_mutex::master(false);
 
     // Object Oriented
     common::object_oriented::definition::master(false);
