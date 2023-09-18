@@ -4,7 +4,6 @@ pub mod structs;
 pub mod methods;
 pub mod enums;
 pub mod random_numbers;
-pub mod algorithms;
 pub mod collections;
 pub mod hashmaps;
 pub mod exercises;
@@ -38,7 +37,7 @@ fn main() {
     random_numbers::master(false);
 
     // Algorithms
-    algorithms::master(false);
+    common::algorithms::master(false);
 
     // Vectors
     collections::master(false);
@@ -57,9 +56,6 @@ fn main() {
 
     // Lifetimes
     lifetimes::master(false);
-
-    // Algorithms
-    algorithms::master(false);
 
     // Strings
     common::strings::master(false);
