@@ -1,11 +1,11 @@
 pub mod algorithms;
 pub mod basics;
+pub mod boxes;
 pub mod generics;
 pub mod closures;
 pub mod iterators;
 pub mod doc;
 pub mod tests;
-pub mod boxes;
 pub mod custom_smart_pointer;
 pub mod rc_t;
 pub mod messenger;

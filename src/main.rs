@@ -75,7 +75,7 @@ fn main() {
     common::doc::definition::master(false);
 
     // Boxes
-    common::boxes::definition::master(false);
+    common::boxes::master(false);
 
     // Custom Smart Pointer
     common::custom_smart_pointer::definition::master(false);
