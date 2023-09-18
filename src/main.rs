@@ -133,7 +133,7 @@ fn main() {
     common::operator_overloading::definition::master(false);
 
     // Implementing the Add trait on Millimeters to add Millimeters and Meters
-    common::add_millimeters_to_meters::definition::master(false);
+    common::add_millimeters_to_meters::master(false);
 
     // Vectors
     common::vectors::master(false);
