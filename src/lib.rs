@@ -42,6 +42,7 @@ pub mod references;
 pub mod advanced_match;
 pub mod optionals;
 pub mod results;
+pub use results::master;
 
 pub fn print_title(title: &str) {
     println!(" ");
