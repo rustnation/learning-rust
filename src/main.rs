@@ -1,4 +1,3 @@
-pub mod basics;
 pub mod ownership;
 pub mod structs;
 pub mod methods;
@@ -16,7 +15,7 @@ pub mod get_type;
 
 fn main() {
     // Basics
-    basics::master(false);
+    common::basics::master(false);
 
     // Local Function
     local_function(false);

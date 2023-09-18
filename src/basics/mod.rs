@@ -15,7 +15,7 @@ pub mod integers;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("BASICS");
+        //common::print_title("BASICS");
 
         // Variables
         variables::master();

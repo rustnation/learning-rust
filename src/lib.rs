@@ -1,4 +1,5 @@
 pub mod algorithms;
+pub mod basics;
 pub mod generics;
 pub mod closures;
 pub mod iterators;
