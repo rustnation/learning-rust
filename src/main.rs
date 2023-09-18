@@ -3,7 +3,6 @@ pub mod structs;
 pub mod methods;
 pub mod enums;
 pub mod random_numbers;
-pub mod collections;
 pub mod hashmaps;
 pub mod exercises;
 pub mod errors;
@@ -39,7 +38,7 @@ fn main() {
     common::algorithms::master(false);
 
     // Vectors
-    collections::master(false);
+    common::collections::master(false);
 
     // HashMaps
     hashmaps::master(false);

@@ -3,6 +3,7 @@ pub mod basics;
 pub mod boxes;
 pub mod generics;
 pub mod closures;
+pub mod collections;
 pub mod iterators;
 pub mod doc;
 pub mod tests;
