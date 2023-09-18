@@ -1,6 +1,6 @@
-pub mod definition;
-pub mod activity;
-pub mod question_mark_operator;
+mod definition;
+mod activity;
+mod question_mark_operator;
 
 pub fn master(show: bool) {
     if show {

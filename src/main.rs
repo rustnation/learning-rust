@@ -58,6 +58,9 @@ fn main() {
     // Lifetimes
     lifetimes::master(false);
 
+    // Algorithms
+    algorithms::master(false);
+
     // Strings
     common::strings::master(false);
 
