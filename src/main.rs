@@ -79,7 +79,7 @@ fn main() {
     common::messenger::master(false);
 
     // Tree Data Structure
-    common::tree_data_structure::definition::master(false);
+    common::tree_data_structure::master(false);
 
     // Concurrency
     common::threads::master(false);
