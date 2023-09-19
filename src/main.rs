@@ -104,7 +104,7 @@ fn main() {
     common::object_oriented::definition::master(false);
 
     // Draw Trait
-    common::draw::definition::master(false);
+    common::draw::master(false);
 
     // Blog Post
     common::post::definition::master(false);
