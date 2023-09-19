@@ -82,7 +82,7 @@ fn main() {
     common::tree_data_structure::definition::master(false);
 
     // Concurrency
-    common::threads::definition::master(false);
+    common::threads::master(false);
 
     // JoinHandle
     common::joinhandle::master(false);
