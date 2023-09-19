@@ -1,6 +1,6 @@
 pub fn master(show: bool) {
     if show {
-        println!("-- Making Decisions with Rust");
+        println!("\n--- Making Decisions with Rust");
 
         // show if statement
         if_statement();

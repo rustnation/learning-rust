@@ -146,7 +146,7 @@ fn main() {
     common::mutable_reference::definition::master(false);
 
     // Making Decisions with Rust
-    common::decisions::definition::master(false);
+    common::decisions::master(false);
 
     // Match Expression
     common::match_expression::definition::master(false);
