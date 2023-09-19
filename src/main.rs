@@ -1,4 +1,4 @@
-pub mod structs;
+
 pub mod errors;
 pub mod traits;
 pub mod get_type;
@@ -16,7 +16,7 @@ fn main() {
     common::ownership::master(false);
 
     // Structs
-    structs::master(false);
+    common::structs::master(false);
 
     // Methods
     common::methods::master(false);

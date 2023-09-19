@@ -52,6 +52,7 @@ pub mod results;
 pub mod methods;
 pub mod ownership;
 pub mod random_numbers;
+pub mod structs;
 
 pub fn print_title(title: &str) {
     println!(" ");
