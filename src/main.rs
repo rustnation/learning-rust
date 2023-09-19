@@ -68,7 +68,7 @@ fn main() {
     common::closures::master(false);
 
     // Iterators
-    common::iterators::definition::master(false);
+    common::iterators::master(true);
 
     // Doc
     common::doc::definition::master(false);
