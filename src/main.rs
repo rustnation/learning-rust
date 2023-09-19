@@ -101,7 +101,7 @@ fn main() {
     common::draw::master(false);
 
     // Blog Post
-    common::post::definition::master(false);
+    common::post::master(false);
 
     // Patterns
     common::patterns::master(false);
