@@ -1,12 +1,10 @@
-pub mod definition;
-pub mod parameters;
-pub mod associated_functions;
-pub mod multiple_impl_blocks;
+mod definition;
+mod parameters;
+mod associated_functions;
+mod multiple_impl_blocks;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("METHODS");
-
         // Methods Definition
         definition::master();
 

@@ -1,6 +1,5 @@
 pub mod ownership;
 pub mod structs;
-pub mod methods;
 pub mod random_numbers;
 pub mod errors;
 pub mod traits;
@@ -22,7 +21,7 @@ fn main() {
     structs::master(false);
 
     // Methods
-    methods::master(false);
+    common::methods::master(false);
 
     // Enums
     common::enums::master(false);
