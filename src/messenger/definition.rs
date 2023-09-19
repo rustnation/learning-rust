@@ -1,6 +1,38 @@
+use std::cell::RefCell;
+
 pub fn master(show: bool) {
     if show {
         println!("-- Messenger Application");
+
+        let mock_messenger = MockMessenger::new();
+        let mut limit_tracker = LimitTracker::new(
+            &mock_messenger,
+            100
+        );
+
+        limit_tracker.set_value(80);
+
+        println!("Messages Len: {}", mock_messenger.sent_messages.borrow().len());
+    }
+}
+
+struct MockMessenger {
+    sent_messages: RefCell<Vec<String>>,
+}
+
+impl MockMessenger {
+    fn new() -> MockMessenger {
+        MockMessenger {
+            sent_messages: RefCell::new(vec![]),
+        }
+    }
+}
+
+impl Messenger for MockMessenger {
+    fn send(&self, message: &str) {
+        self.sent_messages
+            .borrow_mut()
+            .push(String::from(message));
     }
 }
 

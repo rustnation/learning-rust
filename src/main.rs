@@ -79,7 +79,7 @@ fn main() {
     common::rc_t::definition::master(false);
 
     // Messenger Application
-    common::messenger::definition::master(false);
+    common::messenger::master(false);
 
     // Tree Data Structure
     common::tree_data_structure::definition::master(false);
@@ -91,7 +91,7 @@ fn main() {
     common::joinhandle::master(false);
 
     // Message Passing
-    common::message_passing::definition::master(false);
+    common::message_passing::master(false);
 
     // The API of Mutex<T>
     common::api_mutex::master(false);
