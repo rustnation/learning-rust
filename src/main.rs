@@ -57,7 +57,7 @@ fn main() {
     common::strings::master(false);
 
     // Generics
-    common::generics::definition::master(false);
+    common::generics::master(false);
 
     // Tests
     common::tests::definition::master(false);
@@ -117,7 +117,7 @@ fn main() {
     common::unsafe_code::definition::master(false);
 
     // Using Extern Functions
-    common::extern_functions::master(true);
+    common::extern_functions::master(false);
 
     // Accessing or Modifying a Mutable Static Variable
     common::static_variable::definition::master(false);
@@ -135,7 +135,7 @@ fn main() {
     common::vectors::master(false);
 
     // Futures
-    common::futures::master(true);
+    common::futures::master(false);
 
     // Get Type
     get_type::definition::master(false);
