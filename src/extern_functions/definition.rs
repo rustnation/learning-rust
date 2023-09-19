@@ -1,6 +1,6 @@
 pub fn master(show: bool) {
     if show {
-        println!("-- Using Extern Functions to Call External Code");
+        println!("\n--- Using Extern Functions to Call External Code");
 
         definition();
     }

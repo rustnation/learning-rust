@@ -117,7 +117,7 @@ fn main() {
     common::unsafe_code::definition::master(false);
 
     // Using Extern Functions
-    common::extern_functions::definition::master(false);
+    common::extern_functions::master(true);
 
     // Accessing or Modifying a Mutable Static Variable
     common::static_variable::definition::master(false);
