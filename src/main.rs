@@ -1,7 +1,6 @@
 pub mod ownership;
 pub mod structs;
 pub mod methods;
-pub mod enums;
 pub mod random_numbers;
 pub mod hashmaps;
 pub mod exercises;
@@ -29,7 +28,7 @@ fn main() {
     methods::master(false);
 
     // Enums
-    enums::master(false);
+    common::enums::master(false);
 
     // Random Numbers
     random_numbers::master(false);

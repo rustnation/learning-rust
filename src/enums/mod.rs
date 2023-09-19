@@ -1,12 +1,12 @@
-pub mod definition;
-pub mod options;
-pub mod matches;
-pub mod enum_multi_array;
-pub mod enum_with_match;
+mod definition;
+mod options;
+mod matches;
+mod enum_multi_array;
+mod enum_with_match;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("ENUMS");
+        println!("\n-- Enums");
 
         // Enum Definition
         definition::master();
