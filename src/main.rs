@@ -104,7 +104,7 @@ fn main() {
     common::post::definition::master(false);
 
     // Patterns
-    common::patterns::definition::master(false);
+    common::patterns::master(false);
 
     // Destructuring Structs
     common::destructuring_structs::master(false);
