@@ -165,7 +165,7 @@ fn main() {
     common::print_var_type::master(false);
 
     // Move vars
-    common::move_vars::master(false);
+    common::move_vars::master(true);
 
     // Data Collections
     common::data_collections::master(false);
