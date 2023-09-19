@@ -4,7 +4,6 @@ pub mod methods;
 pub mod random_numbers;
 pub mod errors;
 pub mod traits;
-pub mod lifetimes;
 pub mod get_type;
 
 //use std::{cmp::Ordering, io};
@@ -50,7 +49,7 @@ fn main() {
     traits::master(false);
 
     // Lifetimes
-    lifetimes::master(false);
+    common::lifetimes::master(false);
 
     // Strings
     common::strings::master(false);

@@ -35,6 +35,7 @@ pub mod get_type;
 pub mod mutable_reference;
 pub mod decisions;
 pub mod match_expression;
+pub mod lifetimes;
 pub mod loops;
 pub mod while_loop;
 pub mod tuples;
