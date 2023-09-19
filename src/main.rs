@@ -73,7 +73,7 @@ fn main() {
     common::custom_smart_pointer::master(false);
 
     // Rc<T>
-    common::rc_t::definition::master(false);
+    common::rc_t::master(false);
 
     // Messenger Application
     common::messenger::master(false);
