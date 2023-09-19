@@ -1,17 +1,15 @@
-pub mod string_type;
-pub mod string_clone_heap;
-pub mod functions;
-pub mod return_values_and_scope;
-pub mod return_multiple_values;
-pub mod references_borrowing;
-pub mod mutable_references;
-pub mod borrowing;
-pub mod mutable_borrowing;
+mod string_type;
+mod string_clone_heap;
+mod functions;
+mod return_values_and_scope;
+mod return_multiple_values;
+mod references_borrowing;
+mod mutable_references;
+mod borrowing;
+mod mutable_borrowing;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("OWNERSHIP");
-
         // String Type
         string_type::master();
 

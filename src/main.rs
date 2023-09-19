@@ -1,4 +1,3 @@
-pub mod ownership;
 pub mod structs;
 pub mod random_numbers;
 pub mod errors;
@@ -15,7 +14,7 @@ fn main() {
     local_function(false);
 
     // Ownership
-    ownership::master(false);
+    common::ownership::master(false);
 
     // Structs
     structs::master(false);
