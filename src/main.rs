@@ -148,7 +148,7 @@ fn main() {
     common::loops::master(false);
 
     // While Loops
-    common::while_loop::definition::master(false);
+    common::while_loop::master(false);
 
     // Tuples
     common::tuples::master(false);
