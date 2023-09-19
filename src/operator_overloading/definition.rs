@@ -2,7 +2,6 @@ use std::ops::Add;
 
 pub fn master(show: bool) {
     if show {
-        println!("-- Operator Overloading");
         definition();
     }
 }

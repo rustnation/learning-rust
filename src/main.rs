@@ -123,7 +123,7 @@ fn main() {
     common::unsafe_trait::definition::master(false);
 
     // Operator Overloading
-    common::operator_overloading::definition::master(false);
+    common::operator_overloading::master(false);
 
     // Implementing the Add trait on Millimeters to add Millimeters and Meters
     common::add_millimeters_to_meters::master(false);
