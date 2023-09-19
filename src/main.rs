@@ -1,7 +1,7 @@
 
 pub mod errors;
 
-pub mod get_type;
+
 
 //use std::{cmp::Ordering, io};
 
@@ -133,7 +133,7 @@ fn main() {
     common::futures::master(false);
 
     // Get Type
-    get_type::master(false);
+    common::get_type::master(false);
 
     // Mutable Reference
     common::mutable_reference::master(false);
