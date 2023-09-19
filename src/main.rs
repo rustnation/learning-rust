@@ -1,10 +1,3 @@
-
-pub mod errors;
-
-
-
-//use std::{cmp::Ordering, io};
-
 fn main() {
     // Basics
     common::basics::master(false);
@@ -40,7 +33,7 @@ fn main() {
     common::exercises::master(false);
 
     // Errors
-    errors::master(false);
+    common::errors::master(false);
 
     // Traits
     common::traits::master(false);
