@@ -148,7 +148,7 @@ fn main() {
     common::match_expression::definition::master(false);
 
     // Loops
-    common::loops::definition::master(false);
+    common::loops::master(false);
 
     // While Loops
     common::while_loop::definition::master(false);
