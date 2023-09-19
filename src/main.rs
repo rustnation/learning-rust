@@ -2,7 +2,6 @@ pub mod ownership;
 pub mod structs;
 pub mod methods;
 pub mod random_numbers;
-pub mod hashmaps;
 pub mod errors;
 pub mod traits;
 pub mod lifetimes;
@@ -39,7 +38,7 @@ fn main() {
     common::collections::master(false);
 
     // HashMaps
-    hashmaps::master(false);
+    common::hashmaps::master(false);
 
     // Exercises
     common::exercises::master(false);

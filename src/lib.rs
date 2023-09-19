@@ -6,6 +6,7 @@ pub mod exercises;
 pub mod generics;
 pub mod closures;
 pub mod collections;
+pub mod hashmaps;
 pub mod iterators;
 pub mod doc;
 pub mod tests;
