@@ -109,7 +109,7 @@ fn main() {
     common::destructuring_structs::master(false);
 
     // Unsafe Code
-    common::unsafe_code::definition::master(false);
+    common::unsafe_code::master(false);
 
     // Using Extern Functions
     common::extern_functions::master(false);
