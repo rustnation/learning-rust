@@ -138,7 +138,7 @@ fn main() {
     common::futures::master(false);
 
     // Get Type
-    get_type::definition::master(false);
+    get_type::master(false);
 
     // Mutable Reference
     common::mutable_reference::definition::master(false);
