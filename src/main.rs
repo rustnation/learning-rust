@@ -71,7 +71,7 @@ fn main() {
     common::iterators::master(false);
 
     // Doc
-    common::doc::definition::master(false);
+    common::doc::master(false);
 
     // Boxes
     common::boxes::master(false);
