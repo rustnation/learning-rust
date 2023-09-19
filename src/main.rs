@@ -135,7 +135,7 @@ fn main() {
     common::vectors::master(false);
 
     // Futures
-    common::futures::definition::master(false);
+    common::futures::master(true);
 
     // Get Type
     get_type::definition::master(false);
