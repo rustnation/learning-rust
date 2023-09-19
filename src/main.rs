@@ -118,7 +118,7 @@ fn main() {
     common::static_variable::master(false);
 
     // Implementing an Unsafe Trait
-    common::unsafe_trait::definition::master(false);
+    common::unsafe_trait::master(false);
 
     // Operator Overloading
     common::operator_overloading::master(false);
