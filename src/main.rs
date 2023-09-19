@@ -138,7 +138,7 @@ fn main() {
     get_type::master(false);
 
     // Mutable Reference
-    common::mutable_reference::definition::master(false);
+    common::mutable_reference::master(false);
 
     // Making Decisions with Rust
     common::decisions::master(false);
@@ -165,7 +165,7 @@ fn main() {
     common::print_var_type::master(false);
 
     // Move vars
-    common::move_vars::master(true);
+    common::move_vars::master(false);
 
     // Data Collections
     common::data_collections::master(false);
