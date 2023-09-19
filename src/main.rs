@@ -77,7 +77,7 @@ fn main() {
     common::boxes::master(false);
 
     // Custom Smart Pointer
-    common::custom_smart_pointer::definition::master(false);
+    common::custom_smart_pointer::master(false);
 
     // Rc<T>
     common::rc_t::definition::master(false);

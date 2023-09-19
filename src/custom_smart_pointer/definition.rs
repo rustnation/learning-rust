@@ -1,11 +1,12 @@
 pub fn master(show: bool) {
     if show {
-        println!("-- Custom Smart Pointer");
         definition();
     }
 }
 
 fn definition() {
+    println!("\n-- Definition");
+
     let _c = CustomSmartPointer {
         data: String::from("my stuff"),
     };
