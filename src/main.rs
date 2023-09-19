@@ -55,7 +55,7 @@ fn main() {
     common::generics::master(false);
 
     // Tests
-    common::tests::definition::master(false);
+    common::tests::master(false);
 
     // Closures
     common::closures::master(false);
