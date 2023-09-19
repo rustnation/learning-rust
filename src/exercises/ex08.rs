@@ -4,7 +4,7 @@ pub mod departments;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("- Chapter 8");
+        println!("\n--- Chapter 08");
 
         vector::master();
 

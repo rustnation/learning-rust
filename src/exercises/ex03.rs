@@ -4,7 +4,8 @@ pub mod christmas_carol;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("- Chapter 3");
+        println!("\n--- Chapter 03");
+
         fah_to_cel::master();
         fib::master();
         christmas_carol::master();

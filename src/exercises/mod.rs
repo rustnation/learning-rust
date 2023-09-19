@@ -1,9 +1,9 @@
-pub mod ex03;
-pub mod ex08;
+mod ex03;
+mod ex08;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("EXERCISES");
+        println!("\n-- Exercises");
 
         ex03::master(false);
 

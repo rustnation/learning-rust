@@ -2,6 +2,7 @@ pub mod algorithms;
 pub mod basics;
 pub mod boxes;
 pub mod enums;
+pub mod exercises;
 pub mod generics;
 pub mod closures;
 pub mod collections;

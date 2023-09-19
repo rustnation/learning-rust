@@ -3,7 +3,6 @@ pub mod structs;
 pub mod methods;
 pub mod random_numbers;
 pub mod hashmaps;
-pub mod exercises;
 pub mod errors;
 pub mod traits;
 pub mod lifetimes;
@@ -43,7 +42,7 @@ fn main() {
     hashmaps::master(false);
 
     // Exercises
-    exercises::master(false);
+    common::exercises::master(false);
 
     // Errors
     errors::master(false);
