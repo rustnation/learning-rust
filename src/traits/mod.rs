@@ -1,12 +1,10 @@
-pub mod definition;
-pub mod derives;
-pub mod returning_traits_with_dyn;
-pub mod media_aggregator;
+mod definition;
+mod derives;
+mod returning_traits_with_dyn;
+mod media_aggregator;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("TRAITS");
-
         // Trait Definition
         definition::master();
 

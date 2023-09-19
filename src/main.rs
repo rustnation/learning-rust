@@ -1,6 +1,6 @@
 
 pub mod errors;
-pub mod traits;
+
 pub mod get_type;
 
 //use std::{cmp::Ordering, io};
@@ -43,7 +43,7 @@ fn main() {
     errors::master(false);
 
     // Traits
-    traits::master(false);
+    common::traits::master(false);
 
     // Lifetimes
     common::lifetimes::master(false);
