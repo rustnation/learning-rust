@@ -1,7 +1,5 @@
 pub fn master(show: bool) {
     if show {
-        println!("-- Destructuring Structs");
-
         definition();
         idiomatic_alternative();
         destructuring_matching_literal();

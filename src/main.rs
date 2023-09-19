@@ -113,7 +113,7 @@ fn main() {
     common::patterns::definition::master(false);
 
     // Destructuring Structs
-    common::destructuring_structs::definition::master(false);
+    common::destructuring_structs::master(false);
 
     // Unsafe Code
     common::unsafe_code::definition::master(false);
