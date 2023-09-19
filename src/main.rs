@@ -89,7 +89,7 @@ fn main() {
     common::threads::definition::master(false);
 
     // JoinHandle
-    common::joinhandle::definition::master(false);
+    common::joinhandle::master(false);
 
     // Message Passing
     common::message_passing::definition::master(false);
