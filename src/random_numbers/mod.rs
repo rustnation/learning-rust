@@ -1,8 +1,8 @@
-pub mod definition;
+mod definition;
 
 pub fn master(show: bool) {
     if show {
-        common::print_title("RANDOM NUMBERS");
+        println!("\n-- Random Numbers");
 
         // Random Definition
         definition::master();

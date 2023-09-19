@@ -1,5 +1,4 @@
 pub mod structs;
-pub mod random_numbers;
 pub mod errors;
 pub mod traits;
 pub mod get_type;
@@ -26,7 +25,7 @@ fn main() {
     common::enums::master(false);
 
     // Random Numbers
-    random_numbers::master(false);
+    common::random_numbers::master(false);
 
     // Algorithms
     common::algorithms::master(false);
