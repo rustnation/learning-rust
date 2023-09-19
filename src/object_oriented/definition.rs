@@ -1,6 +1,5 @@
 pub fn master(show: bool) {
     if show {
-        println!("-- Object Oriented");
         definition();
     }
 }
@@ -15,9 +14,8 @@ fn definition() {
     average_collection.add(9);
     average_collection.add(10);
 
-    let average = average_collection.average;
-
-    println!("Average: {average}");
+    average_collection.remove();
+    println!("Average: {}", average_collection.get_average());
 }
 
 pub struct AveragedCollection {
@@ -44,7 +42,7 @@ impl AveragedCollection {
         }
     }
 
-    pub fn average(&self) -> f64 {
+    pub fn get_average(&self) -> f64 {
         self.average
     }
 

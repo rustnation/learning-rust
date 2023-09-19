@@ -96,7 +96,7 @@ fn main() {
     common::api_mutex::master(false);
 
     // Object Oriented
-    common::object_oriented::definition::master(false);
+    common::object_oriented::master(false);
 
     // Draw Trait
     common::draw::master(false);
