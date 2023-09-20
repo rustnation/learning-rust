@@ -56,6 +56,7 @@ pub mod random_numbers;
 pub mod structs;
 pub mod errors;
 pub mod ranges;
+pub mod modules;
 
 pub fn print_title(title: &str) {
     println!(" ");

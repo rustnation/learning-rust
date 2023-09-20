@@ -175,6 +175,9 @@ fn main() {
 
     // Ranges
     common::ranges::master(false);
+
+    // Modules
+    common::modules::master(true);
 }
 
 fn local_function(show: bool) {
