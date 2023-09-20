@@ -48,7 +48,7 @@ fn main() {
     common::generics::master(false);
 
     // Tests
-    common::tests::master(false);
+    common::testing::master(false);
 
     // Closures
     common::closures::master(false);
@@ -177,7 +177,7 @@ fn main() {
     common::ranges::master(false);
 
     // Modules
-    common::modules::master(true);
+    common::modules::master(false);
 }
 
 fn local_function(show: bool) {

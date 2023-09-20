@@ -9,7 +9,7 @@ pub mod collections;
 pub mod hashmaps;
 pub mod iterators;
 pub mod doc;
-pub mod tests;
+pub mod testing;
 pub mod traits;
 pub mod custom_smart_pointer;
 pub mod rc_t;
