@@ -172,6 +172,9 @@ fn main() {
 
     // Results
     common::results::master(false);
+
+    // Ranges
+    common::ranges::master(true);
 }
 
 fn local_function(show: bool) {
