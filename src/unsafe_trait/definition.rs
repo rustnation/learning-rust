@@ -4,6 +4,7 @@ pub fn master(show: bool) {
     }
 }
 
+/// # Safety
 unsafe trait Foo {
     // methods go here
 }
