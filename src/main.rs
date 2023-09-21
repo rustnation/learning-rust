@@ -178,6 +178,9 @@ fn main() {
 
     // Modules
     common::modules::master(false);
+
+    // External Crates
+    common::external_crates::master(false);
 }
 
 fn local_function(show: bool) {

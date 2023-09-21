@@ -57,6 +57,7 @@ pub mod structs;
 pub mod errors;
 pub mod ranges;
 pub mod modules;
+pub mod external_crates;
 
 pub fn print_title(title: &str) {
     println!(" ");
