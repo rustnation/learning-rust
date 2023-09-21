@@ -168,7 +168,7 @@ fn main() {
     common::advanced_match::master(false);
 
     // Optionals
-    common::optionals::master(true);
+    common::optionals::master(false);
 
     // Results
     common::results::master(false);
