@@ -44,7 +44,7 @@ impl Sheep {
 impl Animal for Sheep {
     // `Self` is the implementor type: `Sheep`.
     fn new(name: &'static str) -> Sheep {
-        Sheep { name: name, naked: false }
+        Sheep { name, naked: false }
     }
 
     fn name(&self) -> &'static str {

@@ -1,17 +1,19 @@
-pub fn master() {
-    println!("--- Selection Sort ---");
-    println!("Sort numbers ascending");
-    let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
-    println!("Before: {:?}", numbers);
-    selection_sort(&mut numbers);
-    println!("After: {:?}", numbers);
+pub fn master(show: bool) {
+    if show {
+        println!("--- Selection Sort ---");
+        println!("Sort numbers ascending");
+        let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
+        println!("Before: {:?}", numbers);
+        selection_sort(&mut numbers);
+        println!("After: {:?}", numbers);
 
-    println!("Sort strings alphabetically");
-    let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
-    println!("Before: {:?}", strings);
-    selection_sort(&mut strings);
-    println!("After: {:?}", strings);
-    println!(" ");
+        println!("Sort strings alphabetically");
+        let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
+        println!("Before: {:?}", strings);
+        selection_sort(&mut strings);
+        println!("After: {:?}", strings);
+        println!(" ");
+    }
 }
 
 fn selection_sort<T: Ord>(arr: &mut [T]) {

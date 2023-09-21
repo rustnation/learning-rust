@@ -6,21 +6,19 @@ mod merge_sort;
 
 pub fn master(show: bool) {
     if show {
-        //common::print_title("ALGORITHMS");
-
         // Quick Sort
-        quick_sort::master();
+        quick_sort::master(false);
 
         // Bubble Sort
-        bubble_sort::master();
+        bubble_sort::master(false);
 
         // Insertion Sort
-        insertion_sort::master();
+        insertion_sort::master(true);
 
         // Selection Sort
-        selection_sort::master();
+        selection_sort::master(false);
 
         // Merge Sort
-        merge_sort::master();
+        merge_sort::master(false);
     }
 }

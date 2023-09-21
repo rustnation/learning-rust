@@ -24,27 +24,27 @@ struct Human {
 
 impl Human {
     fn new(name: &str, age: i8) -> Human {
-        return Human{
+        Human{
             name: name.to_string(),
             age,
             current_thought: None,
-            friend: Friend::NIL
+            friend: Friend::Nil
         }
     }
 
     fn with_thought(mut self, thought: &str) -> Human {
         self.current_thought = Some(thought.to_string());
-        return self
+        self
     }
 
     fn with_friend(mut self, friend: Box<Human>) -> Human {
-        self.friend = Friend::HUMAN(friend);
-        return self
+        self.friend = Friend::Human(friend);
+        self
     }
 }
 
 #[derive(Debug)]
 enum Friend {
-    HUMAN(Box<Human>),
-    NIL
+    Human(Box<Human>),
+    Nil
 }

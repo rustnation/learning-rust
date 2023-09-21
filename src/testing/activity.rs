@@ -74,7 +74,7 @@ fn clamp(n: i32, lower: i32, upper: i32) -> i32 {
 /// Divides a and b.
 fn div(a: i32, b: i32) -> Option<i32> {
     if b == 0 {
-        return None
+        None
     } else {
         Some(a / b)
     }

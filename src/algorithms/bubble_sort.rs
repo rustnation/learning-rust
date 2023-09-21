@@ -1,17 +1,19 @@
-pub fn master() {
-    println!("--- Bubble Sort ---");
-    println!("Sort numbers ascending");
-    let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
-    println!("Before: {:?}", numbers);
-    bubble_sort(&mut numbers);
-    println!("After: {:?}", numbers);
+pub fn master(show: bool) {
+    if show {
+        println!("--- Bubble Sort ---");
+        println!("Sort numbers ascending");
+        let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
+        println!("Before: {:?}", numbers);
+        bubble_sort(&mut numbers);
+        println!("After: {:?}", numbers);
 
-    println!("Sort strings alphabetically");
-    let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
-    println!("Before: {:?}", strings);
-    bubble_sort(&mut strings);
-    println!("After: {:?}", strings);
-    println!(" ");
+        println!("Sort strings alphabetically");
+        let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
+        println!("Before: {:?}", strings);
+        bubble_sort(&mut strings);
+        println!("After: {:?}", strings);
+        println!(" ");
+    }
 }
 
 fn bubble_sort<T: Ord>(arr: &mut [T]) {

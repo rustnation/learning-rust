@@ -22,8 +22,8 @@ fn simple_data() {
 fn in_vector() {
     println!("\n--- In vector");
 
-    let numbers = vec![1, 2, 3, 4, 5, 6, 7];
-    let mut number_iter = numbers.iter();
+    //let numbers = vec![1, 2, 3, 4, 5, 6, 7];
+    let mut number_iter = [1, 2, 3, 4, 5, 6, 7].iter();
     while let Some(num) = number_iter.next() {
         println!("num: {:?}", num);
     }

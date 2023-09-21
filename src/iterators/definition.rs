@@ -15,8 +15,8 @@ pub fn master(show: bool) {
 
 fn creating_an_iterator() {
     println!("\n-- Creating and Iterator");
-    let v1 = vec![1, 2, 3];
-    let v1_iter = v1.iter();
+    //let v1 = vec![1, 2, 3];
+    let v1_iter = [1, 2, 3].iter();
 
     for val in v1_iter {
         println!("Got: {val}");

@@ -11,6 +11,6 @@ pub fn master(show: bool) {
         println!("{}", local);
 
         // print a formatted version
-        println!("{}", local.format("%Y-%m-%d %H:%M:%S").to_string());
+        println!("{}", local.format("%Y-%m-%d %H:%M:%S"));
     }
 }

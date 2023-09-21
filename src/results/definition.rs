@@ -24,7 +24,7 @@ fn print_choice(choice: &MenuChoice) {
 
 fn pick_choice(input: &str) -> Result<(), String> {
     // the question mark (?) at the end automatically performs the match choice for us
-    let choice = get_choice(&input)?;
+    let choice = get_choice(input)?;
     print_choice(&choice);
     Ok(())
 }

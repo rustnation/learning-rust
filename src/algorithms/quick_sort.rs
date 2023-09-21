@@ -1,17 +1,19 @@
-pub fn master() {
-    println!("--- Quick Sort ---");
-    println!("Sort numbers ascending");
-    let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
-    println!("Before: {:?}", numbers);
-    quick_sort(&mut numbers);
-    println!("After: {:?}", numbers);
+pub fn master(show: bool) {
+    if show {
+        println!("\n--- Quick Sort ---");
+        println!("\nSort numbers ascending");
+        let mut numbers = [4, 65, 2, -31, 0, 99, 2, 83, 782, 1];
+        println!("Before: {:?}", numbers);
+        quick_sort(&mut numbers);
+        println!("After: {:?}", numbers);
 
-    println!("Sort strings alphabetically");
-    let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
-    println!("Before: {:?}", strings);
-    quick_sort(&mut strings);
-    println!("After: {:?}", strings);
-    println!(" ");
+        println!("\nSort strings alphabetically");
+        let mut strings = ["beach", "hotel", "airplane", "car", "house", "art"];
+        println!("Before: {:?}", strings);
+        quick_sort(&mut strings);
+        println!("After: {:?}", strings);
+        println!(" ");
+    }
 }
 
 fn quick_sort<T: Ord>(arr: &mut [T]) {
@@ -47,6 +49,6 @@ fn partition<T: Ord>(arr: &mut [T], low: isize, high: isize) -> isize {
             arr.swap(store_index as usize, last_index as usize);
         }
     }
-    arr.swap(store_index as usize, pivot as usize);
+    arr.swap(store_index as usize, pivot);
     store_index
 }

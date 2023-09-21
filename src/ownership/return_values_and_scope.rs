@@ -10,9 +10,10 @@ pub fn master() {
     // and is dropped.
 
 fn gives_ownership() -> String { // gives_ownership will move
-    let some_string = String::from("yours"); // some_string comes into scope
+    /*let some_string = String::from("yours"); // some_string comes into scope
 
-    some_string // some_string is returned and moves out to the calling function
+    some_string // some_string is returned and moves out to the calling function*/
+    String::from("yours")
 }
 
 fn takes_and_gives_back(a_string: String) -> String { // a_string comes into scope

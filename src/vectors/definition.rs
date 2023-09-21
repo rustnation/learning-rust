@@ -39,10 +39,11 @@ fn definition(show: bool) {
 
 // type inference
 fn build_vector() -> Vec<i16> {
-    let mut v = Vec::new();
+    vec![7, 77]
+    /*let mut v = Vec::new();
     v.push(7);
     v.push(77);
-    v
+    v*/
 }
 
 // build a vector from the values produced by an iterator
@@ -118,8 +119,8 @@ fn vector_iterate(show: bool) {
     if show {
         println!("--- Vector iterate");
 
-        let languages = vec!["c", "go", "rust"];
-        for (index, l) in languages.iter().enumerate() {
+        //let languages = vec!["c", "go", "rust"];
+        for (index, l) in ["c", "go", "rust"].iter().enumerate() {
             println!("language[{}]: {}", index, l);
         }
     }
@@ -129,8 +130,8 @@ fn vector_is_empty(show: bool) {
     if show {
         println!("\n--- Vector is empty");
 
-        let numbers = vec![1, 2, 3];
-        match numbers.is_empty() {
+        //let numbers = vec![1, 2, 3];
+        match [1, 2, 3].is_empty() {
             true => println!("numbers vector has no numbers"),
             false => println!("numbers vector has numbers"),
         }

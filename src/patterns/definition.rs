@@ -45,9 +45,9 @@ fn while_let() {
 
 fn for_loop() {
     println!("-- For loop");
-    let v = vec!['a', 'b', 'c'];
+   // let v = vec!['a', 'b', 'c'];
 
-    for (index, value) in v.iter().enumerate() {
+    for (index, value) in ['a', 'b', 'c'].iter().enumerate() {
         println!("{value} is at index {index}");
     }
 }

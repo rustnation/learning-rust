@@ -128,10 +128,15 @@ fn ignoring_multiple_parts_of_tuple() {
 
     let numbers = (2, 4, 8, 16, 32);
 
-    match numbers {
+    /*match numbers {
         (first, _, third, _, fifth) =>  {
             println!("Some numbers: {first}, {third}, {fifth}");
         }
+    }*/
+
+    let (first, _, third, _, fifth) = numbers;
+    {
+        println!("Some numbers: {first}, {third}, {fifth}");
     }
 }
 
@@ -139,11 +144,16 @@ fn matching_first_and_last_in_tuple() {
     println!("-- Matching only the first and last values in a tuple");
     let numbers = (2, 4, 8, 16, 32);
 
-    match numbers {
+    let (first, .., last) = numbers;
+    {
+        println!("First and last: {first}, {last}");
+    }
+
+    /*match numbers {
         (first, .., last) => {
             println!("First and last: {first}, {last}");
         }
-    }
+    }*/
 }
 
 enum Message3 {

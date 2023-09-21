@@ -10,7 +10,7 @@ pub fn master(show: bool) {
         println!("\n-- Enums");
 
         // Enum Demo
-        demo::master(true);
+        demo::master(false);
 
         // Enum Definition
         definition::master(false);
@@ -19,7 +19,7 @@ pub fn master(show: bool) {
         options::master(false);
 
         // Matches
-        matches::master(false);
+        matches::master(true);
 
         // Enum Multi Array
         enum_multi_array::master(false);

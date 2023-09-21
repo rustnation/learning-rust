@@ -9,7 +9,7 @@ async fn do_something(number: i8) -> i8 {
     println!("number {} is running", number);
     let two_seconds = time::Duration::new(2, 0);
     thread::sleep(two_seconds);
-    return 2
+    2
 }
 
 pub fn master(show: bool) {
@@ -42,7 +42,7 @@ fn using_futures_async() {
     let future_three = async {
         let outcome_one = do_something(2).await;
         let outcome_two = do_something(3).await;
-        return outcome_one + outcome_two
+        outcome_one + outcome_two
     };
 
     let future_outcome = block_on(future_three);
@@ -55,7 +55,7 @@ fn using_futures_join() {
         let outcome_one = do_something(2);
         let outcome_two = do_something(3);
         let results = join!(outcome_one, outcome_two);
-        return results.0 + results.1
+        results.0 + results.1
     };
 
     let now = time::Instant::now();
@@ -76,7 +76,7 @@ fn run_multiple_futures_at_once() {
 
         let handles = futures_vec.into_iter().map(async_std::task::spawn).collect::<Vec<_>>();
         let results = join_all(handles).await;
-        return results.into_iter().sum::<i8>();
+        results.into_iter().sum::<i8>()
     };
 
     let now = time::Instant::now();

@@ -11,7 +11,7 @@ enum Command {
 
 impl Command {
     fn from_input(s: &str) -> Option<Self> {
-        let words: Vec<&str> = s.trim().split_whitespace().collect();
+        let words: Vec<&str> = s.split_whitespace().collect();
         match words.as_slice() {
             ["All"] => Some(Command::All),
             ["Quit"] => Some(Command::Quit),

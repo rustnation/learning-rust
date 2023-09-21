@@ -2,7 +2,7 @@ pub fn master(show: bool) {
     if show {
         println!("\n--- Activity Using Iterators");
 
-        let data: Vec<_> = vec![1, 2, 3, 4, 5, 6, 7]
+        let data: Vec<_> = [1, 2, 3, 4, 5, 6, 7]
             .iter()
             .map(|num| num * 3)
             .filter(|num| num > &10)
