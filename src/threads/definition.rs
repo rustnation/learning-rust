@@ -33,7 +33,7 @@ fn spawned_thread() {
     let v = vec![1, 2, 3, 4, 5, 6, 7];
 
     let handle = thread::spawn(move || {
-       println!("Here's a vector: {:?}", v);
+        println!("Here's a vector: {:?}", v);
     });
 
     handle.join().unwrap();

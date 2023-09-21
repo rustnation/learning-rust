@@ -84,5 +84,3 @@ fn div(a: i32, b: i32) -> Option<i32> {
 fn concat(first: &str, second: &str) -> String {
     format!("{} {}", first, second)
 }
-
-

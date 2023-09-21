@@ -8,7 +8,10 @@ pub fn master() {
     dolly.talk();
 }
 
-struct Sheep { naked: bool, name: &'static str }
+struct Sheep {
+    naked: bool,
+    name: &'static str,
+}
 
 pub trait Animal {
     // Associated function signature; `Self` refers to the implementor type.

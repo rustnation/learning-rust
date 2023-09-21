@@ -1,7 +1,7 @@
-mod definition;
-mod parameters;
 mod associated_functions;
+mod definition;
 mod multiple_impl_blocks;
+mod parameters;
 
 pub fn master(show: bool) {
     if show {

@@ -1,10 +1,10 @@
 mod definition;
-mod tuple_structs;
-mod unit_struct;
 mod human;
 mod integrate_struct_enum_match;
-mod structs_owned;
 mod person;
+mod structs_owned;
+mod tuple_structs;
+mod unit_struct;
 
 pub fn master(show: bool) {
     if show {

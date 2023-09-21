@@ -1,9 +1,9 @@
+use async_std;
 use futures::executor::block_on;
-use std::{thread, time};
+use futures::future::join_all;
 use futures::join;
 use std::vec::Vec;
-use async_std;
-use futures::future::join_all;
+use std::{thread, time};
 
 async fn do_something(number: i8) -> i8 {
     println!("number {} is running", number);
@@ -26,7 +26,8 @@ pub fn master(show: bool) {
     }
 }
 
-fn option1() { // bad name for a function
+fn option1() {
+    // bad name for a function
     println!("\n-- Option");
     let now = time::Instant::now();
     let future_one = do_something(1);
@@ -74,7 +75,10 @@ fn run_multiple_futures_at_once() {
         futures_vec.push(future_four);
         futures_vec.push(future_five);
 
-        let handles = futures_vec.into_iter().map(async_std::task::spawn).collect::<Vec<_>>();
+        let handles = futures_vec
+            .into_iter()
+            .map(async_std::task::spawn)
+            .collect::<Vec<_>>();
         let results = join_all(handles).await;
         results.into_iter().sum::<i8>()
     };

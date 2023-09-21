@@ -1,5 +1,5 @@
-mod inline_modules_demo;
 mod inline_modules_activity;
+mod inline_modules_demo;
 
 pub fn master(show: bool) {
     if show {

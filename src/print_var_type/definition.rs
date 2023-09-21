@@ -11,7 +11,7 @@ pub fn master(show: bool) {
         let s = "Hello";
         println!("type of s: {:?}", type_of(&s));
 
-        let  mut chaos = [3, 5, 4, 1, 2, 6, 7];
+        let mut chaos = [3, 5, 4, 1, 2, 6, 7];
         println!("type of chaos: {:?}", type_of(&chaos));
 
         chaos.sort();

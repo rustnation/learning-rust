@@ -5,7 +5,7 @@ enum Access {
     Guest,
 }
 
-fn validate_permission(access: Access) -> bool{
+fn validate_permission(access: Access) -> bool {
     match access {
         Access::Admin => true,
         Access::Manager => true,

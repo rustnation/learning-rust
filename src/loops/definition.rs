@@ -55,7 +55,7 @@ pub fn loop_print_numbers_1_to_4() {
     loop {
         println!("The value of i: {}", i);
         if i == 4 {
-            break
+            break;
         }
         i += 1;
     }

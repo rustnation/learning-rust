@@ -48,6 +48,6 @@ impl AveragedCollection {
 
     fn update_average(&mut self) {
         let total: i32 = self.list.iter().sum();
-        self.average = total as f64 /self.list.len() as f64;
+        self.average = total as f64 / self.list.len() as f64;
     }
 }

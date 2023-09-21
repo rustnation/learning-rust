@@ -1,6 +1,6 @@
+mod activity;
 mod definition;
 mod demo;
-mod activity;
 
 pub fn master(show: bool) {
     if show {

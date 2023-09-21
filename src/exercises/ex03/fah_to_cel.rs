@@ -7,5 +7,5 @@ pub fn master() {
 }
 
 fn convert_to_celsius(f: f32) -> f32 {
-    (5_f32/9_f32) * (f - 32.0)
+    (5_f32 / 9_f32) * (f - 32.0)
 }

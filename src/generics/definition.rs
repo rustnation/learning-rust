@@ -83,8 +83,14 @@ fn generic_struct_multiple_values() {
     println!("The value of floats x is: {}", floats.x);
     println!("The value of floats y is: {}", floats.y);
 
-    println!("The value of integer_and_float x is: {}", integer_and_float.x);
-    println!("The value of integer_and_float y is: {}", integer_and_float.y);
+    println!(
+        "The value of integer_and_float x is: {}",
+        integer_and_float.x
+    );
+    println!(
+        "The value of integer_and_float y is: {}",
+        integer_and_float.y
+    );
 }
 
 // In Method Definitions

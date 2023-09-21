@@ -1,6 +1,6 @@
-pub mod vector;
-pub mod pig_latin;
 pub mod departments;
+pub mod pig_latin;
+pub mod vector;
 
 pub fn master(show: bool) {
     if show {

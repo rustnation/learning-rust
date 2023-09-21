@@ -12,9 +12,6 @@ extern "C" {
 
 fn definition() {
     unsafe {
-        println!(
-            "Absolute value of -3 according to C: {}",
-            abs(-3)
-        );
+        println!("Absolute value of -3 according to C: {}", abs(-3));
     }
 }

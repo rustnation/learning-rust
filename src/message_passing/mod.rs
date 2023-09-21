@@ -7,4 +7,3 @@ pub fn master(show: bool) {
         definition::master(true);
     }
 }
-

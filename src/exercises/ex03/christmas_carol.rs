@@ -26,7 +26,11 @@ fn christmas_carol() {
             3 => "rd",
             _ => "th",
         };
-        println!("On the {}{} day of xmax my true love gave to me:", day + 1, suffix);
+        println!(
+            "On the {}{} day of xmax my true love gave to me:",
+            day + 1,
+            suffix
+        );
         for item in (0..day + 1).rev() {
             if day > 0 && item == 0 {
                 print!("And ");

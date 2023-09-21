@@ -3,9 +3,7 @@ pub fn master() {
 
     let tweet = Tweet {
         username: String::from("horse_ebooks"),
-        content: String::from(
-            "of course, as you probably already know, people",
-        ),
+        content: String::from("of course, as you probably already know, people"),
         reply: false,
         retweet: false,
     };
@@ -32,21 +30,13 @@ trait Summary {
     fn summarize_author(&self) -> String;
 
     fn summarize(&self) -> String {
-        format!(
-            "(Read more form {}...",
-            self.summarize_author()
-        )
+        format!("(Read more form {}...", self.summarize_author())
     }
 }
 
 impl Summary for NewsArticle {
     fn summarize_author(&self) -> String {
-        format!(
-            "{}, by {} ({})",
-            self.headline,
-            self.author,
-            self.location
-        )
+        format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
 }
 

@@ -40,6 +40,5 @@ pub fn master(show: bool) {
             Ok(inner_adult) => println!("{} is {} years old.", inner_adult.name, inner_adult.age),
             Err(e) => println!("error: {}", e),
         }
-
     }
 }

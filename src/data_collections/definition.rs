@@ -14,13 +14,15 @@ impl Temperature {
 
     // we don't need the call the function parameter as Temperature
     // we can use &self, as borrowing or in this case referencing
-    fn show_temp(&self) { // here &self means we have a Temperature created somewhere
+    fn show_temp(&self) {
+        // here &self means we have a Temperature created somewhere
         println!("{:?} degrees F", self.degrees_f);
     }
 
-    fn freezing() -> Self { // Self here means we are creating a new Temperature or we are referring as Temperature
+    fn freezing() -> Self {
+        // Self here means we are creating a new Temperature or we are referring as Temperature
         Self { degrees_f: 32.0 } // Use Self because if in the future you change the name of Temperature struct name
-                                // you don't have to change the implementation here
+                                 // you don't have to change the implementation here
     }
 
     fn boiling() -> Self {

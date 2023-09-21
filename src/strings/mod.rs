@@ -1,5 +1,5 @@
-mod definition;
 mod concatenation;
+mod definition;
 mod iterate;
 mod string_functions;
 

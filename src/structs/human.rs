@@ -19,16 +19,16 @@ struct Human {
     name: String,
     age: i8,
     current_thought: Option<String>,
-    friend: Friend
+    friend: Friend,
 }
 
 impl Human {
     fn new(name: &str, age: i8) -> Human {
-        Human{
+        Human {
             name: name.to_string(),
             age,
             current_thought: None,
-            friend: Friend::Nil
+            friend: Friend::Nil,
         }
     }
 
@@ -46,5 +46,5 @@ impl Human {
 #[derive(Debug)]
 enum Friend {
     Human(Box<Human>),
-    Nil
+    Nil,
 }

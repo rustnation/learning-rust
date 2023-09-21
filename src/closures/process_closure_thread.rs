@@ -1,5 +1,5 @@
-use std::{thread, time};
 use std::thread::JoinHandle;
+use std::{thread, time};
 
 fn do_something(number: i8) -> i8 {
     println!("number {} is running", number);
@@ -18,6 +18,9 @@ pub fn master(show: bool) {
         let result_two = thread_two.join();
         let result_three = thread_three.join();
         println!("time elapsed {:?}", now.elapsed());
-        println!("result {}", result_one.unwrap() + result_two.unwrap() + result_three.unwrap());
+        println!(
+            "result {}",
+            result_one.unwrap() + result_two.unwrap() + result_three.unwrap()
+        );
     }
 }

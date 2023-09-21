@@ -72,9 +72,9 @@ fn destructuring_enums() {
         Message1::Write(text) => {
             println!("The message: {text}");
         }
-        Message1::ChangeColor(r, g, b) => println!(
-            "Change color to ree {r}, green {g}, and blue {b}"
-        ),
+        Message1::ChangeColor(r, g, b) => {
+            println!("Change color to ree {r}, green {g}, and blue {b}")
+        }
     }
 }
 
@@ -102,13 +102,13 @@ fn destructuring_nested_structs_and_enums() {
     match msg4 {
         Message2::Move { x, y } => {
             println!("Move in the x dir {x}, in the y dir {y}");
-        },
-        Message2::ChangeColor(Color::Rgb(r, g, b)) => println!(
-            "Change color to red {r}, green {g}, and blue {b}"
-        ),
-        Message2::ChangeColor(Color::Hsv(h, s, v)) => println!(
-            "Change color hue {h}, saturation {s}, value {v}"
-        ),
+        }
+        Message2::ChangeColor(Color::Rgb(r, g, b)) => {
+            println!("Change color to red {r}, green {g}, and blue {b}")
+        }
+        Message2::ChangeColor(Color::Hsv(h, s, v)) => {
+            println!("Change color hue {h}, saturation {s}, value {v}")
+        }
         _ => (),
     }
 }

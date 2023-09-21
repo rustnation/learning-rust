@@ -1,7 +1,7 @@
 mod definition;
 mod derives;
-mod returning_traits_with_dyn;
 mod media_aggregator;
+mod returning_traits_with_dyn;
 
 pub fn master(show: bool) {
     if show {

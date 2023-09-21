@@ -1,17 +1,17 @@
-pub mod constants;
-pub mod scalar_types;
-pub mod shadowing;
-pub mod variables;
-pub mod floating_point;
-pub mod numeric_operations;
 pub mod boolean_type;
 pub mod character_type;
 pub mod compound_types;
-pub mod functions;
+pub mod constants;
 pub mod control_flow;
-pub mod loops;
-pub mod slices;
+pub mod floating_point;
+pub mod functions;
 pub mod integers;
+pub mod loops;
+pub mod numeric_operations;
+pub mod scalar_types;
+pub mod shadowing;
+pub mod slices;
+pub mod variables;
 
 pub fn master(show: bool) {
     if show {

@@ -82,10 +82,6 @@ mod test {
 
     #[test]
     fn check_part_3() {
-        assert_eq!(
-            part_3(),
-            Access::Guest,
-            "Alice is a guest"
-        );
+        assert_eq!(part_3(), Access::Guest, "Alice is a guest");
     }
 }

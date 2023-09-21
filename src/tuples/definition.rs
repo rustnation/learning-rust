@@ -23,6 +23,8 @@ pub fn master(show: bool) {
         let (employee, access) = ("Jake", Access::Full);
         println!("employee name: {}", employee);
 
-        match access { Access::Full => println!("employee has full access") };
+        match access {
+            Access::Full => println!("employee has full access"),
+        };
     }
 }

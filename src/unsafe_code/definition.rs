@@ -37,19 +37,13 @@ unsafe fn dangerous() {}
 fn creating_safe_abstraction_over_unsafe_code() {
     let mut array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    let (vec1, vec2) = split_at_mut(
-        &mut array,
-        7,
-    );
+    let (vec1, vec2) = split_at_mut(&mut array, 7);
 
     println!("vec1 values: {:?}", vec1);
     println!("vec2 values: {:?}", vec2);
 }
 
-fn split_at_mut(
-    values: &mut [i32],
-    mid: usize,
-) -> (&mut [i32], &mut [i32]) {
+fn split_at_mut(values: &mut [i32], mid: usize) -> (&mut [i32], &mut [i32]) {
     let len = values.len();
     let ptr = values.as_mut_ptr();
 

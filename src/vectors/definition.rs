@@ -63,7 +63,6 @@ fn reverse_vector(show: bool) {
         println!("palindrome: {:?}", palindrome);
         palindrome.reverse();
         println!("palindrome reversed: {:?}", palindrome);
-
     }
 }
 

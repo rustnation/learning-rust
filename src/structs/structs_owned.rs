@@ -15,13 +15,12 @@ pub fn master(show: bool) {
             LineItem {
                 name: String::from("fruit"),
                 count: 3,
-            }
+            },
         ];
 
         for item in receipt {
             println!("Item: {:?}", item.name);
             println!("Quantity: {:?}", item.count);
-
         }
     }
 }

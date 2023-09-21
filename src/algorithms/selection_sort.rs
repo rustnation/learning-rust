@@ -27,5 +27,4 @@ fn selection_sort<T: Ord>(arr: &mut [T]) {
         }
         arr.swap(smallest, left);
     }
-
 }

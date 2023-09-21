@@ -4,11 +4,7 @@ pub fn master(show: bool) {
     if show {
         println!("--- CLOSURES ---");
         let store = Inventory {
-            shirts: vec![
-                ShirtColor::Blue,
-                ShirtColor::Red,
-                ShirtColor::Blue,
-            ]
+            shirts: vec![ShirtColor::Blue, ShirtColor::Red, ShirtColor::Blue],
         };
 
         let user_pref1 = Some(ShirtColor::Red);
@@ -50,10 +46,7 @@ struct Inventory {
 }
 
 impl Inventory {
-    fn giveaway(
-        &self,
-        user_preference: Option<ShirtColor>,
-    ) -> ShirtColor {
+    fn giveaway(&self, user_preference: Option<ShirtColor>) -> ShirtColor {
         user_preference.unwrap_or_else(|| self.most_stocked())
     }
 
@@ -118,7 +111,9 @@ fn closure_thread_to_take_ownership() {
     thread::spawn(move || {
         list.push(13);
         println!("From thread: {:?}", list)
-    }).join().unwrap();
+    })
+    .join()
+    .unwrap();
 
     // cannot use the list variable after calling the closure
 }
@@ -132,9 +127,18 @@ struct Rectangle {
 fn sorting_a_struct() {
     println!("\n-- Sorting a struct");
     let mut list = [
-        Rectangle { width: 10, height: 1 },
-        Rectangle { width: 3, height: 5 },
-        Rectangle { width: 7, height: 17 },
+        Rectangle {
+            width: 10,
+            height: 1,
+        },
+        Rectangle {
+            width: 3,
+            height: 5,
+        },
+        Rectangle {
+            width: 7,
+            height: 17,
+        },
     ];
 
     list.sort_by_key(|r| r.width);

@@ -1,6 +1,6 @@
+pub mod christmas_carol;
 pub mod fah_to_cel;
 pub mod fib;
-pub mod christmas_carol;
 
 pub fn master(show: bool) {
     if show {
@@ -11,4 +11,3 @@ pub fn master(show: bool) {
         christmas_carol::master();
     }
 }
-

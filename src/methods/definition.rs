@@ -26,9 +26,6 @@ pub fn master() {
     );
 
     if rect1.width() {
-        println!(
-            "The rectangle has a nonzero width; it is {}",
-            rect1.width
-        );
+        println!("The rectangle has a nonzero width; it is {}", rect1.width);
     }
 }

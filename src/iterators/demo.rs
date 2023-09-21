@@ -10,10 +10,7 @@ pub fn master(show: bool) {
         }
         */
 
-        let plus_one: Vec<_> = [0, 1, 2, 3, 4, 5, 6]
-            .iter()
-            .map(|num| num + 1)
-            .collect();
+        let plus_one: Vec<_> = [0, 1, 2, 3, 4, 5, 6].iter().map(|num| num + 1).collect();
 
         println!("New vector: {:?}", plus_one);
     }

@@ -37,8 +37,5 @@ fn definition() {
 
     *leaf.parent.borrow_mut() = Rc::downgrade(&branch);
 
-    println!(
-        "leaf parent = {:?}",
-        leaf.parent.borrow().upgrade()
-    );
+    println!("leaf parent = {:?}", leaf.parent.borrow().upgrade());
 }

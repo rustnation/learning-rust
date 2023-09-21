@@ -1,7 +1,7 @@
 mod definition;
-mod process_closure_thread;
 mod demo;
 mod map_combinator;
+mod process_closure_thread;
 
 pub fn master(show: bool) {
     if show {

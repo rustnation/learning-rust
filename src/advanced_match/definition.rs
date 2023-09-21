@@ -16,9 +16,13 @@ pub fn master(show: bool) {
 
         for ticket in tickets {
             match ticket {
-                Ticket::Backstage(price, holder) => println!("Backstage Ticket Holder: {:?}, Price: {:?}", holder, price),
+                Ticket::Backstage(price, holder) => {
+                    println!("Backstage Ticket Holder: {:?}, Price: {:?}", holder, price)
+                }
                 Ticket::Standard(price) => println!("Standard Ticket Price: {:?}", price),
-                Ticket::Vip(price, holder) => println!("VIP Ticket Holder: {:?}, Price: {:?}", holder, price),
+                Ticket::Vip(price, holder) => {
+                    println!("VIP Ticket Holder: {:?}, Price: {:?}", holder, price)
+                }
             }
         }
     }

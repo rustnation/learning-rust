@@ -19,7 +19,19 @@ pub fn array_type() {
     let a = [1, 2, 3, 4, 5, 6, 7];
     println!("The value of array a is: {:?}", a);
 
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "December"];
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "December",
+    ];
     println!("The value of months is: {:?}", months);
 
     let b: [i32; 7] = [1, 2, 3, 4, 5, 6, 7];

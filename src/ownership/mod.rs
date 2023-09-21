@@ -1,12 +1,12 @@
-mod string_type;
-mod string_clone_heap;
-mod functions;
-mod return_values_and_scope;
-mod return_multiple_values;
-mod references_borrowing;
-mod mutable_references;
 mod borrowing;
+mod functions;
 mod mutable_borrowing;
+mod mutable_references;
+mod references_borrowing;
+mod return_multiple_values;
+mod return_values_and_scope;
+mod string_clone_heap;
+mod string_type;
 
 pub fn master(show: bool) {
     if show {

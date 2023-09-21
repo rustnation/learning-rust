@@ -30,7 +30,7 @@ struct ShippingBox {
     name: String,
     color: Color,
     weight: f64,
-    dimensions: Dimensions
+    dimensions: Dimensions,
 }
 
 impl ShippingBox {
@@ -61,7 +61,8 @@ pub fn master(show: bool) {
             depth: 3.0,
         };
 
-        let small_box = ShippingBox::new("Small Box".to_string(), 5.0, Color::Red, small_dimensions);
+        let small_box =
+            ShippingBox::new("Small Box".to_string(), 5.0, Color::Red, small_dimensions);
         small_box.print();
 
         let brown_dimensions = Dimensions {
@@ -70,7 +71,8 @@ pub fn master(show: bool) {
             depth: 4.0,
         };
 
-        let brown_box = ShippingBox::new("Brown Box".to_string(), 7.0, Color::Brown, brown_dimensions);
+        let brown_box =
+            ShippingBox::new("Brown Box".to_string(), 7.0, Color::Brown, brown_dimensions);
         brown_box.print();
     }
 }

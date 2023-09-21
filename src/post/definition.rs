@@ -38,7 +38,7 @@ impl Post {
     pub fn content(&self) -> &str {
         self.state.as_ref().unwrap().content(self)
     }
-    
+
     pub fn request_review(&mut self) {
         if let Some(s) = self.state.take() {
             self.state = Some(s.request_review())

@@ -3,8 +3,9 @@ use std::collections::HashMap;
 pub fn master() {
     println!("--- Vector and show the average, median and mode ---");
 
-    let mut v = vec![17, 7, 27, 47, 37, 67, 57, 87, 77, 97, 107, 117, 127, 137, 147, 197,
-                     187, 177, 167, 157];
+    let mut v = vec![
+        17, 7, 27, 47, 37, 67, 57, 87, 77, 97, 107, 117, 127, 137, 147, 197, 187, 177, 167, 157,
+    ];
     println!("Original value of v: {:?}", v);
 
     println!("Average: {}", average(&v));

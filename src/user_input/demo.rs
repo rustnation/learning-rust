@@ -16,15 +16,16 @@ pub fn master(show: bool) {
                 Ok(words) => {
                     all_input.push(words);
                     times_input += 1;
-                },
+                }
                 Err(e) => println!("error: {:?}", e),
             }
         }
 
         for input in all_input {
-            println!("Original: {:?}, Capitalized: {:?}",
-                     input,
-                     input.to_uppercase()
+            println!(
+                "Original: {:?}, Capitalized: {:?}",
+                input,
+                input.to_uppercase()
             );
         }
     }

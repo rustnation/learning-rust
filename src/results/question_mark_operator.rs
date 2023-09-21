@@ -131,4 +131,3 @@ pub fn master(show: bool) {
         println!("{will_authorized:?}");
     }
 }
-

@@ -6,14 +6,14 @@ enum Direction {
     Up,
     Down,
     Left,
-    Right
+    Right,
 }
 
 #[derive(Debug, EnumIter)]
 enum Color {
     Yellow,
     Blue,
-    Red
+    Red,
 }
 
 pub fn master(show: bool) {

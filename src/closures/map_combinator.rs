@@ -22,14 +22,15 @@ pub fn master(show: bool) {
         let user_name = "sam";
         // because find_user returns an Option we can use map because Option implements it
         let user = find_user(user_name).map(|user_id| User {
-            user_id, name: user_name.to_owned()
+            user_id,
+            name: user_name.to_owned(),
         });
 
         match user {
             Some(user) => {
                 println!("user id: {:?}", user.user_id);
                 println!("user name: {:?}", user.name);
-            },
+            }
             None => println!("user not found"),
         }
     }

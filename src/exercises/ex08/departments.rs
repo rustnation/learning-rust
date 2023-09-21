@@ -62,6 +62,3 @@ pub fn master() {
     }
     println!("Have a nice day!");
 }
-
-
-

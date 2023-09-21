@@ -4,7 +4,7 @@ use std::collections::HashMap;
 enum CharacterValue {
     Name(String),
     Age(i32),
-    Items(Vec<String>)
+    Items(Vec<String>),
 }
 
 pub fn master(show: bool) {
@@ -15,22 +15,23 @@ pub fn master(show: bool) {
 
         profile.insert("name", CharacterValue::Name("Maxwell".to_string()));
         profile.insert("age", CharacterValue::Age(32));
-        profile.insert("items", CharacterValue::Items(vec![
-            "laptop".to_string(),
-            "book".to_string(),
-            "coat".to_string()
-        ]));
+        profile.insert(
+            "items",
+            CharacterValue::Items(vec![
+                "laptop".to_string(),
+                "book".to_string(),
+                "coat".to_string(),
+            ]),
+        );
 
         println!("{:?}", profile);
 
         match profile.get("name") {
-            Some(value_data) => {
-                match value_data {
-                    CharacterValue::Name(name) => {
-                        println!("the name is: {}", name);
-                    },
-                    _ => panic!("name should be a string")
+            Some(value_data) => match value_data {
+                CharacterValue::Name(name) => {
+                    println!("the name is: {}", name);
                 }
+                _ => panic!("name should be a string"),
             },
             None => {
                 println!("name is not present");
