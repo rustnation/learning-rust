@@ -181,6 +181,9 @@ fn main() {
 
     // External Crates
     common::external_crates::master(false);
+
+    // User Input
+    common::user_input::master(false);
 }
 
 fn local_function(show: bool) {

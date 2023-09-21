@@ -58,6 +58,7 @@ pub mod errors;
 pub mod ranges;
 pub mod modules;
 pub mod external_crates;
+pub mod user_input;
 
 pub fn print_title(title: &str) {
     println!(" ");
