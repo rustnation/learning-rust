@@ -3,22 +3,24 @@ enum SomeValue {
     IntValue(i32)
 }
 
-pub fn master() {
-    println!("\n-- Enums Multi Arrays");
-    let multi_array: [SomeValue; 4] = [
-        SomeValue::StringValue(String::from("one")),
-        SomeValue::IntValue(3),
-        SomeValue::StringValue(String::from("three")),
-        SomeValue::IntValue(7),
-    ];
+pub fn master(show: bool) {
+    if show {
+        println!("\n-- Enums Multi Arrays");
+        let multi_array: [SomeValue; 4] = [
+            SomeValue::StringValue(String::from("one")),
+            SomeValue::IntValue(3),
+            SomeValue::StringValue(String::from("three")),
+            SomeValue::IntValue(7),
+        ];
 
-    for i in multi_array {
-        match i {
-            SomeValue::StringValue(data) => {
-                println!("The string is {}", data);
-            },
-            SomeValue::IntValue(data) => {
-                println!("The int is {}", data);
+        for i in multi_array {
+            match i {
+                SomeValue::StringValue(data) => {
+                    println!("The string is {}", data);
+                },
+                SomeValue::IntValue(data) => {
+                    println!("The int is {}", data);
+                }
             }
         }
     }

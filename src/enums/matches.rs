@@ -11,20 +11,22 @@ enum Coin {
     Quarter(UsState),
 }
 
-pub fn master() {
-    value_in_cents(Coin::Penny);
-    value_in_cents(Coin::Nickel);
-    value_in_cents(Coin::Dime);
-    value_in_cents(Coin::Quarter(UsState::Alaska));
-    value_in_cents(Coin::Quarter(UsState::Alabama));
+pub fn master(show: bool) {
+    if show {
+        value_in_cents(Coin::Penny);
+        value_in_cents(Coin::Nickel);
+        value_in_cents(Coin::Dime);
+        value_in_cents(Coin::Quarter(UsState::Alaska));
+        value_in_cents(Coin::Quarter(UsState::Alabama));
 
-    let five = Some(5);
-    let six = plus_one(five);
-    let none = plus_one(None);
+        let five = Some(5);
+        let six = plus_one(five);
+        let none = plus_one(None);
 
-    println!("The value of five is: {:?}", five);
-    println!("The value of six is: {:?}", six);
-    println!("THe value of none is: {:?}", none);
+        println!("The value of five is: {:?}", five);
+        println!("The value of six is: {:?}", six);
+        println!("THe value of none is: {:?}", none);
+    }
 }
 
 fn value_in_cents(coin: Coin) -> u8 {

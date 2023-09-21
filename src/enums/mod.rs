@@ -1,3 +1,4 @@
+mod demo;
 mod definition;
 mod options;
 mod matches;
@@ -8,19 +9,22 @@ pub fn master(show: bool) {
     if show {
         println!("\n-- Enums");
 
+        // Enum Demo
+        demo::master(true);
+
         // Enum Definition
-        definition::master();
+        definition::master(false);
 
         // Option Enums
-        options::master();
+        options::master(false);
 
         // Matches
-        matches::master();
+        matches::master(false);
 
         // Enum Multi Array
-        enum_multi_array::master();
+        enum_multi_array::master(false);
 
         // Enum with Match
-        enum_with_match::master();
+        enum_with_match::master(false);
     }
 }

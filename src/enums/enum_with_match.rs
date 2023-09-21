@@ -16,18 +16,20 @@ enum Color {
     Red
 }
 
-pub fn master() {
-    println!("\n-- Enum with Match");
+pub fn master(show: bool) {
+    if show {
+        println!("\n-- Enum with Match");
 
-    // Enum iteration
-    for item in Direction::iter() {
-        let direction = which_way(item);
-        println!("Direction: {}", direction);
-    }
+        // Enum iteration
+        for item in Direction::iter() {
+            let direction = which_way(item);
+            println!("Direction: {}", direction);
+        }
 
-    println!("\n-- Print Color");
-    for color in Color::iter() {
-       print_color(color);
+        println!("\n-- Print Color");
+        for color in Color::iter() {
+            print_color(color);
+        }
     }
 }
 
