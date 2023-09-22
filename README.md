@@ -43,8 +43,15 @@ cargo add rand
 
 ## Resources
 
-- The Rust Programming Language 2nd Edition
-- Programming Rust 2nd Edition
+- The Rust Programming Language 2nd Edition [Done]
+- Programming Rust 2nd Edition [Done]
+- Rust for Rustaceans
+- Rust in Action
+- Zero to Production in Rust [In Progress]
+- Black Hat Rust
+- Rust Intermediate Mastering Backend
+- Rust Advanced Mastering Backend
+- Zero to Mastery Course [In Progress]
 - Rust Web Programming
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
