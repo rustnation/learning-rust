@@ -36,7 +36,7 @@ fn main() {
     common::errors::master(false);
 
     // Traits
-    common::traits::master(true);
+    common::traits::master(false);
 
     // Lifetimes
     common::lifetimes::master(false);
