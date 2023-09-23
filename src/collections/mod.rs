@@ -6,6 +6,6 @@ pub fn master(show: bool) {
         println!("\n-- Collections");
 
         // Vectors
-        vectors::master();
+        vectors::master(false);
     }
 }
