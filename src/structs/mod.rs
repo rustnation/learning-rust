@@ -5,6 +5,7 @@ mod person;
 mod structs_owned;
 mod tuple_structs;
 mod unit_struct;
+mod queue;
 
 pub fn master(show: bool) {
     if show {
@@ -20,6 +21,8 @@ pub fn master(show: bool) {
 
         structs_owned::master(false);
 
-        person::master(true);
+        person::master(false);
+
+        queue::master(false);
     }
 }
