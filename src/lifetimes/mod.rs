@@ -4,6 +4,6 @@ pub fn master(show: bool) {
     if show {
         println!("\n-- Lifetimes");
 
-        definition::master();
+        definition::master(false);
     }
 }
