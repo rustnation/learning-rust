@@ -2,10 +2,10 @@ mod definition;
 mod human;
 mod integrate_struct_enum_match;
 mod person;
+mod queue;
 mod structs_owned;
 mod tuple_structs;
 mod unit_struct;
-mod queue;
 
 pub fn master(show: bool) {
     if show {

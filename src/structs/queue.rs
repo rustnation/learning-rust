@@ -3,7 +3,7 @@ use std::mem::swap;
 /// A first-in, first-out queue of characters.
 #[derive(Debug)]
 pub struct Queue {
-    older: Vec<char>, // older elements, eldest last.
+    older: Vec<char>,   // older elements, eldest last.
     younger: Vec<char>, // younger elements, youngest last.
 }
 
@@ -66,10 +66,7 @@ fn queue_without_construct(show: bool) {
         let younger = vec!['a', 'b', 'c'];
         let older = vec!['x', 'y', 'z'];
 
-        let mut queue = Queue {
-            younger,
-            older,
-        };
+        let mut queue = Queue { younger, older };
 
         println!("{:?}", queue);
 

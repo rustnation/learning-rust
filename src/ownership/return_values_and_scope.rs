@@ -5,7 +5,7 @@ pub fn master(show: bool) {
         let s2 = String::from("hallo"); // s2 comes into scope
 
         let s3 = takes_and_gives_back(s2); // s2 is move into takes_and_gives_back,
-        // which also moves its return value into s3
+                                           // which also moves its return value into s3
         println!("{s3}");
     }
 } // Here, s3 goes out of scope and is dropped. s2 was moved, so nothing happens. s2 goes out of
