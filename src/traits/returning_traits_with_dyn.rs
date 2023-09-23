@@ -1,14 +1,16 @@
 struct Sheep {}
 struct Cow {}
 
-pub fn master() {
-    println!("--- Returning Traits with Dyn ---");
-    let random_number = 0.234;
-    let animal = random_animal(random_number);
-    println!(
-        "you've randomly chosen an animal, and it says {}",
-        animal.noise()
-    );
+pub fn master(show: bool) {
+    if show {
+        println!("--- Returning Traits with Dyn ---");
+        let random_number = 0.234;
+        let animal = random_animal(random_number);
+        println!(
+            "you've randomly chosen an animal, and it says {}",
+            animal.noise()
+        );
+    }
 }
 
 trait Animal {

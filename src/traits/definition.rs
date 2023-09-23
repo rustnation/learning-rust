@@ -1,11 +1,13 @@
-pub fn master() {
-    println!("--- Traits Definition ---");
+pub fn master(show: bool) {
+    if show {
+        println!("--- Traits Definition ---");
 
-    let mut dolly: Sheep = Animal::new("Dolly");
+        let mut dolly: Sheep = Animal::new("Dolly");
 
-    dolly.talk();
-    dolly.shear();
-    dolly.talk();
+        dolly.talk();
+        dolly.shear();
+        dolly.talk();
+    }
 }
 
 struct Sheep {

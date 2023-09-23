@@ -1,22 +1,24 @@
-pub fn master() {
-    println!("--- Media Aggregator ---");
+pub fn master(show: bool) {
+    if show {
+        println!("--- Media Aggregator ---");
 
-    let tweet = Tweet {
-        username: String::from("horse_ebooks"),
-        content: String::from("of course, as you probably already know, people"),
-        reply: false,
-        retweet: false,
-    };
-    // we can call summarize on instances
-    println!("1 new tweet: {}", tweet.summarize());
+        let tweet = Tweet {
+            username: String::from("horse_ebooks"),
+            content: String::from("of course, as you probably already know, people"),
+            reply: false,
+            retweet: false,
+        };
+        // we can call summarize on instances
+        println!("1 new tweet: {}", tweet.summarize());
 
-    let article = NewsArticle {
-        headline: String::from("Learning Rust!"),
-        location: String::from("Envigado"),
-        author: String::from("Will"),
-        content: String::from("Learning Rust is fantastic!"),
-    };
-    println!("1 new article: {}", article.summarize());
+        let article = NewsArticle {
+            headline: String::from("Learning Rust!"),
+            location: String::from("Envigado"),
+            author: String::from("Will"),
+            content: String::from("Learning Rust is fantastic!"),
+        };
+        println!("1 new article: {}", article.summarize());
+    }
 }
 
 pub struct NewsArticle {

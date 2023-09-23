@@ -1,21 +1,23 @@
-pub fn master() {
-    println!("--- Implement Traits via #[derive] Attribute ---");
+pub fn master(show: bool) {
+    if show {
+        println!("--- Implement Traits via #[derive] Attribute ---");
 
-    let _one_second = Seconds(1);
+        let _one_second = Seconds(1);
 
-    let foot = Inches(12);
+        let foot = Inches(12);
 
-    println!("One foot equals {:?}", foot);
+        println!("One foot equals {:?}", foot);
 
-    let meter = Centimeters(100.0);
+        let meter = Centimeters(100.0);
 
-    let cmp = if foot.to_centimeters() < meter {
-        "smaller"
-    } else {
-        "bigger"
-    };
+        let cmp = if foot.to_centimeters() < meter {
+            "smaller"
+        } else {
+            "bigger"
+        };
 
-    println!("One foot is {} than one meter.", cmp);
+        println!("One foot is {} than one meter.", cmp);
+    }
 }
 
 // `Centimeters`, a tuple struct that can be compared
