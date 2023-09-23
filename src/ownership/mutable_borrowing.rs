@@ -1,7 +1,9 @@
-pub fn master() {
-    let mut one: i8 = 6;
-    print(&mut one);
-    println!("In master the value is: {}", one);
+pub fn master(show: bool) {
+    if show {
+        let mut one: i8 = 6;
+        print(&mut one);
+        println!("In master the value is: {}", one);
+    }
 }
 
 fn print(value: &mut i8) {

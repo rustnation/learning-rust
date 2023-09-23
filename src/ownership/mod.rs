@@ -11,30 +11,30 @@ mod string_type;
 pub fn master(show: bool) {
     if show {
         // String Type
-        string_type::master();
+        string_type::master(false);
 
         // String Clone Heap
-        string_clone_heap::master();
+        string_clone_heap::master(false);
 
         // Moving a Value
-        functions::master();
+        functions::master(false);
 
         // Return values and scope
-        return_values_and_scope::master();
+        return_values_and_scope::master(false);
 
         // Return multiple values
-        return_multiple_values::master();
+        return_multiple_values::master(false);
 
         // References and Borrowing
-        references_borrowing::master();
+        references_borrowing::master(false);
 
         // Mutable references
-        mutable_references::master();
+        mutable_references::master(false);
 
         // Borrowing
-        borrowing::master();
+        borrowing::master(false);
 
         // Mutable Borrowing of Variables
-        mutable_borrowing::master();
+        mutable_borrowing::master(false);
     }
 }

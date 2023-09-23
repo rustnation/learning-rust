@@ -6,15 +6,15 @@ mod parameters;
 pub fn master(show: bool) {
     if show {
         // Methods Definition
-        definition::master();
+        definition::master(false);
 
         // Methods with Parameters
-        parameters::master();
+        parameters::master(false);
 
         // Associated Functions
-        associated_functions::master();
+        associated_functions::master(false);
 
         // Multiple impl Blocks
-        multiple_impl_blocks::master();
+        multiple_impl_blocks::master(false);
     }
 }

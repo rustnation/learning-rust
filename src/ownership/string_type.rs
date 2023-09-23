@@ -1,9 +1,11 @@
-pub fn master() {
-    println!("--- String Type ---");
+pub fn master(show: bool) {
+    if show {
+        println!("--- String Type ---");
 
-    let mut s = String::from("hallo");
+        let mut s = String::from("hallo");
 
-    s.push_str(", Welt"); // push_str() appends a literal to a String
+        s.push_str(", Welt"); // push_str() appends a literal to a String
 
-    println!("{s}");
+        println!("{s}");
+    }
 }

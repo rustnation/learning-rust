@@ -13,9 +13,11 @@ impl Rectangle {
     }
 }
 
-pub fn master() {
-    let sq = Rectangle::square(7);
+pub fn master(show: bool) {
+    if show {
+        let sq = Rectangle::square(7);
 
-    println!("The width of sq is: {}", sq.width);
-    println!("The height of sq is: {}", sq.height);
+        println!("The width of sq is: {}", sq.width);
+        println!("The height of sq is: {}", sq.height);
+    }
 }

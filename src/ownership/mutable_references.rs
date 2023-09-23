@@ -1,7 +1,9 @@
-pub fn master() {
-    let mut s = String::from("hallo");
+pub fn master(show: bool) {
+    if show {
+        let mut s = String::from("hallo");
 
-    change(&mut s);
+        change(&mut s);
+    }
 }
 
 fn change(some_string: &mut String) {
