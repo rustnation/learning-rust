@@ -5,6 +5,7 @@ mod conveyor_belt;
 mod definition;
 mod demo;
 mod generic_structures;
+mod vehicle;
 
 pub fn master(show: bool) {
     if show {
@@ -19,5 +20,7 @@ pub fn master(show: bool) {
         generic_structures::master(false);
 
         conveyor_belt::master(false);
+
+        vehicle::master(false);
     }
 }
