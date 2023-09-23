@@ -1,9 +1,11 @@
 use crate::print_title;
 
 mod activity;
+mod activity_trait_objects;
 mod default_trait;
 mod definition;
 mod demo;
+mod demo_trait_objets;
 mod derives;
 mod media_aggregator;
 mod returning_traits_with_dyn;
@@ -32,5 +34,11 @@ pub fn master(show: bool) {
 
         // Media Aggregator
         media_aggregator::master(false);
+
+        // Demo Trait Objects
+        demo_trait_objets::master(false);
+
+        // Activity Trait Objects
+        activity_trait_objects::master(false);
     }
 }
