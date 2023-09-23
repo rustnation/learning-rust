@@ -8,6 +8,14 @@ pub struct Queue {
 }
 
 impl Queue {
+    /// Constructor functions using type-associated functions
+    pub fn new() -> Queue {
+        Queue {
+            older: Vec::new(),
+            younger: Vec::new(),
+        }
+    }
+
     /// Push a character onto the back of a queue.
     pub fn push(&mut self, c: char) {
         self.younger.push(c);
@@ -45,6 +53,16 @@ pub fn master(show: bool) {
     if show {
         println!("\n-- Queue Struct");
 
+        queue_without_construct(false);
+
+        queue_with_construct(false);
+    }
+}
+
+fn queue_without_construct(show: bool) {
+    if show {
+        println!("\n--- Queue Struct Without A Construct");
+
         let younger = vec!['a', 'b', 'c'];
         let older = vec!['x', 'y', 'z'];
 
@@ -70,5 +88,17 @@ pub fn master(show: bool) {
         let (older_values, younger_values) = queue.split();
         println!("Older Values: {:?}", older_values);
         println!("Younger Values: {:?}", younger_values);
+    }
+}
+
+fn queue_with_construct(show: bool) {
+    if show {
+        println!("\n--- Queue Struct With Construct");
+
+        let mut queue = Queue::new();
+
+        queue.push('*');
+
+        println!("{:?}", queue);
     }
 }
