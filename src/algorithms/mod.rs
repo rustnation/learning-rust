@@ -13,7 +13,7 @@ pub fn master(show: bool) {
         bubble_sort::master(false);
 
         // Insertion Sort
-        insertion_sort::master(true);
+        insertion_sort::master(false);
 
         // Selection Sort
         selection_sort::master(false);
