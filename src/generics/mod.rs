@@ -1,6 +1,7 @@
 use crate::print_title;
 
 mod activity;
+mod conveyor_belt;
 mod definition;
 mod demo;
 mod generic_structures;
@@ -16,5 +17,7 @@ pub fn master(show: bool) {
         activity::master(false);
 
         generic_structures::master(false);
+
+        conveyor_belt::master(false);
     }
 }
