@@ -1,4 +1,14 @@
-pub fn tuple_type() {
+pub fn master(show: bool) {
+    if show {
+        println!("\n--- Compound Types");
+
+        tuple_type();
+
+        array_type();
+    }
+}
+
+fn tuple_type() {
     println!("--- Tuple Type ---");
     let tup: (i32, f64, u8) = (500, 6.4, 1);
 
@@ -14,7 +24,7 @@ pub fn tuple_type() {
     println!("The third value of the tuple is: {:?}", tup.2);
 }
 
-pub fn array_type() {
+fn array_type() {
     println!("--- Array Type ---");
     let a = [1, 2, 3, 4, 5, 6, 7];
     println!("The value of array a is: {:?}", a);

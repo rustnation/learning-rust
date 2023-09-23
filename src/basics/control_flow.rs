@@ -1,4 +1,14 @@
-pub fn if_expression() {
+pub fn master(show: bool) {
+    if show {
+        println!("\n--- Control Flow");
+
+        if_expression();
+
+        if_multiple_expressions();
+    }
+}
+
+fn if_expression() {
     println!("--- If Expressions ---");
 
     let number = 7;
@@ -10,7 +20,7 @@ pub fn if_expression() {
     }
 }
 
-pub fn if_multiple_expressions() {
+fn if_multiple_expressions() {
     println!("--- If with Multiple Expressions ---");
     let number = 7;
 

@@ -18,67 +18,45 @@ pub fn master(show: bool) {
         //common::print_title("BASICS");
 
         // Variables
-        variables::master();
+        variables::master(false);
 
         // Constants
-        constants::master();
+        constants::master(false);
 
         // Shadowing
-        shadowing::master();
+        shadowing::master(false);
 
         // Scalar Types
-        scalar_types::master();
+        scalar_types::master(false);
 
         // Floating Points
-        floating_point::master();
+        floating_point::master(false);
 
         // Numeric Operations
-        numeric_operations::master();
+        numeric_operations::master(false);
 
         // Boolean Types
-        boolean_type::master();
+        boolean_type::master(false);
 
         // Character Types
-        character_type::master();
+        character_type::master(false);
 
         // Tuple Types
-        compound_types::tuple_type();
+        compound_types::master(false);
 
-        // Array Type
-        compound_types::array_type();
+        // Functions
+        functions::master(false);
 
-        // Functions with Parameters
-        functions::function_with_parameters(7);
+        // Control Flow
+        control_flow::master(false);
 
-        // Functions Multiple Parameters
-        functions::function_multiple_parameters(7, 'h');
-
-        // sum 2 numbers
-        let result = functions::sum(3, 4);
-
-        // display the result
-        functions::display_result(result);
-
-        // Function with Return Value
-        let seven = functions::function_with_return_value();
-        println!("The value of seven is: {seven}");
-
-        // If Expression
-        control_flow::if_expression();
-
-        // If with Multiple Expressions
-        control_flow::if_multiple_expressions();
-
-        // For Loop Elements
-        loops::for_loop_elements();
-
-        // Countdown Loop with Rev
-        loops::countdown_loop_with_rev();
+        // Loops
+        loops::master(false);
 
         // Slices
-        slices::master();
+        slices::master(false);
 
         // Integers
-        integers::master();
+        integers::master(false);
     }
 }

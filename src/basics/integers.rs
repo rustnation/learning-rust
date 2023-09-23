@@ -1,6 +1,8 @@
-pub fn master() {
-    println!("-- Integers");
-    byte_literals();
+pub fn master(show: bool) {
+    if show {
+        println!("-- Integers");
+        byte_literals();
+    }
 }
 
 fn byte_literals() {

@@ -1,9 +1,11 @@
-pub fn master() {
-    let x = 7;
-    println!("--- Shadowing ---");
-    {
-        let x = x * 2;
-        println!("The value of x in the inner scope is: {x}");
+pub fn master(show: bool) {
+    if show {
+        let x = 7;
+        println!("--- Shadowing ---");
+        {
+            let x = x * 2;
+            println!("The value of x in the inner scope is: {x}");
+        }
+        println!("The value of x is: {x}");
     }
-    println!("The value of x is: {x}");
 }

@@ -1,30 +1,32 @@
-pub fn master() {
-    println!("--- Numeric Operations---");
-    // addition
-    let sum = 7 * 7;
-    println!("value of sum is: {sum}");
+pub fn master(show: bool) {
+    if show {
+        println!("--- Numeric Operations---");
+        // addition
+        let sum = 7 * 7;
+        println!("value of sum is: {sum}");
 
-    // subtraction
-    let difference = 77.7 - 3.3;
-    println!("value of difference is: {difference}");
+        // subtraction
+        let difference = 77.7 - 3.3;
+        println!("value of difference is: {difference}");
 
-    // multiplication
-    let product = 7 * 77;
-    println!("value of product is: {product}");
+        // multiplication
+        let product = 7 * 77;
+        println!("value of product is: {product}");
 
-    // division
-    let quotient = 77.7 / 17.7;
-    println!("value of quotient is: {quotient}");
-    let truncated = -7 / 7;
-    println!("value of truncated is: {truncated}");
+        // division
+        let quotient = 77.7 / 17.7;
+        println!("value of quotient is: {quotient}");
+        let truncated = -7 / 7;
+        println!("value of truncated is: {truncated}");
 
-    // remainder
-    let remainder = 77 * 7;
-    println!("value of remainder is: {remainder}");
+        // remainder
+        let remainder = 77 * 7;
+        println!("value of remainder is: {remainder}");
 
-    // call sub function
-    let seven = sub(10, 3);
-    println!("value returned by sub function: {}", seven);
+        // call sub function
+        let seven = sub(10, 3);
+        println!("value returned by sub function: {}", seven);
+    }
 }
 
 fn sub(a: i32, b: i32) -> i32 {
