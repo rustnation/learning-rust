@@ -3,6 +3,7 @@ use crate::print_title;
 mod activity;
 mod definition;
 mod demo;
+mod generic_structures;
 
 pub fn master(show: bool) {
     if show {
@@ -12,6 +13,8 @@ pub fn master(show: bool) {
 
         demo::master(false);
 
-        activity::master(true);
+        activity::master(false);
+
+        generic_structures::master(false);
     }
 }
