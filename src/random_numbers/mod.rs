@@ -5,6 +5,6 @@ pub fn master(show: bool) {
         println!("\n-- Random Numbers");
 
         // Random Definition
-        definition::master();
+        definition::master(false);
     }
 }
