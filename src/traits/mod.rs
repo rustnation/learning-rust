@@ -1,9 +1,9 @@
 use crate::print_title;
 
-mod demo;
 mod activity;
-mod definition;
 mod default_trait;
+mod definition;
+mod demo;
 mod derives;
 mod media_aggregator;
 mod returning_traits_with_dyn;
