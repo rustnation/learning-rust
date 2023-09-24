@@ -17,7 +17,7 @@ pub fn master(show: bool) {
 
         let pool = ThreadPool::new(4);
 
-        for stream in listener.incoming() {
+        for stream in listener.incoming().take(2) {
             let stream = stream.unwrap();
 
             pool.execute(|| {
