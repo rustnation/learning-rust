@@ -184,6 +184,9 @@ fn main() {
 
     // User Input
     common::user_input::master(false);
+
+    // Webserver
+    common::webserver::master(true);
 }
 
 fn local_function(show: bool) {
