@@ -74,7 +74,8 @@ pub fn print_title(title: &str) {
 pub struct ThreadPool;
 
 impl ThreadPool {
-    pub fn new(_size: usize) -> ThreadPool {
+    pub fn new(size: usize) -> ThreadPool {
+        assert!(size > 0);
         ThreadPool
     }
 
