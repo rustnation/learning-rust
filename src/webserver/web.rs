@@ -1,5 +1,5 @@
 use crate::print_title;
-//use crate::ThreadPool;
+use crate::ThreadPool;
 
 /*use std::{
     fs,
@@ -63,10 +63,12 @@ pub fn master(show: bool) {
 
         let listener = TcpListener::bind("127.0.0.1:7777").unwrap();
 
+        let pool = ThreadPool::new(4);
+
         for stream in listener.incoming() {
             let stream = stream.unwrap();
 
-            thread::spawn(|| {
+            pool.execute(|| {
                 handle_connection(stream);
             });
         }
