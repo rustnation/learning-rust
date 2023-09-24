@@ -65,7 +65,10 @@ pub fn master(show: bool) {
 
         for stream in listener.incoming() {
             let stream = stream.unwrap();
-            handle_connection(stream);
+
+            thread::spawn(|| {
+                handle_connection(stream);
+            });
         }
     }
 }
@@ -97,10 +100,4 @@ fn handle_connection(mut stream: TcpStream) {
     );
 
     stream.write_all(response.as_bytes()).unwrap();
-
-    /*let _http_request: Vec<_> = buf_reader
-        .lines()
-        .map(|result| result.unwrap())
-        .take_while(|line| !line.is_empty())
-        .collect();*/
 }
