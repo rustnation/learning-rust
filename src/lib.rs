@@ -1,7 +1,4 @@
-/*use std::{
-    sync::{mpsc, Arc, Mutex},
-    thread}
-;*/
+use std::thread;
 
 pub mod add_millimeters_to_meters;
 pub mod advanced_match;
@@ -71,12 +68,21 @@ pub fn print_title(title: &str) {
     println!("### {title} ###");
 }
 
-pub struct ThreadPool;
+pub struct ThreadPool {
+    threads: Vec<thread::JoinHandle<()>>,
+}
 
 impl ThreadPool {
     pub fn new(size: usize) -> ThreadPool {
         assert!(size > 0);
-        ThreadPool
+
+        let mut threads = Vec::with_capacity(size);
+
+        for _ in 0..size {
+            // create some threads and store them in the vector
+        }
+
+        ThreadPool { threads }
     }
 
     pub fn execute<F>(&self, _f: F)
