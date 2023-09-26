@@ -1,5 +1,6 @@
 mod definition;
 mod example;
+mod demo;
 
 pub fn master(show: bool) {
     if show {
@@ -7,6 +8,8 @@ pub fn master(show: bool) {
 
         definition::master(false);
 
-        example::master(true);
+        example::master(false);
+
+        demo::master(false);
     }
 }
