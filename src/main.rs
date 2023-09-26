@@ -39,7 +39,7 @@ fn main() {
     common::traits::master(false);
 
     // Lifetimes
-    common::lifetimes::master(false);
+    common::lifetimes::master(true);
 
     // Strings
     common::strings::master(false);
