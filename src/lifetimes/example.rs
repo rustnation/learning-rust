@@ -28,5 +28,7 @@ pub fn master(show: bool) {
             println!("Arm: {:?}", arm);
             println!("Arm Part: {:?}", arm.part);
         }
+
+        println!("Line: {:?}", line);
     }
 }
