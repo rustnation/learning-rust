@@ -18,6 +18,6 @@ pub fn master(show: bool) {
 
         activity::master(false);
 
-        compare_activity::master(true);
+        compare_activity::master(false);
     }
 }

@@ -1,8 +1,11 @@
 use std::fs;
 use std::io;
+use crate::print_title;
 
 pub fn master(show: bool) {
     if show {
+        print_title("Return Errors");
+
         let f = read_username_from_file();
 
         let f = match f {

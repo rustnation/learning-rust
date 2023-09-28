@@ -1,12 +1,14 @@
+use crate::print_title;
+
 mod closures;
 mod error_propagation;
 
 pub fn master(show: bool) {
     if show {
-        println!("\n--- Errors using closures ---");
+        print_title("Errors");
+
         closures::master(false);
 
-        println!("\n--- Return Errors ---");
         error_propagation::master(false);
     }
 }

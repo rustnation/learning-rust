@@ -33,13 +33,13 @@ fn main() {
     common::exercises::master(false);
 
     // Errors
-    common::errors::master(false);
+    common::errors::master(true);
 
     // Traits
     common::traits::master(false);
 
     // Lifetimes
-    common::lifetimes::master(true);
+    common::lifetimes::master(false);
 
     // Strings
     common::strings::master(false);
