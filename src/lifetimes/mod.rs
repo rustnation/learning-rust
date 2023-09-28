@@ -4,6 +4,7 @@ mod definition;
 mod example;
 mod demo;
 mod activity;
+mod compare_activity;
 
 pub fn master(show: bool) {
     if show {
@@ -15,6 +16,8 @@ pub fn master(show: bool) {
 
         demo::master(false);
 
-        activity::master(true);
+        activity::master(false);
+
+        compare_activity::master(true);
     }
 }
