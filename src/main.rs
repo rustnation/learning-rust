@@ -33,7 +33,7 @@ fn main() {
     common::exercises::master(false);
 
     // Errors
-    common::errors::master(true);
+    common::errors::master(false);
 
     // Traits
     common::traits::master(false);

@@ -2,6 +2,7 @@ use crate::print_title;
 
 mod closures;
 mod error_propagation;
+mod demo_custom_error;
 
 pub fn master(show: bool) {
     if show {
@@ -10,5 +11,7 @@ pub fn master(show: bool) {
         closures::master(false);
 
         error_propagation::master(false);
+
+        demo_custom_error::master(false);
     }
 }
