@@ -1,3 +1,5 @@
+use crate::print_title;
+
 mod definition;
 mod demo;
 mod enum_multi_array;
@@ -7,7 +9,7 @@ mod options;
 
 pub fn master(show: bool) {
     if show {
-        println!("\n-- Enums");
+        print_title("Enums");
 
         // Enum Demo
         demo::master(false);
@@ -19,7 +21,7 @@ pub fn master(show: bool) {
         options::master(false);
 
         // Matches
-        matches::master(true);
+        matches::master(false);
 
         // Enum Multi Array
         enum_multi_array::master(false);

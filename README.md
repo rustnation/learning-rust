@@ -59,3 +59,8 @@ cargo add rand
 ### Free Resources
 
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
+
+### Enums
+
+- [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
+
