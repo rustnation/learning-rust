@@ -6,6 +6,9 @@ mod definition;
 mod demo;
 mod generic_structures;
 mod vehicle;
+mod generic_functions;
+mod generic_enums;
+mod generic_structs;
 
 pub fn master(show: bool) {
     if show {
@@ -22,5 +25,11 @@ pub fn master(show: bool) {
         conveyor_belt::master(false);
 
         vehicle::master(false);
+
+        generic_functions::master(false);
+
+        generic_enums::master(false);
+
+        generic_structs::master(false);
     }
 }
