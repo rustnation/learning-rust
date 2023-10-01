@@ -47,7 +47,8 @@ struct YoungPeople<'a> {
 }
 
 impl<'a> YoungPeople<'a> {
-    #[allow(clippy::all)] fn living_in_fooville(&self) -> Self {
+    #[allow(clippy::all)]
+    fn living_in_fooville(&self) -> Self {
         Self {
             inner: self
                 .inner
