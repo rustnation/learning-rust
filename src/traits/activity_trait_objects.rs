@@ -39,7 +39,7 @@ impl Material for Wood {
 }
 
 /// Box always has a usize type
-fn total_cost(material: &Vec<Box<dyn Material>>) -> f64 {
+fn total_cost(material: &[Box<dyn Material>]) -> f64 {
     material.iter().map(|mat| mat.total_cost()).sum()
 }
 
