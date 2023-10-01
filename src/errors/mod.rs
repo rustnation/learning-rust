@@ -1,8 +1,8 @@
 use crate::print_title;
 
 mod closures;
-mod error_propagation;
 mod demo_custom_error;
+mod error_propagation;
 
 pub fn master(show: bool) {
     if show {

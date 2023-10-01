@@ -16,14 +16,12 @@ fn generic_enums(show: bool) {
         let o3 = Some(true);
         let o4 = Some(7.0);
 
-
         println!("o1: {:?}", o1);
         println!("o2: {:?}", o2);
         println!("o3: {:?}", o3);
         println!("o4: {:?}", o4);
 
         println!("safe_division of 4/2: {:?}", safe_division(4, 2));
-
     }
 }
 

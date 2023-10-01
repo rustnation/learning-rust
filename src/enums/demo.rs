@@ -49,7 +49,7 @@ enum HealthBar1 {
 /// Enum with named fields.
 #[derive(Debug)]
 enum HealthBar2 {
-    Alive{life: i8},
+    Alive { life: i8 },
     Dead,
 }
 
@@ -61,7 +61,7 @@ fn simple_demo(show: bool) {
         println!("Is alive 1: {:?}", is_alive_1);
         println!("Is dead 1: {:?}", is_dead_1);
 
-        let is_alive_2 = HealthBar2::Alive {life: 77};
+        let is_alive_2 = HealthBar2::Alive { life: 77 };
         let is_dead_2 = HealthBar2::Dead;
 
         println!("Is alive 2: {:?}", is_alive_2);
@@ -81,8 +81,8 @@ fn simple_demo(show: bool) {
 
 #[derive(Debug)]
 enum Player {
-    Alive{life: i8},
-    KnockedOut{life: i8, turns_to_wait: i8},
+    Alive { life: i8 },
+    KnockedOut { life: i8, turns_to_wait: i8 },
     Dead,
 }
 
@@ -91,7 +91,7 @@ fn player_demo(show: bool) {
         let dead_player = Player::Dead;
         print_player(dead_player);
 
-        let alive_player = Player::Alive {life: 77};
+        let alive_player = Player::Alive { life: 77 };
         print_player(alive_player);
 
         let knocked_out_player = Player::KnockedOut {
@@ -105,7 +105,13 @@ fn player_demo(show: bool) {
 fn print_player(player: Player) {
     match player {
         Player::Alive { life } => println!("Player Alive: {}", life),
-        Player::KnockedOut {life, turns_to_wait} => println!("Player Knocked Out. Life: {}, Turns to Wait: {}", life, turns_to_wait),
+        Player::KnockedOut {
+            life,
+            turns_to_wait,
+        } => println!(
+            "Player Knocked Out. Life: {}, Turns to Wait: {}",
+            life, turns_to_wait
+        ),
         Player::Dead => println!("Player is dead!"),
     }
 }

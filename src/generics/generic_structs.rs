@@ -20,7 +20,6 @@ pub fn master(show: bool) {
         int_scores(false);
 
         flt_scores(true);
-
     }
 }
 

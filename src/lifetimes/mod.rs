@@ -1,10 +1,10 @@
 use crate::print_title;
 
-mod definition;
-mod example;
-mod demo;
 mod activity;
 mod compare_activity;
+mod definition;
+mod demo;
+mod example;
 
 pub fn master(show: bool) {
     if show {

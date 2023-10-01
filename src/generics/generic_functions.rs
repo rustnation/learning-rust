@@ -31,7 +31,7 @@ fn generic_functions(show: bool) {
 fn reverse<T>(vector: &mut Vec<T>) {
     let mut new_vector = Vec::new();
 
-    while let Some(last)  = vector.pop() {
+    while let Some(last) = vector.pop() {
         new_vector.push(last);
     }
 

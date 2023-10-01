@@ -1,6 +1,6 @@
+use crate::print_title;
 use std::fs::File;
 use std::io::ErrorKind;
-use crate::print_title;
 
 pub fn master(show: bool) {
     if show {

@@ -1,5 +1,5 @@
-use std::fs::File;
 use crate::print_title;
+use std::fs::File;
 use std::io::{self, BufRead};
 
 pub fn master(show: bool) {
@@ -40,7 +40,6 @@ fn process_file_activity(show: bool) {
                     }
                 }
             }
-
         } else {
             println!("Error opening the file: {}", file_path);
         }

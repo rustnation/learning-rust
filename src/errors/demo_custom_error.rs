@@ -44,7 +44,7 @@ fn use_pass(pass: &mut SubwayPass, cost: isize) -> Result<(), PassError> {
             Err(PassError::InsufficientFunds(pass.funds))
         } else {
             pass.funds = pass.funds - cost;
-            Ok (())
+            Ok(())
         }
     }
 }
@@ -63,7 +63,7 @@ pub fn master(show: bool) {
                 PassError::ReadError(s) => println!("Error reading: {}", s),
                 PassError::PassExpired => println!("Error: pass has expired"),
                 PassError::InsufficientFunds(f) => println!("Error: Insufficient funds {}", f),
-            }
+            },
         }
     }
 }

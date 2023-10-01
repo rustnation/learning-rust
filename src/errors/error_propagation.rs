@@ -1,6 +1,6 @@
+use crate::print_title;
 use std::fs;
 use std::io;
-use crate::print_title;
 
 pub fn master(show: bool) {
     if show {
