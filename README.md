@@ -41,6 +41,23 @@ cargo add rand
 
 - [Quick Sort](https://www.hackertouch.com/rust-data-structures-and-algorithms/quick-sort-in-rust.html)
 
+## Clippy
+
+### Prevent to run analyze with clippy in a function
+
+Append before the function the following:
+
+```commandline
+#[allow(clippy::all)]
+fn living_in_fooville(&self) -> Self {
+```
+
+### Run clippy
+
+```commandline
+cargo clippy -- -D warnings
+```
+
 ## Resources
 
 - The Rust Programming Language 2nd Edition [Done]
