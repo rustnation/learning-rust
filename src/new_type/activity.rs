@@ -67,7 +67,6 @@ fn print_pant_color(color: PantsColor) {
     println!("pant color = {:?}", color);
 }
 
-
 pub fn master(show: bool) {
     if show {
         print_title("New Type Patter Activity");
