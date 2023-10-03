@@ -1,4 +1,8 @@
 fn main() {
+
+    // Hello World
+    common::hello_world::master(false);
+
     // Basics
     common::basics::master(false);
 

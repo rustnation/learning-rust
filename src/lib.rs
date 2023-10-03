@@ -3,6 +3,7 @@ use std::{
     thread,
 };
 
+pub mod hello_world;
 pub mod add_millimeters_to_meters;
 pub mod advanced_match;
 pub mod algorithms;
