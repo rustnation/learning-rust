@@ -3,7 +3,6 @@ use std::{
     thread,
 };
 
-pub mod hello_world;
 pub mod add_millimeters_to_meters;
 pub mod advanced_match;
 pub mod algorithms;
@@ -29,6 +28,7 @@ pub mod futures;
 pub mod generics;
 pub mod get_type;
 pub mod hashmaps;
+pub mod hello_world;
 pub mod iterators;
 pub mod joinhandle;
 pub mod lifetimes;

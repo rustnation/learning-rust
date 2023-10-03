@@ -1,5 +1,4 @@
 fn main() {
-
     // Hello World
     common::hello_world::master(false);
 
