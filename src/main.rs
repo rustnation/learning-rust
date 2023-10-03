@@ -187,6 +187,9 @@ fn main() {
 
     // Webserver
     common::webserver::master(false);
+
+    // New Type Pattern
+    common::new_type::master(false);
 }
 
 fn local_function(show: bool) {
