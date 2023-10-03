@@ -190,6 +190,9 @@ fn main() {
 
     // New Type Pattern
     common::new_type::master(false);
+
+    // TypeState Pattern
+    common::typestate_pattern::master(false);
 }
 
 fn local_function(show: bool) {
