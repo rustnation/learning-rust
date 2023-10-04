@@ -1,16 +1,16 @@
 use crate::print_title;
 
-pub mod boolean_type;
-pub mod character_type;
-pub mod compound_types;
+pub mod booleans;
+pub mod characters;
+pub mod compounds;
 pub mod constants;
 pub mod control_flow;
-pub mod floating_point;
+pub mod floats;
 pub mod functions;
 pub mod integers;
 pub mod loops;
 pub mod numeric_operations;
-pub mod scalar_types;
+pub mod scalars;
 pub mod shadowing;
 pub mod slices;
 pub mod variables;
@@ -29,22 +29,22 @@ pub fn master(show: bool) {
         shadowing::master(false);
 
         // Scalar Types
-        scalar_types::master(false);
+        scalars::master(false);
 
         // Floating Points
-        floating_point::master(false);
+        floats::master(false);
 
         // Numeric Operations
         numeric_operations::master(false);
 
         // Boolean Types
-        boolean_type::master(false);
+        booleans::master(false);
 
         // Character Types
-        character_type::master(false);
+        characters::master(false);
 
         // Tuple Types
-        compound_types::master(false);
+        compounds::master(false);
 
         // Functions
         functions::master(false);
