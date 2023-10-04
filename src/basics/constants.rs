@@ -1,5 +1,7 @@
 use crate::print_title;
 
+// https://doc.rust-lang.org/reference/const_eval.html
+
 const MAX_SPEED: i32 = 9000;
 
 pub fn master(show: bool) {
