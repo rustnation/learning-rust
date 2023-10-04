@@ -9,7 +9,7 @@ pub mod floats;
 pub mod functions;
 pub mod integers;
 pub mod loops;
-pub mod numeric_operations;
+pub mod num_operations;
 pub mod scalars;
 pub mod shadowing;
 pub mod slices;
@@ -35,7 +35,7 @@ pub fn master(show: bool) {
         floats::master(false);
 
         // Numeric Operations
-        numeric_operations::master(false);
+        num_operations::master(false);
 
         // Boolean Types
         booleans::master(false);
