@@ -1,3 +1,5 @@
+use crate::print_title;
+
 pub mod boolean_type;
 pub mod character_type;
 pub mod compound_types;
@@ -15,7 +17,7 @@ pub mod variables;
 
 pub fn master(show: bool) {
     if show {
-        //common::print_title("BASICS");
+        print_title("BASICS");
 
         // Variables
         variables::master(false);

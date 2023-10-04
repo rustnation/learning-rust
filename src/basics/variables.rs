@@ -1,6 +1,9 @@
+use crate::print_title;
+
 pub fn master(show: bool) {
     if show {
-        println!("--- Variables ---");
+        print_title("Variables");
+
         let mut x = 5;
         println!("The value of x is: {x}");
         x = 6;
