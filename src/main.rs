@@ -2,6 +2,9 @@ fn main() {
     // Hello World
     common::hello_world::master(false);
 
+    // Guessing Game
+    common::guessing_game::master(false);
+
     // Basics
     common::basics::master(false);
 

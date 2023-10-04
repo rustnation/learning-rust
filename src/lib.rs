@@ -27,6 +27,7 @@ pub mod external_crates;
 pub mod futures;
 pub mod generics;
 pub mod get_type;
+pub mod guessing_game;
 pub mod hashmaps;
 pub mod hello_world;
 pub mod iterators;
