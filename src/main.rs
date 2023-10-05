@@ -199,6 +199,9 @@ fn main() {
 
     // TypeState Pattern
     common::typestate_pattern::master(false);
+
+    // For Loops
+    common::for_loops::master(false);
 }
 
 fn local_function(show: bool) {

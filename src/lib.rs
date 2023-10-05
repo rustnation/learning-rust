@@ -24,6 +24,7 @@ pub mod exercises;
 pub mod expressions;
 pub mod extern_functions;
 pub mod external_crates;
+pub mod for_loops;
 pub mod futures;
 pub mod generics;
 pub mod get_type;
