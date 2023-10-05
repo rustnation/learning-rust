@@ -2,6 +2,8 @@ pub fn master(show: bool) {
     if show {
         println!("\n--- Functions");
 
+        print_labeled_measurement(7, 'h');
+
         function_with_parameters(7);
         function_multiple_parameters(7, 'h');
 
@@ -11,6 +13,10 @@ pub fn master(show: bool) {
         let result = sum(3, 4);
         display_result(result);
     }
+}
+
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("The measurement is: {value}{unit_label}");
 }
 
 fn function_with_parameters(x: i32) {
