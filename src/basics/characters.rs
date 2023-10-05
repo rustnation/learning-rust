@@ -10,5 +10,8 @@ pub fn master(show: bool) {
 
         let kannada: char = '\u{CA0}';
         println!("value of kannada is: {kannada}");
+
+        let heart_eyed_cat = '😻';
+        println!("value of heart eyed cat: {}", heart_eyed_cat);
     }
 }
