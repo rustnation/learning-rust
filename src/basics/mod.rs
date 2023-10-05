@@ -1,19 +1,20 @@
 use crate::print_title;
 
-pub mod booleans;
-pub mod characters;
-pub mod compounds;
-pub mod constants;
-pub mod control_flow;
-pub mod floats;
-pub mod functions;
-pub mod integers;
-pub mod loops;
-pub mod num_operations;
-pub mod scalars;
-pub mod shadowing;
-pub mod slices;
-pub mod variables;
+mod arrays;
+mod booleans;
+mod characters;
+mod compounds;
+mod constants;
+mod control_flow;
+mod floats;
+mod functions;
+mod integers;
+mod loops;
+mod num_operations;
+mod scalars;
+mod shadowing;
+mod slices;
+mod variables;
 
 pub fn master(show: bool) {
     if show {
@@ -60,5 +61,8 @@ pub fn master(show: bool) {
 
         // Integers
         integers::master(false);
+
+        // Arrays
+        arrays::master(false);
     }
 }
