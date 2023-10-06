@@ -6,9 +6,16 @@ pub fn master(show: bool) {
         takes_ownership(s.clone()); // The compiler prevents us to pass the ownership
 
         println!("the value of s is: {s}");
+
+        let x = 7;
+        makes_copy(x);
     }
 }
 
 fn takes_ownership(message: String) {
     println!("value received: {message}");
+}
+
+fn makes_copy(some_integer: i32) {
+    println!("some_integer value is: {some_integer}");
 }
