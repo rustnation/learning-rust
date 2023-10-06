@@ -5,6 +5,7 @@ mod mutable_references;
 mod references_borrowing;
 mod return_multiple_values;
 mod return_values_and_scope;
+mod returning_ownership;
 mod string_clone_heap;
 mod string_type;
 
@@ -36,5 +37,8 @@ pub fn master(show: bool) {
 
         // Mutable Borrowing of Variables
         mutable_borrowing::master(false);
+
+        // Returning Ownership
+        returning_ownership::master(false);
     }
 }
