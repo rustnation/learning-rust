@@ -3,6 +3,7 @@ use crate::print_title;
 mod arrays;
 mod booleans;
 mod characters;
+mod clone;
 mod compounds;
 mod constants;
 mod control_flow;
@@ -64,5 +65,8 @@ pub fn master(show: bool) {
 
         // Arrays
         arrays::master(false);
+
+        // Clone
+        clone::master(false);
     }
 }
