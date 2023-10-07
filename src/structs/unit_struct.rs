@@ -6,6 +6,12 @@ struct Rectangle {
     height: u32,
 }
 
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
 pub fn master(show: bool) {
     if show {
         let _subject = AlwaysEqual;
@@ -17,7 +23,7 @@ pub fn master(show: bool) {
 
         println!(
             "The area of the rectangle is {} square pixels.",
-            area(&rect1)
+            rect1.area()
         );
 
         // to work, we need to annotate the struct Rectangle with:
@@ -26,6 +32,6 @@ pub fn master(show: bool) {
     }
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
+/*fn area(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
-}
+}*/
