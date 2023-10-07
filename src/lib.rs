@@ -35,7 +35,7 @@ pub mod iterators;
 pub mod joinhandle;
 pub mod lifetimes;
 pub mod loops;
-pub mod match_expression;
+pub mod matches;
 pub mod message_passing;
 pub mod messenger;
 pub mod methods;

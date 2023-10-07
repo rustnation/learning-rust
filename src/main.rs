@@ -141,7 +141,7 @@ fn main() {
     common::decisions::master(false);
 
     // Match Expression
-    common::match_expression::master(false);
+    common::matches::master(false);
 
     // Loops
     common::loops::master(false);
