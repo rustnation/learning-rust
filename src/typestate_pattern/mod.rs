@@ -1,5 +1,6 @@
 use crate::print_title;
 
+mod activity;
 mod demo;
 
 pub fn master(show: bool) {
@@ -7,5 +8,7 @@ pub fn master(show: bool) {
         print_title("TypeState Pattern");
 
         demo::master(false);
+
+        activity::master(false);
     }
 }
