@@ -205,6 +205,9 @@ fn main() {
 
     // Slices
     common::slices::master(false);
+
+    // Type Aliases
+    common::type_aliases::master(false);
 }
 
 fn local_function(show: bool) {

@@ -64,6 +64,7 @@ pub mod threads;
 pub mod traits;
 pub mod tree_data_structure;
 pub mod tuples;
+pub mod type_aliases;
 pub mod typestate_pattern;
 pub mod unsafe_code;
 pub mod unsafe_trait;
