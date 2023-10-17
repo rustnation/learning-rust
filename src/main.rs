@@ -202,6 +202,9 @@ fn main() {
 
     // For Loops
     common::for_loops::master(false);
+
+    // Slices
+    common::slices::master(false);
 }
 
 fn local_function(show: bool) {
