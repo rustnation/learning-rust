@@ -74,7 +74,7 @@ pub fn master(show: bool) {
 fn rough_time_to_english(rt: RoughTime) -> String {
     match rt {
         RoughTime::InThePast(units, count) => format!("{} {} ago", count, units.plural()),
-        RoughTime::JustNow => format!("Just Now"),
+        RoughTime::JustNow => format!("{:?}", "Just Now".to_string()),
         RoughTime::InTheFuture(unit, 1) => format!("a {} from now", unit.singular()),
         RoughTime::InTheFuture(units, count) => format!("{} {} from now", count, units.plural()),
     }
