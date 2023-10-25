@@ -3,6 +3,7 @@ use crate::print_title;
 mod definition;
 mod demo;
 mod enum_multi_array;
+mod enum_with_data;
 mod enum_with_match;
 mod matches;
 mod options;
@@ -28,5 +29,8 @@ pub fn master(show: bool) {
 
         // Enum with Match
         enum_with_match::master(false);
+
+        // Enum with Data
+        enum_with_data::master(false);
     }
 }
