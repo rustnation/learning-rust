@@ -44,7 +44,10 @@ pub fn master(show: bool) {
         print_title("Enums with Data");
 
         let four_score_and_seven_years_ago = RoughTime::InThePast(TimeUnit::Years, 4 * 20 + 7);
-        println!("{:?}", rough_time_to_english(four_score_and_seven_years_ago));
+        println!(
+            "{:?}",
+            rough_time_to_english(four_score_and_seven_years_ago)
+        );
 
         let three_hours_from_now = RoughTime::InTheFuture(TimeUnit::Hours, 3);
         println!("{:?}", rough_time_to_english(three_hours_from_now));
