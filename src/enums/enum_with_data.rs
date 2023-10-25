@@ -44,26 +44,34 @@ pub fn master(show: bool) {
         print_title("Enums with Data");
 
         let four_score_and_seven_years_ago = RoughTime::InThePast(TimeUnit::Years, 4 * 20 + 7);
-        println!("{:?}", four_score_and_seven_years_ago);
+        println!("{:?}", rough_time_to_english(four_score_and_seven_years_ago));
 
         let three_hours_from_now = RoughTime::InTheFuture(TimeUnit::Hours, 3);
-        println!("{:?}", three_hours_from_now);
+        println!("{:?}", rough_time_to_english(three_hours_from_now));
 
         let seven_seconds_from_now = RoughTime::InTheFuture(TimeUnit::Seconds, 7);
-        println!("{:?}", seven_seconds_from_now);
+        println!("{:?}", rough_time_to_english(seven_seconds_from_now));
 
         let seven_minutes_from_now = RoughTime::InTheFuture(TimeUnit::Minutes, 7);
-        println!("{:?}", seven_minutes_from_now);
+        println!("{:?}", rough_time_to_english(seven_minutes_from_now));
 
         let seven_months_from_now = RoughTime::InTheFuture(TimeUnit::Months, 7);
-        println!("{:?}", seven_months_from_now);
+        println!("{:?}", rough_time_to_english(seven_months_from_now));
 
         let seven_days_from_now = RoughTime::InTheFuture(TimeUnit::Days, 7);
-        println!("{:?}", seven_days_from_now);
+        println!("{:?}", rough_time_to_english(seven_days_from_now));
 
         let from_now = RoughTime::JustNow;
-        println!("{:?}", from_now);
+        println!("{:?}", rough_time_to_english(from_now));
 
         println!("{:?}", TimeUnit::Days.singular());
+    }
+}
+
+fn rough_time_to_english(rt: RoughTime) -> String {
+    match rt {
+        RoughTime::InThePast(units, count) => format!("{} {} ago", count, units.plural()),
+        RoughTime::JustNow => format!("Just Now"),
+        RoughTime::InTheFuture(units, count) => format!("{} {} from now", count, units.plural()),
     }
 }
