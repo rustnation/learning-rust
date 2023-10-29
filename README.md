@@ -61,11 +61,11 @@ cargo clippy -- -D warnings
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
-- Programming Rust 2nd Edition [Done]
-- Rust Web Development [Done]
-- Zero to Production in Rust [In Progress]
-- Command-Line Rust [In Progress]
-- Rust Atomics and Locks [In Progress]
+- Programming Rust 2nd Edition ${\color{orange}[Done]}$
+- Rust Web Development ${\color{orange}[Done]}$
+- Zero to Production in Rust ${\color{red}[In Progress]}$
+- Command-Line Rust ${\color{red}[In Progress]}$
+- Rust Atomics and Locks ${\color{red}[In Progress]}$
 - Rust for Rustaceans
 - Rust in Action
 - Black Hat Rust
