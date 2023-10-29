@@ -58,24 +58,32 @@ fn living_in_fooville(&self) -> Self {
 cargo clippy -- -D warnings
 ```
 
-## Resources
+## Books
 
 - The Rust Programming Language 2nd Edition [Done]
 - Programming Rust 2nd Edition [Done]
+- Rust Web Development [Done]
+- Zero to Production in Rust [In Progress]
+- Command-Line Rust [In Progress]
+- Rust Atomics and Locks [In Progress]
 - Rust for Rustaceans
 - Rust in Action
-- Zero to Production in Rust [In Progress]
 - Black Hat Rust
 - Rust Intermediate Mastering Backend
 - Rust Advanced Mastering Backend
-- Zero to Mastery Course [In Progress]
-- Rust Web Programming
+
+## Courses
+
+- Zero to Mastery [In Progress]
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
 ### Free Resources
 
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
+- [Rust Data Structures and Algorithms](https://www.hackertouch.com/rust-data-structures-and-algorithms.html)
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+- [Actix Web](https://actix.rs/)
 
 ### Enums
 
