@@ -60,7 +60,7 @@ cargo clippy -- -D warnings
 
 ## Books
 
-- The Rust Programming Language 2nd Edition [Done]
+- The Rust Programming Language 2nd Edition $${\color{orange}[Done]}$$
 - Programming Rust 2nd Edition [Done]
 - Rust Web Development [Done]
 - Zero to Production in Rust [In Progress]
