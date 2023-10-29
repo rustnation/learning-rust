@@ -7,6 +7,7 @@ mod definition;
 mod demo;
 mod demo_trait_objets;
 mod derives;
+mod from_trait;
 mod media_aggregator;
 mod returning_traits_with_dyn;
 
@@ -40,5 +41,8 @@ pub fn master(show: bool) {
 
         // Activity Trait Objects
         activity_trait_objects::master(false);
+
+        // From Trait
+        from_trait::master(false);
     }
 }
