@@ -64,6 +64,7 @@ cargo clippy -- -D warnings
 - Programming Rust 2nd Edition ${\color{orange}[Done]}$
 - Rust Web Development ${\color{orange}[Done]}$
 - Zero to Production in Rust [In Progress]
+- Rust Web Programming
 - Command-Line Rust [In Progress]
 - Rust Atomics and Locks [In Progress]
 - Rust for Rustaceans
