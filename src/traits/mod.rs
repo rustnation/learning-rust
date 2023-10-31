@@ -10,6 +10,7 @@ mod derives;
 mod from_trait;
 mod media_aggregator;
 mod returning_traits_with_dyn;
+mod with_generics;
 
 pub fn master(show: bool) {
     if show {
@@ -44,5 +45,8 @@ pub fn master(show: bool) {
 
         // From Trait
         from_trait::master(false);
+
+        // With Generics
+        with_generics::master(false);
     }
 }
