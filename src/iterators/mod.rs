@@ -1,6 +1,7 @@
 mod activity;
 mod definition;
 mod demo;
+mod partition;
 
 pub fn master(show: bool) {
     if show {
@@ -10,6 +11,8 @@ pub fn master(show: bool) {
 
         demo::master(false);
 
-        activity::master(true);
+        activity::master(false);
+
+        partition::master(false);
     }
 }
