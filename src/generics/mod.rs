@@ -8,6 +8,7 @@ mod generic_enums;
 mod generic_functions;
 mod generic_structs;
 mod generic_structures;
+mod question_operator;
 mod vehicle;
 
 pub fn master(show: bool) {
@@ -31,5 +32,7 @@ pub fn master(show: bool) {
         generic_enums::master(false);
 
         generic_structs::master(false);
+
+        question_operator::master(false);
     }
 }
