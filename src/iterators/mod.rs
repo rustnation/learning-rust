@@ -1,6 +1,7 @@
 mod activity;
 mod definition;
 mod demo;
+mod iter_in_collections;
 mod partition;
 
 pub fn master(show: bool) {
@@ -14,5 +15,7 @@ pub fn master(show: bool) {
         activity::master(false);
 
         partition::master(false);
+
+        iter_in_collections::master(false);
     }
 }
