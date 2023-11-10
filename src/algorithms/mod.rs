@@ -1,5 +1,6 @@
 mod bubble_sort;
 mod cocktail_sort;
+mod comb_sort;
 mod insertion_sort;
 mod merge_sort;
 mod quick_sort;
@@ -24,5 +25,8 @@ pub fn master(show: bool) {
 
         // Cocktail Sort
         cocktail_sort::master(false);
+
+        // Comb Sort
+        comb_sort::master(false);
     }
 }
