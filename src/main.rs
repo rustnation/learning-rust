@@ -208,9 +208,6 @@ fn main() {
 
     // Type Aliases
     common::type_aliases::master(false);
-
-    // Data Structures and Algorithms
-    common::data_structures_and_algorithms::master(false);
 }
 
 fn local_function(show: bool) {

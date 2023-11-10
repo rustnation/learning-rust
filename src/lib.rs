@@ -14,7 +14,6 @@ pub mod closures;
 pub mod collections;
 pub mod custom_smart_pointer;
 pub mod data_collections;
-pub mod data_structures_and_algorithms;
 pub mod decisions;
 pub mod destructuring_structs;
 pub mod doc;
