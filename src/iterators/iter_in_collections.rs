@@ -6,7 +6,7 @@ pub fn master(show: bool) {
         // iterators over the type, producing a shared or mutable reference to each item.
         print_title("Iter in Collections");
 
-        let v = vec![1, 7, 14, 21, 28, 35, 42];
+        let v = [1, 7, 14, 21, 28, 35, 42];
         let mut iterator = v.iter();
 
         assert_eq!(iterator.next(), Some(&1));

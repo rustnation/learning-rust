@@ -32,7 +32,7 @@ fn cocktail_sort<T: Ord>(arr: &mut [T]) {
             }
         }
 
-        if swapped == false {
+        if !swapped {
             return;
         }
 
@@ -44,7 +44,7 @@ fn cocktail_sort<T: Ord>(arr: &mut [T]) {
             }
         }
 
-        if swapped == false {
+        if !swapped {
             return;
         }
     }

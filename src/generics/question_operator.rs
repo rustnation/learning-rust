@@ -11,7 +11,7 @@ pub fn master(show: bool) {
     if show {
         print_title("Question Operator");
 
-        let ip_local = [u8::from(127)];
+        let ip_local = [127]; //[u8::from(127)];
 
         let result = parse_i32_bytes(&ip_local);
 
