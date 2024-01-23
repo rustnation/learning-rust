@@ -15,6 +15,6 @@ pub fn master(show: bool) {
         iterate::master(false);
 
         // String Functions
-        string_functions::master(true);
+        string_functions::master(false);
     }
 }
