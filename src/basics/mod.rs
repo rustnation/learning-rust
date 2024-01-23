@@ -16,6 +16,7 @@ mod scalars;
 mod shadowing;
 mod slices;
 mod variables;
+mod borrowing;
 
 pub fn master(show: bool) {
     if show {
@@ -68,5 +69,8 @@ pub fn master(show: bool) {
 
         // Clone
         clone::master(false);
+
+        // Borrowing
+        borrowing::master(false);
     }
 }
