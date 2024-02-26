@@ -1,7 +1,5 @@
 //! src/numbers/mod.rs
 
-use crate::numbers::comparing_numbers::comparing_different_types;
-
 mod comparing_numbers;
 
 pub fn master(show: bool) {
@@ -10,7 +8,7 @@ pub fn master(show: bool) {
 
         intro_to_numbers(false);
         non_base2(false);
-        comparing_different_types(true);
+        comparing_numbers::comparing_different_types(false);
     }
 }
 
