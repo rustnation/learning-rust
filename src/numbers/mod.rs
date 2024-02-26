@@ -10,7 +10,7 @@ pub fn master(show: bool) {
         intro_to_numbers(false);
         non_base2(false);
         comparing_numbers::comparing_different_types(false);
-        try_into_method::convert_try_into(true);
+        try_into_method::convert_try_into(false);
     }
 }
 

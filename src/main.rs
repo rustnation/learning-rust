@@ -210,7 +210,7 @@ fn main() {
     common::type_aliases::master(false);
 
     // Numbers
-    common::numbers::master(true);
+    common::numbers::master(false);
 }
 
 fn local_function(show: bool) {
