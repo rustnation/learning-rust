@@ -2,7 +2,8 @@ pub fn master(show: bool) {
     if show {
         println!("-- Numbers");
 
-        intro_to_numbers(true);
+        intro_to_numbers(false);
+        non_base2(true);
     }
 }
 
@@ -25,5 +26,20 @@ fn intro_to_numbers(show: bool) {
 
         let forty_twos = [42.0, 42f32, 42.0_f32];
         println!("{:02}", forty_twos[0]);
+    }
+}
+
+fn non_base2(show: bool) {
+    if show {
+        println!("--- Non base2 Numbers:");
+
+        let three = 0b11;
+        let thirty = 0o36;
+        let three_hundred = 0x12C;
+
+        println!("base 10: {} {} {}", three, thirty, three_hundred);
+        println!("base 2: {:b} {:b} {:b}", three, thirty, three_hundred);
+        println!("base 8: {:o} {:o} {:o}", three, thirty, three_hundred);
+        println!("base 16: {:x} {:x} {:x}", three, thirty, three_hundred);
     }
 }
