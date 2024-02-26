@@ -43,6 +43,7 @@ pub mod modules;
 pub mod move_vars;
 pub mod mutable_reference;
 pub mod new_type;
+pub mod numbers;
 pub mod object_oriented;
 pub mod operator_overloading;
 pub mod optionals;

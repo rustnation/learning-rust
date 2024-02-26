@@ -208,6 +208,9 @@ fn main() {
 
     // Type Aliases
     common::type_aliases::master(false);
+
+    // Numbers
+    common::numbers::master(true);
 }
 
 fn local_function(show: bool) {
