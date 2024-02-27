@@ -1,6 +1,7 @@
 //! src/numbers/mod.rs
 
 mod comparing_numbers;
+mod complex_numbers;
 mod try_into_method;
 
 pub fn master(show: bool) {
@@ -11,6 +12,7 @@ pub fn master(show: bool) {
         non_base2(false);
         comparing_numbers::comparing_different_types(false);
         try_into_method::convert_try_into(false);
+        complex_numbers::create_complex_number(false);
     }
 }
 
