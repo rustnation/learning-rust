@@ -211,6 +211,9 @@ fn main() {
 
     // Numbers
     common::numbers::master(false);
+
+    // Mandelbrot
+    common::mandelbrot::master(false);
 }
 
 fn local_function(show: bool) {
