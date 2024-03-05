@@ -1,8 +1,8 @@
 //! src/generics/generic_add.rs
 
 use crate::print_title;
-use std::ops::{Add};
-use std::time::{Duration};
+use std::ops::Add;
+use std::time::Duration;
 
 pub fn master(show: bool) {
     if show {
@@ -10,10 +10,7 @@ pub fn master(show: bool) {
 
         let floats = add(1.2, 3.4);
         let ints = add(10, 20);
-        let durations = add(
-            Duration::new(5,0),
-            Duration::new(10, 0)
-        );
+        let durations = add(Duration::new(5, 0), Duration::new(10, 0));
 
         println!("floats: {}", floats);
         println!("ints: {}", ints);

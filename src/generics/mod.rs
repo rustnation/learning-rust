@@ -4,13 +4,13 @@ mod activity;
 mod conveyor_belt;
 mod definition;
 mod demo;
+mod generic_add;
 mod generic_enums;
 mod generic_functions;
 mod generic_structs;
 mod generic_structures;
 mod question_operator;
 mod vehicle;
-mod generic_add;
 
 pub fn master(show: bool) {
     if show {

@@ -1,5 +1,6 @@
 use crate::print_title;
 mod activity;
+mod definition;
 mod demo;
 
 pub fn master(show: bool) {
@@ -9,5 +10,7 @@ pub fn master(show: bool) {
         demo::master(false);
 
         activity::master(false);
+
+        definition::master(false);
     }
 }

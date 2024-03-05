@@ -35,6 +35,7 @@ pub mod iterators;
 pub mod joinhandle;
 pub mod lifetimes;
 pub mod loops;
+pub mod mandelbrot;
 pub mod matches;
 pub mod message_passing;
 pub mod messenger;
@@ -73,7 +74,6 @@ pub mod user_input;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
-pub mod mandelbrot;
 
 pub fn print_title(title: &str) {
     println!(" ");
