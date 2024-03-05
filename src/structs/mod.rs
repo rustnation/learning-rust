@@ -1,4 +1,5 @@
 mod definition;
+mod file;
 mod human;
 mod integrate_struct_enum_match;
 mod person;
@@ -24,5 +25,7 @@ pub fn master(show: bool) {
         person::master(false);
 
         queue::master(false);
+
+        file::master(false);
     }
 }
