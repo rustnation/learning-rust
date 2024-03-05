@@ -10,6 +10,7 @@ mod generic_structs;
 mod generic_structures;
 mod question_operator;
 mod vehicle;
+mod generic_add;
 
 pub fn master(show: bool) {
     if show {
@@ -34,5 +35,7 @@ pub fn master(show: bool) {
         generic_structs::master(false);
 
         question_operator::master(false);
+
+        generic_add::master(false);
     }
 }
