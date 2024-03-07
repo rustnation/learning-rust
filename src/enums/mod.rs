@@ -7,6 +7,7 @@ mod enum_with_data;
 mod enum_with_match;
 mod matches;
 mod options;
+mod event;
 
 pub fn master(show: bool) {
     if show {
@@ -32,5 +33,8 @@ pub fn master(show: bool) {
 
         // Enum with Data
         enum_with_data::master(false);
+
+        // Event enum
+        event::master(false);
     }
 }
