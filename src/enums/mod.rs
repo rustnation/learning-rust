@@ -5,9 +5,9 @@ mod demo;
 mod enum_multi_array;
 mod enum_with_data;
 mod enum_with_match;
+mod event;
 mod matches;
 mod options;
-mod event;
 
 pub fn master(show: bool) {
     if show {

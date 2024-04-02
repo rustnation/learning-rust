@@ -8,6 +8,7 @@ pub fn master(show: bool) {
         spawned_thread(false);
         sharing_mutex(false);
         working_with_threads(false);
+        scoped_threads(false);
     }
 }
 
@@ -86,4 +87,24 @@ fn f() {
 
     let id = thread::current().id();
     println!("This is my thread id: {id:?}");
+}
+
+fn scoped_threads(show: bool) {
+    if show {
+        println!("Scoped Threads");
+
+        let numbers = vec![1, 2, 3];
+
+        thread::scope(|s| {
+            s.spawn(|| {
+                println!("length: {}", numbers.len());
+            });
+
+            s.spawn(|| {
+                for n in &numbers {
+                    println!("{n}");
+                }
+            });
+        });
+    }
 }
