@@ -109,6 +109,9 @@ fn destructuring_nested_structs_and_enums() {
         Message2::ChangeColor(Color::Hsv(h, s, v)) => {
             println!("Change color hue {h}, saturation {s}, value {v}")
         }
+        Message2::Write(s) => {
+            println!("Message to write: {}", s)
+        }
         _ => (),
     }
 }
