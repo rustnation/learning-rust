@@ -43,6 +43,7 @@ impl Human {
     }
 }
 
+#[allow(unused)]
 #[derive(Debug)]
 enum Friend {
     Human(Box<Human>),

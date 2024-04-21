@@ -37,4 +37,5 @@ impl Inches {
 }
 
 // `Seconds`, a tuple struct with no additional attributes
+#[allow(unused)]
 struct Seconds(i32);

@@ -14,6 +14,7 @@ use strum_macros::EnumIter;
 // * Create a function for each type of clothes (shoes, shirt, pants)
 //   that accepts the new type specific to that type of clothing
 
+#[allow(unused)]
 #[derive(Debug, EnumIter)]
 enum Color {
     Black,
@@ -28,6 +29,7 @@ enum Color {
     Yellow,
 }
 
+#[allow(unused)]
 #[derive(Debug)]
 struct ShirtColor(Color);
 
@@ -37,6 +39,7 @@ impl ShirtColor {
     }
 }
 
+#[allow(unused)]
 #[derive(Debug)]
 struct ShoesColor(Color);
 
@@ -46,6 +49,7 @@ impl ShoesColor {
     }
 }
 
+#[allow(unused)]
 #[derive(Debug)]
 struct PantsColor(Color);
 

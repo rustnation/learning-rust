@@ -9,6 +9,7 @@ pub fn master(show: bool) {
     }
 }
 
+#[allow(unused)]
 enum List {
     Cons(i32, Rc<List>),
     Nil,

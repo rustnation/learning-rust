@@ -40,6 +40,7 @@ fn print_status(status: Status) {
 }
 
 /// Enum with unnamed fields.
+#[allow(unused)]
 #[derive(Debug)]
 enum HealthBar1 {
     Alive(i8),

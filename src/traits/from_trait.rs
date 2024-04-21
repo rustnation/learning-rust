@@ -1,5 +1,6 @@
 use crate::print_title;
 
+#[allow(unused)]
 #[derive(Debug)]
 struct Uppercase(String);
 

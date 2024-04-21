@@ -1,5 +1,6 @@
 use crate::print_title;
 
+#[allow(unused)]
 #[derive(Debug, Copy, Clone)]
 struct LuggageId(usize);
 
@@ -10,6 +11,8 @@ struct CheckIn(LuggageId);
 struct OnLoad(LuggageId);
 struct OffLoad(LuggageId);
 struct AwaitingPickup(LuggageId);
+
+#[allow(unused)]
 struct EndCustody(LuggageId);
 
 impl Luggage {

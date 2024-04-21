@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+#[allow(unused)]
 #[derive(Debug)]
 enum CharacterValue {
     Name(String),
