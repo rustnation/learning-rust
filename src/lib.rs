@@ -24,6 +24,7 @@ pub mod exercises;
 pub mod expressions;
 pub mod extern_functions;
 pub mod external_crates;
+pub mod files;
 pub mod for_loops;
 pub mod futures;
 pub mod generics;
@@ -43,6 +44,7 @@ pub mod methods;
 pub mod modules;
 pub mod move_vars;
 pub mod mutable_reference;
+pub mod network;
 pub mod new_type;
 pub mod numbers;
 pub mod object_oriented;
@@ -74,7 +76,6 @@ pub mod user_input;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
-pub mod files;
 
 pub fn print_title(title: &str) {
     println!(" ");

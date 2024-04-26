@@ -214,6 +214,9 @@ fn main() {
 
     // Mandelbrot
     common::mandelbrot::master(false);
+
+    // Network
+    common::network::master(false);
 }
 
 fn local_function(show: bool) {
