@@ -1,4 +1,6 @@
 use crate::print_title;
+use std::io::prelude::*;
+use std::net::TcpListener;
 
 pub fn master(show: bool) {
     if show {
@@ -8,6 +10,9 @@ pub fn master(show: bool) {
         if is_valid_ip(ip_address) {
             println!("ip_address: {} is a valid IP address", ip_address);
         }
+
+        // Starting the server
+        let _ = server().unwrap();
     }
 }
 
@@ -30,4 +35,30 @@ fn is_valid_ip(ip_address: &str) -> bool {
     }
 
     true
+}
+
+fn server() -> std::io::Result<()> {
+    let listener = TcpListener::bind("127.0.0.1:9090")?;
+
+    println!("Starting the server in port 9090");
+
+    for stream in listener.incoming() {
+        let mut stream = stream?;
+
+        let mut buffer = [0; 1024];
+
+        loop {
+            let bytes_read = stream.read(&mut buffer)?;
+
+            if bytes_read == 0 {
+                break;
+            }
+
+            let message = String::from_utf8_lossy(&buffer[0..bytes_read]);
+
+            println!("Received message: {}", message);
+        }
+    }
+
+    Ok(())
 }
