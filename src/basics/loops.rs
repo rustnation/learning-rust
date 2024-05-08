@@ -7,6 +7,8 @@ pub fn master(show: bool) {
         for_loop_elements();
 
         countdown_loop_with_rev();
+
+        loop_labels_multiple_loops();
     }
 }
 
@@ -42,4 +44,27 @@ fn countdown_loop_with_rev() {
     }
 
     println!("LIFTOFF!!!");
+}
+
+pub fn loop_labels_multiple_loops() {
+    println!("\n--- Loop Labels Multiple Loops ---");
+
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
+
+        count += 1;
+    }
+    println!("End count = {count}");
 }
