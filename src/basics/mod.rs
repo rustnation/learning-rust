@@ -11,6 +11,7 @@ mod constants;
 mod control_flow;
 mod floats;
 mod functions;
+mod if_let;
 mod integers;
 mod loops;
 mod num_operations;
@@ -76,5 +77,8 @@ pub fn master(show: bool) {
 
         // Branches
         branches::master(false);
+
+        // Using if in a let statement
+        if_let::master(false);
     }
 }
