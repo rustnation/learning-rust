@@ -3,6 +3,7 @@ use crate::print_title;
 mod arrays;
 mod booleans;
 mod borrowing;
+mod branches;
 mod characters;
 mod clone;
 mod compounds;
@@ -17,7 +18,6 @@ mod scalars;
 mod shadowing;
 mod slices;
 mod variables;
-mod branches;
 
 pub fn master(show: bool) {
     if show {

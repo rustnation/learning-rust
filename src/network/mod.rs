@@ -20,14 +20,14 @@ fn is_valid_ip(ip_address: &str) -> bool {
     let octets: Vec<&str> = ip_address.split(".").collect();
 
     if octets.len() != 4 {
-        return false
+        return false;
     }
 
     for octect in octets {
         match octect.parse::<u8>() {
             Ok(num) => {
                 println!("num: {}", num);
-            },
+            }
             Err(_) => {
                 return false;
             }
