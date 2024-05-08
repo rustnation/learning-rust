@@ -4,11 +4,11 @@ pub fn master(show: bool) {
     }
 }
 
-/// # Safety
-unsafe trait Foo {
+// # Safety
+/*unsafe trait Foo {
     // methods go here
 }
 
 unsafe impl Foo for i32 {
     // method implementations go here
-}
+}*/

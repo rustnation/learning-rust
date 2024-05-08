@@ -17,6 +17,7 @@ mod scalars;
 mod shadowing;
 mod slices;
 mod variables;
+mod branches;
 
 pub fn master(show: bool) {
     if show {
@@ -72,5 +73,8 @@ pub fn master(show: bool) {
 
         // Borrowing
         borrowing::master(false);
+
+        // Branches
+        branches::master(false);
     }
 }

@@ -67,6 +67,7 @@ pub fn master(show: bool) {
             println!("Height: {:?}", i.dimensions().height);
             println!("Depth: {:?}", i.dimensions().depth);
             println!("Part Number: {:?}", i.part_number);
+            println!("Weight: {:?}", i.weight());
         }
     }
 }
