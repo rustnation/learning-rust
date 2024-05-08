@@ -9,6 +9,8 @@ pub fn master(show: bool) {
         countdown_loop_with_rev();
 
         loop_labels_multiple_loops();
+
+        while_loop();
     }
 }
 
@@ -67,4 +69,18 @@ pub fn loop_labels_multiple_loops() {
         count += 1;
     }
     println!("End count = {count}");
+}
+
+pub fn while_loop() {
+    println!("\n--- While Loop ---");
+
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
 }
