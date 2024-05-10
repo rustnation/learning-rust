@@ -12,6 +12,7 @@ pub mod basics;
 pub mod boxes;
 pub mod closures;
 pub mod collections;
+pub mod cubesats;
 pub mod custom_smart_pointer;
 pub mod data_collections;
 pub mod decisions;

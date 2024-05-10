@@ -217,6 +217,9 @@ fn main() {
 
     // Network
     common::network::master(false);
+
+    // CubeSats
+    common::cubesats::master(false);
 }
 
 fn local_function(show: bool) {
