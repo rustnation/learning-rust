@@ -33,6 +33,7 @@ pub mod get_type;
 pub mod guessing_game;
 pub mod hashmaps;
 pub mod hello_world;
+pub mod inspecting_endianness;
 pub mod iterators;
 pub mod joinhandle;
 pub mod lifetimes;

@@ -218,8 +218,11 @@ fn main() {
     // Network
     common::network::master(false);
 
-    // CubeSats
+    // Cube Satellites
     common::cubesats::master(false);
+
+    // Inspecting Endianness
+    common::inspecting_endianness::master(false);
 }
 
 fn local_function(show: bool) {
