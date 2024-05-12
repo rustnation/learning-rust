@@ -2,6 +2,7 @@ mod concatenation;
 mod definition;
 mod iterate;
 mod string_functions;
+mod string_is_encoded;
 
 pub fn master(show: bool) {
     if show {
@@ -16,5 +17,8 @@ pub fn master(show: bool) {
 
         // String Functions
         string_functions::master(false);
+
+        // &str and String are encoded with UTF-8
+        string_is_encoded::master(false);
     }
 }
