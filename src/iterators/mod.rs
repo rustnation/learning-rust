@@ -4,6 +4,7 @@ mod demo;
 mod extend;
 mod iter_in_collections;
 mod partition;
+mod scan_hash_table;
 
 pub fn master(show: bool) {
     if show {
@@ -20,5 +21,7 @@ pub fn master(show: bool) {
         iter_in_collections::master(false);
 
         extend::master(false);
+
+        scan_hash_table::master(false);
     }
 }
