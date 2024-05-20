@@ -65,6 +65,7 @@ pub mod slices;
 pub mod static_variable;
 pub mod strings;
 pub mod structs;
+pub mod system_calls;
 pub mod testing;
 pub mod threads;
 pub mod traits;

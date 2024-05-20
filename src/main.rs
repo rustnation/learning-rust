@@ -223,6 +223,9 @@ fn main() {
 
     // Inspecting Endianness
     common::inspecting_endianness::master(false);
+
+    // System Calls, FFI, and cross-platform abstractions
+    common::system_calls::master(false);
 }
 
 fn local_function(show: bool) {
