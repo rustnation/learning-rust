@@ -1,8 +1,9 @@
-struct User {
-    active: bool,
-    username: String,
-    email: String,
-    sign_in_count: u64,
+#[derive(Debug)]
+pub struct User {
+    pub active: bool,
+    pub username: String,
+    pub email: String,
+    pub sign_in_count: u64,
 }
 
 struct ShippingBox {
@@ -20,13 +21,13 @@ pub fn master(show: bool) {
             sign_in_count: 1,
         };
 
-        user1.email = String::from("bellerophon@rustdeveloper.net");
+        user1.email = String::from("bellerophon@rustdeveloper.io");
         println!("{}", user1.username);
         println!("{} {}", user1.active, user1.sign_in_count);
 
         let mut user2 = build_user(String::from("chimera@example.com"), String::from("chimera"));
 
-        user2.email = String::from("chimera@rustdeveloer.net");
+        user2.email = String::from("chimera@rustdeveloer.io");
         println!("{}", user2.username);
 
         // Working with Structs
