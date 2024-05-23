@@ -10,6 +10,10 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    fn width(&self) -> bool {
+        self.width > 0
+    }
 }
 
 pub fn master(show: bool) {
@@ -29,9 +33,9 @@ pub fn master(show: bool) {
         // to work, we need to annotate the struct Rectangle with:
         // #[derive(Debug)]
         println!("rect1 is {:?}", rect1);
+
+        if rect1.width() {
+            println!("The rectangle has a nonzero width; it is {}", rect1.width);
+        }
     }
 }
-
-/*fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
-}*/
