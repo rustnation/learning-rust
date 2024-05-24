@@ -2,6 +2,7 @@ mod catch_all;
 mod definition;
 mod if_let;
 mod match_guard;
+mod placeholder;
 
 pub fn master(show: bool) {
     if show {
@@ -14,5 +15,7 @@ pub fn master(show: bool) {
         match_guard::master(false);
 
         catch_all::master(false);
+
+        placeholder::master(false);
     }
 }
