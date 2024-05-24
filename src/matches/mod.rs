@@ -1,3 +1,4 @@
+mod catch_all;
 mod definition;
 mod if_let;
 mod match_guard;
@@ -11,5 +12,7 @@ pub fn master(show: bool) {
         if_let::master(false);
 
         match_guard::master(false);
+
+        catch_all::master(false);
     }
 }
