@@ -61,6 +61,7 @@ pub mod ranges;
 pub mod rc_t;
 pub mod references;
 pub mod results;
+pub mod shadowing;
 pub mod slices;
 pub mod static_variable;
 pub mod strings;

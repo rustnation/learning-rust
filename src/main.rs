@@ -226,6 +226,9 @@ fn main() {
 
     // System Calls, FFI, and cross-platform abstractions
     common::system_calls::master(false);
+
+    // Shadowing
+    common::shadowing::master(false);
 }
 
 fn local_function(show: bool) {
