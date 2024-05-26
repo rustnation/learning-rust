@@ -1,5 +1,6 @@
 mod basic_reference;
 mod definition;
+mod mut_reference;
 mod ref_of_references;
 
 pub fn master(show: bool) {
@@ -11,5 +12,7 @@ pub fn master(show: bool) {
         ref_of_references::master(false);
 
         basic_reference::master(false);
+
+        mut_reference::master(false);
     }
 }
