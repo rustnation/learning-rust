@@ -1,3 +1,4 @@
+mod basic_reference;
 mod definition;
 mod ref_of_references;
 
@@ -8,5 +9,7 @@ pub fn master(show: bool) {
         definition::master(false);
 
         ref_of_references::master(false);
+
+        basic_reference::master(false);
     }
 }
