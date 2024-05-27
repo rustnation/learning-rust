@@ -12,7 +12,7 @@ pub fn master(show: bool) {
 
         vector_iterate(false);
 
-        vector_is_empty(true);
+        vector_is_empty(false);
     }
 }
 
