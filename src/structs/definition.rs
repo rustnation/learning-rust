@@ -12,6 +12,13 @@ struct ShippingBox {
     height: i32,
 }
 
+#[derive(Debug)]
+struct Country {
+    population: u32,
+    capital: String,
+    leader_name: String,
+}
+
 pub fn master(show: bool) {
     if show {
         let mut user1 = User {
@@ -32,6 +39,9 @@ pub fn master(show: bool) {
 
         // Working with Structs
         send_box();
+
+        // Create Country Struct
+        create_country();
     }
 }
 
@@ -60,4 +70,21 @@ fn send_box() {
     println!("container_box is {} height", height);
     println!("container_box is {} depth", depth);
     println!("container box is {} width", width);
+}
+
+fn create_country() {
+    let population = 500_000;
+    let capital = String::from("Elista");
+    let leader_name = String::from("Batu Khasikov");
+
+    let kalmykia = Country {
+        population,
+        capital,
+        leader_name,
+    };
+
+    println!("Country: {:?}", kalmykia);
+    println!("Country Population: {:?}", kalmykia.population);
+    println!("Country Capita: {:?}", kalmykia.capital);
+    println!("Country Leader Name: {:?}", kalmykia.leader_name);
 }
