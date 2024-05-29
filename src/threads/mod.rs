@@ -1,6 +1,6 @@
 mod definition;
-mod preventing_race_condition;
 mod mutexes;
+mod preventing_race_condition;
 
 pub fn master(show: bool) {
     if show {
