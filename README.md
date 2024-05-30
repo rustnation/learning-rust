@@ -2,6 +2,15 @@
 
 `Learning Rust` is one of those things every man must do before he dies.
 
+## Neovim Configuration
+
+In this section I am going to register the set of features I want to install in `Neovim` to create a better development workflow.
+
+- Find how to create code templates.
+- Implement GitHub.
+- Create shortcuts to navigate the `NvimTree`.
+- Create shortcuts for debugging Rust applications.
+
 ## Variable Ownership
 
 ### Rust enforces the following rules
@@ -89,4 +98,3 @@ cargo clippy -- -D warnings
 ### Enums
 
 - [Get Started with Rust: Enums](https://serokell.io/blog/enums-and-pattern-matching)
-
