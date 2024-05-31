@@ -6,6 +6,7 @@ mod enum_multi_array;
 mod enum_with_data;
 mod enum_with_match;
 mod event;
+mod hold_data;
 mod matches;
 mod options;
 
@@ -36,5 +37,8 @@ pub fn master(show: bool) {
 
         // Event enum
         event::master(false);
+
+        // Enum holding data
+        hold_data::master(false);
     }
 }
