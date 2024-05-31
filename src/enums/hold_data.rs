@@ -13,7 +13,7 @@ fn create_sky_state(time: i32) -> ThingsInTheSky {
 fn check_sky_state(state: &ThingsInTheSky) {
     match state {
         ThingsInTheSky::Sun(description) => println!("{description}"),
-        ThingsInTheSky::Stars(n) => println!("{n}"),
+        ThingsInTheSky::Stars(description) => println!("{description}"),
     }
 }
 
