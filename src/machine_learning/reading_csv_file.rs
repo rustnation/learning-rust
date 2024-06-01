@@ -2,7 +2,7 @@ use std::fs::File;
 extern crate polars;
 use polars::prelude::*;
 
-pub fn master(show: bool) -> Result<()>{
+pub fn master(show: bool) -> Result<()> {
     if show {
         println!("--- Reading CSV File\n");
 
