@@ -229,6 +229,9 @@ fn main() {
 
     // Shadowing
     common::shadowing::master(false);
+
+    // Machine Learning
+    common::machine_learning::master(true);
 }
 
 fn local_function(show: bool) {
