@@ -7,6 +7,7 @@ mod demo;
 mod generic_add;
 mod generic_enums;
 mod generic_functions;
+mod generic_implementation;
 mod generic_structs;
 mod generic_structures;
 mod question_operator;
@@ -37,5 +38,7 @@ pub fn master(show: bool) {
         question_operator::master(false);
 
         generic_add::master(false);
+
+        generic_implementation::master(false);
     }
 }
