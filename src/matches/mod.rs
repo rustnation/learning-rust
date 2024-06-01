@@ -5,6 +5,7 @@ mod match_guard;
 mod match_vector;
 mod multiple_placeholders;
 mod placeholder;
+mod while_let;
 
 pub fn master(show: bool) {
     if show {
@@ -23,5 +24,7 @@ pub fn master(show: bool) {
         multiple_placeholders::master(false);
 
         match_vector::master(false);
+
+        while_let::master(false);
     }
 }
