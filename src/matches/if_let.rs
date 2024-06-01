@@ -13,16 +13,31 @@ pub fn master(show: bool) {
             println!("user: {:?}", user)
         }
 
-        other_if_let();
+        if_let_example();
+        if_let_else_example();
     }
 }
 
-fn other_if_let() {
+fn if_let_example() {
     let scores = vec![7, 77, 777, 7777];
 
     for index in 0..10 {
         if let Some(number) = scores.get(index) {
             println!("The number is: {number}")
         }
+    }
+}
+
+fn if_let_else_example() {
+    let scores = vec![7.7, 77.7, 777.7, 7777.7];
+
+    for index in 0..10 {
+        if let Some(number) = scores.get(index) {
+            println!("The number is: {number}");
+        }
+        let Some(number) = scores.get(index) else {
+            continue;
+        };
+        println!("The number is {number}")
     }
 }
