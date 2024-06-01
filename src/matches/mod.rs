@@ -2,6 +2,7 @@ mod catch_all;
 mod definition;
 mod if_let;
 mod match_guard;
+mod match_vector;
 mod multiple_placeholders;
 mod placeholder;
 
@@ -20,5 +21,7 @@ pub fn master(show: bool) {
         placeholder::master(false);
 
         multiple_placeholders::master(false);
+
+        match_vector::master(false);
     }
 }
