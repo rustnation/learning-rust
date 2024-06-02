@@ -1,6 +1,7 @@
 mod activity;
 mod definition;
 mod furniture;
+mod hashmap_get;
 mod hashmap_loop;
 
 pub fn master(show: bool) {
@@ -16,5 +17,8 @@ pub fn master(show: bool) {
 
         // HashMap in for
         hashmap_loop::master(false);
+
+        // HashMap Get Method
+        hashmap_get::master(false);
     }
 }
