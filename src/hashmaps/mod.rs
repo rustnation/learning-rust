@@ -1,7 +1,7 @@
 mod activity;
 mod definition;
-
 mod furniture;
+mod hashmap_loop;
 
 pub fn master(show: bool) {
     if show {
@@ -13,5 +13,8 @@ pub fn master(show: bool) {
 
         // HashMap Furniture Activity
         furniture::master(false);
+
+        // HashMap in for
+        hashmap_loop::master(false);
     }
 }
