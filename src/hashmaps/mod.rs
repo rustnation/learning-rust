@@ -3,6 +3,7 @@ mod definition;
 mod furniture;
 mod hashmap_get;
 mod hashmap_loop;
+mod hashmap_old_values;
 
 pub fn master(show: bool) {
     if show {
@@ -20,5 +21,8 @@ pub fn master(show: bool) {
 
         // HashMap Get Method
         hashmap_get::master(false);
+
+        // HashMap Old Values
+        hashmap_old_values::master(false);
     }
 }
