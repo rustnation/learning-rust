@@ -10,6 +10,7 @@ mod derives;
 mod from_trait;
 mod media_aggregator;
 mod returning_traits_with_dyn;
+mod simple_trait;
 mod with_generics;
 
 pub fn master(show: bool) {
@@ -48,5 +49,8 @@ pub fn master(show: bool) {
 
         // With Generics
         with_generics::master(false);
+
+        // Simple Trait Example
+        simple_trait::master(false);
     }
 }
