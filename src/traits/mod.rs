@@ -2,6 +2,7 @@ use crate::print_title;
 
 mod activity;
 mod activity_trait_objects;
+mod complex_trait;
 mod default_trait;
 mod definition;
 mod demo;
@@ -56,5 +57,8 @@ pub fn master(show: bool) {
 
         // Implement Display Trait
         impl_display::master(false);
+
+        // Implement Complex Trait
+        complex_trait::master(false);
     }
 }
