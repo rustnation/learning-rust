@@ -17,7 +17,12 @@ trait DogLike {
 }
 
 impl DogLike for Dog {}
-impl DogLike for Parrot {}
+
+impl DogLike for Parrot {
+    fn run(&self) {
+        println!("{} the parrot is running!", self.name);
+    }
+}
 
 pub fn master(show: bool) {
     if show {
