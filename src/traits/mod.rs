@@ -8,6 +8,7 @@ mod demo;
 mod demo_trait_objets;
 mod derives;
 mod from_trait;
+mod impl_display;
 mod media_aggregator;
 mod returning_traits_with_dyn;
 mod simple_trait;
@@ -52,5 +53,8 @@ pub fn master(show: bool) {
 
         // Simple Trait Example
         simple_trait::master(false);
+
+        // Implement Display Trait
+        impl_display::master(false);
     }
 }
