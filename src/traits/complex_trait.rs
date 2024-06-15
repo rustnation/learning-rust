@@ -1,5 +1,6 @@
 use std::fmt::Debug;
 
+#[derive(Debug)]
 struct Monster {
     health: i32,
 }
@@ -18,27 +19,34 @@ trait DisplayHealth {
     fn health(&self) -> i32;
 }
 
+trait MonsterBehavior: Debug {
+    fn take_damage(&mut self, damage: i32);
+    fn display_self(&self) {}
+}
+
+impl MonsterBehavior for Monster {
+    fn take_damage(&mut self, damage: i32) {
+        self.health -= damage;
+    }
+}
+
 impl DisplayHealth for Monster {
     fn health(&self) -> i32 {
         self.health
     }
 }
 
-trait FightClose: Debug {
-    fn attack_with_sword(&self, opponent: &mut Monster) {
-        opponent.health -= 10;
-        println!(
-            "Sword attack! Opponent's health {}. You are now at: {:?}",
-            opponent.health, self
-        );
+trait FightClose {
+    fn attack_with_sword<T: MonsterBehavior>(&self, opponent: &mut T) {
+        println!("You attack with your sword!");
+        opponent.take_damage(10);
+        opponent.display_self();
     }
 
-    fn attack_with_hand(&self, opponent: &mut Monster) {
-        opponent.health -= 2;
-        println!(
-            "Hand attack! Opponent's health{}. You are now at: {:?}",
-            opponent.health, self
-        )
+    fn attack_with_hand<T: MonsterBehavior>(&self, opponent: &mut T) {
+        println!("You attack with your hand!");
+        opponent.take_damage(2);
+        opponent.display_self();
     }
 }
 
