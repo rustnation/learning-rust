@@ -24,6 +24,8 @@ trait MonsterBehavior: Debug {
     fn display_self(&self) {}
 }
 
+trait Magic {}
+
 impl MonsterBehavior for Monster {
     fn take_damage(&mut self, damage: i32) {
         self.health -= damage;
@@ -52,6 +54,7 @@ trait FightClose {
 
 impl FightClose for Wizard {}
 impl FightClose for Ranger {}
+impl Magic for Wizard {}
 
 trait FightFromDistance: Debug {
     fn attack_with_bow(&self, opponent: &mut Monster, distance: u32) {
@@ -77,6 +80,19 @@ trait FightFromDistance: Debug {
 
 impl FightFromDistance for Ranger {}
 
+fn fireball<T>(pc: &T, opponent: &mut Monster, distance: u32)
+where
+    T: Magic + Debug,
+{
+    if distance < 15 {
+        opponent.health -= 20;
+        println!(
+            "A massive fireball! Opponent's health: {}. You are now at: {pc:?}",
+            opponent.health
+        );
+    }
+}
+
 pub fn master(show: bool) {
     if show {
         println!("--- Complex Trait");
@@ -99,5 +115,7 @@ pub fn master(show: bool) {
         println!("Radagast's Health: {:?}", radagast.health);
         println!("Aragorn's Health: {:?}", aragorn.health);
         println!("Uruk Hai's Health: {:?}", uruk_hai.health());
+
+        fireball(&radagast, &mut uruk_hai, 8);
     }
 }
