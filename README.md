@@ -11,6 +11,7 @@ In this section I am going to register the set of features I want to install in 
 - Create shortcuts to navigate the `NvimTree`.
 - Create shortcuts for debugging Rust applications.
 - Organice the `terminal` layout.
+- Integrate LazyGit [Done]
 
 ## Variable Ownership
 
