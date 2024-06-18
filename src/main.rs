@@ -232,6 +232,9 @@ fn main() {
 
     // Machine Learning
     common::machine_learning::master(false);
+
+    // Channels
+    common::channels::master(false);
 }
 
 fn local_function(show: bool) {

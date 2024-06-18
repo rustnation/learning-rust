@@ -10,6 +10,7 @@ pub mod api_mutex;
 pub mod arrays;
 pub mod basics;
 pub mod boxes;
+pub mod channels;
 pub mod closures;
 pub mod collections;
 pub mod cubesats;
