@@ -3,6 +3,7 @@ mod definition;
 mod demo;
 mod extend;
 mod iter_in_collections;
+mod nonfunctional_style;
 mod partition;
 mod scan_hash_table;
 
@@ -23,5 +24,7 @@ pub fn master(show: bool) {
         extend::master(false);
 
         scan_hash_table::master(false);
+
+        nonfunctional_style::master(false);
     }
 }
