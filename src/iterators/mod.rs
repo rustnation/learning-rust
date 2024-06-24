@@ -2,6 +2,7 @@ mod activity;
 mod definition;
 mod demo;
 mod extend;
+mod functional_style;
 mod iter_in_collections;
 mod nonfunctional_style;
 mod partition;
@@ -26,5 +27,7 @@ pub fn master(show: bool) {
         scan_hash_table::master(false);
 
         nonfunctional_style::master(false);
+
+        functional_style::master(false);
     }
 }
