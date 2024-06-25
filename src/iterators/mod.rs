@@ -4,6 +4,7 @@ mod demo;
 mod extend;
 mod functional_style;
 mod iter_in_collections;
+mod iterator_next;
 mod nonfunctional_style;
 mod partition;
 mod scan_hash_table;
@@ -32,5 +33,7 @@ pub fn master(show: bool) {
         functional_style::master(false);
 
         without_for::master(false);
+
+        iterator_next::master(false);
     }
 }
