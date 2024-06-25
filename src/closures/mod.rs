@@ -2,6 +2,7 @@ mod definition;
 mod demo;
 mod map_combinator;
 mod process_closure_thread;
+mod simple_closure;
 
 pub fn master(show: bool) {
     if show {
@@ -14,5 +15,7 @@ pub fn master(show: bool) {
         demo::master(false);
 
         map_combinator::master(true);
+
+        simple_closure::master(false);
     }
 }
