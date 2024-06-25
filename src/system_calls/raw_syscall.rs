@@ -1,4 +1,4 @@
-use std::arch::asm;
+//use std::arch::asm;
 
 pub fn master(show: bool) {
     if show {
@@ -16,7 +16,10 @@ fn syscall(message: String) {
     let ptr = message.as_ptr();
     let len = message.len();
 
-    unsafe {
+    println!("ptr value: {:?}", ptr);
+    println!("len value: {:?}", len);
+
+    /*unsafe {
         asm!(
         "mov x16, 4",
         "mov x0, 1",
@@ -28,5 +31,5 @@ fn syscall(message: String) {
         lateout("x1") _,
         lateout("x2") _
         );
-    }
+    }*/
 }
