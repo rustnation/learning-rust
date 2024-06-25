@@ -3,6 +3,7 @@ mod demo;
 mod map_combinator;
 mod process_closure_thread;
 mod simple_closure;
+mod vars_outside_closure;
 
 pub fn master(show: bool) {
     if show {
@@ -17,5 +18,7 @@ pub fn master(show: bool) {
         map_combinator::master(true);
 
         simple_closure::master(false);
+
+        vars_outside_closure::master(false);
     }
 }
