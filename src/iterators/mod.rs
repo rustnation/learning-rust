@@ -3,6 +3,7 @@ mod definition;
 mod demo;
 mod extend;
 mod functional_style;
+mod impl_iterator;
 mod iter_in_collections;
 mod iterator_next;
 mod nonfunctional_style;
@@ -35,5 +36,7 @@ pub fn master(show: bool) {
         without_for::master(false);
 
         iterator_next::master(false);
+
+        impl_iterator::master(false);
     }
 }
