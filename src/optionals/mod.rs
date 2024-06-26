@@ -1,6 +1,7 @@
 mod activity;
 mod definition;
 mod unwrap_or;
+mod unwrap_or_else;
 
 pub fn master(show: bool) {
     if show {
@@ -11,5 +12,7 @@ pub fn master(show: bool) {
         activity::master(false);
 
         unwrap_or::master(false);
+
+        unwrap_or_else::master(false);
     }
 }
