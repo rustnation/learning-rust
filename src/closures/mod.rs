@@ -1,3 +1,4 @@
+mod closures_inside_methods;
 mod definition;
 mod demo;
 mod map_combinator;
@@ -14,5 +15,7 @@ pub fn master(show: bool) {
         demo::master(false);
 
         map_combinator::master(true);
+
+        closures_inside_methods::master(false);
     }
 }
