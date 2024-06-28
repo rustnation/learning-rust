@@ -12,6 +12,7 @@ mod partition;
 mod scan_hash_table;
 mod without_for;
 mod filter_map;
+mod result_option_ok;
 
 pub fn master(show: bool) {
     if show {
@@ -44,5 +45,7 @@ pub fn master(show: bool) {
         mapping_and_filtering::master(false);
 
         filter_map::master(false);
+
+        result_option_ok::master(false);
     }
 }
