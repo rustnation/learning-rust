@@ -37,9 +37,7 @@ pub fn master(show: bool) {
 
         let all_the_ceos = company_vec
             .iter()
-            .filter_map(|company| {
-                company.get_ceo().map(|ceo| (company.get_name(), ceo))
-            })
+            .filter_map(|company| company.get_ceo().map(|ceo| (company.get_name(), ceo)))
             .collect::<Vec<(String, String)>>();
         println!("{:?}", all_the_ceos);
     }

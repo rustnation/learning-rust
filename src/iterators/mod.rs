@@ -2,6 +2,7 @@ mod activity;
 mod definition;
 mod demo;
 mod extend;
+mod filter_map;
 mod functional_style;
 mod impl_iterator;
 mod iter_in_collections;
@@ -9,10 +10,9 @@ mod iterator_next;
 mod mapping_and_filtering;
 mod nonfunctional_style;
 mod partition;
+mod result_option_ok;
 mod scan_hash_table;
 mod without_for;
-mod filter_map;
-mod result_option_ok;
 
 pub fn master(show: bool) {
     if show {
