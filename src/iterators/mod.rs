@@ -6,6 +6,7 @@ mod functional_style;
 mod impl_iterator;
 mod iter_in_collections;
 mod iterator_next;
+mod mapping_and_filtering;
 mod nonfunctional_style;
 mod partition;
 mod scan_hash_table;
@@ -38,5 +39,7 @@ pub fn master(show: bool) {
         iterator_next::master(false);
 
         impl_iterator::master(false);
+
+        mapping_and_filtering::master(false);
     }
 }

@@ -38,7 +38,7 @@ trait Summary {
 
 impl Summary for NewsArticle {
     fn summarize_author(&self) -> String {
-        format!("{}, by {} ({})", self.headline, self.author, self.location)
+        format!("{}, by {} ({}) and \n{}", self.headline, self.author, self.location, self.content)
     }
 }
 
@@ -51,6 +51,6 @@ pub struct Tweet {
 
 impl Summary for Tweet {
     fn summarize_author(&self) -> String {
-        format!("{}: {}", self.username, self.content)
+        format!("{}: {}, reply: {}, retweet: {}", self.username, self.content, self.reply, self.retweet)
     }
 }
