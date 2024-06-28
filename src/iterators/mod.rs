@@ -11,6 +11,7 @@ mod nonfunctional_style;
 mod partition;
 mod scan_hash_table;
 mod without_for;
+mod filter_map;
 
 pub fn master(show: bool) {
     if show {
@@ -41,5 +42,7 @@ pub fn master(show: bool) {
         impl_iterator::master(false);
 
         mapping_and_filtering::master(false);
+
+        filter_map::master(false);
     }
 }
