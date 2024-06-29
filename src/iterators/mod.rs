@@ -9,6 +9,7 @@ mod iter_in_collections;
 mod iterator_next;
 mod mapping_and_filtering;
 mod nonfunctional_style;
+mod ok_or;
 mod partition;
 mod result_option_ok;
 mod scan_hash_table;
@@ -47,5 +48,7 @@ pub fn master(show: bool) {
         filter_map::master(false);
 
         result_option_ok::master(false);
+
+        ok_or::master(false);
     }
 }
