@@ -11,6 +11,7 @@ mod mapping_and_filtering;
 mod nonfunctional_style;
 mod partition;
 mod result_option_ok;
+mod rev;
 mod scan_hash_table;
 mod without_for;
 
@@ -47,5 +48,7 @@ pub fn master(show: bool) {
         filter_map::master(false);
 
         result_option_ok::master(false);
+
+        rev::master(false);
     }
 }
