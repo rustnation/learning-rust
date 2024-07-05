@@ -3,6 +3,7 @@ mod definition;
 mod demo;
 mod extend;
 mod filter_map;
+mod find_position;
 mod functional_style;
 mod impl_iterator;
 mod iter_in_collections;
@@ -50,5 +51,7 @@ pub fn master(show: bool) {
         result_option_ok::master(false);
 
         rev::master(false);
+
+        find_position::master(false);
     }
 }
