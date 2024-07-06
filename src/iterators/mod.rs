@@ -15,6 +15,7 @@ mod partition;
 mod result_option_ok;
 mod rev;
 mod scan_hash_table;
+mod skip;
 mod without_for;
 
 pub fn master(show: bool) {
@@ -56,5 +57,7 @@ pub fn master(show: bool) {
         find_position::master(false);
 
         fold::master(false);
+
+        skip::master(false);
     }
 }
