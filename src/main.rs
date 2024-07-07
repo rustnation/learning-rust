@@ -60,7 +60,7 @@ fn main() {
     common::closures::master(false);
 
     // Iterators
-    common::iterators::master(true);
+    common::iterators::master(false);
 
     // Doc
     common::doc::master(false);
