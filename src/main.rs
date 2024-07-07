@@ -235,6 +235,9 @@ fn main() {
 
     // Channels
     common::channels::master(false);
+
+    // Macros
+    common::macros::master(false);
 }
 
 fn local_function(show: bool) {

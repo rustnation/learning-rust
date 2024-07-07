@@ -40,6 +40,7 @@ pub mod joinhandle;
 pub mod lifetimes;
 pub mod loops;
 pub mod machine_learning;
+pub mod macros;
 pub mod mandelbrot;
 pub mod matches;
 pub mod message_passing;
