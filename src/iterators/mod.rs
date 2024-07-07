@@ -58,6 +58,6 @@ pub fn master(show: bool) {
 
         fold::master(false);
 
-        skip::master(false);
+        skip::master(true);
     }
 }
