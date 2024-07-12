@@ -240,7 +240,7 @@ fn main() {
     common::macros::master(false);
 
     // Rust Atomics and Locks Book
-    common::rust_atomics_and_locks::master(true);
+    common::rust_atomics_and_locks::master(false);
 }
 
 fn local_function(show: bool) {
