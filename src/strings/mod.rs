@@ -1,3 +1,4 @@
+mod borrowed_string;
 mod concatenation;
 mod definition;
 mod iterate;
@@ -24,5 +25,8 @@ pub fn master(show: bool) {
 
         // String Literals
         string_literals::master(false);
+
+        // Borrowed String
+        borrowed_string::master(false);
     }
 }
