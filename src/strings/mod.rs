@@ -3,6 +3,7 @@ mod definition;
 mod iterate;
 mod string_functions;
 mod string_is_encoded;
+mod string_literals;
 
 pub fn master(show: bool) {
     if show {
@@ -20,5 +21,8 @@ pub fn master(show: bool) {
 
         // &str and String are encoded with UTF-8
         string_is_encoded::master(false);
+
+        // String Literals
+        string_literals::master(false);
     }
 }
