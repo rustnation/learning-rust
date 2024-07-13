@@ -1,6 +1,7 @@
 use crate::print_title;
 
 mod activity;
+mod anonymous_lifetime;
 mod compare_activity;
 mod definition;
 mod demo;
@@ -22,5 +23,7 @@ pub fn master(show: bool) {
         compare_activity::master(false);
 
         named_lifetime::master(false);
+
+        anonymous_lifetime::master(false);
     }
 }
