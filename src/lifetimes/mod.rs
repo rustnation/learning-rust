@@ -5,6 +5,7 @@ mod compare_activity;
 mod definition;
 mod demo;
 mod example;
+mod named_lifetime;
 
 pub fn master(show: bool) {
     if show {
@@ -19,5 +20,7 @@ pub fn master(show: bool) {
         activity::master(false);
 
         compare_activity::master(false);
+
+        named_lifetime::master(false);
     }
 }
