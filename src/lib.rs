@@ -35,6 +35,7 @@ pub mod guessing_game;
 pub mod hashmaps;
 pub mod hello_world;
 pub mod inspecting_endianness;
+pub mod interior_mutability;
 pub mod iterators;
 pub mod joinhandle;
 pub mod lifetimes;
