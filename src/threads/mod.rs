@@ -2,6 +2,7 @@ mod definition;
 mod mutexes;
 mod preventing_race_condition;
 mod sharing_data_between_threads;
+mod message_passing_between_threads;
 
 pub fn master(show: bool) {
     if show {
@@ -14,5 +15,7 @@ pub fn master(show: bool) {
         mutexes::master(false);
 
         sharing_data_between_threads::master(false);
+
+        message_passing_between_threads::master(false);
     }
 }
