@@ -67,7 +67,7 @@ fn mutex_try_lock(show: bool) {
 
         let other_mutex_changer = my_mutex.try_lock();
 
-        if let Ok(value)  = other_mutex_changer {
+        if let Ok(value) = other_mutex_changer {
             println!("The MutexGuard has: {value}");
         } else {
             println!("Didn't get the lock");
