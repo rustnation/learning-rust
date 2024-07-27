@@ -7,15 +7,13 @@ pub fn master(show: bool) {
 
         let (sender, receiver) = mpsc::channel();
 
-        let _ = thread::spawn(move || {
-           match receiver.recv() {
-               Ok(data) => {
-                   println!("{:?}", data);
-               }
-               Err(err) => {
-                   println!("{:?}", err);
-               }
-           }
+        let _ = thread::spawn(move || match receiver.recv() {
+            Ok(data) => {
+                println!("{:?}", data);
+            }
+            Err(err) => {
+                println!("{:?}", err);
+            }
         });
 
         let data = 42;

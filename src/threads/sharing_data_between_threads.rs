@@ -9,7 +9,7 @@ pub fn master(show: bool) {
 
         let handle = thread::spawn({
             let shared_data = shared_data.clone();
-            
+
             move || {
                 println!("{:?}", shared_data);
             }
@@ -18,7 +18,7 @@ pub fn master(show: bool) {
         let result = match handle.join() {
             Ok(result) => {
                 println!("Result: {:?}", result);
-            },
+            }
             Err(_) => {
                 println!("Error");
             }
