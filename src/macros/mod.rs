@@ -1,21 +1,11 @@
-macro_rules! greetings {
-    ($x: expr) => {
-        println!("Hello, {}", $x);
-    };
-}
+mod create_vector;
+mod definition;
 
 pub fn master(show: bool) {
     if show {
         println!("--- Macros");
 
-        declarative_macros(false);
-    }
-}
-
-fn declarative_macros(show: bool) {
-    if show {
-        println!("Declarative Macros");
-
-        greetings!("Earthly"); // prints: "Hello, Earthly"
+        definition::master(false);
+        create_vector::master(false);
     }
 }

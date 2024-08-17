@@ -62,38 +62,16 @@ fn main() {
     common::ranges::master(false);
     common::modules::master(false);
     common::external_crates::master(false);
-
-    // User Input
     common::user_input::master(false);
-
-    // Webserver
     common::webserver::master(false);
-
-    // New Type Pattern
     common::new_type::master(false);
-
-    // TypeState Pattern
     common::typestate_pattern::master(false);
-
-    // For Loops
     common::for_loops::master(false);
-
-    // Slices
     common::slices::master(false);
-
-    // Type Aliases
     common::type_aliases::master(false);
-
-    // Numbers
     common::numbers::master(false);
-
-    // Mandelbrot
     common::mandelbrot::master(false);
-
-    // Network
     common::network::master(false);
-
-    // Cube Satellites
     common::cubesats::master(false);
     common::inspecting_endianness::master(false);
     common::system_calls::master(false);
