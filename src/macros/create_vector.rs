@@ -1,3 +1,5 @@
+// declarative macros
+
 macro_rules! my_vector {
     () => { // first matcher
         Vec::new()
