@@ -85,6 +85,7 @@ pub mod user_input;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
+pub mod cow_type;
 
 pub fn print_title(title: &str) {
     println!(" ");
