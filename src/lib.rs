@@ -13,6 +13,7 @@ pub mod boxes;
 pub mod channels;
 pub mod closures;
 pub mod collections;
+pub mod cow_type;
 pub mod cubesats;
 pub mod custom_smart_pointer;
 pub mod data_collections;
@@ -85,7 +86,6 @@ pub mod user_input;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
-pub mod cow_type;
 
 pub fn print_title(title: &str) {
     println!(" ");

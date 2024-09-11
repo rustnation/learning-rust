@@ -12,17 +12,14 @@ enum LocalError {
     TooSmall,
 }
 
-fn generate_message(
-    message: &'static str,
-    error_info: Option<ErrorInfo>
-) -> Cow<'static, str> {
+fn generate_message(message: &'static str, error_info: Option<ErrorInfo>) -> Cow<'static, str> {
     match error_info {
         None => message.into(),
         Some(info) => {
             let info_error = info.error;
             let info_message = info.message;
             format!("{message}: {info_error:?} {info_message:?}").into()
-        },
+        }
     }
 }
 
@@ -30,10 +27,7 @@ pub fn master(show: bool) {
     if show {
         println!("---Cow Definition");
 
-        let msg1 = generate_message(
-            "Everything is fine",
-            None
-        );
+        let msg1 = generate_message("Everything is fine", None);
 
         let msg2 = generate_message(
             "Got an error",
