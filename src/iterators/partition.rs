@@ -6,6 +6,7 @@ pub fn master(show: bool) {
         print_title("Partition");
 
         in_array(false);
+        in_string_array(false);
         in_string(false);
     }
 }
@@ -20,6 +21,18 @@ fn in_array(show: bool) {
 
         println!("powers_of_two: {:?}", powers_of_two);
         println!("impure: {:?}", impure);
+    }
+}
+
+fn in_string_array(show: bool) {
+    if show {
+        let things = ["doorknob", "mushroom", "noodle", "giraffe", "grapefruit"];
+
+        // Amazing fact: the name of a living thing always starts with an odd-numbered letter
+        let (living, nonliving): (Vec<&str>, Vec<&str>) = things.iter().partition(|name| name.as_bytes()[0] & 1 != 0);
+
+        assert_eq!(living, vec!["mushroom", "giraffe", "grapefruit"]);
+        assert_eq!(nonliving, vec!["doorknob", "noodle"]);
     }
 }
 
