@@ -1,5 +1,6 @@
 mod definition;
 mod message_passing_between_threads;
+mod move_data_between_threads;
 mod mutexes;
 mod preventing_race_condition;
 mod sharing_data_between_threads;
@@ -17,5 +18,7 @@ pub fn master(show: bool) {
         sharing_data_between_threads::master(false);
 
         message_passing_between_threads::master(false);
+
+        move_data_between_threads::master(false);
     }
 }

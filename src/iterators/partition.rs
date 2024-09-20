@@ -29,7 +29,8 @@ fn in_string_array(show: bool) {
         let things = ["doorknob", "mushroom", "noodle", "giraffe", "grapefruit"];
 
         // Amazing fact: the name of a living thing always starts with an odd-numbered letter
-        let (living, nonliving): (Vec<&str>, Vec<&str>) = things.iter().partition(|name| name.as_bytes()[0] & 1 != 0);
+        let (living, nonliving): (Vec<&str>, Vec<&str>) =
+            things.iter().partition(|name| name.as_bytes()[0] & 1 != 0);
 
         assert_eq!(living, vec!["mushroom", "giraffe", "grapefruit"]);
         assert_eq!(nonliving, vec!["doorknob", "noodle"]);
