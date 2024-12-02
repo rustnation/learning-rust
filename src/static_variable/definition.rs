@@ -14,9 +14,9 @@ fn definition() {
 
     add_to_count(7);
 
-    unsafe {
+    /*unsafe {
         println!("COUNTER: {COUNTER}");
-    }
+    }*/
 }
 
 fn add_to_count(inc: u32) {
