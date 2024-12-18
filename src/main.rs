@@ -82,6 +82,7 @@ fn main() {
     common::rust_atomics_and_locks::master(false);
     common::interior_mutability::master(false);
     common::cow_type::master(false);
+    common::functions::master(false);
 }
 
 fn local_function(show: bool) {
