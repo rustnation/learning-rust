@@ -7,6 +7,6 @@ pub fn master(show: bool) {
         println!("--- Concurrency");
         definition::master(false);
         message_passing::master(false);
-        sharing_state_concurrently::master(true);
+        sharing_state_concurrently::master(false);
     }
 }
