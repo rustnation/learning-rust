@@ -83,6 +83,7 @@ fn main() {
     common::interior_mutability::master(false);
     common::cow_type::master(false);
     common::functions::master(false);
+    common::concurrency::master(true);
 }
 
 fn local_function(show: bool) {

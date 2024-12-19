@@ -13,6 +13,7 @@ pub mod boxes;
 pub mod channels;
 pub mod closures;
 pub mod collections;
+pub mod concurrency;
 pub mod cow_type;
 pub mod cubesats;
 pub mod custom_smart_pointer;
@@ -29,6 +30,7 @@ pub mod extern_functions;
 pub mod external_crates;
 pub mod files;
 pub mod for_loops;
+pub mod functions;
 pub mod futures;
 pub mod generics;
 pub mod get_type;
@@ -86,7 +88,6 @@ pub mod user_input;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
-pub mod functions;
 
 pub fn print_title(title: &str) {
     println!(" ");
