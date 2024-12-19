@@ -10,9 +10,7 @@ pub fn master(show: bool) {
         let (sender, receiver) = channel();
 
         // spawn off an expensive computation
-        thread::spawn(move || {
-            sender.send(expensive_computation()).unwrap();
-        });
+        thread::spawn(move || sender.send(expensive_computation()).unwrap());
 
         // let's see what that answer was
         println!("{:?}", receiver.recv().unwrap());
