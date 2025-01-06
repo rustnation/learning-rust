@@ -17,7 +17,7 @@ use crate::print_title;
 // * Grass, Dirt, and Sand should all print "Ground tile"
 // * Treasure Chests:
 //   * If the treasure is Gold and the amount is at least 100, print "Lots of gold!"
-// * Everything else shoud not print any messages
+// * Everything else should not print any messages
 //
 // Notes:
 // * Use a single match expression utilizing guards to implement the program
