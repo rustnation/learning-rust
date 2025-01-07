@@ -84,6 +84,7 @@ fn main() {
     common::cow_type::master(false);
     common::functions::master(false);
     common::concurrency::master(false);
+    common::variables_and_mutability::master(false);
 }
 
 fn local_function(show: bool) {
