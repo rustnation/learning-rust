@@ -1,12 +1,12 @@
 mod catch_all;
 mod definition;
 mod if_let;
+mod match_control_flow;
 mod match_guard;
 mod match_vector;
 mod multiple_placeholders;
 mod placeholder;
 mod while_let;
-mod match_control_flow;
 
 pub fn master(show: bool) {
     if show {
