@@ -8,6 +8,8 @@ pub fn master(show: bool) {
         let oranges = 77;
         println!("Number of oranges {}", oranges);
 
+        println!("I have {} apples and {} oranges", apples, oranges);
+
         let fruits = apples + oranges;
         println!("Number of fruits {}", fruits);
     }
