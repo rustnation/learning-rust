@@ -74,9 +74,9 @@ cargo clippy -- -D warnings
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
 - Programming Rust 2nd Edition ${\color{orange}[Done]}$
 - Rust Web Development ${\color{orange}[Done]}$
-- Zero to Production in Rust [In Progress]
-- Rust Web Programming
-- Command-Line Rust [In Progress]
+- Zero to Production in Rust ${\color{orange}[Done]}$
+- Rust Web Programming ${\color{orange}[Done]}$
+- Command-Line Rust ${\color{orange}[Done]}$
 - Rust Atomics and Locks [In Progress]
 - Rust for Rustaceans
 - Rust in Action
@@ -86,7 +86,7 @@ cargo clippy -- -D warnings
 
 ## Courses
 
-- Zero to Mastery [In Progress]
+- Zero to Mastery ${\color{orange}[Done]}$
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
