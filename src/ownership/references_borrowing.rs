@@ -9,6 +9,6 @@ pub fn master(show: bool) {
 }
 
 // Has a reference to an object as a parameter instead of taking ownership of the value.
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &str) -> usize {
     s.len()
 }

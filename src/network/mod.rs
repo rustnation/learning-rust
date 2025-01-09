@@ -12,7 +12,7 @@ pub fn master(show: bool) {
         }
 
         // Starting the server
-        let _ = server().unwrap();
+        server().unwrap();
     }
 }
 

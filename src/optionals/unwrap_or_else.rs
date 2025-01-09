@@ -7,13 +7,7 @@ pub fn master(show: bool) {
         // unwrap_or is to pass a default value when receive None from Optional
         // unwrap_or_else is to give a default value, except that it passes on a closure that we
         // can use to write some more complex logic.
-        let fourth = my_vec.get(3).unwrap_or_else(|| {
-            if let Some(val) = my_vec.get(2) {
-                val
-            } else {
-                &0
-            }
-        });
+        let fourth = my_vec.get(3).unwrap_or_else(|| my_vec.get(2).unwrap_or(&0));
 
         println!("{fourth}");
     }

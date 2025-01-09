@@ -5,9 +5,8 @@ pub fn master(show: bool) {
         let scores = [3, 4, 5, 6, 7];
 
         for index in 0..10 {
-            match scores.get(index) {
-                Some(number) => println!("The number is: {number}"),
-                None => {}
+            if let Some(number) = scores.get(index) {
+                println!("The number is: {number}");
             }
         }
     }

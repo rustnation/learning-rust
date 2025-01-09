@@ -15,7 +15,7 @@ pub fn master(show: bool) {
             }
         });
 
-        let result = match handle.join() {
+        match handle.join() {
             Ok(result) => {
                 println!("Result: {:?}", result);
             }
@@ -24,6 +24,6 @@ pub fn master(show: bool) {
             }
         };
 
-        println!("{:?}", result);
+        println!("{:?}", ());
     }
 }

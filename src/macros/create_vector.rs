@@ -15,10 +15,7 @@ macro_rules! my_vector {
     };
     [$($x:expr),+] => (
         {
-            let mut v = Vec::new();
-            $(
-                v.push($x);
-            )+
+            let v = vec![..];
             v
         }
     )

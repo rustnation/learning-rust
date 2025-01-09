@@ -130,6 +130,7 @@ fn vector_is_empty(show: bool) {
         println!("\n--- Vector is empty");
 
         //let numbers = vec![1, 2, 3];
+        #[allow(clippy::const_is_empty)]
         match [1, 2, 3].is_empty() {
             true => println!("numbers vector has no numbers"),
             false => println!("numbers vector has numbers"),
