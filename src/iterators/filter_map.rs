@@ -28,7 +28,7 @@ pub fn master(show: bool) {
     if show {
         println!("---Filter Map");
 
-        let company_vec = vec![
+        let company_vec = [
             Company::new("Umbrella Corporation", "Unknown"),
             Company::new("Ovintiv", "Brendan McCracken"),
             Company::new("The Red-Headed League", ""),

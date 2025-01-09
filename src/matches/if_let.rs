@@ -19,7 +19,7 @@ pub fn master(show: bool) {
 }
 
 fn if_let_example() {
-    let scores = vec![7, 77, 777, 7777];
+    let scores = [7, 77, 777, 7777];
 
     for index in 0..10 {
         if let Some(number) = scores.get(index) {
@@ -29,7 +29,7 @@ fn if_let_example() {
 }
 
 fn if_let_else_example() {
-    let scores = vec![7.7, 77.7, 777.7, 7777.7];
+    let scores = [7.7, 77.7, 777.7, 7777.7];
 
     for index in 0..10 {
         if let Some(number) = scores.get(index) {

@@ -2,7 +2,7 @@ pub fn master(show: bool) {
     if show {
         println!("---Result to Option with ok method");
 
-        let user_input = vec![
+        let user_input = [
             "8.9",
             "Nine point nine five",
             "8.0",

@@ -46,7 +46,7 @@ struct YoungPeople<'a> {
     inner: Vec<&'a IdCard>,
 }
 
-impl<'a> YoungPeople<'a> {
+impl YoungPeople<'_> {
     #[allow(clippy::all)]
     fn living_in_fooville(&self) -> Self {
         Self {

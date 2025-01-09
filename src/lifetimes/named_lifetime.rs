@@ -8,7 +8,7 @@ pub fn master(show: bool) {
     if show {
         println!("Named Lifetime");
 
-        let city_names = vec!["Ichinomiya".to_string(), "Kurume".to_string()];
+        let city_names = ["Ichinomiya".to_string(), "Kurume".to_string()];
 
         let my_city = City {
             name: &city_names[0],

@@ -2,7 +2,7 @@ pub fn master(show: bool) {
     if show {
         println!("Iterators with next");
 
-        let my_vec = vec!['a', 'b', 'c', 'd'];
+        let my_vec = ['a', 'b', 'c', 'd'];
 
         let mut my_vec_iter = my_vec.iter();
 

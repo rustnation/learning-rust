@@ -17,7 +17,7 @@ fn fold_definition(show: bool) {
     if show {
         println!("---Fold definition");
 
-        let some_numbers = vec![10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+        let some_numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
         println!(
             "{}",
