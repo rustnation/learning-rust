@@ -1,7 +1,5 @@
 # Learning Rust
 
-`Learning Rust`.
-
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
