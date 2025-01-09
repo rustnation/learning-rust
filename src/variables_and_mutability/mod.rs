@@ -1,5 +1,5 @@
-mod variables;
 mod constants;
+mod variables;
 
 use crate::print_title;
 

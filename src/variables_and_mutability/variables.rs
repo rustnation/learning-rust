@@ -22,7 +22,10 @@ pub fn master(show: bool) {
 
         // variable shadowing
         let grams_of_protein = "100.345";
-        println!("Number of grams_of_protein as a string {}", grams_of_protein);
+        println!(
+            "Number of grams_of_protein as a string {}",
+            grams_of_protein
+        );
 
         let grams_of_protein = 100.345;
         println!("Number of grams_of_protein as a float {}", grams_of_protein);

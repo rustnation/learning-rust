@@ -13,6 +13,7 @@ pub mod boxes;
 pub mod channels;
 pub mod closures;
 pub mod collections;
+pub mod compiler_directives;
 pub mod concurrency;
 pub mod cow_type;
 pub mod cubesats;
