@@ -1,3 +1,5 @@
+mod demo;
+
 pub fn master(show: bool) {
     if show {
         println!("-- Compiler Directives --");
@@ -9,6 +11,8 @@ pub fn master(show: bool) {
         let expected_message = "other unused variable";
 
         show_message(false);
+
+        demo::master(false);
     }
 }
 
