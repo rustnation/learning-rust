@@ -28,12 +28,18 @@ pub fn master(show: bool) {
 
         add_contact(&mut contact_index, contact);
 
-        let mile_race_length: Meters = 1600;
-        let two_mile_race_length: Meters = 3200;
-        println!("A one mile race is {mile_race_length} meters long and two mile race length: {two_mile_race_length}");
+        type_examples(false);
     }
 }
 
 fn add_contact(index: &mut ContactIndex, contact: Contact) {
     index.insert(contact.name.to_owned(), contact);
+}
+
+fn type_examples(show: bool) {
+    if show {
+        let mile_race_length: Meters = 1600;
+        let two_mile_race_length: Meters = 3200;
+        println!("A one mile race is {mile_race_length} meters long and two mile race length: {two_mile_race_length}");
+    }
 }
