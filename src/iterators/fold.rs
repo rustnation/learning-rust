@@ -12,6 +12,7 @@ pub fn master(show: bool) {
     }
 }
 
+#[allow(clippy::unnecessary_fold)]
 fn fold_definition(show: bool) {
     if show {
         println!("---Fold definition");
