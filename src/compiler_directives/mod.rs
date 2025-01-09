@@ -4,5 +4,8 @@ pub fn master(show: bool) {
 
         #[allow(unused_variables)]
         let message = "unused variable";
+
+        #[allow(unused_variables)]
+        let expected_message = "other unused variable";
     }
 }
