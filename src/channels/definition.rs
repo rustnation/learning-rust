@@ -11,9 +11,12 @@ pub fn master(show: bool) {
 
         // spawn off an expensive computation
         thread::spawn(move || {
-            expensive_computation();
-            sender.send(())
-        }.unwrap());
+            {
+                expensive_computation();
+                sender.send(())
+            }
+            .unwrap()
+        });
 
         // let's see what that answer was
         println!("{:?}", receiver.recv().unwrap());
