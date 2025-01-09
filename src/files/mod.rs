@@ -26,6 +26,10 @@ impl File {
     pub fn name(&self) -> String {
         self.name.clone()
     }
+
+    pub fn is_empty(&self) -> bool {
+        self.data.is_empty()
+    }
 }
 
 use crate::print_title;
