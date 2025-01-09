@@ -8,6 +8,11 @@ check:
 	@echo 'running cargo check'
 	cargo check
 
+.PHONY: clippy
+clippy:
+	@echo 'running cargo clippy -- -D warnings'
+	cargo clippy -- -D warnings
+
 .PHONY: build
 build:
 	@echo 'running cargo build'
@@ -23,6 +28,7 @@ all:
 	@echo 'running all cargo commands'
 	cargo fmt
 	cargo check
+	cargo clippy -- -D warnings
 	cargo build
 	cargo run
 
