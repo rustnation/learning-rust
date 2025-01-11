@@ -90,7 +90,6 @@ pub mod variables_and_mutability;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
-pub mod serde_tutorial;
 
 pub fn print_title(title: &str) {
     println!(" ");
