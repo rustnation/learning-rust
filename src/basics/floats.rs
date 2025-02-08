@@ -7,3 +7,7 @@ pub fn master(show: bool) {
         println!("The value of y is: {y}");
     }
 }
+
+// Type                 Precision
+// f32                  6-9 digits of precision
+// f64                  15-17 digits of precision
