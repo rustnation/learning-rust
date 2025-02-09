@@ -17,5 +17,21 @@ pub fn master(show: bool) {
         assert_eq!(iterator.next(), Some(&35));
         assert_eq!(iterator.next(), Some(&42));
         assert_eq!(iterator.next(), None);
+
+        for_each_iter(false);
+    }
+}
+
+pub fn for_each_iter(show: bool) {
+    if show {
+        ["doves", "hens", "birds"]
+            .iter()
+            .zip(["turtle", "french", "calling"])
+            .zip(2..5)
+            .rev()
+            .map(|((item, kind), quantity)| format!("{}{}{}", quantity, kind, item))
+            .for_each(|gift| {
+                println!("You have received: {}", gift);
+            });
     }
 }
