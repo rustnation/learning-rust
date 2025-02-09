@@ -1,5 +1,7 @@
 # Learning Rust
 
+Starting date: Mar 22, 2023
+
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
