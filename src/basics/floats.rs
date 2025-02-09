@@ -1,3 +1,5 @@
+use core::f64;
+
 pub fn master(show: bool) {
     if show {
         println!("--- Floating Points ---");
@@ -5,6 +7,9 @@ pub fn master(show: bool) {
         let y: f32 = 3.0; // f32
         println!("The value of x is: {x}");
         println!("The value of y is: {y}");
+
+        let pi = f64::consts::PI;
+        println!("pi: {pi}")
     }
 }
 
