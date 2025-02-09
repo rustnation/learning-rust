@@ -20,7 +20,7 @@ pub fn master(show: bool) {
         println!("value of truncated is: {truncated}");
 
         // remainder
-        let remainder = 77 * 7;
+        let remainder = 77 % 7;
         println!("value of remainder is: {remainder}");
 
         // call sub function
