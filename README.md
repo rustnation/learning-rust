@@ -8,7 +8,7 @@
 - Zero to Production in Rust ${\color{orange}[Done]}$
 - Rust Web Programming ${\color{orange}[Done]}$
 - Command-Line Rust ${\color{orange}[Done]}$
-- Rust Atomics and Locks [In Progress]
+- Rust Atomics and Locks ${\color{green}[In Progress]}$
 - Rust for Rustaceans ★
 - Rust in Action
 - Black Hat Rust
@@ -22,7 +22,7 @@
 ## Courses
 
 - Zero to Mastery ${\color{orange}[Done]}$
-- Learn to Code with Rust [In Progress] ★
+- Learn to Code with Rust ${\color{green}[In Progress]}$ ★
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
