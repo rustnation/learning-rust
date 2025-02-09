@@ -19,7 +19,7 @@ pub fn master(show: bool) {
         let truncated = -7 / 7;
         println!("value of truncated is: {truncated}");
 
-        // remainder
+        // remainder or modulus
         let remainder = 77 % 7;
         println!("value of remainder is: {remainder}");
 
