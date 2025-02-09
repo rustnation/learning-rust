@@ -32,11 +32,9 @@ pub fn master(show: bool) {
         year += 1;
         year -= 1;
         year *= 1;
-
-        let half_years = year / 2;
+        year /= 2;
 
         println!("year: {year}");
-        println!("half years: {half_years}");
     }
 }
 
