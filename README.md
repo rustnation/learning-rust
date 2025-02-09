@@ -18,6 +18,7 @@
 ## Courses
 
 - Zero to Mastery ${\color{orange}[Done]}$
+- Learn to Code with Rust [In Progress]
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
