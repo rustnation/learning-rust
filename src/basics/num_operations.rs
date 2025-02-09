@@ -26,6 +26,17 @@ pub fn master(show: bool) {
         // call sub function
         let seven = sub(10, 3);
         println!("value returned by sub function: {}", seven);
+
+        // single operator
+        let mut year = 2025;
+        year += 1;
+        year -= 1;
+        year *= 1;
+
+        let half_years = year / 2;
+
+        println!("year: {year}");
+        println!("half years: {half_years}");
     }
 }
 

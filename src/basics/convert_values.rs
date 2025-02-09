@@ -9,6 +9,7 @@ pub fn convert_val(show: bool) {
         let miles_away_f32 = miles_away as f32;
         let miles_away_int = miles_away as i32;
 
+        println!("miles_away_f32: {miles_away_f32}");
         println!("miles away int value: {miles_away_int}");
     }
 }
