@@ -11,6 +11,7 @@ enum Status {
     Failed,
 }
 
+/// demo has three examples: [status, simple_demo, player_demo]
 pub fn master(show: bool) {
     if show {
         print_title("Enum Demos");

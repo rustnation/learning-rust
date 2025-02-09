@@ -9,7 +9,10 @@ pub fn master(show: bool) {
         println!("The value of y is: {y}");
 
         let pi = f64::consts::PI;
-        println!("pi: {pi}")
+        println!("pi: {pi}");
+
+        let seven = 7.7;
+        println!("seven value: {seven}");
     }
 }
 
