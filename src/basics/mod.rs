@@ -18,6 +18,7 @@ mod num_operations;
 mod scalars;
 mod shadowing;
 mod slices;
+mod underscores;
 mod variables;
 
 pub fn master(show: bool) {
@@ -80,5 +81,8 @@ pub fn master(show: bool) {
 
         // Using if in a let statement
         if_let::master(false);
+
+        // Using underscores in numbers
+        underscores::master(false);
     }
 }
