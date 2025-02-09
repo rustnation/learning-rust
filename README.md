@@ -2,6 +2,8 @@
 
 Starting date: Mar 22, 2023
 
+Focused in the one with ★
+
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
@@ -11,15 +13,15 @@ Starting date: Mar 22, 2023
 - Rust Web Programming ${\color{orange}[Done]}$
 - Command-Line Rust ${\color{orange}[Done]}$
 - Rust Atomics and Locks ${\color{green}[In Progress]}$
-- Rust for Rustaceans ★
+- Rust for Rustaceans
 - Rust in Action
 - Black Hat Rust
 - Rust Intermediate Mastering Backend
 - Rust Advanced Mastering Backend
 - Learn Rust in a month of lunches
 - Machine Learning with Rust
-- Effective Rust ★
-- Write Powerful Rust Macros ★
+- Effective Rust
+- Write Powerful Rust Macros
 
 ## Courses
 
