@@ -9,16 +9,20 @@
 - Rust Web Programming ${\color{orange}[Done]}$
 - Command-Line Rust ${\color{orange}[Done]}$
 - Rust Atomics and Locks [In Progress]
-- Rust for Rustaceans
+- Rust for Rustaceans ★
 - Rust in Action
 - Black Hat Rust
 - Rust Intermediate Mastering Backend
 - Rust Advanced Mastering Backend
+- Learn Rust in a month of lunches
+- Machine Learning with Rust
+- Effective Rust ★
+- Write Powerful Rust Macros ★
 
 ## Courses
 
 - Zero to Mastery ${\color{orange}[Done]}$
-- Learn to Code with Rust [In Progress]
+- Learn to Code with Rust [In Progress] ★
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
