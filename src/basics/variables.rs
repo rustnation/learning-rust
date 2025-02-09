@@ -11,5 +11,8 @@ pub fn master(show: bool) {
         println!("The value of x is: {x}");
 
         println!("MAX_SPEED constant value: {}", constants::MAX_SPEED);
+
+        x += 1;
+        println!("This is a better number: {x}");
     }
 }
