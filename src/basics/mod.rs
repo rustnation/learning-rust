@@ -9,6 +9,7 @@ mod clone;
 mod compounds;
 mod constants;
 mod control_flow;
+mod convert_values;
 mod floats;
 mod functions;
 mod if_let;
@@ -84,5 +85,8 @@ pub fn master(show: bool) {
 
         // Using underscores in numbers
         underscores::master(false);
+
+        // Convert values from one to another
+        convert_values::convert_val(false);
     }
 }
