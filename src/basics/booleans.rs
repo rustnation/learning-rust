@@ -18,5 +18,29 @@ pub fn master(show: bool) {
         } else if age > 50 {
             println!("the person is getting old");
         }
+
+        demo_and_logic(false);
+        demo_or_logic(false);
+    }
+}
+
+pub fn demo_and_logic(show: bool) {
+    if show {
+        let purchased_ticket = true;
+        let plane_on_time = true;
+        let making_event = purchased_ticket && plane_on_time;
+        println!("It is {} that I will arrive as expected", making_event);
+    }
+}
+
+pub fn demo_or_logic(show: bool) {
+    if show {
+        let user_has_paid_for_subscription = true;
+        let user_is_admin = true;
+        let is_user_granted = user_has_paid_for_subscription || user_is_admin;
+        println!(
+            "Is user allowed to access the premium course?: {}",
+            is_user_granted
+        );
     }
 }
