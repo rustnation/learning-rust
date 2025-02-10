@@ -23,6 +23,7 @@ fn definition(show: bool) {
             }
         });
 
+        // this is the main thread
         for i in 1..5 {
             println!("hi number {i} from the main thread!");
             thread::sleep(Duration::from_millis(1));
@@ -36,10 +37,14 @@ fn spawned_thread(show: bool) {
 
         let v = vec![1, 2, 3, 4, 5, 6, 7];
 
+        // using the move keyword to force a closure to take ownership of the values it use
+        // // using the move keyword to force a closure to take ownership of the values it usess
         let handle = thread::spawn(move || {
             println!("Here's a vector: {:?}", v);
         });
 
+        // this join the thread with the main thread
+        // when we call the join method on it, will wait for its thread to finish
         handle.join().unwrap();
     }
 }
