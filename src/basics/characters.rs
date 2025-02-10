@@ -13,5 +13,20 @@ pub fn master(show: bool) {
 
         let heart_eyed_cat = '😻';
         println!("value of heart eyed cat: {}", heart_eyed_cat);
+
+        character_example(false);
+    }
+}
+
+fn character_example(show: bool) {
+    if show {
+        let first_initial = 'L';
+        let emoji = '🐶';
+
+        println!(
+            "first_initial: {}\n emoji: {}",
+            first_initial.is_alphabetic(),
+            emoji.is_alphabetic()
+        );
     }
 }
