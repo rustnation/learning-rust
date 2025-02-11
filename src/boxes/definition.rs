@@ -1,3 +1,4 @@
+//! src/boxes/definition.rs
 use crate::boxes::dereference::box_dereference;
 
 pub fn master(show: bool) {

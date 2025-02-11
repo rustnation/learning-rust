@@ -1,3 +1,4 @@
+//! src/boxes/dereference.rs
 pub fn box_dereference() {
     let x = 7;
     let y = Box::new(x);

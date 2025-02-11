@@ -1,3 +1,4 @@
+//! src/boxes/mod.rs
 pub mod definition;
 pub mod dereference;
 
