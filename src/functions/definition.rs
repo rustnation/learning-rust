@@ -13,15 +13,15 @@ pub fn master(show: bool) {
 
         println!("x = {}, y = {}, z = {}", x, y, z);
 
-        open_store(false);
+        open_store(false, Some("Envigado"));
         bake_pizza(false);
         swim_in_profit(false);
     }
 }
 
-fn open_store(show: bool) {
+fn open_store(show: bool, neighborhood: Option<&str>) {
     if show {
-        println!("Opening my pizza store");
+        println!("Opening my pizza store {}", neighborhood.unwrap_or(""));
     }
 }
 
