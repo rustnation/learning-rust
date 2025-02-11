@@ -1,3 +1,4 @@
+//! src/tree_data_structure/mod.rs
 mod definition;
 
 pub fn master(show: bool) {

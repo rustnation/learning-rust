@@ -1,3 +1,4 @@
+//! src/hashmaps/definition.rs
 use std::collections::HashMap;
 
 #[allow(unused)]

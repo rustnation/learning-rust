@@ -1,3 +1,4 @@
+//! src/threads/move_data_between_threads.rs
 use std::sync::{Arc, Mutex};
 
 pub fn master(show: bool) {

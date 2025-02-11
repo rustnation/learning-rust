@@ -1,3 +1,4 @@
+//! src/unsafe_code/mod.rs
 mod definition;
 
 pub fn master(show: bool) {

@@ -1,3 +1,4 @@
+//! src/network/mod.rs
 use crate::print_title;
 use std::io::prelude::*;
 use std::net::TcpListener;

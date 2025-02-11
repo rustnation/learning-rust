@@ -1,3 +1,4 @@
+//! src/user_input/activity.rs
 use std::io;
 
 enum PowerState {

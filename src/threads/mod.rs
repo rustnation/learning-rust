@@ -1,3 +1,4 @@
+//! src/threads/mod.rs
 mod definition;
 mod message_passing_between_threads;
 mod move_data_between_threads;

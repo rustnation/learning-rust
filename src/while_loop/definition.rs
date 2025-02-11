@@ -1,3 +1,4 @@
+//! src/while_loop/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("\n-- While Loops");

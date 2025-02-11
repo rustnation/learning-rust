@@ -1,3 +1,4 @@
+//! src/typestate_pattern/demo.rs
 use crate::print_title;
 
 // State is a Generic Parameter

@@ -1,3 +1,4 @@
+//! src/move_vars/definition.rs
 enum Light {
     Bright,
     Dull,

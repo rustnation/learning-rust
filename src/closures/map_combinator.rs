@@ -1,3 +1,4 @@
+//! src/closures/map_combinator.rs
 #[derive(Debug)]
 struct User {
     user_id: i32,

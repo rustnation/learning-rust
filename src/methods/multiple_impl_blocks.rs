@@ -1,3 +1,4 @@
+//! src/methods/multiple_impl_blocks.rs
 #[derive(Debug)]
 struct Rectangle {
     width: u32,

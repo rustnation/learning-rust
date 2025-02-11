@@ -1,3 +1,4 @@
+//! src/generics/generic_functions.rs
 use crate::print_title;
 
 pub fn master(show: bool) {

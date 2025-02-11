@@ -1,3 +1,4 @@
+//! src/structs/definition.rs
 #[derive(Debug)]
 pub struct User {
     pub active: bool,

@@ -1,3 +1,4 @@
+//! src/enums/definition.rs
 #[allow(unused)]
 #[derive(Debug)]
 enum IpAddr {

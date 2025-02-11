@@ -1,3 +1,4 @@
+//! src/data_collections/definition.rs
 struct Temperature {
     degrees_f: f64,
 }

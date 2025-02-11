@@ -1,3 +1,4 @@
+//! src/ownership/borrowing.rs
 pub fn master(show: bool) {
     if show {
         println!("\n-- Immutable Borrowing of Variables");

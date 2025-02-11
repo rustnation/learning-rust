@@ -1,3 +1,4 @@
+//! src/shadowing/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Shadowing Definition");

@@ -1,3 +1,4 @@
+//! src/strings/iterate.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Methods for Iterating  Over Strings ---");

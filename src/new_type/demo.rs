@@ -1,3 +1,4 @@
+//! src/new_type/demo.rs
 use crate::print_title;
 
 #[derive(Debug, Copy, Clone)]

@@ -1,3 +1,4 @@
+//! src/ranges/mod.rs
 mod demo;
 
 pub fn master(show: bool) {

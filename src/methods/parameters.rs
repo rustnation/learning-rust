@@ -1,3 +1,4 @@
+//! src/methods/parameters.rs
 #[derive(Debug)]
 struct Rectangle {
     width: u32,

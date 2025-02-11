@@ -1,3 +1,4 @@
+//! src/errors/closures.rs
 use crate::print_title;
 use std::fs::File;
 use std::io::ErrorKind;

@@ -1,3 +1,4 @@
+//! src/iterators/impl_iterator.rs
 #[derive(Debug)]
 struct Library {
     name: String,

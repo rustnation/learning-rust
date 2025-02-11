@@ -1,3 +1,4 @@
+//! src/matches/placeholder.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Match with Placeholder");

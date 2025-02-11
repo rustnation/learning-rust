@@ -1,3 +1,4 @@
+//! src//home/william/workspace/rust/learning-rust/src/main.rs
 fn main() {
     local_function(false);
     common::hello_world::master(false);

@@ -1,3 +1,4 @@
+//! src/structs/human.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Working with Structs");

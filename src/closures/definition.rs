@@ -1,3 +1,4 @@
+//! src/closures/definition.rs
 use std::thread;
 
 pub fn master(show: bool) {

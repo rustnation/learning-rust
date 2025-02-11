@@ -1,3 +1,4 @@
+//! src/errors/mod.rs
 use crate::print_title;
 
 mod activity_custom_errors;

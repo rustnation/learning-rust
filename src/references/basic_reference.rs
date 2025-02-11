@@ -1,3 +1,4 @@
+//! src/references/basic_reference.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Basic Reference");

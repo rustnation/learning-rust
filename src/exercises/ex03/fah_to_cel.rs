@@ -1,3 +1,4 @@
+//! src/exercises/ex03/fah_to_cel.rs
 pub fn master() {
     println!("--- Convert Fahrenheit-Celsius ---");
 

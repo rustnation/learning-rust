@@ -1,3 +1,4 @@
+//! src/exercises/mod.rs
 mod ex03;
 mod ex08;
 

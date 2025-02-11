@@ -1,3 +1,4 @@
+//! src/type_aliases/mod.rs
 use crate::print_title;
 mod demo;
 mod long_types;

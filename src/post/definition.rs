@@ -1,3 +1,4 @@
+//! src/post/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Working with Blog Post");

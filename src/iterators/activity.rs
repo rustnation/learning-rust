@@ -1,3 +1,4 @@
+//! src/iterators/activity.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Activity Using Iterators");

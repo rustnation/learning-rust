@@ -1,3 +1,4 @@
+//! src/strings/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("--- String Definition ---");

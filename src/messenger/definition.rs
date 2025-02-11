@@ -1,3 +1,4 @@
+//! src/messenger/definition.rs
 use std::cell::RefCell;
 
 pub fn master(show: bool) {

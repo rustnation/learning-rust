@@ -1,3 +1,4 @@
+//! src/for_loops/demo.rs
 use crate::print_title;
 
 pub fn definition(show: bool) {

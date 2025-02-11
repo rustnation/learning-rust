@@ -1,3 +1,4 @@
+//! src/vectors/definition.rs
 pub fn master(show: bool) {
     if show {
         definition(false);

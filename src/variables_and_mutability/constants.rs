@@ -1,3 +1,4 @@
+//! src/variables_and_mutability/constants.rs
 const TAX_RATE: f64 = 7.7;
 
 pub fn master(show: bool) {

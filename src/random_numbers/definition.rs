@@ -1,3 +1,4 @@
+//! src/random_numbers/definition.rs
 use rand::Rng;
 
 pub fn master(show: bool) {

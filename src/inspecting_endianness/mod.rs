@@ -1,3 +1,4 @@
+//! src/inspecting_endianness/mod.rs
 use crate::print_title;
 use std::mem::transmute;
 

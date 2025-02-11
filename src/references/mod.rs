@@ -1,3 +1,4 @@
+//! src/references/mod.rs
 mod basic_reference;
 mod definition;
 mod mut_reference;

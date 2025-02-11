@@ -1,3 +1,4 @@
+//! src/traits/impl_display.rs
 use std::fmt;
 use std::fmt::Formatter;
 

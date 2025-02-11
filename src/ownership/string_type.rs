@@ -1,3 +1,4 @@
+//! src/ownership/string_type.rs
 pub fn master(show: bool) {
     if show {
         println!("--- String Type ---");

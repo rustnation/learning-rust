@@ -1,3 +1,4 @@
+//! src/iterators/scan_hash_table.rs
 use std::collections::HashMap;
 
 pub fn master(show: bool) {

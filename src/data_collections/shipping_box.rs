@@ -1,3 +1,4 @@
+//! src/data_collections/shipping_box.rs
 enum Color {
     Brown,
     Red,

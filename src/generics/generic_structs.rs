@@ -1,3 +1,4 @@
+//! src/generics/generic_structs.rs
 use crate::print_title;
 
 struct Score<T> {

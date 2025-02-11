@@ -1,3 +1,4 @@
+//! src/strings/borrowed_string.rs
 fn prints_str(my_str: &str) {
     println!("{my_str}");
 }

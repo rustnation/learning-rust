@@ -1,3 +1,4 @@
+//! src/generics/activity.rs
 // Topic: Generics & Functions
 //
 // Requirements:

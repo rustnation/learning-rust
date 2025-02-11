@@ -1,3 +1,4 @@
+//! src/messenger/mock_messenger.rs
 #[cfg(test)]
 mod tests {
     use crate::messenger::definition::LimitTracker;

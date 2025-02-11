@@ -1,3 +1,4 @@
+//! src/hashmaps/furniture.rs
 use crate::print_title;
 use std::collections::HashMap;
 

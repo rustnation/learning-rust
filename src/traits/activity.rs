@@ -1,3 +1,4 @@
+//! src/traits/activity.rs
 trait Perimeter {
     fn calculate_perimeter(&self) -> i32;
 }

@@ -1,3 +1,4 @@
+//! src/data_collections/mod.rs
 mod definition;
 mod shipping_box;
 

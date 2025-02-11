@@ -1,3 +1,4 @@
+//! src/optionals/definition.rs
 struct Student {
     name: String,
     locker: Option<i32>,

@@ -1,3 +1,4 @@
+//! src/results/activity.rs
 #[derive(Debug)]
 struct Adult {
     age: u8,

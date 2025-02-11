@@ -1,3 +1,4 @@
+//! src/strings/string_literals.rs
 pub fn master(show: bool) {
     if show {
         println!("String Literals");

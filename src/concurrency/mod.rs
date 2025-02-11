@@ -1,3 +1,4 @@
+//! src/concurrency/mod.rs
 mod definition;
 mod message_passing;
 mod scoped_threads;

@@ -1,3 +1,4 @@
+//! src/testing/demo.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Testing Demo");

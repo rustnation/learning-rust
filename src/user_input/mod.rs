@@ -1,3 +1,4 @@
+//! src/user_input/mod.rs
 mod activity;
 mod demo;
 

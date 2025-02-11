@@ -1,3 +1,4 @@
+//! src/slices/activity.rs
 use crate::print_title;
 
 pub fn slices_activity(show: bool) {

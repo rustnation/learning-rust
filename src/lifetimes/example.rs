@@ -1,3 +1,4 @@
+//! src/lifetimes/example.rs
 #[derive(Debug)]
 enum Part {
     Bolt,

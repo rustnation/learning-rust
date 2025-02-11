@@ -1,3 +1,4 @@
+//! src/for_loops/mod.rs
 use crate::print_title;
 mod demo;
 

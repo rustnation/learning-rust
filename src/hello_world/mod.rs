@@ -1,3 +1,4 @@
+//! src/hello_world/mod.rs
 use crate::print_title;
 
 pub fn master(show: bool) {

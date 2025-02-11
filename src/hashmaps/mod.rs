@@ -1,3 +1,4 @@
+//! src/hashmaps/mod.rs
 mod activity;
 mod definition;
 mod furniture;

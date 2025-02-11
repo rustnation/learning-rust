@@ -1,3 +1,4 @@
+//! src/traits/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Traits Definition ---");

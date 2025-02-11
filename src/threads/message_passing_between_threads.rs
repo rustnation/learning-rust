@@ -1,3 +1,4 @@
+//! src/threads/message_passing_between_threads.rs
 use std::sync::mpsc; // multiple producer, single consumer
 use std::thread;
 

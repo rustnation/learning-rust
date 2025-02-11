@@ -1,3 +1,4 @@
+//! src/compiler_directives/mod.rs
 mod demo;
 
 pub fn master(show: bool) {

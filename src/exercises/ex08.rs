@@ -1,3 +1,4 @@
+//! src/exercises/ex08.rs
 pub mod departments;
 pub mod pig_latin;
 pub mod vector;

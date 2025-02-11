@@ -1,3 +1,4 @@
+//! src/testing/mod.rs
 mod activity;
 mod definition;
 mod demo;

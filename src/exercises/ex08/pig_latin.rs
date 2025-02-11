@@ -1,3 +1,4 @@
+//! src/exercises/ex08/pig_latin.rs
 pub fn master() {
     println!("-- Convert strings to pig latin ---");
 

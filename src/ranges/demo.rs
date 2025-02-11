@@ -1,3 +1,4 @@
+//! src/ranges/demo.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Range Demo");

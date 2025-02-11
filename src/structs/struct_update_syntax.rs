@@ -1,3 +1,4 @@
+//! src/structs/struct_update_syntax.rs
 use crate::structs::definition::User;
 
 pub fn master(show: bool) {

@@ -1,3 +1,4 @@
+//! src/expressions/definition.rs
 enum Access {
     Admin,
     Manager,

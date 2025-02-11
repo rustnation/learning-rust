@@ -1,3 +1,4 @@
+//! src/threads/preventing_race_condition.rs
 use crate::print_title;
 use std::thread;
 

@@ -1,3 +1,4 @@
+//! src/generics/conveyor_belt.rs
 use crate::print_title;
 
 struct Dimensions {

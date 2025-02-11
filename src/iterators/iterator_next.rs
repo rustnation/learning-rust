@@ -1,3 +1,4 @@
+//! src/iterators/iterator_next.rs
 pub fn master(show: bool) {
     if show {
         println!("Iterators with next");

@@ -1,3 +1,4 @@
+//! src/traits/with_generics.rs
 use crate::print_title;
 use std::io::Write;
 

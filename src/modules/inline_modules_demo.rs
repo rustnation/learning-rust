@@ -1,3 +1,4 @@
+//! src/modules/inline_modules_demo.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Inline Modules Demo");

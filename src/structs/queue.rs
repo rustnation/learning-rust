@@ -1,3 +1,4 @@
+//! src/structs/queue.rs
 use std::mem::swap;
 
 /// A first-in, first-out queue of characters.

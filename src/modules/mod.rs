@@ -1,3 +1,4 @@
+//! src/modules/mod.rs
 mod inline_modules_activity;
 mod inline_modules_demo;
 

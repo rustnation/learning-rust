@@ -1,3 +1,4 @@
+//! src/concurrency/message_passing.rs
 use std::sync::mpsc;
 use std::thread;
 

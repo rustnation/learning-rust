@@ -1,3 +1,4 @@
+//! src/macros/definition.rs
 macro_rules! greetings {
     ($x: expr) => {
         println!("Hello, {}", $x);

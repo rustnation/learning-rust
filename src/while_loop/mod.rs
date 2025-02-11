@@ -1,3 +1,4 @@
+//! src/while_loop/mod.rs
 mod definition;
 mod while_let;
 

@@ -1,3 +1,4 @@
+//! src/external_crates/demo.rs
 use humantime::format_duration;
 use std::time::Duration;
 

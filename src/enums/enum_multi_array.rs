@@ -1,3 +1,4 @@
+//! src/enums/enum_multi_array.rs
 enum SomeValue {
     StringValue(String),
     IntValue(i32),

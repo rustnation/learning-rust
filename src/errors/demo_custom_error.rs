@@ -1,3 +1,4 @@
+//! src/errors/demo_custom_error.rs
 use crate::print_title;
 use chrono::{DateTime, Duration, Utc};
 use thiserror::Error;

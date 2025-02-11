@@ -1,3 +1,4 @@
+//! src/iterators/rev.rs
 pub fn master(show: bool) {
     if show {
         println!("Iterators with rev method");

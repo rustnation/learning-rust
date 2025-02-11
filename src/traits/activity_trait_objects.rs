@@ -1,3 +1,4 @@
+//! src/traits/activity_trait_objects.rs
 use crate::print_title;
 
 trait Material {

@@ -1,3 +1,4 @@
+//! src/traits/default_trait.rs
 use crate::print_title;
 
 struct Package {

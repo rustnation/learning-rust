@@ -1,3 +1,4 @@
+//! src/doc/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Documentation Definition");

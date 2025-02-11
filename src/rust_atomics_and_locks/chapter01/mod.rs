@@ -1,3 +1,4 @@
+//! src/rust_atomics_and_locks/chapter01/mod.rs
 mod thread_basics;
 mod thread_closure;
 mod thread_join;

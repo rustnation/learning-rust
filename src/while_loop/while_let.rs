@@ -1,3 +1,4 @@
+//! src/while_loop/while_let.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- while let");

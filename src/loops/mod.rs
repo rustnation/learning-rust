@@ -1,3 +1,4 @@
+//! src/loops/mod.rs
 mod definition;
 mod returning_values_from_loops;
 

@@ -1,3 +1,4 @@
+//! src/cow_type/definition.rs
 use std::borrow::Cow;
 
 #[derive(Debug)]

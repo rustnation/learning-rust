@@ -1,3 +1,4 @@
+//! src/closures/mod.rs
 mod closures_inside_methods;
 mod definition;
 mod demo;

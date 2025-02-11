@@ -1,3 +1,4 @@
+//! src/matches/catch_all.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Catch-All Patterns");

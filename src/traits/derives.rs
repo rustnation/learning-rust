@@ -1,3 +1,4 @@
+//! src/traits/derives.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Implement Traits via #[derive] Attribute ---");

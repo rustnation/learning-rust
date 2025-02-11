@@ -1,3 +1,4 @@
+//! src/lifetimes/anonymous_lifetime.rs
 struct Adventurer<'a> {
     name: &'a str,
     hit_points: u32,

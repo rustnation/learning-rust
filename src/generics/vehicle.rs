@@ -1,3 +1,4 @@
+//! src/generics/vehicle.rs
 use crate::print_title;
 
 trait Body {}

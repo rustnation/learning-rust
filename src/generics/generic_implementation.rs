@@ -1,3 +1,4 @@
+//! src/generics/generic_implementation.rs
 use std::fmt::Debug;
 
 #[derive(Debug)]

@@ -1,3 +1,4 @@
+//! src/exercises/ex03/fib.rs
 pub fn master() {
     println!("--- Fibonacci Number ---");
     println!("Fibonacci 1st = {}", fib(1));

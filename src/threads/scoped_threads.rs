@@ -1,3 +1,4 @@
+//! src/threads/scoped_threads.rs
 use std::sync::Mutex;
 use std::thread;
 

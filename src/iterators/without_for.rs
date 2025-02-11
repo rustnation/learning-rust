@@ -1,3 +1,4 @@
+//! src/iterators/without_for.rs
 use std::vec;
 
 pub fn master(show: bool) {

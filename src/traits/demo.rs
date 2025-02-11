@@ -1,3 +1,4 @@
+//! src/traits/demo.rs
 trait Fall {
     fn hit_ground(&self);
 }

@@ -1,3 +1,4 @@
+//! src/webserver/mod.rs
 use crate::print_title;
 
 mod web;

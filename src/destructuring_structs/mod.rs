@@ -1,3 +1,4 @@
+//! src/destructuring_structs/mod.rs
 pub mod definition;
 
 pub fn master(show: bool) {

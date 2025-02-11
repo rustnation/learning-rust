@@ -1,3 +1,4 @@
+//! src/structs/integrate_struct_enum_match.rs
 enum Flavor {
     Sparkling,
     Sweet,

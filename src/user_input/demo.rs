@@ -1,3 +1,4 @@
+//! src/user_input/demo.rs
 use std::io;
 
 fn get_input() -> io::Result<String> {

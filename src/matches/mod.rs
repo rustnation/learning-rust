@@ -1,3 +1,4 @@
+//! src/matches/mod.rs
 mod catch_all;
 mod definition;
 mod if_let;

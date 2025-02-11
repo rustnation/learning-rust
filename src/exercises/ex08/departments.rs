@@ -1,3 +1,4 @@
+//! src/exercises/ex08/departments.rs
 use std::collections::HashMap;
 use std::io;
 use std::io::BufRead;

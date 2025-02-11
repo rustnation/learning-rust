@@ -1,3 +1,4 @@
+//! src/destructuring_structs/definition.rs
 pub fn master(show: bool) {
     if show {
         definition();

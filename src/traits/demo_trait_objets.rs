@@ -1,3 +1,4 @@
+//! src/traits/demo_trait_objets.rs
 use crate::print_title;
 
 trait Sale {

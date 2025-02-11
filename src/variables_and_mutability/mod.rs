@@ -1,3 +1,4 @@
+//! src/variables_and_mutability/mod.rs
 mod constants;
 mod variables;
 

@@ -1,3 +1,4 @@
+//! src/guessing_game/mod.rs
 use crate::print_title;
 mod guessing;
 

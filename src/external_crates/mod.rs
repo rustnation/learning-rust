@@ -1,3 +1,4 @@
+//! src/external_crates/mod.rs
 mod activity;
 mod demo;
 

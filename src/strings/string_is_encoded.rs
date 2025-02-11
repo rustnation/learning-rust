@@ -1,3 +1,4 @@
+//! src/strings/string_is_encoded.rs
 pub fn master(show: bool) {
     if show {
         println!("--- &str and String are encoded with UTF-8");

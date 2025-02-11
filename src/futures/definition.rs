@@ -1,3 +1,4 @@
+//! src/futures/definition.rs
 use async_std;
 use futures::executor::block_on;
 use futures::future::join_all;

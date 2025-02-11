@@ -1,3 +1,4 @@
+//! src/hashmaps/hashmap_loop.rs
 use std::collections::HashMap;
 
 struct City {

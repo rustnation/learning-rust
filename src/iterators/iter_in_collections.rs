@@ -1,3 +1,4 @@
+//! src/iterators/iter_in_collections.rs
 use crate::print_title;
 
 pub fn master(show: bool) {

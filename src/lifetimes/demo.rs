@@ -1,3 +1,4 @@
+//! src/lifetimes/demo.rs
 use crate::print_title;
 
 #[derive(Debug)]

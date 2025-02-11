@@ -1,3 +1,4 @@
+//! src/references/mut_reference.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Mutable Reference");

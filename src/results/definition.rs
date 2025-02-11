@@ -1,3 +1,4 @@
+//! src/results/definition.rs
 #[derive(Debug)] // this allows to print MenuChoice data
 enum MenuChoice {
     MainMenu,

@@ -1,3 +1,4 @@
+//! src/enums/enum_with_match.rs
 use strum::IntoEnumIterator;
 use strum_macros::EnumIter;
 

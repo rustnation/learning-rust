@@ -1,3 +1,4 @@
+//! src/iterators/partition.rs
 use crate::print_title;
 use std::collections::HashSet;
 

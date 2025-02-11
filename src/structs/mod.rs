@@ -1,3 +1,4 @@
+//! src/structs/mod.rs
 mod definition;
 mod file;
 mod human;

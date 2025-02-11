@@ -1,3 +1,4 @@
+//! src/channels/definition.rs
 use std::sync::mpsc::channel;
 use std::thread;
 

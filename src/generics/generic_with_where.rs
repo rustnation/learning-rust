@@ -1,3 +1,4 @@
+//! src/generics/generic_with_where.rs
 use std::cmp::PartialOrd;
 use std::fmt::Display;
 

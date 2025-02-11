@@ -1,3 +1,4 @@
+//! src/patterns/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Patterns");

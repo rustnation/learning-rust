@@ -1,3 +1,4 @@
+//! src/errors/error_handling.rs
 use std::fs::File;
 
 pub fn master(show: bool) {

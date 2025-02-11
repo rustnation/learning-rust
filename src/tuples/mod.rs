@@ -1,3 +1,4 @@
+//! src/tuples/mod.rs
 mod definition;
 mod single_tuple;
 

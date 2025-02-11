@@ -1,3 +1,4 @@
+//! src/optionals/mod.rs
 mod activity;
 mod definition;
 mod unwrap_or_else;

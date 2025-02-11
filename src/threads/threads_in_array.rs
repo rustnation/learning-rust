@@ -1,3 +1,4 @@
+//! src/threads/threads_in_array.rs
 use std::sync::{Arc, Mutex};
 
 pub fn master(show: bool) {

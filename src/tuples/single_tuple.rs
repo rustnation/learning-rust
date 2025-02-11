@@ -1,3 +1,4 @@
+//! src/tuples/single_tuple.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Single tuple");

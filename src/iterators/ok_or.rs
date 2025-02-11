@@ -1,3 +1,4 @@
+//! src/iterators/ok_or.rs
 struct Company {
     name: String,
     ceo: Option<String>,

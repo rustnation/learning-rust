@@ -1,3 +1,4 @@
+//! src/unsafe_trait/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Unsafe Trait");

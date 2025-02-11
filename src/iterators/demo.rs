@@ -1,3 +1,4 @@
+//! src/iterators/demo.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Operators");

@@ -1,3 +1,4 @@
+//! src/strings/mod.rs
 mod borrowed_string;
 mod concatenation;
 mod definition;

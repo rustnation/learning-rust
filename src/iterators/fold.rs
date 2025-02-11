@@ -1,3 +1,4 @@
+//! src/iterators/fold.rs
 #[derive(Debug)]
 struct CombinedEvents {
     num_of_events: u32,

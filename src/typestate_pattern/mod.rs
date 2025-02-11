@@ -1,3 +1,4 @@
+//! src/typestate_pattern/mod.rs
 use crate::print_title;
 
 mod activity;

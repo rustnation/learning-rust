@@ -1,3 +1,4 @@
+//! src/compiler_directives/demo.rs
 #![allow(unused_variables)] // notice the exclamation mark
 
 pub fn master(show: bool) {

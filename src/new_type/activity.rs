@@ -1,3 +1,4 @@
+//! src/new_type/activity.rs
 use crate::print_title;
 use strum::IntoEnumIterator;
 use strum_macros::EnumIter;

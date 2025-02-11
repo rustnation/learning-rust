@@ -1,3 +1,4 @@
+//! src/iterators/extend.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Iterating over Option");

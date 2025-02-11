@@ -1,3 +1,4 @@
+//! src/methods/associated_functions.rs
 #[derive(Debug)]
 struct Rectangle {
     width: u32,

@@ -1,3 +1,4 @@
+//! src/lifetimes/named_lifetime.rs
 #[derive(Debug)]
 struct City<'a> {
     name: &'a str,

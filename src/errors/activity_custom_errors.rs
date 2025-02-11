@@ -1,3 +1,4 @@
+//! src/errors/activity_custom_errors.rs
 // Topic: Custom error types
 //
 // Requirements:

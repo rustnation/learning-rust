@@ -1,3 +1,4 @@
+//! src/hashmaps/activity.rs
 use std::collections::HashMap;
 
 #[derive(Debug)]

@@ -1,3 +1,4 @@
+//! src/hashmaps/hashmap_get.rs
 use std::collections::HashMap;
 
 pub fn master(show: bool) {

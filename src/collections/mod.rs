@@ -1,3 +1,4 @@
+//! src/collections/mod.rs
 mod vectors;
 
 pub fn master(show: bool) {

@@ -1,3 +1,4 @@
+//! src/messenger/mod.rs
 mod definition;
 mod mock_messenger;
 

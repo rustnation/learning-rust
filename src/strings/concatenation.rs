@@ -1,3 +1,4 @@
+//! src/strings/concatenation.rs
 pub fn master(show: bool) {
     if show {
         let s1 = String::from("Hello, ");

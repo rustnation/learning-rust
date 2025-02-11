@@ -1,3 +1,4 @@
+//! src/webserver/web.rs
 use crate::print_title;
 use crate::ThreadPool;
 

@@ -1,3 +1,4 @@
+//! src/strings/string_functions.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Working with string functions");

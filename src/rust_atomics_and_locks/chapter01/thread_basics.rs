@@ -1,3 +1,4 @@
+//! src/rust_atomics_and_locks/chapter01/thread_basics.rs
 use std::thread;
 
 pub fn master(show: bool) {

@@ -1,3 +1,4 @@
+//! src/exercises/ex03/christmas_carol.rs
 pub fn master() {
     println!("--- Lyrics to the Christmas Carol ---");
     christmas_carol();

@@ -1,3 +1,4 @@
+//! src/macros/mod.rs
 mod create_vector;
 mod definition;
 

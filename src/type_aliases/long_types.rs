@@ -1,3 +1,4 @@
+//! src/type_aliases/long_types.rs
 type SkipFourTakeFive = std::iter::Take<std::iter::Skip<std::vec::IntoIter<char>>>;
 
 fn returns_some_chars(input: Vec<char>) -> SkipFourTakeFive {

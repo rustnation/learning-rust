@@ -1,3 +1,4 @@
+//! src/structs/unit_struct.rs
 struct AlwaysEqual;
 
 #[derive(Debug)]

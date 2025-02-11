@@ -1,3 +1,4 @@
+//! src/closures/process_closure_thread.rs
 use std::thread::JoinHandle;
 use std::{thread, time};
 

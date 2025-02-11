@@ -1,3 +1,4 @@
+//! src/generics/question_operator.rs
 use crate::print_title;
 
 type GenericError = Box<dyn std::error::Error + Send + Sync + 'static>;

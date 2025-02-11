@@ -1,3 +1,4 @@
+//! src/typestate_pattern/activity.rs
 use crate::print_title;
 
 #[allow(unused)]

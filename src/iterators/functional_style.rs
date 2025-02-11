@@ -1,3 +1,4 @@
+//! src/iterators/functional_style.rs
 use std::vec;
 
 pub fn master(show: bool) {

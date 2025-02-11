@@ -1,3 +1,4 @@
+//! src/files/mod.rs
 //! Simulating files one step at a time.
 
 /// Represents a "file",

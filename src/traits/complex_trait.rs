@@ -1,3 +1,4 @@
+//! src/traits/complex_trait.rs
 use std::fmt::Debug;
 
 #[derive(Debug)]

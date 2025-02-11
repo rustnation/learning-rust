@@ -1,3 +1,4 @@
+//! src/errors/error_propagation.rs
 use crate::print_title;
 use std::fs;
 use std::io;

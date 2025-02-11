@@ -1,3 +1,4 @@
+//! src/iterators/result_option_ok.rs
 pub fn master(show: bool) {
     if show {
         println!("---Result to Option with ok method");

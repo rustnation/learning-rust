@@ -1,3 +1,4 @@
+//! src/traits/simple_trait.rs
 struct Dog {
     name: String,
 }

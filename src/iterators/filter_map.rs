@@ -1,3 +1,4 @@
+//! src/iterators/filter_map.rs
 struct Company {
     name: String,
     ceo: Option<String>,

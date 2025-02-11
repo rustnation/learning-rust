@@ -1,3 +1,4 @@
+//! src/generics/demo.rs
 use crate::print_title;
 
 trait CheckIn {

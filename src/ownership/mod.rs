@@ -1,3 +1,4 @@
+//! src/ownership/mod.rs
 mod borrowing;
 mod functions;
 mod mutable_borrowing;

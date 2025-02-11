@@ -1,3 +1,4 @@
+//! src/traits/returning_traits_with_dyn.rs
 struct Sheep {}
 struct Cow {}
 

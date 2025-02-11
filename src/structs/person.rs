@@ -1,3 +1,4 @@
+//! src/structs/person.rs
 struct Person {
     name: String,
     fav_color: String,

@@ -1,3 +1,4 @@
+//! src/closures/simple_closure.rs
 pub fn master(show: bool) {
     if show {
         println!("Simple Closure");

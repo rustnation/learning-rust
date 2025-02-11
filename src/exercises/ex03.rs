@@ -1,3 +1,4 @@
+//! src/exercises/ex03.rs
 pub mod christmas_carol;
 pub mod fah_to_cel;
 pub mod fib;

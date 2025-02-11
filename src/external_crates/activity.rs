@@ -1,3 +1,4 @@
+//! src/external_crates/activity.rs
 use chrono::prelude::*;
 
 pub fn master(show: bool) {

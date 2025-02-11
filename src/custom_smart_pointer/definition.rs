@@ -1,3 +1,4 @@
+//! src/custom_smart_pointer/definition.rs
 pub fn master(show: bool) {
     if show {
         definition();

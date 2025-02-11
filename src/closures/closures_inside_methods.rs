@@ -1,3 +1,4 @@
+//! src/closures/closures_inside_methods.rs
 pub fn master(show: bool) {
     if show {
         println!("Closures Inside Methods");

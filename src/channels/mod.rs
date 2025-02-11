@@ -1,3 +1,4 @@
+//! src/channels/mod.rs
 use crate::print_title;
 pub mod definition;
 

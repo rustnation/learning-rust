@@ -1,3 +1,4 @@
+//! src/lifetimes/definition.rs
 #[derive(Debug)]
 enum FrozenItem {
     IceCube,

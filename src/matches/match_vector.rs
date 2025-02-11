@@ -1,3 +1,4 @@
+//! src/matches/match_vector.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Match in vector\n");

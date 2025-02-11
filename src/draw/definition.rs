@@ -1,3 +1,4 @@
+//! src/draw/definition.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Draw Trait");

@@ -1,3 +1,4 @@
+//! src/methods/mod.rs
 mod associated_functions;
 mod definition;
 mod multiple_impl_blocks;

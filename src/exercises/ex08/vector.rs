@@ -1,3 +1,4 @@
+//! src/exercises/ex08/vector.rs
 use std::collections::HashMap;
 
 pub fn master() {

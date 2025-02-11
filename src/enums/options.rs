@@ -1,3 +1,4 @@
+//! src/enums/options.rs
 // The option type encodes the very common scenario in which a value could be something
 // or it could be nothing.
 

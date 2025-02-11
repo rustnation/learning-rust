@@ -1,3 +1,4 @@
+//! src/iterators/definition.rs
 #[derive(PartialEq, Debug)]
 struct Shoe {
     size: u32,

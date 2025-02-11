@@ -1,3 +1,4 @@
+//! src/traits/media_aggregator.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Media Aggregator ---");

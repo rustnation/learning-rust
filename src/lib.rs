@@ -1,3 +1,4 @@
+//! src//home/william/workspace/rust/learning-rust/src/lib.rs
 use std::{
     sync::{mpsc, Arc, Mutex},
     thread,

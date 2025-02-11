@@ -1,3 +1,4 @@
+//! src/generics/definition.rs
 //use std::cmp;
 
 pub fn master(show: bool) {

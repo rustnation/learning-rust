@@ -1,3 +1,4 @@
+//! src/slices/mod.rs
 use crate::print_title;
 mod activity;
 

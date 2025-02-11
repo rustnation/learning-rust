@@ -1,3 +1,4 @@
+//! src/object_oriented/definition.rs
 pub fn master(show: bool) {
     if show {
         definition();

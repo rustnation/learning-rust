@@ -1,3 +1,4 @@
+//! src/structs/structs_owned.rs
 struct LineItem {
     name: String,
     count: i32,

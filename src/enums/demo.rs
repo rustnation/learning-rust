@@ -1,3 +1,4 @@
+//! src/enums/demo.rs
 use crate::print_title;
 
 /// Enums (short for enumerations) are a way to create compound data types in Rust.

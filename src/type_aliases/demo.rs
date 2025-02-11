@@ -1,3 +1,4 @@
+//! src/type_aliases/demo.rs
 use crate::print_title;
 use std::collections::HashMap;
 
