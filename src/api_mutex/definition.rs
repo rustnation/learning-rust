@@ -1,3 +1,4 @@
+//! src/api_mutex/definition.rs
 use std::sync::Mutex;
 
 pub fn master(show: bool) {
