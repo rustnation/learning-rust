@@ -33,6 +33,7 @@ fn definition(show: bool) {
     }
 }
 
+// ten threads, each incrementing a counter guarded by a Mutex<T>
 fn mutex_example(show: bool) {
     if show {
         println!("--- Mutex Example");
