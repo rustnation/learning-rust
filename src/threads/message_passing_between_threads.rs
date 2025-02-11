@@ -1,13 +1,13 @@
-use std::sync::mpsc;
+use std::sync::mpsc; // multiple producer, single consumer
 use std::thread;
 
 pub fn master(show: bool) {
     if show {
         println!("---Message Passing Between Threads");
 
-        let (sender, receiver) = mpsc::channel();
+        let (tx, rx) = mpsc::channel();
 
-        let _ = thread::spawn(move || match receiver.recv() {
+        let _ = thread::spawn(move || match rx.recv() {
             Ok(data) => {
                 println!("{:?}", data);
             }
@@ -17,7 +17,7 @@ pub fn master(show: bool) {
         });
 
         let data = 42;
-        match sender.send(data) {
+        match tx.send(data) {
             Ok(data) => {
                 println!("{:?}", data);
             }
