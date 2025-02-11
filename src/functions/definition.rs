@@ -14,6 +14,7 @@ pub fn master(show: bool) {
         println!("x = {}, y = {}, z = {}", x, y, z);
 
         open_store(false, Some("Envigado"));
+        open_store(false, Some(""));
         bake_pizza(false);
         swim_in_profit(false);
     }
