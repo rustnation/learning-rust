@@ -1,3 +1,4 @@
+//! src/basics/mod.rs
 use crate::print_title;
 
 mod arrays;

@@ -1,3 +1,4 @@
+//! src/basics/borrowing.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Borrowing ---");

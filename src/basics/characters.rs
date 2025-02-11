@@ -1,3 +1,4 @@
+//! src/basics/characters.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Character Types ---");

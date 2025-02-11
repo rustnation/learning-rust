@@ -20,6 +20,8 @@ pub fn master(show: bool) {
     }
 }
 
+// if there is no explicit return value or implicit value produced (e.g. every line ends with a
+// semicolon), the funciton will return a unit
 fn open_store(show: bool, neighborhood: Option<&str>) {
     if show {
         println!("Opening my pizza store {}", neighborhood.unwrap_or(""));

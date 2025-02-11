@@ -1,3 +1,4 @@
+//! src/basics/compounds.rs
 use crate::print_title;
 
 pub fn master(show: bool) {

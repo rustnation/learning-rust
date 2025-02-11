@@ -1,3 +1,4 @@
+//! src/basics/variables.rs
 use crate::basics::constants;
 use crate::print_title;
 

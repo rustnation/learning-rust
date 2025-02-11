@@ -1,3 +1,4 @@
+//! src/basics/booleans.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Boolean Type ---");

@@ -1,3 +1,4 @@
+//! src/basics/clone.rs
 use crate::print_title;
 
 pub fn master(show: bool) {

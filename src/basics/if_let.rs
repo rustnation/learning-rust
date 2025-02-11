@@ -1,3 +1,4 @@
+//! src/basics/if_let.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Using if in a let statement");

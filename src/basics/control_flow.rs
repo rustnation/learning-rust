@@ -1,3 +1,4 @@
+//! src/basics/control_flow.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Control Flow");

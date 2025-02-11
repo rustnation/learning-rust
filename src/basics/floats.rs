@@ -1,3 +1,4 @@
+//! src/basics/floats.rs
 use core::f64;
 
 pub fn master(show: bool) {
