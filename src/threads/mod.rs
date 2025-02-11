@@ -4,6 +4,7 @@ mod move_data_between_threads;
 mod mutexes;
 mod preventing_race_condition;
 mod scoped_threads;
+mod sending_multiple_values;
 mod sharing_data_between_threads;
 mod threads_in_array;
 
@@ -26,5 +27,7 @@ pub fn master(show: bool) {
         threads_in_array::master(false);
 
         scoped_threads::master(false);
+
+        sending_multiple_values::master(false);
     }
 }
