@@ -1,3 +1,4 @@
+//! src/algorithms/comb_sort.rs
 use crate::print_title;
 
 fn comb_sort<T: std::cmp::PartialOrd>(arr: &mut [T]) {

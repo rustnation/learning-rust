@@ -1,3 +1,4 @@
+//! src/algorithms/bubble_sort.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Bubble Sort ---");

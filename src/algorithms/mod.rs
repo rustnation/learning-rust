@@ -1,3 +1,4 @@
+//! src/algorithms/mod.rs
 mod bubble_sort;
 mod cocktail_sort;
 mod comb_sort;

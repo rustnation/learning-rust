@@ -1,3 +1,4 @@
+//! src/algorithms/insertion_sort.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Insertion Sort ---");

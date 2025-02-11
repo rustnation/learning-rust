@@ -1,3 +1,4 @@
+//! src/algorithms/selection_sort.rs
 pub fn master(show: bool) {
     if show {
         println!("--- Selection Sort ---");

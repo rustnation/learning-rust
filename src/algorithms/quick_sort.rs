@@ -1,3 +1,4 @@
+//! src/algorithms/quick_sort.rs
 pub fn master(show: bool) {
     if show {
         println!("\n--- Quick Sort ---");

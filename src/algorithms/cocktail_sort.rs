@@ -1,3 +1,4 @@
+//! src/algorithms/cocktail_sort.rs
 use crate::print_title;
 
 // Despite its potential improvements over bubble sort, cocktail sort is still considered
