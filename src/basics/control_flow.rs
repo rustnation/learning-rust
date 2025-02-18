@@ -3,35 +3,39 @@ pub fn master(show: bool) {
     if show {
         println!("\n--- Control Flow");
 
-        if_expression();
+        if_expression(false);
 
-        if_multiple_expressions();
+        if_multiple_expressions(false);
     }
 }
 
-fn if_expression() {
-    println!("--- If Expressions ---");
+fn if_expression(show: bool) {
+    if show {
+        println!("--- If Expressions ---");
 
-    let number = 7;
+        let number = 7;
 
-    if number < 77 {
-        println!("condition was true");
-    } else {
-        println!("condition was false");
+        if number < 77 {
+            println!("condition was true");
+        } else {
+            println!("condition was false");
+        }
     }
 }
 
-fn if_multiple_expressions() {
-    println!("--- If with Multiple Expressions ---");
-    let number = 7;
+fn if_multiple_expressions(show: bool) {
+    if show {
+        println!("--- If with Multiple Expressions ---");
+        let number = 7;
 
-    if number % 7 == 0 {
-        println!("number is divisible by 7");
-    } else if number % 3 == 0 {
-        println!("number is divisible by 3");
-    } else if number % 2 == 0 {
-        println!("number is divisible by 2");
-    } else {
-        println!("number is not divisible by 7, 3, or 2");
+        if number % 7 == 0 {
+            println!("number is divisible by 7");
+        } else if number % 3 == 0 {
+            println!("number is divisible by 3");
+        } else if number % 2 == 0 {
+            println!("number is divisible by 2");
+        } else {
+            println!("number is not divisible by 7, 3, or 2");
+        }
     }
 }
