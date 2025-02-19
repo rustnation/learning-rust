@@ -16,13 +16,13 @@ mod functions;
 mod if_let;
 mod integers;
 mod loops;
+mod match_statements;
 mod num_operations;
 mod scalars;
 mod shadowing;
 mod slices;
 mod underscores;
 mod variables;
-mod match_statements;
 
 pub fn master(show: bool) {
     if show {
