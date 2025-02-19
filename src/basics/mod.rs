@@ -18,6 +18,7 @@ mod integers;
 mod loops;
 mod match_statements;
 mod num_operations;
+mod recursion;
 mod scalars;
 mod shadowing;
 mod slices;
@@ -93,5 +94,8 @@ pub fn master(show: bool) {
 
         // Match Statement
         match_statements::master(false);
+
+        // Recursion
+        recursion::master(false);
     }
 }
