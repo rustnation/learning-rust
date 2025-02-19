@@ -22,6 +22,7 @@ mod shadowing;
 mod slices;
 mod underscores;
 mod variables;
+mod match_statements;
 
 pub fn master(show: bool) {
     if show {
@@ -89,5 +90,8 @@ pub fn master(show: bool) {
 
         // Convert values from one to another
         convert_values::convert_val(false);
+
+        // Match Statement
+        match_statements::master(false);
     }
 }
