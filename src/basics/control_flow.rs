@@ -6,6 +6,8 @@ pub fn master(show: bool) {
         if_expression(false);
 
         if_multiple_expressions(false);
+
+        validate_season(false);
     }
 }
 
@@ -36,6 +38,22 @@ fn if_multiple_expressions(show: bool) {
             println!("number is divisible by 2");
         } else {
             println!("number is not divisible by 7, 3, or 2");
+        }
+    }
+}
+
+fn validate_season(show: bool) {
+    if show {
+        let season = "summer";
+
+        if season == "summer" {
+            println!("School's out!");
+        } else if season == "winter" {
+            println!("So cold!");
+        } else if season == "fall" {
+            println!("Leaves falling!");
+        } else if season == "spring" {
+            println!("Lots of rain!");
         }
     }
 }
