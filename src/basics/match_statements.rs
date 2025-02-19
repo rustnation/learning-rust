@@ -22,7 +22,7 @@ fn match_with_variables(show: bool) {
         match number {
             x if x % 2 == 0 => println!("{x} is an even number"),
             x if x % 2 != 0 => println!("{x} is an odd number"),
-            _ => println!("Unknown"),
+            _ => unreachable!(),
         }
     }
 }
