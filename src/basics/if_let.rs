@@ -5,7 +5,7 @@ pub fn master(show: bool) {
 
         let condition = true;
 
-        let number = if condition { 5 } else { 6 };
+        let number = if condition { 5 } else { 6 }; // this is a bad design
 
         println!("The value of number is: {number}");
     }
