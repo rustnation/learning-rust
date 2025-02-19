@@ -75,7 +75,7 @@ pub fn loop_labels_multiple_loops() {
 pub fn while_loop() {
     println!("\n--- While Loop ---");
 
-    let mut number = 3;
+    let mut number = 7;
 
     while number != 0 {
         println!("{number}");
