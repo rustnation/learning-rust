@@ -1,6 +1,6 @@
 # Learning Rust
 
-Starting date: Mar 22, 2023
+Starting date: Feb 27, 2023
 
 Focus in the one with ★
 

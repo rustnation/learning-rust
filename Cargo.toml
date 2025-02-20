@@ -2,7 +2,7 @@
 name = "learning_rust"
 version = "0.2.0"
 edition = "2021"
-description = "Started on March 2023 with Rust"
+description = "Started on February 27 2023 with Rust"
 authors = ["William Munoz <william@rustdeveloper.io>"]
 repository = "https://github.com/therustdeveloper/learning-rust"
 
