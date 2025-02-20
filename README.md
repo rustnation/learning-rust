@@ -2,8 +2,6 @@
 
 Starting date: Feb 27, 2023
 
-Focus in the one with ★
-
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
