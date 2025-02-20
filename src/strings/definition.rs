@@ -30,7 +30,7 @@ pub fn master(show: bool) {
         push_single_character();
     }
 } // drop(s3), drop(s2) and drop(s1) are called automatically
-// owners that have heap memory
+  // owners that have heap memory
 
 fn pushing_to_string() {
     println!("--- Pushing to String ---");

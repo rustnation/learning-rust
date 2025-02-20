@@ -1,5 +1,6 @@
 //! src/ownership/mod.rs
 mod borrowing;
+mod dereference_operator;
 mod functions;
 mod mutable_borrowing;
 mod mutable_references;
@@ -41,5 +42,8 @@ pub fn master(show: bool) {
 
         // Returning Ownership
         returning_ownership::master(false);
+
+        // Dereference Operator
+        dereference_operator::master(false);
     }
 }

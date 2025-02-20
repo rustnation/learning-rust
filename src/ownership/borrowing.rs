@@ -15,8 +15,8 @@ pub fn master(show: bool) {
 fn print(value: &String) {
     println!("{}", value);
 } // the variables are going to be out of scope
-// value is the owner of memory address that is pointing to the address of one in the heap
-// one is the owner of the memory address on the heap
+  // value is the owner of memory address that is pointing to the address of one in the heap
+  // one is the owner of the memory address on the heap
 
 fn string_type() {
     let mut s = String::from("hello");
