@@ -10,6 +10,10 @@ pub fn master(show: bool) {
         println!("{}", s1);
 
         // the method also works on a literal directly
+        // this creates the following in the stack:
+        // Reference to the Heap
+        // Length: 31
+        // Capacity: 40
         let s2 = "This is a second string literal".to_string();
 
         println!("{}", s2);
