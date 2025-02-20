@@ -20,6 +20,7 @@ mod match_statements;
 mod num_operations;
 mod recursion;
 mod scalars;
+mod scopes;
 mod shadowing;
 mod slices;
 mod underscores;
@@ -97,5 +98,8 @@ pub fn master(show: bool) {
 
         // Recursion
         recursion::master(false);
+
+        // Scopes
+        scopes::master(false);
     }
 }
