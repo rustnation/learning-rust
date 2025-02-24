@@ -20,7 +20,7 @@ pub fn master(show: bool) {
         string_clone_heap::master(false);
 
         // Moving a Value
-        functions::master(false);
+        functions::master(true);
 
         // Return values and scope
         return_values_and_scope::master(false);
