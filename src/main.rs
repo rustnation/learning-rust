@@ -4,7 +4,7 @@ fn main() {
     common::hello_world::master(false);
     common::guessing_game::master(false);
     common::basics::master(false);
-    common::ownership::master(true);
+    common::ownership::master(false);
     common::structs::master(false);
     common::methods::master(false);
     common::enums::master(false);
