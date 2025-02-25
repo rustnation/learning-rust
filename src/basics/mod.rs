@@ -67,7 +67,7 @@ pub fn master(show: bool) {
         loops::master(false);
 
         // Slices
-        slices::master(false);
+        slices::master(true);
 
         // Integers
         integers::master(false);
@@ -100,6 +100,6 @@ pub fn master(show: bool) {
         recursion::master(false);
 
         // Scopes
-        scopes::master(false);
+        scopes::master(true);
     }
 }
