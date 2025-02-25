@@ -10,6 +10,9 @@ pub fn master(show: bool) {
         let burger = String::from("Burger"); // the burger variable is the owner of the
                                              // String
         add_fries(burger); // burger passes the ownership of the String to meal variable
+
+        let pizza = String::from("pizza");
+        show_my_meal(&pizza); // we are borrowing the variable to the show_my_meal function
     }
 }
 
@@ -36,4 +39,8 @@ fn immutable_and_mutable_references() {
 fn add_fries(mut meal: String) {
     meal.push_str(" and fries");
     println!("meal: {meal}");
+}
+
+fn show_my_meal(meal: &String) {
+    println!("Meal steps: {meal}");
 }
