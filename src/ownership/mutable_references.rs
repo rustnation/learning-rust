@@ -6,6 +6,10 @@ pub fn master(show: bool) {
         change(&mut s);
 
         immutable_and_mutable_references();
+
+        let burger = String::from("Burger"); // the burger variable is the owner of the
+                                             // String
+        add_fries(burger); // burger passes the ownership of the String to meal variable
     }
 }
 
@@ -25,4 +29,11 @@ fn immutable_and_mutable_references() {
 
     let r3 = &mut s; // not problem
     println!("value of {r3}");
+}
+
+// the parameter meal must be mutable because it needs internally in the function to mutate the
+// meal variable
+fn add_fries(mut meal: String) {
+    meal.push_str(" and fries");
+    println!("meal: {meal}");
 }
