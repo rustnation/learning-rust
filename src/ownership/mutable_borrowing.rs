@@ -1,13 +1,12 @@
 //! src/ownership/mutable_borrowing.rs
 pub fn master(show: bool) {
     if show {
-        let mut one: i8 = 6;
-        print(&mut one);
-        println!("In master the value is: {}", one);
+        let mut meal = String::from("burger");
+        change_meal(&mut meal);
+        println!("The final meal is: {}", meal);
     }
 }
 
-fn print(value: &mut i8) {
-    //value += 1; ToDo: this is not working
-    println!("In function the value is: {}", value);
+fn change_meal(value: &mut String) {
+    value.push_str(" and fries");
 }
