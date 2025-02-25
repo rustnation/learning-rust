@@ -4,6 +4,7 @@ mod dereference_operator;
 mod functions;
 mod mutable_borrowing;
 mod mutable_references;
+mod ownership_arrays;
 mod references_borrowing;
 mod return_multiple_values;
 mod return_values_and_scope;
@@ -45,5 +46,8 @@ pub fn master(show: bool) {
 
         // Dereference Operator
         dereference_operator::master(false);
+
+        // Ownership in Arrays
+        ownership_arrays::master(false);
     }
 }
