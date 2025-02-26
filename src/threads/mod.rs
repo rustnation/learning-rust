@@ -1,13 +1,13 @@
 //! src/threads/mod.rs
-mod definition;
-mod message_passing_between_threads;
-mod move_data_between_threads;
-mod mutexes;
-mod preventing_race_condition;
-mod scoped_threads;
-mod sending_multiple_values;
-mod sharing_data_between_threads;
-mod threads_in_array;
+pub mod definition;
+pub mod message_passing_between_threads;
+pub mod move_data_between_threads;
+pub mod mutexes;
+pub mod preventing_race_condition;
+pub mod scoped_threads;
+pub mod sending_multiple_values;
+pub mod sharing_data_between_threads;
+pub mod threads_in_array;
 
 pub fn master(show: bool) {
     if show {

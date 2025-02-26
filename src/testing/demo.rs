@@ -13,7 +13,7 @@ fn all_caps(word: &str) -> String {
 }
 
 #[cfg(test)]
-mod test {
+pub mod test {
     use crate::testing::demo::all_caps;
 
     #[test]

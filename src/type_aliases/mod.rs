@@ -1,7 +1,7 @@
 //! src/type_aliases/mod.rs
 use crate::print_title;
-mod demo;
-mod long_types;
+pub mod demo;
+pub mod long_types;
 
 pub fn master(show: bool) {
     if show {

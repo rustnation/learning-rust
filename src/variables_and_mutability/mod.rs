@@ -1,6 +1,6 @@
 //! src/variables_and_mutability/mod.rs
-mod constants;
-mod variables;
+pub mod constants;
+pub mod variables;
 
 use crate::print_title;
 

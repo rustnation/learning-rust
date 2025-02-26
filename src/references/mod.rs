@@ -1,8 +1,8 @@
 //! src/references/mod.rs
-mod basic_reference;
-mod definition;
-mod mut_reference;
-mod ref_of_references;
+pub mod basic_reference;
+pub mod definition;
+pub mod mut_reference;
+pub mod ref_of_references;
 
 pub fn master(show: bool) {
     if show {

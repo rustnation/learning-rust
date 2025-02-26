@@ -1,13 +1,13 @@
 //! src/lifetimes/mod.rs
 use crate::print_title;
 
-mod activity;
-mod anonymous_lifetime;
-mod compare_activity;
-mod definition;
-mod demo;
-mod example;
-mod named_lifetime;
+pub mod activity;
+pub mod anonymous_lifetime;
+pub mod compare_activity;
+pub mod definition;
+pub mod demo;
+pub mod example;
+pub mod named_lifetime;
 
 pub fn master(show: bool) {
     if show {

@@ -1,5 +1,5 @@
 //! src/compiler_directives/mod.rs
-mod demo;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

@@ -1,8 +1,8 @@
 //! src/typestate_pattern/mod.rs
 use crate::print_title;
 
-mod activity;
-mod demo;
+pub mod activity;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

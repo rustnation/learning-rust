@@ -1,11 +1,11 @@
 //! src/strings/mod.rs
-mod borrowed_string;
-mod concatenation;
-mod definition;
-mod iterate;
-mod string_functions;
-mod string_is_encoded;
-mod string_literals;
+pub mod borrowed_string;
+pub mod concatenation;
+pub mod definition;
+pub mod iterate;
+pub mod string_functions;
+pub mod string_is_encoded;
+pub mod string_literals;
 
 pub fn master(show: bool) {
     if show {

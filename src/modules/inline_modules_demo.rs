@@ -14,7 +14,7 @@ pub fn master(show: bool) {
     }
 }
 
-mod greet {
+pub mod greet {
     pub fn hallo() {
         println!("hallo");
     }
@@ -24,7 +24,7 @@ mod greet {
     }
 }
 
-mod math {
+pub mod math {
     pub fn add(a: i32, b: i32) -> i32 {
         a + b
     }

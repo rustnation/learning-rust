@@ -1,8 +1,8 @@
 //! src/concurrency/mod.rs
-mod definition;
-mod message_passing;
-mod scoped_threads;
-mod sharing_state_concurrently;
+pub mod definition;
+pub mod message_passing;
+pub mod scoped_threads;
+pub mod sharing_state_concurrently;
 
 pub fn master(show: bool) {
     if show {

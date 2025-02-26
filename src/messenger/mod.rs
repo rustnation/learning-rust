@@ -1,6 +1,6 @@
 //! src/messenger/mod.rs
-mod definition;
-mod mock_messenger;
+pub mod definition;
+pub mod mock_messenger;
 
 pub fn master(show: bool) {
     if show {

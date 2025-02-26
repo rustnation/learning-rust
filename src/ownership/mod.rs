@@ -1,16 +1,16 @@
 //! src/ownership/mod.rs
-mod borrowing;
-mod dereference_operator;
-mod functions;
-mod mutable_borrowing;
-mod mutable_references;
-mod ownership_arrays;
-mod references_borrowing;
-mod return_multiple_values;
-mod return_values_and_scope;
-mod returning_ownership;
-mod string_clone_heap;
-mod string_type;
+pub mod borrowing;
+pub mod dereference_operator;
+pub mod functions;
+pub mod mutable_borrowing;
+pub mod mutable_references;
+pub mod ownership_arrays;
+pub mod references_borrowing;
+pub mod return_multiple_values;
+pub mod return_values_and_scope;
+pub mod returning_ownership;
+pub mod string_clone_heap;
+pub mod string_type;
 
 pub fn master(show: bool) {
     if show {

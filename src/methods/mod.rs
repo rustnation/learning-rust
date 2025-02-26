@@ -1,8 +1,8 @@
 //! src/methods/mod.rs
-mod associated_functions;
-mod definition;
-mod multiple_impl_blocks;
-mod parameters;
+pub mod associated_functions;
+pub mod definition;
+pub mod multiple_impl_blocks;
+pub mod parameters;
 
 pub fn master(show: bool) {
     if show {

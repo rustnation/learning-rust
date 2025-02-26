@@ -1,19 +1,19 @@
 //! src/generics/mod.rs
 use crate::print_title;
 
-mod activity;
-mod conveyor_belt;
-mod definition;
-mod demo;
-mod generic_add;
-mod generic_enums;
-mod generic_functions;
-mod generic_implementation;
-mod generic_structs;
-mod generic_structures;
-mod generic_with_where;
-mod question_operator;
-mod vehicle;
+pub mod activity;
+pub mod conveyor_belt;
+pub mod definition;
+pub mod demo;
+pub mod generic_add;
+pub mod generic_enums;
+pub mod generic_functions;
+pub mod generic_implementation;
+pub mod generic_structs;
+pub mod generic_structures;
+pub mod generic_with_where;
+pub mod question_operator;
+pub mod vehicle;
 
 pub fn master(show: bool) {
     if show {

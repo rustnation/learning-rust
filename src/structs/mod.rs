@@ -1,14 +1,14 @@
 //! src/structs/mod.rs
-mod definition;
-mod file;
-mod human;
-mod integrate_struct_enum_match;
-mod person;
-mod queue;
-mod struct_update_syntax;
-mod structs_owned;
-mod tuple_structs;
-mod unit_struct;
+pub mod definition;
+pub mod file;
+pub mod human;
+pub mod integrate_struct_enum_match;
+pub mod person;
+pub mod queue;
+pub mod struct_update_syntax;
+pub mod structs_owned;
+pub mod tuple_structs;
+pub mod unit_struct;
 
 pub fn master(show: bool) {
     if show {

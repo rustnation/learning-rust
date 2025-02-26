@@ -1,6 +1,6 @@
 //! src/for_loops/mod.rs
 use crate::print_title;
-mod demo;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

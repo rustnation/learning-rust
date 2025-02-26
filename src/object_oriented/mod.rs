@@ -1,5 +1,5 @@
 //! src/object_oriented/mod.rs
-mod definition;
+pub mod definition;
 
 pub fn master(show: bool) {
     if show {

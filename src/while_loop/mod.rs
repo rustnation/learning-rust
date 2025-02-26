@@ -1,6 +1,6 @@
 //! src/while_loop/mod.rs
-mod definition;
-mod while_let;
+pub mod definition;
+pub mod while_let;
 
 pub fn master(show: bool) {
     if show {

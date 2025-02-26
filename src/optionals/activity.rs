@@ -61,7 +61,7 @@ fn root() -> Option<Access> {
 }
 
 #[cfg(test)]
-mod test {
+pub mod test {
     use crate::optionals::activity::part_1;
     use crate::optionals::activity::part_2;
     use crate::optionals::activity::part_3;

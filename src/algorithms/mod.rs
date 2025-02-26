@@ -1,11 +1,11 @@
 //! src/algorithms/mod.rs
-mod bubble_sort;
-mod cocktail_sort;
-mod comb_sort;
-mod insertion_sort;
-mod merge_sort;
-mod quick_sort;
-mod selection_sort;
+pub mod bubble_sort;
+pub mod cocktail_sort;
+pub mod comb_sort;
+pub mod insertion_sort;
+pub mod merge_sort;
+pub mod quick_sort;
+pub mod selection_sort;
 
 pub fn master(show: bool) {
     if show {

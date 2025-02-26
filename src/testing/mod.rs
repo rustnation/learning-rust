@@ -1,7 +1,7 @@
 //! src/testing/mod.rs
-mod activity;
-mod definition;
-mod demo;
+pub mod activity;
+pub mod definition;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

@@ -1,7 +1,7 @@
 //! src/optionals/mod.rs
-mod activity;
-mod definition;
-mod unwrap_or_else;
+pub mod activity;
+pub mod definition;
+pub mod unwrap_or_else;
 
 pub fn master(show: bool) {
     if show {

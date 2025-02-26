@@ -1,5 +1,5 @@
 //! src/rust_atomics_and_locks/mod.rs
-mod chapter01;
+pub mod chapter01;
 
 pub fn master(show: bool) {
     if show {

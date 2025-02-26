@@ -1,10 +1,10 @@
 //! src/rust_atomics_and_locks/chapter01/mod.rs
-mod thread_basics;
-mod thread_closure;
-mod thread_join;
-mod thread_leaking;
-mod thread_result;
-mod thread_scoped;
+pub mod thread_basics;
+pub mod thread_closure;
+pub mod thread_join;
+pub mod thread_leaking;
+pub mod thread_result;
+pub mod thread_scoped;
 
 pub fn master(show: bool) {
     if show {

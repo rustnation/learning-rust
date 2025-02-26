@@ -1,6 +1,6 @@
 //! src/loops/mod.rs
-mod definition;
-mod returning_values_from_loops;
+pub mod definition;
+pub mod returning_values_from_loops;
 
 pub fn master(show: bool) {
     if show {

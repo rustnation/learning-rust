@@ -1,10 +1,10 @@
 //! src/closures/mod.rs
-mod closures_inside_methods;
-mod definition;
-mod demo;
-mod map_collect;
-mod map_combinator;
-mod process_closure_thread;
+pub mod closures_inside_methods;
+pub mod definition;
+pub mod demo;
+pub mod map_collect;
+pub mod map_combinator;
+pub mod process_closure_thread;
 
 pub fn master(show: bool) {
     if show {

@@ -1,11 +1,11 @@
 //! src/hashmaps/mod.rs
-mod activity;
-mod definition;
-mod furniture;
-mod hashmap_entry_method;
-mod hashmap_get;
-mod hashmap_loop;
-mod hashmap_old_values;
+pub mod activity;
+pub mod definition;
+pub mod furniture;
+pub mod hashmap_entry_method;
+pub mod hashmap_get;
+pub mod hashmap_loop;
+pub mod hashmap_old_values;
 
 pub fn master(show: bool) {
     if show {

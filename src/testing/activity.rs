@@ -15,7 +15,7 @@ pub fn master(show: bool) {
 }
 
 #[cfg(test)]
-mod test {
+pub mod test {
     use crate::testing::activity::{clamp, concat, div};
 
     #[test]

@@ -32,7 +32,7 @@ pub fn master(show: bool) {
     }
 }
 
-mod msg {
+pub mod msg {
     pub fn trim(msg: &str) -> &str {
         msg.trim()
     }
@@ -50,7 +50,7 @@ mod msg {
     }
 }
 
-mod math {
+pub mod math {
     pub fn add(lhs: isize, rhs: isize) -> isize {
         lhs + rhs
     }

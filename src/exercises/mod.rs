@@ -1,6 +1,6 @@
 //! src/exercises/mod.rs
-mod ex03;
-mod ex08;
+pub mod ex03;
+pub mod ex08;
 
 pub fn master(show: bool) {
     if show {

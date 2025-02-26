@@ -1,6 +1,6 @@
 //! src/user_input/mod.rs
-mod activity;
-mod demo;
+pub mod activity;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

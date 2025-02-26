@@ -1,21 +1,21 @@
 //! src/traits/mod.rs
 use crate::print_title;
 
-mod activity;
-mod activity_trait_objects;
-mod complex_trait;
-mod copy_trait;
-mod default_trait;
-mod definition;
-mod demo;
-mod demo_trait_objets;
-mod derives;
-mod from_trait;
-mod impl_display;
-mod media_aggregator;
-mod returning_traits_with_dyn;
-mod simple_trait;
-mod with_generics;
+pub mod activity;
+pub mod activity_trait_objects;
+pub mod complex_trait;
+pub mod copy_trait;
+pub mod default_trait;
+pub mod definition;
+pub mod demo;
+pub mod demo_trait_objets;
+pub mod derives;
+pub mod from_trait;
+pub mod impl_display;
+pub mod media_aggregator;
+pub mod returning_traits_with_dyn;
+pub mod simple_trait;
+pub mod with_generics;
 
 pub fn master(show: bool) {
     if show {

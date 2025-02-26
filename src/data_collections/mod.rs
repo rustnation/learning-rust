@@ -1,6 +1,6 @@
 //! src/data_collections/mod.rs
-mod definition;
-mod shipping_box;
+pub mod definition;
+pub mod shipping_box;
 
 pub fn master(show: bool) {
     if show {

@@ -1,8 +1,8 @@
 //! src/numbers/mod.rs
 
-mod comparing_numbers;
-mod complex_numbers;
-mod try_into_method;
+pub mod comparing_numbers;
+pub mod complex_numbers;
+pub mod try_into_method;
 
 pub fn master(show: bool) {
     if show {

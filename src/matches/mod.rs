@@ -1,13 +1,13 @@
 //! src/matches/mod.rs
-mod catch_all;
-mod definition;
-mod if_let;
-mod match_control_flow;
-mod match_guard;
-mod match_vector;
-mod multiple_placeholders;
-mod placeholder;
-mod while_let;
+pub mod catch_all;
+pub mod definition;
+pub mod if_let;
+pub mod match_control_flow;
+pub mod match_guard;
+pub mod match_vector;
+pub mod multiple_placeholders;
+pub mod placeholder;
+pub mod while_let;
 
 pub fn master(show: bool) {
     if show {

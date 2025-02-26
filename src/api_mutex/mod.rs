@@ -1,7 +1,7 @@
 //! src/api_mutex/mod.rs
-mod definition;
-mod mutexes;
-mod thread_parking;
+pub mod definition;
+pub mod mutexes;
+pub mod thread_parking;
 
 pub fn master(show: bool) {
     if show {

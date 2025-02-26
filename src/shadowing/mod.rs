@@ -1,6 +1,6 @@
 //! src/shadowing/mod.rs
 use crate::print_title;
-mod definition;
+pub mod definition;
 
 pub fn master(show: bool) {
     if show {

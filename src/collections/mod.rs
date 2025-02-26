@@ -1,5 +1,5 @@
 //! src/collections/mod.rs
-mod vectors;
+pub mod vectors;
 
 pub fn master(show: bool) {
     if show {

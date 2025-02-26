@@ -1,6 +1,6 @@
 //! src/functions/mod.rs
-mod blocks_in_functions;
-mod definition;
+pub mod blocks_in_functions;
+pub mod definition;
 
 pub fn master(show: bool) {
     if show {

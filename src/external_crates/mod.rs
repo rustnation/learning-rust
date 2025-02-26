@@ -1,6 +1,6 @@
 //! src/external_crates/mod.rs
-mod activity;
-mod demo;
+pub mod activity;
+pub mod demo;
 
 pub fn master(show: bool) {
     if show {

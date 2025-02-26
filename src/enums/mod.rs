@@ -1,15 +1,15 @@
 //! src/enums/mod.rs
 use crate::print_title;
 
-mod definition;
-mod demo;
-mod enum_multi_array;
-mod enum_with_data;
-mod enum_with_match;
-mod event;
-mod hold_data;
-mod matches;
-mod options;
+pub mod definition;
+pub mod demo;
+pub mod enum_multi_array;
+pub mod enum_with_data;
+pub mod enum_with_match;
+pub mod event;
+pub mod hold_data;
+pub mod matches;
+pub mod options;
 
 pub fn master(show: bool) {
     if show {

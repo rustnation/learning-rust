@@ -51,7 +51,7 @@ fn filter_by_size() {
 }
 
 #[cfg(test)]
-mod tests {
+pub mod tests {
     use super::*;
 
     #[test]

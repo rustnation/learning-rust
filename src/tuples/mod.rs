@@ -1,6 +1,6 @@
 //! src/tuples/mod.rs
-mod definition;
-mod single_tuple;
+pub mod definition;
+pub mod single_tuple;
 
 pub fn master(show: bool) {
     if show {

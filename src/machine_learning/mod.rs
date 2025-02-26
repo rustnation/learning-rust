@@ -1,6 +1,6 @@
 //! src/machine_learning/mod.rs
 use crate::print_title;
-mod reading_csv_file;
+pub mod reading_csv_file;
 
 pub fn master(show: bool) {
     if show {

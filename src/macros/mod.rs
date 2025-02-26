@@ -1,6 +1,6 @@
 //! src/macros/mod.rs
-mod create_vector;
-mod definition;
+pub mod create_vector;
+pub mod definition;
 
 pub fn master(show: bool) {
     if show {

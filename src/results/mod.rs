@@ -1,7 +1,7 @@
 //! src/results/mod.rs
-mod activity;
-mod definition;
-mod question_mark_operator;
+pub mod activity;
+pub mod definition;
+pub mod question_mark_operator;
 
 pub fn master(show: bool) {
     if show {

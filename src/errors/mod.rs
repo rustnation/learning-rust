@@ -1,11 +1,11 @@
 //! src/errors/mod.rs
 use crate::print_title;
 
-mod activity_custom_errors;
-mod closures;
-mod demo_custom_error;
-mod error_handling;
-mod error_propagation;
+pub mod activity_custom_errors;
+pub mod closures;
+pub mod demo_custom_error;
+pub mod error_handling;
+pub mod error_propagation;
 
 pub fn master(show: bool) {
     if show {

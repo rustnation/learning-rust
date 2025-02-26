@@ -1,6 +1,6 @@
 //! src/messenger/mock_messenger.rs
 #[cfg(test)]
-mod tests {
+pub mod tests {
     use crate::messenger::definition::LimitTracker;
     use crate::messenger::definition::Messenger;
     use std::cell::RefCell;
