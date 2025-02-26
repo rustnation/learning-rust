@@ -1,30 +1,30 @@
 //! src/basics/mod.rs
 use crate::print_title;
 
-mod arrays;
-mod booleans;
-mod borrowing;
-mod branches;
-mod characters;
-mod clone;
-mod compounds;
-mod constants;
-mod control_flow;
-mod convert_values;
-mod floats;
-mod functions;
-mod if_let;
-mod integers;
-mod loops;
-mod match_statements;
-mod num_operations;
-mod recursion;
-mod scalars;
-mod scopes;
-mod shadowing;
-mod slices;
-mod underscores;
-mod variables;
+pub mod arrays;
+pub mod booleans;
+pub mod borrowing;
+pub mod branches;
+pub mod characters;
+pub mod clone;
+pub mod compounds;
+pub mod constants;
+pub mod control_flow;
+pub mod convert_values;
+pub mod floats;
+pub mod functions;
+pub mod if_let;
+pub mod integers;
+pub mod loops;
+pub mod match_statements;
+pub mod num_operations;
+pub mod recursion;
+pub mod scalars;
+pub mod scopes;
+pub mod shadowing;
+pub mod slices;
+pub mod underscores;
+pub mod variables;
 
 pub fn master(show: bool) {
     if show {
