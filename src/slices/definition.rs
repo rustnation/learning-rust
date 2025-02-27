@@ -8,6 +8,10 @@ pub fn master(show: bool) {
         println!("Last Name: {last_name}");
 
         slice_lenght(false);
+
+        do_hero_stuff(&action_hero);
+        let another_action_hero = "Sylvester Stallone";
+        do_hero_stuff(&another_action_hero.to_string());
     }
 }
 
@@ -16,4 +20,8 @@ fn slice_lenght(show: bool) {
         let food = "🍕";
         println!("Lenght food: {}", food.len());
     }
+}
+
+fn do_hero_stuff(hero_name: &String) {
+    println!("{hero_name} saves the day");
 }
