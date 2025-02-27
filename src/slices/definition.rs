@@ -12,6 +12,10 @@ pub fn master(show: bool) {
         do_hero_stuff(&action_hero);
         let another_action_hero = "Sylvester Stallone";
         do_hero_stuff(&another_action_hero.to_string());
+
+        // the cool stuff with slices
+        do_hero_stuff_slice(&action_hero);
+        do_hero_stuff_slice(&another_action_hero);
     }
 }
 
@@ -23,5 +27,9 @@ fn slice_lenght(show: bool) {
 }
 
 fn do_hero_stuff(hero_name: &String) {
+    println!("{hero_name} saves the day");
+}
+
+fn do_hero_stuff_slice(hero_name: &str) {
     println!("{hero_name} saves the day");
 }
