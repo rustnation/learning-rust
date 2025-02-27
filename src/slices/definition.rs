@@ -6,5 +6,14 @@ pub fn master(show: bool) {
 
         let last_name = &action_hero[7..21];
         println!("Last Name: {last_name}");
+
+        slice_lenght(false);
+    }
+}
+
+fn slice_lenght(show: bool) {
+    if show {
+        let food = "🍕";
+        println!("Lenght food: {}", food.len());
     }
 }
