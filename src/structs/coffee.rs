@@ -7,11 +7,14 @@ struct Coffee {
 
 pub fn master(show: bool) {
     if show {
-        let mocha = Coffee {
-            price: 7.7,
+        let mut mocha = Coffee {
+            price: 6.7,
             name: String::from("Mocha"),
             is_hot: true,
         };
+
+        // set a beautiful price
+        mocha.price = 7.7;
 
         println!("Mocha: {mocha:?}");
         println!(
