@@ -1,4 +1,5 @@
 //! src/structs/mod.rs
+pub mod coffee;
 pub mod definition;
 pub mod file;
 pub mod human;
@@ -31,5 +32,7 @@ pub fn master(show: bool) {
         file::master(false);
 
         struct_update_syntax::master(false);
+
+        coffee::master(false);
     }
 }
