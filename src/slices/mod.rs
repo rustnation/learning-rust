@@ -3,6 +3,7 @@ use crate::print_title;
 pub mod activity;
 pub mod array_slices;
 pub mod definition;
+pub mod mutable_slice;
 pub mod reference_array;
 
 pub fn master(show: bool) {
@@ -13,5 +14,6 @@ pub fn master(show: bool) {
         definition::master(false);
         array_slices::master(false);
         reference_array::master(false);
+        mutable_slice::master(false);
     }
 }
