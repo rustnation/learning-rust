@@ -24,6 +24,12 @@ pub struct Post {
     content: String,
 }
 
+impl Default for Post {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Post {
     pub fn new() -> Post {
         Post {

@@ -15,7 +15,7 @@ pub fn master(show: bool) {
 
         // the cool stuff with slices
         do_hero_stuff_slice(&action_hero);
-        do_hero_stuff_slice(&another_action_hero);
+        do_hero_stuff_slice(another_action_hero);
     }
 }
 

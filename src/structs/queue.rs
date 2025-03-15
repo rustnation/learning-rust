@@ -8,6 +8,12 @@ pub struct Queue {
     younger: Vec<char>, // younger elements, youngest last.
 }
 
+impl Default for Queue {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Queue {
     /// Constructor functions using type-associated functions
     pub fn new() -> Queue {
