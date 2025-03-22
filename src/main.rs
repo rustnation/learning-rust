@@ -2,7 +2,7 @@
 fn main() {
     local_function(false);
     common::hello_world::master(false);
-    common::guessing_game::master(true);
+    common::guessing_game::master(false);
     common::basics::master(false);
     common::ownership::master(false);
     common::structs::master(false);
