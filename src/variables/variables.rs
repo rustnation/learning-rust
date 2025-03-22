@@ -1,4 +1,4 @@
-//! src/variables_and_mutability/variables.rs
+//! src/variables/variables.rs
 pub fn master(show: bool) {
     if show {
         println!("-- Variables --");

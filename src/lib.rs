@@ -87,7 +87,7 @@ pub mod typestate_pattern;
 pub mod unsafe_code;
 pub mod unsafe_trait;
 pub mod user_input;
-pub mod variables_and_mutability;
+pub mod variables;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;

@@ -1,4 +1,4 @@
-//! src/variables_and_mutability/mod.rs
+//! src/variables/mod.rs
 pub mod constants;
 pub mod variables;
 
