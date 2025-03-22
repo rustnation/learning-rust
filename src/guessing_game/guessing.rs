@@ -18,6 +18,9 @@ pub fn master(show: bool) {
                 .read_line(&mut guess)
                 .expect("Failed to read line");
 
+            // trim() is necessary because read_line includes the newline byte the buffer
+            // if parse() is able to successfully turn the string into a number, it will return Ok
+            // value that contains thre resultant number
             let guess: u32 = match guess.trim().parse() {
                 Ok(num) => num,
                 Err(_) => continue,
