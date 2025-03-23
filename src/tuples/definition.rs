@@ -27,5 +27,8 @@ pub fn master(show: bool) {
         match access {
             Access::Full => println!("employee has full access"),
         };
+
+        let tup = (700, 7.0, 7);
+        println!("{:?}", tup);
     }
 }
