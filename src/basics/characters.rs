@@ -6,7 +6,7 @@ pub fn master(show: bool) {
         let c = 'z';
         println!("value of c is: {c}");
 
-        let z: char = '⎈';
+        let z: char = '𝒵';
         println!("value of z is: {z}");
 
         let kannada: char = '\u{CA0}';
