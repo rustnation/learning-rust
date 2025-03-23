@@ -3,7 +3,7 @@ pub fn master(show: bool) {
     if show {
         println!("--- Numeric Operations---");
         // addition
-        let sum = 7 * 7;
+        let sum = 7 + 7;
         println!("value of sum is: {sum}");
 
         // subtraction
