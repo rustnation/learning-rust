@@ -12,5 +12,8 @@ pub fn convert_val(show: bool) {
 
         println!("miles_away_f32: {miles_away_f32}");
         println!("miles away int value: {miles_away_int}");
+
+        let guess: u32 = "77".parse().expect("Not a number!");
+        println!("guess value: {guess}");
     }
 }
