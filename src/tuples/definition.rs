@@ -30,5 +30,8 @@ pub fn master(show: bool) {
 
         let tup = (700, 7.0, 7);
         println!("{:?}", tup);
+
+        let (x, y, z) = tup;
+        println!("x: {x}, y: {y}, z: {z}");
     }
 }
