@@ -20,6 +20,7 @@ fn definition() {
         let x = x * 7;
         println!("The value of x in the inner scope is: {x}");
     }
+
     println!("The value of x in the outer scope is: {x}");
 }
 
