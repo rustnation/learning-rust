@@ -21,5 +21,16 @@ pub fn master(show: bool) {
             "My {} this morning cost {}. It is {} that is was hot.",
             mocha.name, mocha.price, mocha.is_hot
         );
+
+        debug_trait(false);
+    }
+}
+
+fn debug_trait(show: bool) {
+    if show {
+        let values = ["hello", "rust"];
+
+        println!("{:?}", values); // debug trait respresentation
+        println!("{:#?}", values); // debug pritier trait representation
     }
 }
