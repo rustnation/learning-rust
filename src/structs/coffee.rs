@@ -1,4 +1,4 @@
-#[derive(Debug)]
+#[derive(Debug)] // add debug trait implementation
 struct Coffee {
     price: f64,
     name: String,
