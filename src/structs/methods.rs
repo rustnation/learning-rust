@@ -42,6 +42,10 @@ impl Song {
     fn double_length_mutable(&mut self) {
         self.duration_seconds *= 2;
     }
+
+    fn is_longer_than(&self, other: &Self) -> bool {
+        self.duration_seconds > other.duration_seconds
+    }
 }
 
 pub fn index(show: bool) {
@@ -92,5 +96,17 @@ pub fn index(show: bool) {
 
         // now I am able to continue using the instance and its fields
         println!("{:?}", metallica_song3.title);
+
+        if metallica_song3.is_longer_than(&metallica_song2) {
+            println!(
+                "{} is longer than {}",
+                metallica_song3.title, metallica_song2.title,
+            );
+        } else {
+            println!(
+                "{} is shorter than {}",
+                metallica_song2.title, metallica_song3.title,
+            )
+        }
     }
 }
