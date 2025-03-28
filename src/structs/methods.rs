@@ -38,7 +38,8 @@ impl Song {
     // mutable reference to the struct instance (no ownership moved, have permission to mutate)
     // the instance here is borrowed
     // self here is not a struct, is a reference to a struct
-    fn double_length_mutable(self: &mut Song) {
+    // also can be set as self: &mut Song
+    fn double_length_mutable(&mut self) {
         self.duration_seconds *= 2;
     }
 }
