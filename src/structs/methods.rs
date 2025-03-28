@@ -13,8 +13,6 @@ impl Song {
     //  Self is a kind of alias of Song, this is more resilient to change, tomorrow I can change
     //  the struct name to Album
     fn display_song(self) {
-        // immutable reference to the struct (no ownership moved)
-        // mutable reference to the struct instance (no ownership moved, have permission to mutate)
         println!("Title: {}", self.title);
         println!("Artist: {}", self.artist);
         println!("Release Year: {}", self.release_year);
@@ -25,6 +23,22 @@ impl Song {
     fn double_length(mut self) {
         self.duration_seconds *= 2;
         println!("{:?}", self);
+    }
+
+    // immutable reference to the struct (no ownership moved)
+    // we can also use &Self
+    // we can also use &self
+    fn display_song_reference(self: &Song) {
+        println!("Title: {}", self.title);
+        println!("Artist: {}", self.artist);
+        println!("Release Year: {}", self.release_year);
+        println!("Duration in Secods: {}", self.duration_seconds);
+    }
+
+    // mutable reference to the struct instance (no ownership moved, have permission to mutate)
+    //
+    fn double_length_mutable(self: &mut Song) {
+        self.duration_seconds *= 2;
     }
 }
 
@@ -43,13 +57,38 @@ pub fn index(show: bool) {
         // I cannot set println!("{}", song.title);, because self in display_song(self) is the
         // owner of the song struct because the value is moved
 
-        let metallica_song = Song {
+        let metallica_song1 = Song {
             title: String::from("If Darkness had a Son"),
             artist: String::from("Metallica"),
             release_year: 2023,
             duration_seconds: 360,
         };
 
-        metallica_song.double_length();
+        metallica_song1.double_length();
+
+        let metallica_song2 = Song {
+            title: String::from("One"),
+            artist: String::from("Metallica"),
+            release_year: 1988,
+            duration_seconds: 447,
+        };
+
+        // automatically behind the scenes rust pass a reference &self
+        metallica_song2.display_song_reference();
+
+        // with this implementation I can continue use the struct instance
+        println!("{:?}", metallica_song2.title);
+
+        let mut metallica_song3 = Song {
+            title: String::from("Master of Puppets"),
+            artist: String::from("Metallica"),
+            release_year: 1986,
+            duration_seconds: 515,
+        };
+
+        metallica_song3.double_length_mutable();
+
+        // now I am able to continue using the instance and its fields
+        println!("{:?}", metallica_song3.title);
     }
 }
