@@ -33,5 +33,9 @@ pub fn index(show: bool) {
         };
 
         song.display_song();
+
+        // with this approach song is not the owner and cannot be used
+        // I cannot set println!("{}", song.title);, because self in display_song(self) is the
+        // owner of the song struct because the value is moved
     }
 }
