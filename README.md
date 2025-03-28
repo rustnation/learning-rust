@@ -28,7 +28,7 @@ Starting date: Feb 27, 2023
 - Rust Programming Master Class: From Beginner to Expert
 - The Complete Rust Programming Course
 
-### Free Resources
+## Free Resources
 
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
 - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
