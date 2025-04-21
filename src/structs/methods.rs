@@ -8,6 +8,18 @@ struct Song {
 
 // methods are defined in this block
 impl Song {
+    // associated function (not a method, because it doesn't take self as parameter)
+    // associated functions are like static methods in other languages
+    // associated functions are not tied to an instance of the struct
+    fn new(title: String, artist: String, release_year: u32, duration_seconds: u32) -> Self {
+        Self {
+            title,
+            artist,
+            release_year,
+            duration_seconds,
+        }
+    }
+    
     // immutable struct value (self parameter takes ownership) (self: Song or self: Self or
     // just self)
     //  Self is a kind of alias of Song, this is more resilient to change, tomorrow I can change
@@ -108,5 +120,15 @@ pub fn index(show: bool) {
                 metallica_song2.title, metallica_song3.title,
             )
         }
+        
+        // associated function
+        let coldplay_song = Song::new(
+            String::from("Viva La Vida"),
+            String::from("Coldplay"),
+            2008,
+            240,
+        );
+        
+        println!("{:?}", coldplay_song.title);
     }
 }
