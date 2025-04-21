@@ -11,6 +11,14 @@ struct SizeAndColor {
     color: ColorRgb,
 }
 
+// Tuple struct with named fields
+// Hours, Minutes
+struct ShortDuration(u32, u32);
+
+// Tuple struct with named fields
+// Years, Months
+struct LongDuration(u32, u32);
+
 pub fn master(show: bool) {
     if show {
         let black = Color(0, 0, 0);
@@ -33,5 +41,18 @@ pub fn master(show: bool) {
         println!("size_and_color color 1: {:?}", size_and_color.color.0);
         println!("size_and_color color 2: {:?}", size_and_color.color.1);
         println!("size_and_color color 3: {:?}", size_and_color.color.2);
+        
+        tuple_structs(false);
+    }
+}
+
+// working with tuple structs
+pub fn tuple_structs(show: bool) {
+    if show {
+        let short = ShortDuration(5, 30);
+        let long = LongDuration(2, 6);
+
+        println!("Short Duration: {:?} {:?}", short.0, short.1);
+        println!("Long Duration: {:?} {:?}", long.0, long.1);
     }
 }
