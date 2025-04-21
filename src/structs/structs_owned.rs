@@ -4,7 +4,7 @@ struct LineItem {
     count: i32,
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("\n--- Structs Owned");
 

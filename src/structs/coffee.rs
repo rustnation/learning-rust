@@ -5,7 +5,7 @@ struct Coffee {
     is_hot: bool,
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let mut mocha = Coffee {
             price: 6.7,

@@ -20,7 +20,7 @@ struct Country {
     leader_name: String,
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let mut user1 = User {
             active: true,

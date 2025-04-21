@@ -17,7 +17,7 @@ impl Rectangle {
     }
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let _subject = AlwaysEqual;
 

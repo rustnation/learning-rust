@@ -40,7 +40,7 @@ fn close(_f: &mut File) -> bool {
     true
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         print_title("Mimic a File Open");
 

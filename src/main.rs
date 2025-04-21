@@ -5,7 +5,7 @@ fn main() {
     common::guessing_game::master(false);
     common::basics::master(false);
     common::ownership::master(false);
-    common::structs::master(false);
+    common::structs::index(false);
     common::methods::master(false);
     common::enums::master(false);
     common::random_numbers::master(false);

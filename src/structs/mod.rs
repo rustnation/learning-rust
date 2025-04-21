@@ -13,29 +13,29 @@ pub mod tuple_structs;
 pub mod unit_struct;
 pub mod builder_pattern;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
-        definition::master(false);
+        definition::index(false);
 
-        tuple_structs::master(false);
+        tuple_structs::index(false);
 
-        unit_struct::master(false);
+        unit_struct::index(false);
 
-        human::master(false);
+        human::index(false);
 
-        integrate_struct_enum_match::master(false);
+        integrate_struct_enum_match::index(false);
 
-        structs_owned::master(false);
+        structs_owned::index(false);
 
-        person::master(false);
+        person::index(false);
 
-        queue::master(false);
+        queue::index(false);
 
-        file::master(false);
+        file::index(false);
 
-        struct_update_syntax::master(false);
+        struct_update_syntax::index(false);
 
-        coffee::master(false);
+        coffee::index(false);
 
         methods::index(false);
         

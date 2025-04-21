@@ -19,7 +19,7 @@ fn print_drink(drink: Drink) {
     println!("oz: {}", drink.fluid_oz);
 }
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("\n-- Integrate Struct, Enum & Match");
 

@@ -19,7 +19,7 @@ struct ShortDuration(u32, u32);
 // Years, Months
 struct LongDuration(u32, u32);
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let black = Color(0, 0, 0);
         let origin = Point(0, 0, 0);

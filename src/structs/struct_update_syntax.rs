@@ -1,7 +1,7 @@
 //! src/structs/struct_update_syntax.rs
 use crate::structs::definition::User;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let user1 = User {
             active: true,
