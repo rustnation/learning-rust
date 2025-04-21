@@ -6,7 +6,6 @@ struct Song {
     duration_seconds: u32,
 }
 
-// methods are defined in this block
 impl Song {
     // associated function (not a method, because it doesn't take self as parameter)
     // associated functions are like static methods in other languages
@@ -19,7 +18,10 @@ impl Song {
             duration_seconds,
         }
     }
-    
+}
+
+// methods are defined in this block
+impl Song {
     // immutable struct value (self parameter takes ownership) (self: Song or self: Self or
     // just self)
     //  Self is a kind of alias of Song, this is more resilient to change, tomorrow I can change
