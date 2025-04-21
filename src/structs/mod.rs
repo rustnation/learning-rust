@@ -11,6 +11,7 @@ pub mod struct_update_syntax;
 pub mod structs_owned;
 pub mod tuple_structs;
 pub mod unit_struct;
+pub mod builder_pattern;
 
 pub fn master(show: bool) {
     if show {
@@ -37,5 +38,7 @@ pub fn master(show: bool) {
         coffee::master(false);
 
         methods::index(false);
+        
+        builder_pattern::index(false);
     }
 }
