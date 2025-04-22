@@ -1,5 +1,5 @@
 //! src/ownership/string_type.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- String Type ---");
 

@@ -1,5 +1,5 @@
 //! src/ownership/mutable_references.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let mut s = String::from("hallo");
 

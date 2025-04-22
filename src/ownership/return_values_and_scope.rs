@@ -1,5 +1,5 @@
 //! src/ownership/return_values_and_scope.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let _s1 = gives_ownership(); // gives_ownership moves its return value to s1
 

@@ -12,42 +12,42 @@ pub mod returning_ownership;
 pub mod string_clone_heap;
 pub mod string_type;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         // String Type
-        string_type::master(false);
+        string_type::index(false);
 
         // String Clone Heap
-        string_clone_heap::master(false);
+        string_clone_heap::index(false);
 
         // Moving a Value
-        functions::master(false);
+        functions::index(false);
 
         // Return values and scope
-        return_values_and_scope::master(false);
+        return_values_and_scope::index(false);
 
         // Return multiple values
-        return_multiple_values::master(false);
+        return_multiple_values::index(false);
 
         // References and Borrowing
-        references_borrowing::master(false);
+        references_borrowing::index(false);
 
         // Mutable references
-        mutable_references::master(false);
+        mutable_references::index(false);
 
         // Borrowing
-        borrowing::master(false);
+        borrowing::index(false);
 
         // Mutable Borrowing of Variables
-        mutable_borrowing::master(false);
+        mutable_borrowing::index(false);
 
         // Returning Ownership
-        returning_ownership::master(false);
+        returning_ownership::index(false);
 
         // Dereference Operator
-        dereference_operator::master(false);
+        dereference_operator::index(false);
 
         // Ownership in Arrays
-        ownership_arrays::master(false);
+        ownership_arrays::index(false);
     }
 }

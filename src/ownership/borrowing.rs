@@ -1,5 +1,5 @@
 //! src/ownership/borrowing.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("\n-- Immutable Borrowing of Variables");
         let one = "one".to_string();

@@ -1,5 +1,5 @@
 //! src/ownership/string_clone_heap.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- String Cloning Heap ---");
         let s1 = String::from("hallo");

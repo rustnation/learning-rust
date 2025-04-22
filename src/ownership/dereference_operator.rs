@@ -1,4 +1,4 @@
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let brand = String::from("Kubernetes and Rust");
         let linked_brand = &brand;

@@ -1,5 +1,5 @@
 //! src/ownership/return_multiple_values.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         let s1 = String::from("hallo");
 
