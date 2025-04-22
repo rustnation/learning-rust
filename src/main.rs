@@ -86,7 +86,7 @@ fn main() {
     common::functions::master(false);
     common::concurrency::master(false);
     common::variables::master(false);
-    common::compiler_directives::master(false);
+    common::compiler_directives::index(false);
 }
 
 fn local_function(show: bool) {
