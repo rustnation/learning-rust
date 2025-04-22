@@ -85,7 +85,7 @@ fn main() {
     common::cow_type::master(false);
     common::functions::master(false);
     common::concurrency::master(false);
-    common::variables::master(false);
+    common::variables::index(false);
     common::compiler_directives::index(false);
 }
 
