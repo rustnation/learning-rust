@@ -1,7 +1,7 @@
 //! src/basics/floats.rs
 use core::f64;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- Floating Points ---");
         let x = 2.0; // f64

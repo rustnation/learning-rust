@@ -2,7 +2,7 @@
 use std::rc::Rc;
 use std::sync::{Arc, Mutex};
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("-- Integers");
 

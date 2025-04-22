@@ -1,5 +1,5 @@
 //! src/basics/scalars.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- Scalar Types ---");
         println!("--- Integer Types ---");

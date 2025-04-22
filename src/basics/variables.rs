@@ -2,7 +2,7 @@
 use crate::basics::constants;
 use crate::print_title;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         print_title("Variables");
 

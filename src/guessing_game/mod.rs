@@ -1,7 +1,7 @@
 //! src/guessing_game/mod.rs
 pub mod guessing;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         guessing::master(false);
     }

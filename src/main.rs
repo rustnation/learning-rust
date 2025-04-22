@@ -1,9 +1,9 @@
 //! src//home/william/workspace/rust/learning-rust/src/main.rs
 fn main() {
     local_function(false);
-    common::hello_world::master(false);
-    common::guessing_game::master(false);
-    common::basics::master(false);
+    common::hello_world::index(false);
+    common::guessing_game::index(false);
+    common::basics::index(false);
     common::ownership::master(false);
     common::structs::index(false);
     common::methods::master(false);

@@ -1,5 +1,5 @@
 //! src/basics/slices.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- Slices ---");
         let slice_array: [i32; 100] = [0; 100];

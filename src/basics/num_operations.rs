@@ -1,5 +1,5 @@
 //! src/basics/num_operations.rs
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         println!("--- Numeric Operations---");
         // addition

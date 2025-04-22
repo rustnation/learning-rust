@@ -6,7 +6,7 @@ use crate::print_title;
 pub const MAX_SPEED: i32 = 9000;
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         print_title("Constants");
 

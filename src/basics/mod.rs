@@ -26,80 +26,80 @@ pub mod slices;
 pub mod underscores;
 pub mod variables;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         print_title("BASICS");
 
         // Variables
-        variables::master(false);
+        variables::index(false);
 
         // Constants
-        constants::master(false);
+        constants::index(false);
 
         // Shadowing
-        shadowing::master(false);
+        shadowing::index(false);
 
         // Scalar Types
-        scalars::master(false);
+        scalars::index(false);
 
         // Floating Points
-        floats::master(false);
+        floats::index(false);
 
         // Numeric Operations
-        num_operations::master(false);
+        num_operations::index(false);
 
         // Boolean Types
-        booleans::master(false);
+        booleans::index(false);
 
         // Character Types
-        characters::master(false);
+        characters::index(false);
 
         // Tuple Types
-        compounds::master(false);
+        compounds::index(false);
 
         // Functions
-        functions::master(false);
+        functions::index(false);
 
         // Control Flow
-        control_flow::master(false);
+        control_flow::index(false);
 
         // Loops
-        loops::master(false);
+        loops::index(false);
 
         // Slices
-        slices::master(false);
+        slices::index(false);
 
         // Integers
-        integers::master(false);
+        integers::index(false);
 
         // Arrays
-        arrays::master(false);
+        arrays::index(false);
 
         // Clone
-        clone::master(false);
+        clone::index(false);
 
         // Borrowing
-        borrowing::master(false);
+        borrowing::index(false);
 
         // Branches
-        branches::master(false);
+        branches::index(false);
 
         // Using if in a let statement
-        if_let::master(false);
+        if_let::index(false);
 
         // Using underscores in numbers
-        underscores::master(false);
+        underscores::index(false);
 
         // Convert values from one to another
         convert_values::convert_val(false);
 
         // Match Statement
-        match_statements::master(false);
+        match_statements::index(false);
 
         // Recursion
-        recursion::master(false);
+        recursion::index(false);
 
         // Scopes
-        scopes::master(false);
+        scopes::index(false);
     }
 }
