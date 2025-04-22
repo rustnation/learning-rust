@@ -41,7 +41,7 @@ pub fn index(show: bool) {
             .upgrade_cpu("M4 Max".to_string())
             .upgrade_memory(128)
             .upgrade_storage(4096);
-        
+
         println!("{:?}", computer);
     }
 }

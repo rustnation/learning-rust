@@ -1,4 +1,5 @@
 //! src/structs/mod.rs
+pub mod builder_pattern;
 pub mod coffee;
 pub mod definition;
 pub mod file;
@@ -11,7 +12,6 @@ pub mod struct_update_syntax;
 pub mod structs_owned;
 pub mod tuple_structs;
 pub mod unit_struct;
-pub mod builder_pattern;
 
 pub fn index(show: bool) {
     if show {
@@ -38,7 +38,7 @@ pub fn index(show: bool) {
         coffee::index(false);
 
         methods::index(false);
-        
+
         builder_pattern::index(false);
     }
 }

@@ -41,7 +41,7 @@ pub fn index(show: bool) {
         println!("size_and_color color 1: {:?}", size_and_color.color.0);
         println!("size_and_color color 2: {:?}", size_and_color.color.1);
         println!("size_and_color color 3: {:?}", size_and_color.color.2);
-        
+
         tuple_structs(false);
     }
 }

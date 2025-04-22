@@ -122,7 +122,7 @@ pub fn index(show: bool) {
                 metallica_song2.title, metallica_song3.title,
             )
         }
-        
+
         // associated function
         let coldplay_song = Song::new(
             String::from("Viva La Vida"),
@@ -130,7 +130,7 @@ pub fn index(show: bool) {
             2008,
             240,
         );
-        
+
         println!("{:?}", coldplay_song.title);
     }
 }
