@@ -4,18 +4,18 @@ pub mod definition;
 pub mod multiple_impl_blocks;
 pub mod parameters;
 
-pub fn master(show: bool) {
+pub fn index(show: bool) {
     if show {
         // Methods Definition
-        definition::master(false);
+        definition::index(false);
 
         // Methods with Parameters
-        parameters::master(false);
+        parameters::index(false);
 
         // Associated Functions
-        associated_functions::master(false);
+        associated_functions::index(false);
 
         // Multiple impl Blocks
-        multiple_impl_blocks::master(false);
+        multiple_impl_blocks::index(false);
     }
 }

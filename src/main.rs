@@ -6,7 +6,7 @@ fn main() {
     common::basics::index(false);
     common::ownership::master(false);
     common::structs::index(false);
-    common::methods::master(false);
+    common::methods::index(false);
     common::enums::master(false);
     common::random_numbers::master(false);
     common::algorithms::master(false);
