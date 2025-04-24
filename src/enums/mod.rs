@@ -7,6 +7,7 @@ pub mod enum_multi_array;
 pub mod enum_with_data;
 pub mod enum_with_match;
 pub mod event;
+pub mod german_months;
 pub mod hold_data;
 pub mod matches;
 pub mod options;
@@ -41,5 +42,8 @@ pub fn master(show: bool) {
 
         // Enum holding data
         hold_data::master(false);
+
+        // German Months
+        german_months::index(false);
     }
 }
