@@ -2,7 +2,7 @@
 enum GermanMonths {
     Januar,
     Februar,
-    März,
+    Marz,
     April,
     Mai,
     Juni,
@@ -19,7 +19,7 @@ pub fn index(show: bool) {
         let months = [
             GermanMonths::Januar,
             GermanMonths::Februar,
-            GermanMonths::März,
+            GermanMonths::Marz,
             GermanMonths::April,
             GermanMonths::Mai,
             GermanMonths::Juni,
@@ -35,7 +35,7 @@ pub fn index(show: bool) {
             match month {
                 GermanMonths::Januar => println!("Januar"),
                 GermanMonths::Februar => println!("Februar"),
-                GermanMonths::März => println!("März"),
+                GermanMonths::Marz => println!("März"),
                 GermanMonths::April => println!("April"),
                 GermanMonths::Mai => println!("Mai"),
                 GermanMonths::Juni => println!("Juni"),
