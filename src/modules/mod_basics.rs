@@ -8,6 +8,8 @@ pub fn master(show: bool) {
 
         let my_billy = Billy::new(3);
         my_billy.print_billy();
+
+        country::province::city::print_city("Canada", "Ontario", "Toronto");
     }
 }
 
@@ -37,6 +39,28 @@ mod print_things {
         pub fn print_billy(&self) {
             for _ in 0..self.times_to_print {
                 println!("{}", self.name);
+            }
+        }
+    }
+}
+
+mod country {
+    fn print_country(country: &str) {
+        println!("We are in the country of {country}");
+    }
+
+    pub mod province {
+        fn print_province(province: &str) {
+            println!("in the province of {province}");
+        }
+
+        pub mod city {
+            pub fn print_city(country: &str, province: &str, city: &str) {
+                crate::modules::mod_basics::country::print_country(country);
+                super::super::print_country(country);
+                crate::modules::mod_basics::country::province::print_province(province);
+                super::print_province(province);
+                println!("in the city of {city}");
             }
         }
     }
