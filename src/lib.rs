@@ -9,6 +9,7 @@ pub mod advanced_match;
 pub mod algorithms;
 pub mod api_mutex;
 pub mod arrays;
+pub mod automatic_clean;
 pub mod basics;
 pub mod boxes;
 pub mod channels;
