@@ -8,6 +8,7 @@ pub mod scoped_threads;
 pub mod sending_multiple_values;
 pub mod sharing_data_between_threads;
 pub mod threads_in_array;
+pub mod multithreading;
 
 pub fn master(show: bool) {
     if show {
@@ -30,5 +31,7 @@ pub fn master(show: bool) {
         scoped_threads::master(false);
 
         sending_multiple_values::master(false);
+        
+        multithreading::index(false);
     }
 }

@@ -1,6 +1,5 @@
 //! src/inspecting_endianness/mod.rs
 use crate::print_title;
-use std::mem::transmute;
 
 pub fn master(show: bool) {
     if show {
@@ -9,8 +8,8 @@ pub fn master(show: bool) {
         let big_endian: [u8; 4] = [0xAA, 0xBB, 0xCC, 0xDD];
         let little_endian: [u8; 4] = [0xAA, 0xBB, 0xCC, 0xDD];
 
-        let a: i32 = unsafe { transmute(big_endian) };
-        let b: i32 = unsafe { transmute(little_endian) };
+        let a: i32 = i32::from_ne_bytes(big_endian);
+        let b: i32 = i32::from_ne_bytes(little_endian);
 
         println!("{} vs  {}", a, b);
     }
