@@ -2,6 +2,15 @@
 
 Starting date: Feb 27, 2023
 
+## Operating Systems
+
+- macOS
+- Debian 13
+
+## Debian Requirements
+
+- libssl-dev
+
 ## Books
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
