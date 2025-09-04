@@ -8,6 +8,7 @@ pub mod definition;
 pub mod demo;
 pub mod example;
 pub mod named_lifetime;
+pub mod multiple_lifetimes;
 
 pub fn master(show: bool) {
     if show {
@@ -26,5 +27,7 @@ pub fn master(show: bool) {
         named_lifetime::master(false);
 
         anonymous_lifetime::master(false);
+        
+        multiple_lifetimes::index(false);
     }
 }
