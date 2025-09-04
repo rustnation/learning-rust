@@ -15,6 +15,7 @@ pub fn master(show: bool) {
         definition(false);
         mutex_example(false);
         mutex_try_lock(false);
+        multithreading_with_mutex(false);
     }
 }
 
@@ -73,5 +74,25 @@ fn mutex_try_lock(show: bool) {
         } else {
             println!("Didn't get the lock");
         }
+    }
+}
+
+fn multithreading_with_mutex(show: bool) {
+    if show {
+        let data = Arc::new(Mutex::new(0));
+        let handles: Vec<_> = (0..10)
+            .map(|_| {
+                let data = data.clone();
+                thread::spawn(move || {
+                    let mut data = data.lock().unwrap();
+                    *data += 1;
+                })
+            })
+        .collect();
+
+        for handle in handles {
+            handle.join().unwrap();
+        }
+        println!("Final data value: {:?}", *data.lock().unwrap());
     }
 }
