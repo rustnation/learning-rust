@@ -8,6 +8,7 @@ pub mod match_vector;
 pub mod multiple_placeholders;
 pub mod placeholder;
 pub mod while_let;
+pub mod pattern_match;
 
 pub fn master(show: bool) {
     if show {
@@ -30,5 +31,7 @@ pub fn master(show: bool) {
         while_let::master(false);
 
         match_control_flow::master(false);
+
+        pattern_match::index(false);
     }
 }
