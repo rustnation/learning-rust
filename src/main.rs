@@ -88,6 +88,7 @@ fn main() {
     common::variables::index(false);
     common::compiler_directives::index(false);
     common::automatic_clean::index(false);
+    common::interpreting_float::index(false);
 }
 
 fn local_function(show: bool) {
