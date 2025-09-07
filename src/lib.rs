@@ -94,6 +94,7 @@ pub mod webserver;
 pub mod while_loop;
 pub mod interpreting_float;
 pub mod bit_patterns;
+pub mod deconstructing_float;
 
 pub fn print_title(title: &str) {
     println!(" ");
