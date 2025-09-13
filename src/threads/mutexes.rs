@@ -88,7 +88,7 @@ fn multithreading_with_mutex(show: bool) {
                     *data += 1;
                 })
             })
-        .collect();
+            .collect();
 
         for handle in handles {
             handle.join().unwrap();

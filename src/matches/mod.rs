@@ -6,9 +6,9 @@ pub mod match_control_flow;
 pub mod match_guard;
 pub mod match_vector;
 pub mod multiple_placeholders;
+pub mod pattern_match;
 pub mod placeholder;
 pub mod while_let;
-pub mod pattern_match;
 
 pub fn master(show: bool) {
     if show {
