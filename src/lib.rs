@@ -95,6 +95,7 @@ pub mod variables;
 pub mod vectors;
 pub mod webserver;
 pub mod while_loop;
+pub mod zero_cost_abstraction;
 
 pub fn print_title(title: &str) {
     println!(" ");

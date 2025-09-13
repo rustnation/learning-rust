@@ -91,6 +91,7 @@ fn main() {
     common::interpreting_float::index(false);
     common::bit_patterns::index(false);
     common::deconstructing_float::index(false);
+    common::zero_cost_abstraction::index(false);
 }
 
 fn local_function(show: bool) {

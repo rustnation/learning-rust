@@ -11,6 +11,7 @@ Starting date: Feb 27, 2023
 
 - libssl-dev
 - pkg-config
+- fd-find
 
 ## Books
 
