@@ -10,6 +10,7 @@ Starting date: Feb 27, 2023
 ## Debian Requirements
 
 - libssl-dev
+- pkg-config
 
 ## Books
 
