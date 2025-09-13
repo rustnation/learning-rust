@@ -63,6 +63,7 @@ pub mod network;
 pub mod new_type;
 pub mod numbers;
 pub mod object_oriented;
+pub mod open_file;
 pub mod operator_overloading;
 pub mod optionals;
 pub mod ownership;
