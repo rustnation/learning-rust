@@ -1,6 +1,7 @@
 //! src/enums/mod.rs
 use crate::print_title;
 
+pub mod cards;
 pub mod definition;
 pub mod demo;
 pub mod enum_multi_array;
@@ -45,5 +46,8 @@ pub fn master(show: bool) {
 
         // German Months
         german_months::index(false);
+
+        // Cards Demo
+        cards::index(false);
     }
 }
