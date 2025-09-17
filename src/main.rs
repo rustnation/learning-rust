@@ -84,8 +84,6 @@ fn main() {
     common::interior_mutability::master(false);
     common::cow_type::master(false);
     common::functions::master(false);
-    common::concurrency::master(false);
-    common::variables::index(false);
     common::compiler_directives::index(false);
     common::automatic_clean::index(false);
     common::interpreting_float::index(false);
