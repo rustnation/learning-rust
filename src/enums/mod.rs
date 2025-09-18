@@ -7,6 +7,7 @@ pub mod demo;
 pub mod enum_multi_array;
 pub mod enum_with_data;
 pub mod enum_with_match;
+pub mod enums_and_functions;
 pub mod enums_with_enums;
 pub mod event;
 pub mod german_months;
@@ -57,5 +58,8 @@ pub fn master(show: bool) {
 
         // Enums with Enums
         enums_with_enums::index(false);
+
+        // Enums and Functions
+        enums_and_functions::index(false);
     }
 }
