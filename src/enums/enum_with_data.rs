@@ -31,6 +31,7 @@ impl TimeUnit {
     }
 }
 
+/// enum inside of enum
 /// A timestamp that has been deliberately rounded off, so our program
 /// says "6 months ago" insted of "February 9, 2016, at 9:49 AM".
 #[derive(Copy, Clone, Debug, PartialEq)]
