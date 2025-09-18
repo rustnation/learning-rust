@@ -7,6 +7,7 @@ pub mod demo;
 pub mod enum_multi_array;
 pub mod enum_with_data;
 pub mod enum_with_match;
+pub mod enums_with_enums;
 pub mod event;
 pub mod german_months;
 pub mod hold_data;
@@ -53,5 +54,8 @@ pub fn master(show: bool) {
 
         // Payment Method Type
         payment_method_type::index(false);
+
+        // Enums with Enums
+        enums_with_enums::index(false);
     }
 }
