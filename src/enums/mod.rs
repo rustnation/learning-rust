@@ -12,6 +12,7 @@ pub mod german_months;
 pub mod hold_data;
 pub mod matches;
 pub mod options;
+pub mod payment_method_type;
 
 pub fn master(show: bool) {
     if show {
@@ -49,5 +50,8 @@ pub fn master(show: bool) {
 
         // Cards Demo
         cards::index(false);
+
+        // Payment Method Type
+        payment_method_type::index(false);
     }
 }
