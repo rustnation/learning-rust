@@ -14,7 +14,7 @@ pub fn master(show: bool) {
     if show {
         println!("\n-- Match Expression");
 
-        definition::master(false);
+        definition::index(false);
 
         if_let::master(false);
 
