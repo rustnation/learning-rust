@@ -3,6 +3,13 @@ enum PaymentMethodType {
     CreditCard(String),
     DebitCard(String),
     PayPal(String, String),
+    PayPalV2(Credentials),
+}
+
+#[derive(Debug)]
+struct Credentials {
+    username: String,
+    password: String,
 }
 
 pub fn index(show: bool) {
@@ -13,10 +20,15 @@ pub fn index(show: bool) {
             String::from("user@example.com"),
             String::from("fake-password"),
         );
+        let paypal_v2 = PaymentMethodType::PayPalV2(Credentials {
+            username: String::from("user@example.com"),
+            password: String::from("fake-password"),
+        });
 
         println!("visa: {:?}", visa);
         println!("mastercard: {:?}", mastercard);
         println!("paypal: {:?}", paypal);
+        println!("paypal v2: {:?}", paypal_v2);
 
         if let PaymentMethodType::CreditCard(visa_number) = visa {
             println!("visa number: {:?}", visa_number);
@@ -29,6 +41,11 @@ pub fn index(show: bool) {
         if let PaymentMethodType::PayPal(email, password) = paypal {
             println!("paypal email: {:?}", email);
             println!("paypal password: {:?}", password);
+        }
+
+        if let PaymentMethodType::PayPalV2(credentials) = paypal_v2 {
+            println!("paypal_v2 email: {:?}", credentials.username);
+            println!("paypal_v2 password: {:?}", credentials.password);
         }
     }
 }
