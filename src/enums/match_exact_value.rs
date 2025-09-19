@@ -2,6 +2,7 @@
 enum Milk {
     Lowfat(i32),
     Whole,
+    NonDiary { kind: String },
 }
 
 impl Milk {
@@ -16,6 +17,9 @@ impl Milk {
             Milk::Whole => {
                 println!("You've got the whole milk!");
             }
+            Milk::NonDiary { kind } => {
+                println!("You've got the {kind} milk!");
+            }
         }
     }
 }
@@ -25,5 +29,23 @@ pub fn index(show: bool) {
         Milk::Whole.drink();
         Milk::Lowfat(7);
         Milk::Lowfat(77);
+        Milk::NonDiary {
+            kind: String::from("Ulta fat"),
+        };
+
+        let my_beverage = Milk::Lowfat(7);
+
+        // in this example we are validating all the posibilities
+        if let Milk::Lowfat(percent) = my_beverage {
+            println!("Your beverage is {percent}% milk");
+        }
+
+        let beverage = Milk::NonDiary {
+            kind: String::from("Oat"),
+        };
+
+        if let Milk::NonDiary { kind } = beverage {
+            println!("Your beverage is {kind} milk");
+        }
     }
 }
