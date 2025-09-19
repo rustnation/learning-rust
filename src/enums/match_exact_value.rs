@@ -27,11 +27,12 @@ impl Milk {
 pub fn index(show: bool) {
     if show {
         Milk::Whole.drink();
-        Milk::Lowfat(7);
-        Milk::Lowfat(77);
+        Milk::Lowfat(7).drink();
+        Milk::Lowfat(77).drink();
         Milk::NonDiary {
             kind: String::from("Ulta fat"),
-        };
+        }
+        .drink();
 
         let my_beverage = Milk::Lowfat(7);
 

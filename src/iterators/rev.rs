@@ -6,6 +6,6 @@ pub fn master(show: bool) {
         let mut big_vec = vec![6; 100];
         big_vec.push(5);
 
-        println!("{:?}", big_vec.iter().any(|&number| number == 5));
+        println!("{:?}", big_vec.contains(&5));
     }
 }

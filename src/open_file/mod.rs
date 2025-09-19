@@ -4,7 +4,7 @@ use std::io::{Error, Read};
 pub fn index(show: bool) {
     if show {
         let filename = "mod.rs";
-        match read_file_contents(&filename) {
+        match read_file_contents(filename) {
             Ok(contents) => println!("{:?}", contents),
             Err(err) => println!("{:?}", err),
         }
