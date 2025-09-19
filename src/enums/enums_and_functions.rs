@@ -27,7 +27,9 @@ pub fn index(show: bool) {
         wash_laundry(LaundryCycle::Hot { temperature: 70 });
         wash_laundry(LaundryCycle::Delicate(String::from("silk")));
 
+        // the same functions but with enum functions
         LaundryCycle::Cold.wash_laundry();
+
         let hot_cycle = LaundryCycle::Hot { temperature: 70 };
         hot_cycle.wash_laundry();
 
