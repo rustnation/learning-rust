@@ -2,6 +2,7 @@
 use crate::print_title;
 
 pub mod cards;
+pub mod catching_multiple_values;
 pub mod definition;
 pub mod demo;
 pub mod enum_multi_array;
@@ -61,5 +62,8 @@ pub fn master(show: bool) {
 
         // Enums and Functions
         enums_and_functions::index(false);
+
+        // Catching multiple values
+        catching_multiple_values::index(false);
     }
 }
