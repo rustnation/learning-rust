@@ -13,6 +13,7 @@ pub mod enums_with_enums;
 pub mod event;
 pub mod german_months;
 pub mod hold_data;
+pub mod if_let_construct;
 pub mod matches;
 pub mod options;
 pub mod payment_method_type;
@@ -65,5 +66,8 @@ pub fn master(show: bool) {
 
         // Catching multiple values
         catching_multiple_values::index(false);
+
+        // if let construct
+        if_let_construct::index(false);
     }
 }
