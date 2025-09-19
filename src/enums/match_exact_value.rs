@@ -48,5 +48,13 @@ pub fn index(show: bool) {
         if let Milk::NonDiary { kind } = beverage {
             println!("Your beverage is {kind} milk");
         }
+
+        // let - else to make the value available after validation
+        let Milk::NonDiary { kind } = my_beverage else {
+            println!("You do not have the nondiary milk");
+            return;
+        };
+
+        println!("{kind} milk is available here");
     }
 }
