@@ -31,7 +31,14 @@ fn demo(show: bool) {
         let bass = musical_instruments.get(2);
         println!("{:?}", bass);
 
+        // we can use unwrap because we know that bass variable has a value
+        // but we cannot trust on this
+        let valid_instrument = bass.unwrap();
+        println!("valid instrument: {valid_instrument}");
+
         let invalid_instrument = musical_instruments.get(77);
         println!("{:?}", invalid_instrument);
+        // if we use unwrap here, we are going to get a panic
+        // invalid_instrument.unwrap(); // this will fail because there is not value
     }
 }
