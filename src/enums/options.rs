@@ -17,6 +17,7 @@ pub fn index(show: bool) {
         println!("The value of absent_number is {:?}", absent_number);
 
         demo(false);
+        demo_idiomatic(false);
     }
 }
 
@@ -42,5 +43,35 @@ fn demo(show: bool) {
         // invalid_instrument.unwrap(); // this will fail because there is not value
 
         // unwrap and expect are optimistic
+    }
+}
+
+fn demo_idiomatic(show: bool) {
+    if show {
+        let musical_instruments = [
+            String::from("Guitar"),
+            String::from("Drums"),
+            String::from("Bass"),
+        ];
+
+        let bass = musical_instruments.get(2);
+        match bass {
+            Option::Some(instrument) => {
+                println!("instrument: {:?}", instrument);
+            }
+            Option::None => {
+                println!("no instrument found");
+            }
+        }
+
+        let invalid_instrument = musical_instruments.get(77);
+        match invalid_instrument {
+            Option::Some(instrument) => {
+                println!("instrument: {:?}", instrument);
+            }
+            Option::None => {
+                println!("no instrument found");
+            }
+        }
     }
 }
