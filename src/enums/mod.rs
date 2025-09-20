@@ -29,7 +29,7 @@ pub fn master(show: bool) {
         definition::master(false);
 
         // Option Enums
-        options::master(false);
+        options::index(false);
 
         // Matches
         matches::master(false);
