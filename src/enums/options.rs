@@ -40,5 +40,7 @@ fn demo(show: bool) {
         println!("{:?}", invalid_instrument);
         // if we use unwrap here, we are going to get a panic
         // invalid_instrument.unwrap(); // this will fail because there is not value
+
+        // unwrap and expect are optimistic
     }
 }
