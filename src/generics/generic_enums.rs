@@ -1,9 +1,30 @@
 //! src/generics/generic_enums.rs
 use crate::print_title;
 
-pub fn master(show: bool) {
+#[derive(Debug)]
+enum Cheesesteak<T> {
+    Plain,
+    Topping(T),
+}
+
+pub fn index(show: bool) {
     if show {
         generic_enums(true);
+
+        // slice of str
+        let mushroom = Cheesesteak::Topping("mushroom");
+        println!("Cheesesteak sabor: {:?}", mushroom);
+
+        // string
+        let onions = Cheesesteak::Topping(String::from("onions"));
+        println!("Cheesesteak sabor: {:?}", onions);
+
+        let topping = String::from("bacon");
+        let bacon = Cheesesteak::Topping(topping);
+        println!("Cheesesteak sabor: {:?}", bacon);
+
+        let plain: Cheesesteak<String> = Cheesesteak::Plain;
+        println!("Cheesesteak sabor: {:?}", plain);
     }
 }
 

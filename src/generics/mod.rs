@@ -35,7 +35,7 @@ pub fn master(show: bool) {
 
         generic_functions::master(false);
 
-        generic_enums::master(false);
+        generic_enums::index(false);
 
         generic_structs::master(false);
 
