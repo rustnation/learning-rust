@@ -12,6 +12,7 @@ pub mod generic_implementation;
 pub mod generic_structs;
 pub mod generic_structures;
 pub mod generic_with_where;
+pub mod introduction;
 pub mod question_operator;
 pub mod vehicle;
 
@@ -44,5 +45,7 @@ pub fn master(show: bool) {
         generic_implementation::master(false);
 
         generic_with_where::master(false);
+
+        introduction::index(false);
     }
 }
