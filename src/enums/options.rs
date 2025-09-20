@@ -15,5 +15,23 @@ pub fn index(show: bool) {
         println!("The value of some_number is: {:?}", some_number);
         println!("The value of some_chart is: {:?}", some_char);
         println!("The value of absent_number is {:?}", absent_number);
+
+        demo(false);
+    }
+}
+
+fn demo(show: bool) {
+    if show {
+        let musical_instruments = [
+            String::from("Guitar"),
+            String::from("Drums"),
+            String::from("Bass"),
+        ];
+
+        let bass = musical_instruments.get(2);
+        println!("{:?}", bass);
+
+        let invalid_instrument = musical_instruments.get(77);
+        println!("{:?}", invalid_instrument);
     }
 }
