@@ -9,6 +9,7 @@ pub fn index(show: bool) {
         let some_char = Some('e');
 
         // represents an absent value
+        // Rust here needs a concret type value
         let absent_number: Option<i32> = None;
 
         println!("The value of some_number is: {:?}", some_number);
