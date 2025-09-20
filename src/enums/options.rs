@@ -55,23 +55,20 @@ fn demo_idiomatic(show: bool) {
         ];
 
         let bass = musical_instruments.get(2);
-        match bass {
-            Option::Some(instrument) => {
-                println!("instrument: {:?}", instrument);
-            }
-            Option::None => {
-                println!("no instrument found");
-            }
-        }
+        validate_instrument(bass);
 
         let invalid_instrument = musical_instruments.get(77);
-        match invalid_instrument {
-            Option::Some(instrument) => {
-                println!("instrument: {:?}", instrument);
-            }
-            Option::None => {
-                println!("no instrument found");
-            }
+        validate_instrument(invalid_instrument);
+    }
+}
+
+fn validate_instrument(instrument: Option<&String>) {
+    match instrument {
+        Option::Some(instrument) => {
+            println!("instrument: {:?}", instrument);
+        }
+        Option::None => {
+            println!("no instrument found");
         }
     }
 }
