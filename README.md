@@ -1,6 +1,8 @@
 # Learning Rust
 
-Starting date: Feb 27, 2023
+Starting date with Rust: Feb 27, 2023
+
+Organizing the repo in my GitHub Organization.
 
 ## Operating Systems
 
@@ -13,7 +15,7 @@ Starting date: Feb 27, 2023
 - pkg-config
 - fd-find
 
-## Books
+## Books - Outdated
 
 - The Rust Programming Language 2nd Edition ${\color{orange}[Done]}$
 - Programming Rust 2nd Edition ${\color{orange}[Done]}$
