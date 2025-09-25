@@ -5,6 +5,7 @@ pub mod cards;
 pub mod catching_multiple_values;
 pub mod definition;
 pub mod demo;
+pub mod emulator;
 pub mod enum_multi_array;
 pub mod enum_with_data;
 pub mod enum_with_match;
@@ -69,5 +70,8 @@ pub fn master(show: bool) {
 
         // Match Exact Value
         match_exact_value::index(false);
+
+        // Enum Emulator
+        emulator::index(false);
     }
 }
