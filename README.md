@@ -33,6 +33,13 @@ Organizing the repo in my GitHub Organization.
 - Machine Learning with Rust
 - Effective Rust
 - Write Powerful Rust Macros
+- Ultimate Rust for Systems Programming
+- The Rust Handbook
+- Mastering Rust Programming
+- Asynchronous Programming in Rust
+- Rust Game Development Essentials
+- Tonic for Rust-based gRPC
+- Rust for Blockchain Application Development
 
 ## Courses
 
