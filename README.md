@@ -33,7 +33,7 @@ Organizing the repo in my GitHub Organization.
 - Machine Learning with Rust
 - Effective Rust
 - Write Powerful Rust Macros
-- Ultimate Rust for Systems Programming
+- Ultimate Rust for Systems Programming ${\color{gree}[In Progress]}$
 - The Rust Handbook
 - Mastering Rust Programming
 - Asynchronous Programming in Rust

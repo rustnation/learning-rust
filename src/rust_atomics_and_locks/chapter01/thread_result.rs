@@ -13,6 +13,8 @@ pub fn master(show: bool) {
             sum / len
         });
 
+        // the value returned by the thread's closure, is sent back to the main thread
+        // through the join method
         let average = t.join().unwrap();
 
         println!("average: {average}");
