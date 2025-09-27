@@ -23,6 +23,7 @@ pub mod scalars;
 pub mod scopes;
 pub mod shadowing;
 pub mod slices;
+pub mod type_casting;
 pub mod underscores;
 pub mod variables;
 
@@ -101,5 +102,8 @@ pub fn index(show: bool) {
 
         // Scopes
         scopes::index(false);
+
+        // Type Casting
+        type_casting::index(false);
     }
 }
